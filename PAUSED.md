@@ -1,3 +1,21 @@
+# Resumed November 7, 2026
+
+Safety-and-preservation rules received from the user are now in force: inspect before modifying, small controlled changes, protect all working systems and data, verify with isolated tests only. No user task was assigned yet in this opening turn, so only inspection and baseline work was done — no source, data, map or asset files were modified.
+
+## Baseline established (2026-11-07)
+
+- `git init` at the workspace root created rollback commit **`be825c981655d7ca0d7bdfae62e9354c1a69af75`** (4,825 objects, ~121 MB) covering source, tools, docs, maps, sprites, `odyssey-2-server-develop/data/`, `community-world/` and the full untouched `archive/` originals. New `.gitignore` excludes only generated outputs: `node_modules/`, `dist/`, `publish/`, `logs/`, `.map-library/`, `.map-library-cache/`, `.editor-test-profile/`, `*.log`. US-ASCII file only; no working files touched.
+- Server TypeScript compiles clean: `npx tsc --noEmit` (exit 0) in `odyssey-2-server-develop`.
+- `node tools/test-reimagined.cjs`: all three PASS groups (five errand chains/rewards/repeat preven­tion/rollback/teleport freeze; Normal+Hardcore deaths, safe-zone loot theft rules; dialogue interaction, accept/decline, invalid replies, ambient speech; story capacity/isolation; story respawn; market escrow; guilds halls persistence).
+- `node smoke-test.cjs`: PASS (import backup, invalid import rejection, six layers, anchors, spawn, accounts, movement, saved position, fragmented TCP header). Caveat: it spawns an isolated server that also binds the mobile web port 8080; a run executed in parallel with other heavy Node processes failed transiently with ECONNREFUSED and then passed when run alone. Run it alone.
+- Client build (`odyssey-2-client-develop`) compiles `lib/**` to `src/bin/` only; it cannot overwrite hand-written sources. Not run in this turn.
+
+## Known pre-existing conditions (not caused by this turn)
+
+- The inherited server Mocha suite (`npm test`) still references the removed ClassicServer module and fails before running; README and REIMAGINED document this and the smoke/reimagined checks are the intended validation.
+- Stray odyssey-2-server-develop/data/undefined file (0.3 KB) exists; left untouched and included in the baseline snapshot.
+- Operational constraints carried over: user permits isolated tests only, no desktop automation, do not launch the user's apps.
+
 # Resumed November 5, 2026
 
 The pause below is historical and was revoked by the user's continue instruction. Current implementation and limitations are documented in REIMAGINED.md. Do not treat earlier test results as validating later edits.
