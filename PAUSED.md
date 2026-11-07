@@ -16,6 +16,15 @@ Safety-and-preservation rules received from the user are now in force: inspect b
 - Stray odyssey-2-server-develop/data/undefined file (0.3 KB) exists; left untouched and included in the baseline snapshot.
 - Operational constraints carried over: user permits isolated tests only, no desktop automation, do not launch the user's apps.
 
+## Priority 1 completed (2026-11-07): explicit surface classification
+
+- Diagnosed floor-as-wall root causes with visual evidence sheets (scenery-audit/selected-0.png runs): catalogue per-tile-ID heuristic plus transparent floor decals rendered upright; per-asset mass reclassification rejected as unsound (711-class cliff art is often a wall foundation row).
+- Implemented per-placement classification precedence — instance > map assetProfiles > installation overrides > catalogue — in `odyssey-2-client-develop/src/views/game/scenery-profiles.js` (instance merge inside profileAt with cache signature on instance counts; scenery-layout/models consume it).
+- Studio: repair panel unlocks surface type/opening at instance scope (studio-profile-tools.js); Structure Inspector reports effective merged profile + provenance (studio-workspace.js); Surface (3D) paint selector with erase/dedupe/1024 cap, 2D badges, eyedropper sampling (editor.js + editor.html + studio-workspace.js).
+- Rendering-property clipboard: tools/map-edit-tools.cjs copy/paste capture instances, heights/walls/wallTiles sub-grids, houses; overlay/replace modes; instance lifecycle; house footprint takeover; collision/anchors/connections untouched. Object clipboard carries instances (studio-workspace.js).
+- Tests added: tools/test-instance-reclassification.cjs, tools/test-clipboard-visual.cjs. All regressions green incl. all-1,520-map renderer and studio overhaul UI. See VALIDATION.md 'November 7' section.
+- Deferred from Priority 1 (documented in ODYSSEY_DEV_HANDOFF.md): clipboard UI toggles (art-only/copy-surface-only buttons), rotation field for painted placement, World Builder surface brush, catalogue asset-scope corrections for ambiguous textures (needs author review per map context).
+
 # Resumed November 5, 2026
 
 The pause below is historical and was revoked by the user's continue instruction. Current implementation and limitations are documented in REIMAGINED.md. Do not treat earlier test results as validating later edits.
