@@ -1,0 +1,20 @@
+{
+  "game": {
+    "accounts": {
+      "file": "accounts.data"
+    }
+  },
+  "server": {
+    "port": 5751,
+    "adminPort": 3000,
+    "log": {
+      "level": "error",
+      "file": "odyssey.log"
+    },
+    "interval": 100,
+    "dataFolder": "data"
+  },
+  "scripts": {
+    "directory": "scripts"
+  }
+}

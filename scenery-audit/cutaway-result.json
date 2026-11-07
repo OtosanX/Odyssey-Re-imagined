@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "distances": [
+    {
+      "zoom": 24,
+      "changed": 0
+    },
+    {
+      "zoom": 40,
+      "changed": 0
+    },
+    {
+      "zoom": 64,
+      "changed": 0
+    }
+  ],
+  "outsideFrontChangedPixels": 0,
+  "outsideBackChangedPixels": 0,
+  "insideChangedPixels": 7841
+}

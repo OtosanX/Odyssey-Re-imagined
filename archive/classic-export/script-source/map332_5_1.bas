@@ -1,0 +1,11 @@
+SUB Main(Player AS LONG)
+   If StrCmp(GetPlayerUser(Player), "robret_strife") Then OpenDoor(332, 5, 0)
+   If StrCmp(GetPlayerUser(Player), "sobe") Then OpenDoor(332, 5, 0)
+ If StrCmp(GetPlayerUser(Player), "magika437") Then OpenDoor(332, 5, 0)
+If StrCmp(GetPlayerUser(Player), "armac") Then OpenDoor(332, 5, 0)
+If StrCmp(GetPlayerUser(Player), "keith") Then OpenDoor(332, 5, 0)
+If StrCmp(GetPlayerUser(Player), "rza") Then OpenDoor(332, 5, 0)
+If StrCmp(GetPlayerUser(Player), "magika439") Then OpenDoor(332, 5, 0)
+If StrCmp(GetPlayerUser(Player), "devilmaycry911") Then OpenDoor(332, 5, 0)
+If StrCmp(GetPlayerUser(Player), "journey") Then OpenDoor(332, 5, 0)
+END SUB

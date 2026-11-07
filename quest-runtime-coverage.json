@@ -1,0 +1,1884 @@
+{
+  "total": 2826,
+  "parsed": 2826,
+  "directApiComplete": 2529,
+  "note": "Static API coverage is not gameplay verification. Nested RunScript dependencies may require additional APIs. Five named errand chains have separate behavioral tests.",
+  "unsupported": [
+    {
+      "name": "carnage",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "cavern",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "chess",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "city",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "command3",
+      "missing": [
+        "banplayer",
+        "getplayerip",
+        "setoutdoorlight",
+        "setplayerclass",
+        "setequippeditemsuffix"
+      ]
+    },
+    {
+      "name": "spell117",
+      "missing": [
+        "getplayerdamage",
+        "createplayermagicprojectile"
+      ]
+    },
+    {
+      "name": "command",
+      "missing": [
+        "bootplayer",
+        "banplayer"
+      ]
+    },
+    {
+      "name": "ctfwarp",
+      "missing": [
+        "getplayerexperience"
+      ]
+    },
+    {
+      "name": "deathball",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "ecarn",
+      "missing": [
+        "getplayerexperience"
+      ]
+    },
+    {
+      "name": "end",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "farm",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "fortress",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "fortressctf",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "getobj480",
+      "missing": [
+        "banplayer"
+      ]
+    },
+    {
+      "name": "getobj560",
+      "missing": [
+        "banplayer"
+      ]
+    },
+    {
+      "name": "guildboardpage",
+      "missing": [
+        "readinistr"
+      ]
+    },
+    {
+      "name": "guildboardview",
+      "missing": [
+        "readinistr"
+      ]
+    },
+    {
+      "name": "guildstats",
+      "missing": [
+        "readiniint",
+        "readinistr"
+      ]
+    },
+    {
+      "name": "halloween",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "map70_1_6",
+      "missing": [
+        "getobjnum",
+        "destroyobject"
+      ]
+    },
+    {
+      "name": "joingame",
+      "missing": [
+        "getmapname",
+        "setplayername"
+      ]
+    },
+    {
+      "name": "joinmap2",
+      "missing": [
+        "createmapstatictext"
+      ]
+    },
+    {
+      "name": "poison",
+      "missing": [
+        "getplayerdamage"
+      ]
+    },
+    {
+      "name": "joinmap678",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "khargattack4",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "map124_10_6",
+      "missing": [
+        "bootplayer",
+        "resetmap",
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "nisfight",
+      "missing": [
+        "getmonsterdirection"
+      ]
+    },
+    {
+      "name": "nisfight2",
+      "missing": [
+        "getmonsterdirection"
+      ]
+    },
+    {
+      "name": "nomana",
+      "missing": [
+        "strformat"
+      ]
+    },
+    {
+      "name": "original",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "original2",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "pacman",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "teamfortress",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "warpitems",
+      "missing": [
+        "getobjx",
+        "getobjy",
+        "getobjval",
+        "getobjnum",
+        "destroyobject"
+      ]
+    },
+    {
+      "name": "disguise",
+      "missing": [
+        "getguildsprite"
+      ]
+    },
+    {
+      "name": "spell133",
+      "missing": [
+        "getguildsprite"
+      ]
+    },
+    {
+      "name": "mulecheck",
+      "missing": [
+        "getplayerip"
+      ]
+    },
+    {
+      "name": "attackmonster209",
+      "missing": [
+        "getplayergender"
+      ]
+    },
+    {
+      "name": "tournamentround7",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "map979_10_1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map1971_5_0",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map1971_6_0",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "monsterdie237",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "dodgeball",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "dodgeballwin",
+      "missing": [
+        "setplayerguild",
+        "resetmap"
+      ]
+    },
+    {
+      "name": "useobj362",
+      "missing": [
+        "createplayermagicprojectile"
+      ]
+    },
+    {
+      "name": "joinmap1428",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "useobj455",
+      "missing": [
+        "attackplayer"
+      ]
+    },
+    {
+      "name": "useobj501",
+      "missing": [
+        "getobjnum"
+      ]
+    },
+    {
+      "name": "getobj443",
+      "missing": [
+        "getobjnum",
+        "getobjx",
+        "getobjy",
+        "destroyobject"
+      ]
+    },
+    {
+      "name": "carnkill",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "useobj450",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj214",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "backstab",
+      "missing": [
+        "gettileisvacant",
+        "gettilenodirectionalwalls",
+        "getplayerdamage",
+        "attackplayer"
+      ]
+    },
+    {
+      "name": "useobj59",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "todattack",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "summonerfire2",
+      "missing": [
+        "magicattackplayer",
+        "attackmonster"
+      ]
+    },
+    {
+      "name": "map320_8_3",
+      "missing": [
+        "getplayerexperience"
+      ]
+    },
+    {
+      "name": "map1826_0_1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "monsterkill123",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "monsterkill144",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "useobj349",
+      "missing": [
+        "setitemsuffix",
+        "setitemprefix"
+      ]
+    },
+    {
+      "name": "useobj237",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj495",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "spell154",
+      "missing": [
+        "canattackmonster",
+        "attackmonster",
+        "attackplayer"
+      ]
+    },
+    {
+      "name": "map552_11_1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "battle",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "tournamentwin",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "bomb2",
+      "missing": [
+        "getplayerdamage",
+        "magicattackplayer"
+      ]
+    },
+    {
+      "name": "buffmindset",
+      "missing": [
+        "setitemsuffix",
+        "setequippeditemsuffix"
+      ]
+    },
+    {
+      "name": "monsterdie230",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "summoner1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "summoner2",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map813_6_11",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "useobj498",
+      "missing": [
+        "setitemprefix",
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "startecarn",
+      "missing": [
+        "banplayer"
+      ]
+    },
+    {
+      "name": "tournamentround1",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "tournamentround2",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "tournamentround3",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "tournamentround4",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "tournamentroundwin",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "tournamentround5",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "tournamentround6",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "map1829_11_1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "redemption2",
+      "missing": [
+        "getplayerdamage",
+        "magicattackplayer"
+      ]
+    },
+    {
+      "name": "stakeeq",
+      "missing": [
+        "getobjnum",
+        "getobjx",
+        "getobjy"
+      ]
+    },
+    {
+      "name": "useobj453",
+      "missing": [
+        "createplayermagicprojectile"
+      ]
+    },
+    {
+      "name": "spell226",
+      "missing": [
+        "magicattackplayer"
+      ]
+    },
+    {
+      "name": "useobj347",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "attackmonster170",
+      "missing": [
+        "getmonsterhp"
+      ]
+    },
+    {
+      "name": "boss6",
+      "missing": [
+        "monstermagicattackplayer"
+      ]
+    },
+    {
+      "name": "boss5",
+      "missing": [
+        "monstermagicattackplayer"
+      ]
+    },
+    {
+      "name": "map90_11_0",
+      "missing": [
+        "attackmonster"
+      ]
+    },
+    {
+      "name": "map933_5_0",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "poison1",
+      "missing": [
+        "magicattackplayer"
+      ]
+    },
+    {
+      "name": "map1443_0_8",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "map1443_11_8",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "map1443_1_6",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "map1443_10_6",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "teamarenakill",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "teamarenawin",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "useobj499",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj500",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj462",
+      "missing": [
+        "setitemprefix",
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "battlekill",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "calltoarms",
+      "missing": [
+        "getmapname"
+      ]
+    },
+    {
+      "name": "map1421_1_1",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "map1422_10_1",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "useobj398",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "throw",
+      "missing": [
+        "attackplayer"
+      ]
+    },
+    {
+      "name": "map1552_11_7",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "map982_2_1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map982_2_2",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map984_10_5",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map984_10_6",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map78_10_6",
+      "missing": [
+        "getobjnum",
+        "destroyobject"
+      ]
+    },
+    {
+      "name": "winter",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "useobj195",
+      "missing": [
+        "setitemprefix",
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj135",
+      "missing": [
+        "setitemprefix",
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "getobj491",
+      "missing": [
+        "getobjnum",
+        "getobjx",
+        "getobjy",
+        "destroyobject"
+      ]
+    },
+    {
+      "name": "useobj159",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "ctfswap",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "useobj497",
+      "missing": [
+        "getplayerdesc",
+        "setplayername"
+      ]
+    },
+    {
+      "name": "useobj383",
+      "missing": [
+        "createplayermagicprojectile"
+      ]
+    },
+    {
+      "name": "useobj187",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj53",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "mapsay3",
+      "missing": [
+        "setplayerclass"
+      ]
+    },
+    {
+      "name": "map1489_3_6",
+      "missing": [
+        "magicattackplayer"
+      ]
+    },
+    {
+      "name": "map1489_8_3",
+      "missing": [
+        "magicattackplayer",
+        "attackmonster"
+      ]
+    },
+    {
+      "name": "joinmap1489",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "swampcarn",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "spacecarn",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "caverncarn",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "citycarn",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "teamkill",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "command2",
+      "missing": [
+        "getmapname"
+      ]
+    },
+    {
+      "name": "magicarmour",
+      "missing": [
+        "setequippeditemsuffix"
+      ]
+    },
+    {
+      "name": "magicarmour2",
+      "missing": [
+        "setequippeditemsuffix"
+      ]
+    },
+    {
+      "name": "spell129",
+      "missing": [
+        "setequippeditemsuffix"
+      ]
+    },
+    {
+      "name": "playerdie",
+      "missing": [
+        "getguildsprite"
+      ]
+    },
+    {
+      "name": "swamp",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "map850_3_7",
+      "missing": [
+        "setequippeditemprefix",
+        "setequippeditemsuffix"
+      ]
+    },
+    {
+      "name": "marssell",
+      "missing": [
+        "readinistr",
+        "writeinistr"
+      ]
+    },
+    {
+      "name": "marscheck",
+      "missing": [
+        "readinistr"
+      ]
+    },
+    {
+      "name": "marscancel",
+      "missing": [
+        "readinistr",
+        "writeinistr"
+      ]
+    },
+    {
+      "name": "champ",
+      "missing": [
+        "banplayer"
+      ]
+    },
+    {
+      "name": "spell200",
+      "missing": [
+        "getplayerdamage",
+        "getplayerconcentration"
+      ]
+    },
+    {
+      "name": "map1828_11_1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map881_5_11",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "joinmap677",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "tofreset",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map1253_2_1",
+      "missing": [
+        "getobjx",
+        "getobjy",
+        "destroyobject"
+      ]
+    },
+    {
+      "name": "map150_1_6",
+      "missing": [
+        "bootplayer",
+        "resetmap",
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "attackmonster234",
+      "missing": [
+        "monsterattackplayer",
+        "resetmap"
+      ]
+    },
+    {
+      "name": "marsview",
+      "missing": [
+        "readinistr"
+      ]
+    },
+    {
+      "name": "marscash",
+      "missing": [
+        "readinistr",
+        "writeinistr"
+      ]
+    },
+    {
+      "name": "tradeswitch",
+      "missing": [
+        "getobjx",
+        "getobjy",
+        "getobjnum"
+      ]
+    },
+    {
+      "name": "gamekill",
+      "missing": [
+        "attackmonster"
+      ]
+    },
+    {
+      "name": "find",
+      "missing": [
+        "getmapname"
+      ]
+    },
+    {
+      "name": "map934_5_2",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map938_5_3",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map938_6_2",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "refreshmarket",
+      "missing": [
+        "getobjx",
+        "getobjy",
+        "destroyobject"
+      ]
+    },
+    {
+      "name": "bomb",
+      "missing": [
+        "monstermagicattackplayer",
+        "magicattackplayer",
+        "magicattackmonster"
+      ]
+    },
+    {
+      "name": "sprite",
+      "missing": [
+        "getguildsprite"
+      ]
+    },
+    {
+      "name": "map603_5_9",
+      "missing": [
+        "magicattackplayer"
+      ]
+    },
+    {
+      "name": "bosskeypad",
+      "missing": [
+        "attackmonster"
+      ]
+    },
+    {
+      "name": "buff",
+      "missing": [
+        "getplayerdamage"
+      ]
+    },
+    {
+      "name": "map933_6_0",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map933_9_3",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map813_8_11",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map427_10_3",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "heal",
+      "missing": [
+        "getplayerdamage"
+      ]
+    },
+    {
+      "name": "useobj96",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "joinmap1960",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "map1434_4_7",
+      "missing": [
+        "magicattackmonster"
+      ]
+    },
+    {
+      "name": "tag",
+      "missing": [
+        "getmapname"
+      ]
+    },
+    {
+      "name": "joinmap555",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map355_9_9",
+      "missing": [
+        "getobjnum",
+        "destroyobject"
+      ]
+    },
+    {
+      "name": "map1551_1_2",
+      "missing": [
+        "getobjnum",
+        "destroyobject"
+      ]
+    },
+    {
+      "name": "map881_6_11",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "spell34",
+      "missing": [
+        "getmapname"
+      ]
+    },
+    {
+      "name": "map898_1_4",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map898_6_1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map898_8_8",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map898_4_1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map898_1_7",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "useobj120",
+      "missing": [
+        "setitemprefix",
+        "setequippeditemsuffix",
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "map678_9_7",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map446_3_7",
+      "missing": [
+        "getplayergender"
+      ]
+    },
+    {
+      "name": "map446_3_8",
+      "missing": [
+        "getplayergender"
+      ]
+    },
+    {
+      "name": "useobj56",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "map1973_8_8",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "ruins",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "calculatestats",
+      "missing": [
+        "setplayerendurance",
+        "setplayerintelligence",
+        "setplayeragility",
+        "setplayerstrength",
+        "setplayerconcentration",
+        "getplayerconcentration",
+        "setplayerconstitution"
+      ]
+    },
+    {
+      "name": "underworld",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "monsterkill190",
+      "missing": [
+        "magicattackmonster",
+        "attackmonster"
+      ]
+    },
+    {
+      "name": "mapsay1644",
+      "missing": [
+        "getequippeditemprefix",
+        "setequippeditemprefix",
+        "getprefixname"
+      ]
+    },
+    {
+      "name": "spell119",
+      "missing": [
+        "getplayerdamage",
+        "createplayermagicprojectile"
+      ]
+    },
+    {
+      "name": "spell122",
+      "missing": [
+        "getplayerdamage",
+        "createplayermagicprojectile"
+      ]
+    },
+    {
+      "name": "spell125",
+      "missing": [
+        "getplayerdamage",
+        "createplayermagicprojectile"
+      ]
+    },
+    {
+      "name": "spell127",
+      "missing": [
+        "getplayerdamage",
+        "createplayermagicprojectile"
+      ]
+    },
+    {
+      "name": "map934_6_2",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "ctfredscore",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "resetmap",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map446_7_7",
+      "missing": [
+        "getplayergender"
+      ]
+    },
+    {
+      "name": "mapsay327",
+      "missing": [
+        "getequippeditemprefix",
+        "setequippeditemprefix",
+        "getprefixname"
+      ]
+    },
+    {
+      "name": "partgame",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "map292_1_5",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "getobj282",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "footballend",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "football",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "football2",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "footballtackle",
+      "missing": [
+        "getobjx",
+        "getobjy",
+        "resetmap"
+      ]
+    },
+    {
+      "name": "footballred",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "footballblue",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "footballredsub",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "footballbluesub",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "ttd",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "ttdkill",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "monsterkill114",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "monsterdie104",
+      "missing": [
+        "getplayergender"
+      ]
+    },
+    {
+      "name": "map1351_6_0",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "fortresscarn",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "wintercarn",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "lottery",
+      "missing": [
+        "getplayerip"
+      ]
+    },
+    {
+      "name": "map814_6_8",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map1315_4_1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map1315_6_1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "monsterkill216",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "monsterhp",
+      "missing": [
+        "attackmonster"
+      ]
+    },
+    {
+      "name": "tofreset2",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map295_6_8",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "soc",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "space",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "spell179",
+      "missing": [
+        "gettileisvacant",
+        "gettilenodirectionalwalls",
+        "getplayerdamage",
+        "attackplayer",
+        "getmonsterdirection"
+      ]
+    },
+    {
+      "name": "lighttimer",
+      "missing": [
+        "setoutdoorlight"
+      ]
+    },
+    {
+      "name": "explosion",
+      "missing": [
+        "getplayerdamage",
+        "magicattackplayer"
+      ]
+    },
+    {
+      "name": "volcano",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "ctfbluescore",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "ctfresetflags",
+      "missing": [
+        "getobjnum",
+        "destroyobject"
+      ]
+    },
+    {
+      "name": "map84_11_1",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "map82_11_1",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "ctfredwin",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "ctfbluewin",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "ctf",
+      "missing": [
+        "setplayerguild"
+      ]
+    },
+    {
+      "name": "champ1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "macropwn",
+      "missing": [
+        "setplayerskilllevel"
+      ]
+    },
+    {
+      "name": "map2100_6_5",
+      "missing": [
+        "setequippeditemsuffix"
+      ]
+    },
+    {
+      "name": "testbuff",
+      "missing": [
+        "setequippeditemsuffix"
+      ]
+    },
+    {
+      "name": "testbuff2",
+      "missing": [
+        "setequippeditemsuffix"
+      ]
+    },
+    {
+      "name": "attackmonster403",
+      "missing": [
+        "attackplayer"
+      ]
+    },
+    {
+      "name": "monsterdie264",
+      "missing": [
+        "setguildbank"
+      ]
+    },
+    {
+      "name": "map2114_1_0",
+      "missing": [
+        "getplayerdamage",
+        "magicattackplayer"
+      ]
+    },
+    {
+      "name": "map2114_10_0",
+      "missing": [
+        "getplayerdamage",
+        "magicattackplayer"
+      ]
+    },
+    {
+      "name": "attackmonster264",
+      "missing": [
+        "attackplayer"
+      ]
+    },
+    {
+      "name": "spell190",
+      "missing": [
+        "getplayerdamage"
+      ]
+    },
+    {
+      "name": "spell196",
+      "missing": [
+        "getplayerdamage"
+      ]
+    },
+    {
+      "name": "spell198",
+      "missing": [
+        "getguildsprite"
+      ]
+    },
+    {
+      "name": "map2117_4_5",
+      "missing": [
+        "attackplayer"
+      ]
+    },
+    {
+      "name": "map2117_4_8",
+      "missing": [
+        "attackplayer"
+      ]
+    },
+    {
+      "name": "map2117_7_5",
+      "missing": [
+        "attackplayer"
+      ]
+    },
+    {
+      "name": "map2117_5_6",
+      "missing": [
+        "setguildbank"
+      ]
+    },
+    {
+      "name": "useobj605",
+      "missing": [
+        "setguildbank"
+      ]
+    },
+    {
+      "name": "abtimer",
+      "missing": [
+        "despawnmonster"
+      ]
+    },
+    {
+      "name": "map2130_7_6",
+      "missing": [
+        "despawnmonster"
+      ]
+    },
+    {
+      "name": "useobj608",
+      "missing": [
+        "setitemprefix"
+      ]
+    },
+    {
+      "name": "useobj609",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj601",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "map2131_0_1",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map2131_2_0",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map2131_4_0",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map2131_7_0",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "map2131_9_0",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "useobj615",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj614",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj617",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "map1826_0_6",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "mapsay2118",
+      "missing": [
+        "setplayerclass"
+      ]
+    },
+    {
+      "name": "map1826_0_9",
+      "missing": [
+        "resetmap"
+      ]
+    },
+    {
+      "name": "useobj620",
+      "missing": [
+        "getplayerdamage",
+        "magicattackplayer",
+        "magicattackmonster"
+      ]
+    },
+    {
+      "name": "useobj230",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj247",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj250",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj168",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj248",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj117",
+      "missing": [
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj612",
+      "missing": [
+        "setitemprefix",
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj197",
+      "missing": [
+        "setitemprefix",
+        "setitemsuffix"
+      ]
+    },
+    {
+      "name": "useobj621",
+      "missing": [
+        "getplayerdamage",
+        "createplayermagicprojectile"
+      ]
+    },
+    {
+      "name": "magespell2",
+      "missing": [
+        "getplayerdamage",
+        "magicattackplayer"
+      ]
+    },
+    {
+      "name": "useobj625",
+      "missing": [
+        "getmapname"
+      ]
+    },
+    {
+      "name": "spell2a",
+      "missing": [
+        "getplayerdamage",
+        "magicattackplayer",
+        "magicattackmonster"
+      ]
+    },
+    {
+      "name": "map2117_7_7",
+      "missing": [
+        "attackplayer"
+      ]
+    },
+    {
+      "name": "mapsay2100",
+      "missing": [
+        "setplayerclass"
+      ]
+    },
+    {
+      "name": "testbomb",
+      "missing": [
+        "getplayerdamage"
+      ]
+    }
+  ]
+}

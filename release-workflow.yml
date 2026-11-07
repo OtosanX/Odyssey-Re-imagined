@@ -1,0 +1,27 @@
+name: Windows testing build
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --prefix odyssey-2-server-develop
+      - run: npm ci --prefix odyssey-2-client-develop
+      - run: npm run build --prefix odyssey-2-server-develop
+      - run: npm run build --prefix odyssey-2-client-develop
+      - run: node tools/test-desktop-runtime.cjs
+      - run: node tools/build-portable.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Odyssey-Reimagined-Windows
+          path: |
+            dist/*.zip
+            dist/*.sha256

@@ -1,0 +1,492 @@
+﻿[
+    {
+        "Name":  "Darkcone",
+        "StartLocationY":  2,
+        "Price":  280000,
+        "Version":  6,
+        "StartLocationMap":  251,
+        "Upkeep":  20000,
+        "Number":  1,
+        "StartLocationX":  1
+    },
+    {
+        "Name":  "Shady Hall",
+        "StartLocationY":  0,
+        "Price":  364000,
+        "Version":  5,
+        "StartLocationMap":  297,
+        "Upkeep":  26000,
+        "Number":  2,
+        "StartLocationX":  0
+    },
+    {
+        "Name":  "",
+        "StartLocationY":  0,
+        "Price":  1,
+        "Version":  4,
+        "StartLocationMap":  1,
+        "Upkeep":  1,
+        "Number":  3,
+        "StartLocationX":  0
+    },
+    {
+        "Name":  "South Crendale",
+        "StartLocationY":  6,
+        "Price":  30000,
+        "Version":  4,
+        "StartLocationMap":  432,
+        "Upkeep":  1000,
+        "Number":  4,
+        "StartLocationX":  9
+    },
+    {
+        "Name":  "West Crendale",
+        "StartLocationY":  1,
+        "Price":  84000,
+        "Version":  10,
+        "StartLocationMap":  233,
+        "Upkeep":  6000,
+        "Number":  5,
+        "StartLocationX":  5
+    },
+    {
+        "Name":  "",
+        "StartLocationY":  0,
+        "Price":  1,
+        "Version":  2,
+        "StartLocationMap":  1,
+        "Upkeep":  1,
+        "Number":  6,
+        "StartLocationX":  0
+    },
+    {
+        "Name":  "Castle",
+        "StartLocationY":  2,
+        "Price":  476000,
+        "Version":  4,
+        "StartLocationMap":  316,
+        "Upkeep":  34000,
+        "Number":  7,
+        "StartLocationX":  2
+    },
+    {
+        "Name":  "Crystal Lake",
+        "StartLocationY":  2,
+        "Price":  20000,
+        "Version":  4,
+        "StartLocationMap":  331,
+        "Upkeep":  1000,
+        "Number":  8,
+        "StartLocationX":  5
+    },
+    {
+        "Name":  "Hidden Hall",
+        "StartLocationY":  0,
+        "Price":  280000,
+        "Version":  4,
+        "StartLocationMap":  328,
+        "Upkeep":  20000,
+        "Number":  9,
+        "StartLocationX":  3
+    },
+    {
+        "Name":  "North Crendale",
+        "StartLocationY":  0,
+        "Price":  84000,
+        "Version":  6,
+        "StartLocationMap":  766,
+        "Upkeep":  6000,
+        "Number":  10,
+        "StartLocationX":  9
+    },
+    {
+        "Name":  "River Valley",
+        "StartLocationY":  11,
+        "Price":  140000,
+        "Version":  8,
+        "StartLocationMap":  765,
+        "Upkeep":  10000,
+        "Number":  11,
+        "StartLocationX":  7
+    },
+    {
+        "Name":  "Lost Hall",
+        "StartLocationY":  3,
+        "Price":  364000,
+        "Version":  13,
+        "StartLocationMap":  1440,
+        "Upkeep":  26000,
+        "Number":  12,
+        "StartLocationX":  2
+    },
+    {
+        "Name":  "North Beach",
+        "StartLocationY":  11,
+        "Price":  56000,
+        "Version":  5,
+        "StartLocationMap":  335,
+        "Upkeep":  4000,
+        "Number":  13,
+        "StartLocationX":  5
+    },
+    {
+        "Name":  "Graveyard",
+        "StartLocationY":  7,
+        "Price":  84000,
+        "Version":  5,
+        "StartLocationMap":  768,
+        "Upkeep":  6000,
+        "Number":  14,
+        "StartLocationX":  0
+    },
+    {
+        "Name":  "",
+        "StartLocationY":  0,
+        "Price":  1,
+        "Version":  2,
+        "StartLocationMap":  1,
+        "Upkeep":  1,
+        "Number":  15,
+        "StartLocationX":  0
+    },
+    {
+        "Name":  "Sea Breeze",
+        "StartLocationY":  5,
+        "Price":  448000,
+        "Version":  4,
+        "StartLocationMap":  479,
+        "Upkeep":  32000,
+        "Number":  16,
+        "StartLocationX":  6
+    },
+    {
+        "Name":  "Freezing Tower",
+        "StartLocationY":  1,
+        "Price":  196000,
+        "Version":  4,
+        "StartLocationMap":  483,
+        "Upkeep":  14000,
+        "Number":  17,
+        "StartLocationX":  9
+    },
+    {
+        "Name":  "Sun Tower",
+        "StartLocationY":  1,
+        "Price":  196000,
+        "Version":  3,
+        "StartLocationMap":  485,
+        "Upkeep":  14000,
+        "Number":  18,
+        "StartLocationX":  2
+    },
+    {
+        "Name":  "Water Tower",
+        "StartLocationY":  1,
+        "Price":  196000,
+        "Version":  3,
+        "StartLocationMap":  487,
+        "Upkeep":  14000,
+        "Number":  19,
+        "StartLocationX":  9
+    },
+    {
+        "Name":  "Flaming Tower",
+        "StartLocationY":  1,
+        "Price":  196000,
+        "Version":  4,
+        "StartLocationMap":  489,
+        "Upkeep":  14000,
+        "Number":  20,
+        "StartLocationX":  2
+    },
+    {
+        "Name":  "Desert Winds",
+        "StartLocationY":  9,
+        "Price":  532000,
+        "Version":  5,
+        "StartLocationMap":  646,
+        "Upkeep":  38000,
+        "Number":  21,
+        "StartLocationX":  2
+    },
+    {
+        "Name":  "Underworld Town",
+        "StartLocationY":  1,
+        "Price":  980000,
+        "Version":  4,
+        "StartLocationMap":  802,
+        "Upkeep":  70000,
+        "Number":  22,
+        "StartLocationX":  5
+    },
+    {
+        "Name":  "Snow Town",
+        "StartLocationY":  2,
+        "Price":  1120000,
+        "Version":  5,
+        "StartLocationMap":  821,
+        "Upkeep":  80000,
+        "Number":  23,
+        "StartLocationX":  5
+    },
+    {
+        "Name":  "Volcano Hall",
+        "StartLocationY":  1,
+        "Price":  84000,
+        "Version":  5,
+        "StartLocationMap":  915,
+        "Upkeep":  6000,
+        "Number":  24,
+        "StartLocationX":  5
+    },
+    {
+        "Name":  "Guard Quarters",
+        "StartLocationY":  3,
+        "Price":  56000,
+        "Version":  5,
+        "StartLocationMap":  184,
+        "Upkeep":  4000,
+        "Number":  25,
+        "StartLocationX":  11
+    },
+    {
+        "Name":  "Druid\u0027s Keep",
+        "StartLocationY":  1,
+        "Price":  644000,
+        "Version":  5,
+        "StartLocationMap":  1029,
+        "Upkeep":  46000,
+        "Number":  26,
+        "StartLocationX":  1
+    },
+    {
+        "Name":  "Forest\u0027s Edge",
+        "StartLocationY":  1,
+        "Price":  84000,
+        "Version":  6,
+        "StartLocationMap":  1475,
+        "Upkeep":  6000,
+        "Number":  27,
+        "StartLocationX":  6
+    },
+    {
+        "Name":  "Sandstone",
+        "StartLocationY":  5,
+        "Price":  168000,
+        "Version":  4,
+        "StartLocationMap":  186,
+        "Upkeep":  12000,
+        "Number":  28,
+        "StartLocationX":  5
+    },
+    {
+        "Name":  "Dragon\u0027s Mouth",
+        "StartLocationY":  10,
+        "Price":  84000,
+        "Version":  4,
+        "StartLocationMap":  187,
+        "Upkeep":  6000,
+        "Number":  29,
+        "StartLocationX":  9
+    },
+    {
+        "Name":  "BC Room #1",
+        "StartLocationY":  3,
+        "Price":  56000,
+        "Version":  5,
+        "StartLocationMap":  1255,
+        "Upkeep":  4000,
+        "Number":  30,
+        "StartLocationX":  2
+    },
+    {
+        "Name":  "BC Room #2",
+        "StartLocationY":  3,
+        "Price":  56000,
+        "Version":  4,
+        "StartLocationMap":  1256,
+        "Upkeep":  4000,
+        "Number":  31,
+        "StartLocationX":  2
+    },
+    {
+        "Name":  "",
+        "StartLocationY":  0,
+        "Price":  1,
+        "Version":  3,
+        "StartLocationMap":  1,
+        "Upkeep":  1,
+        "Number":  32,
+        "StartLocationX":  0
+    },
+    {
+        "Name":  "Ice Mountain",
+        "StartLocationY":  1,
+        "Price":  420000,
+        "Version":  4,
+        "StartLocationMap":  1402,
+        "Upkeep":  30000,
+        "Number":  33,
+        "StartLocationX":  2
+    },
+    {
+        "Name":  "Babylon House",
+        "StartLocationY":  10,
+        "Price":  224000,
+        "Version":  4,
+        "StartLocationMap":  1404,
+        "Upkeep":  16000,
+        "Number":  34,
+        "StartLocationX":  10
+    },
+    {
+        "Name":  "Roaring Rock",
+        "StartLocationY":  6,
+        "Price":  420000,
+        "Version":  6,
+        "StartLocationMap":  1032,
+        "Upkeep":  30000,
+        "Number":  35,
+        "StartLocationX":  5
+    },
+    {
+        "Name":  "Barracks Hall",
+        "StartLocationY":  0,
+        "Price":  110000,
+        "Version":  2,
+        "StartLocationMap":  1519,
+        "Upkeep":  8800,
+        "Number":  36,
+        "StartLocationX":  0
+    },
+    {
+        "Name":  "Pyramid Hall",
+        "StartLocationY":  5,
+        "Price":  476000,
+        "Version":  4,
+        "StartLocationMap":  661,
+        "Upkeep":  34000,
+        "Number":  37,
+        "StartLocationX":  3
+    },
+    {
+        "Name":  "Greystone",
+        "StartLocationY":  3,
+        "Price":  504000,
+        "Version":  7,
+        "StartLocationMap":  779,
+        "Upkeep":  36000,
+        "Number":  38,
+        "StartLocationX":  5
+    },
+    {
+        "Name":  "",
+        "StartLocationY":  0,
+        "Price":  1,
+        "Version":  3,
+        "StartLocationMap":  1,
+        "Upkeep":  1,
+        "Number":  39,
+        "StartLocationX":  0
+    },
+    {
+        "Name":  "Viking Island",
+        "StartLocationY":  10,
+        "Price":  336000,
+        "Version":  5,
+        "StartLocationMap":  1791,
+        "Upkeep":  24000,
+        "Number":  40,
+        "StartLocationX":  2
+    },
+    {
+        "Name":  "G-Stone Heights",
+        "StartLocationY":  5,
+        "Price":  336000,
+        "Version":  7,
+        "StartLocationMap":  1109,
+        "Upkeep":  24000,
+        "Number":  41,
+        "StartLocationX":  5
+    },
+    {
+        "Name":  "",
+        "StartLocationY":  0,
+        "Price":  1,
+        "Version":  2,
+        "StartLocationMap":  1,
+        "Upkeep":  1,
+        "Number":  42,
+        "StartLocationX":  0
+    },
+    {
+        "Name":  "Ruins of Bab",
+        "StartLocationY":  10,
+        "Price":  560000,
+        "Version":  4,
+        "StartLocationMap":  1992,
+        "Upkeep":  40000,
+        "Number":  43,
+        "StartLocationX":  6
+    },
+    {
+        "Name":  "Volcano Town",
+        "StartLocationY":  9,
+        "Price":  476000,
+        "Version":  4,
+        "StartLocationMap":  1899,
+        "Upkeep":  34000,
+        "Number":  44,
+        "StartLocationX":  6
+    },
+    {
+        "Name":  "",
+        "StartLocationY":  0,
+        "Price":  1,
+        "Version":  2,
+        "StartLocationMap":  1,
+        "Upkeep":  1,
+        "Number":  45,
+        "StartLocationX":  0
+    },
+    {
+        "Name":  "Ancient Isle",
+        "StartLocationY":  2,
+        "Price":  1000000,
+        "Version":  2,
+        "StartLocationMap":  1506,
+        "Upkeep":  40000,
+        "Number":  46,
+        "StartLocationX":  7
+    },
+    {
+        "Name":  "",
+        "StartLocationY":  0,
+        "Price":  1,
+        "Version":  3,
+        "StartLocationMap":  1,
+        "Upkeep":  1,
+        "Number":  47,
+        "StartLocationX":  0
+    },
+    {
+        "Name":  "Dragonian River",
+        "StartLocationY":  0,
+        "Price":  224000,
+        "Version":  7,
+        "StartLocationMap":  235,
+        "Upkeep":  16000,
+        "Number":  48,
+        "StartLocationX":  11
+    },
+    {
+        "Name":  "Haunted Hall",
+        "StartLocationY":  0,
+        "Price":  420000,
+        "Version":  7,
+        "StartLocationMap":  1474,
+        "Upkeep":  30000,
+        "Number":  49,
+        "StartLocationX":  0
+    }
+]

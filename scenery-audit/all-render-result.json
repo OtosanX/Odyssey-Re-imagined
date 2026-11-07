@@ -1,0 +1,69 @@
+{
+  "result": "PASS",
+  "maps": 1520,
+  "animationPhases": 2,
+  "maxTriangles": 27160,
+  "largest": [
+    {
+      "map": 1221,
+      "triangles": 27160,
+      "scenery": 142
+    },
+    {
+      "map": 681,
+      "triangles": 25706,
+      "scenery": 141
+    },
+    {
+      "map": 1438,
+      "triangles": 25184,
+      "scenery": 142
+    },
+    {
+      "map": 409,
+      "triangles": 23912,
+      "scenery": 171
+    },
+    {
+      "map": 49,
+      "triangles": 23866,
+      "scenery": 132
+    },
+    {
+      "map": 813,
+      "triangles": 23834,
+      "scenery": 138
+    },
+    {
+      "map": 1007,
+      "triangles": 23614,
+      "scenery": 144
+    },
+    {
+      "map": 32,
+      "triangles": 23198,
+      "scenery": 130
+    },
+    {
+      "map": 34,
+      "triangles": 22586,
+      "scenery": 126
+    },
+    {
+      "map": 576,
+      "triangles": 22496,
+      "scenery": 147
+    },
+    {
+      "map": 42,
+      "triangles": 22146,
+      "scenery": 124
+    },
+    {
+      "map": 1223,
+      "triangles": 21712,
+      "scenery": 121
+    }
+  ],
+  "errors": []
+}

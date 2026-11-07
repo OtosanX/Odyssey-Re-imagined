@@ -1,0 +1,1 @@
+const fs=require('fs');let s=fs.readFileSync('tools/game-features.cjs','utf8');s=s.replace("const i=y*m.width+x,key=map+':'+i;","const i=y*m.width+x,key=map+':'+i;if(this._doorUndo)this._doorUndo.push({map,i,blocked:m.blocked[i],type:m.attrs[i].type});");fs.writeFileSync('tools/game-features.cjs',s);

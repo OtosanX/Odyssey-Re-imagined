@@ -1,0 +1,12 @@
+[
+  {
+    "script": "joinmap2",
+    "error": "Unsupported script API: createmapstatictext",
+    "at": 1794029182554
+  },
+  {
+    "script": "joinmap2",
+    "error": "Unsupported script API: createmapstatictext",
+    "at": 1794029191402
+  }
+]

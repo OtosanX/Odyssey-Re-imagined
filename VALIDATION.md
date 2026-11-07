@@ -1,0 +1,122 @@
+> November 6 update: see [the current editor/rendering report](EDITOR-RENDERER-OVERHAUL.md) for the unified free editor camera, comparison editing, source-piece tree assemblies, related HUD/equipment fixes, verification and limitations. Earlier notes below describe previous stages.
+
+# Validation — November 5, 2026
+
+Current checks passed after the respawn/grid/damage/turning changes:
+
+- Five original quest chains, repeat-reward prevention, script rollback and teleport input holds.
+- Normal and Hardcore death rules, story respawn, safe-zone death loot ownership and owner recovery.
+- Story code capacity of eight and world/difficulty isolation.
+- Market escrow, item/gold transfer, duplicate purchase rejection, seller payout.
+- Guild membership, bank deposits, original hall purchase rules and persistence.
+- Recovered map snapshots, exits, warps, collision and scrolling transitions.
+- TCP account creation/login, persistence and fragmented headers.
+- Keyboard rebinding, duplicate binding prevention, controller axes/button edges and touch preferences.
+- Tap-to-turn/hold-to-walk and uninterrupted steering while walking.
+- Hidden UI checks: 20-slot inventory grid; player/enemy damage numbers including killing blows; respawn overlay when journal is open; overlay removal on revival; tap/hold keyboard input.
+- Hidden browser check: WebSocket registration/login, story creation/code, original map, HP, phone-size layout and adjustable touch controls; UTF-8 labels.
+- Hidden Studio check: sprite load, flip/undo/redo, PNG export, map saving and anchors.
+
+All 2,826 scripts parse. Static direct API coverage: 2,529 scripts. This is not proof that every script or quest works. Five errand chains have behavioral coverage. Two archived quest chains are incomplete, and unsupported interactions are rolled back rather than declared completed.
+
+Physical Android/iPhone and controller hardware have not been exercised. Native mobile packages and public HTTPS hosting are not built/configured. Standalone launcher executables were compiled but were not launched or used to control the desktop.
+
+No desktop automation was used. Test windows were isolated and invisible.
+
+## November 5 account/save/dialogue update
+
+Passed: four-client slot reservation/stale recovery; multi-account profile storage; real Windows-protected password saving in an isolated UI test; available/taken username warnings; signup and saved-card login; old Story-world migration; save naming, account ownership, code rotation, guest access and Continue without a code; existing/new character sprite persistence; portrait conversations only on interaction; distinct accept/decline branches; invalid reply rejection; ambient chatter cannot replace active dialogue; continued desktop/mobile/Studio/combat UI checks.
+
+Tests use temporary accounts and files. Actual desktop client windows were not opened or controlled. The four-client reservation logic was tested in isolation; the real desktop startup uses that helper. Existing player data was not used as test data.
+
+Safe-zone hotfix: tools/test-safe-zone-monsters.cjs passed protected-map/tile spawning, targeting, damage, pursuit, legacy hostile relocation/removal and two-way boundary tests. Existing quest, story respawn, PvP, loot, guild/market and map regressions also passed. No desktop windows were opened or controlled.
+
+## November 5 Map Library and World Builder
+
+Passed `tools/test-map-library.cjs`: all 1,520 original records streamed and compared with the source; complete automatic index; partial/case-insensitive searches by IDs, names, folder ancestry, regions and tags; favorites/recent filters; folder cycle prevention, rename and non-destructive deletion; stable discovery of older JSON maps; protected originals and independent copies; cross-boundary tile paste and undo/redo; atomic rejection of protected/empty destinations and blocked anchors; named layout persistence; all four cardinal connections; validated backed-up publication preserving unrelated original maps/scripts/start; actual game edge traversal and published area labels; stale source/draft protection and recovery copies.
+
+Passed the current hidden `test-studio.cjs` / `test-map-library-ui.cjs` suite with zero renderer errors: complete Classic index, bounded rendered cards, ID search, automatic cached thumbnails and larger previews, original read-only fields, safe duplication, adjacent blank segments, cross-map model editing, saved layouts, nested-folder tag search, favorites, grid/list views, and the existing Sprite editor. Preview: `map-library-preview.png`; result: `map-library-ui-test-result.txt`.
+
+After the runtime area-name extension, `tools/test-safe-zone-monsters.cjs` and `tools/test-reimagined.cjs` also passed again, including quests, deaths/respawn, PvP/loot, story capacity/isolation, market, guild halls and dialogue/ambient speech.
+
+All map indexing/publishing tests and UI saves used temporary server/library trees. The real Classic collection, player progress and story saves were not used for test writes. Studio remained offscreen; no desktop control was used. Publication still requires a server restart and has no live-update endpoint. See `MAP-LIBRARY.md` for the workflow and the distinction between current functionality and later Tile/Sprite overhaul phases.
+
+Shadow alignment: the shared character renderer now anchors shadows to the sprite foot baseline instead of 0.3 tiles below it. `test-shadow-ui.cjs` passed 74 rendered player/creature samples while idle and moving in all four directions at zoom 16, 32 and 64. The offscreen preview was inspected; no player saves or desktop controls were used. Reopen game clients to load the rendering change.
+
+## November 5 chat and NPC history
+
+Passed `tools/test-chat.cjs`: World/Local/Guild/Party/Trade/Whisper delivery; authoritative sender and guild membership; connected 3 × 3 hearing with room, indoor, wall, closed-edge, warp and silent-area cutoffs; Story/difficulty isolation; preservation of Story-save protocol 15 while chat uses 16; Unicode/size validation and rate limits; King Dekkar III sprite 84; player reply text and real numbered-choice labels; persistent NPC history without automatic popups; rollback of failed-script output; and bounded packet size.
+
+Passed hidden `test-chat-ui.cjs` with zero renderer errors: channel filtering, NPC/player histories, original King portrait, explicit NPC sends, private-message commands, safe text, history deduplication, movement/attack isolation while typing, Enter/Escape focus, saved height/width/font settings, viewport resizing, scrollback/jump, minimize and 390px phone layout. Desktop and phone previews were inspected.
+
+The full regression run also passed `tools/test-reimagined.cjs`, `tools/test-safe-zone-monsters.cjs`, `tools/test-map-library.cjs`, and hidden combat, browser/mobile, Studio, accounts/save/dialogue and shadow tests. Browser/mobile now includes an actual WebSocket World-chat round trip, actual King portrait resolution and both NPC/player dialogue history. All tests used temporary accounts/worlds and invisible windows; real player saves and desktop controls were not used. See `CHAT.md` for restart requirements and controls.
+
+Status/join-code UI follow-up: hidden chat, browser/mobile and accounts/Story-save UI suites passed. Mode/difficulty/nearby/control status moved to the header and the duplicate footer was removed. Checks cover masked-by-default codes, reveal/hide and accessible eye labels, copying while masked, feedback and re-hiding when a code changes. Copy delivery used a test stub rather than changing the real clipboard. Desktop and phone previews were inspected, with no horizontal overflow or renderer errors. Join-code controls are shared by the game header and Story save cards.
+
+## November 5 launcher, Crendale and modular HUD
+
+Passed `tools/test-character-launcher.cjs`: read-only catalogue; Story/MMO Normal/Hardcore creation; existing character continuation without appearance/difficulty replacement; occupied-slot and ownership protection; host-difficulty invitations; unavailable saved sprite preservation; actual Crendale start and fallback respawn; guard innocence/criminal/provocation handling; stale provocation removal on respawn; Supersight remaining hostile; original collection unchanged.
+
+Passed `test-launcher-ui.cjs` (also the updated accounts UI entry point): complete account/availability/password reveal/sign-in flow and real Windows-protected storage; separate mode and character selection; all six requested create/continue flows; 642 valid selectable appearances independently compared against the original bitmap and reached through pagination; search, keyboard selection and matching large preview; no save before confirmation; occupied MMO slot protection; inline rename; masked invitations; account switching; joined-save continuation; actual Crendale starts. Desktop and 390px creation layouts were inspected, and the phone preview uses an integer pixel scale.
+
+Passed `test-hud-ui.cjs`: Player Panel HP/XP and 20-slot grid; central viewport; side/corner docking; actual offscreen pointer drag, snap and resize; sliders, hide/restore/collapse; editing input isolation; Default/Compact/Minimal/Chat-focused/Inventory-focused presets; custom save/load/rename/delete; reset; persistence and per-account isolation; equipment/stats views; phone layout. Desktop/phone previews were inspected. A cross-widget pointer-drag issue found during testing was fixed and the test passed again.
+
+The combined run passed the new server suite plus `test-accounts-saves`, `test-reimagined`, `test-safe-zone-monsters`, `test-chat`, `test-map-library`, `smoke-test`, and hidden HUD, launcher, chat, combat, browser/mobile, shadow, Studio and game suites. Final launcher/HUD tests passed again after the phone-preview and unused-dock-space refinements. All tests used temporary accounts/worlds and invisible windows; user desktops and actual save data were not used for automation or test writes. Restart the server and reopen clients to load this update. The retained MMO model is one character per difficulty; Story saves remain independent and named. See `LAUNCHER-AND-HUD.md`.
+
+## November 5 optional 3D sprite world
+
+Passed `tools/test-scene3d.cjs`: perspective projection and sprite camera basis; height-grid and structure validation; Crendale profiles; unchanged original collisions, exits and source files; neighboring-segment placements; packet-safe revision-tagged scene chunks; Studio geometry duplication, cross-segment height/wall painting, undo/redo, save and backed-up publish/reload.
+
+Passed hidden `test-scene3d-ui.cjs` with zero renderer errors: actual software WebGL; pixel-character visibility; a raised wall fully occluding an actor behind it (1,128 red pixels in front, zero behind); projected grounded feet/shadows; real Crendale scene; five draw calls and 2,824 triangles in the fixture; actual game toggle and persistence; movement/damage updates; repeated resource destruction/recreation; camera tilt and quality settings; 390px layout; simulated graphics-loss fallback to Classic without losing the HUD/chat. This is a functional render check, not a real-GPU performance benchmark.
+
+Passed hidden `test-studio3d-ui.cjs`: protected-original 3D preview; blocked geometry edits on a protected Classic map; editable duplicate; height/wall/material/house tools; undo/redo; saved geometry; same-renderer preview. Final roof surfaces were inspected and both 3D UI suites passed again after the color refinement. Previews: `scene3d-game-preview.png`, `scene3d-mobile-preview.png`, `scene3d-world-preview.png`, `studio3d-preview.png`.
+
+Passed regressions: `test-reimagined`, `test-safe-zone-monsters`, `test-map-library`, `test-chat`, and hidden combat, HUD, Studio and browser/mobile suites. The browser/mobile suite now exercises the bundled WebGL view switch over the real temporary HTTP/WebSocket server, in addition to its existing login, Story, chat, dialogue and touch-layout checks.
+
+All tests used temporary accounts/worlds and invisible windows, without desktop control or test writes to real player progress. No new dependency or executable was installed. Classic stays the initial default; use the game’s **3D View** button after restarting the server/reopening clients. This prototype models eight Crendale houses and supports authored heights/walls; remaining Classic scenery retains original flat art. Heights are cosmetic and collision remains separately authored. Real Android/iPhone and hardware-GPU testing are outstanding. See `3D-VIEW.md`.
+
+## November 6 whole-collection 3D scenery and dialogue isolation
+
+The initial eight generic Crendale house profiles were retired. The renderer now indexes all 1,405 used tile IDs and automatically converts original scenery throughout all 1,520 maps into upright silhouettes with depth, matching caps and original pixel-art fronts. Ground classifications use complete original layer-usage evidence plus narrow verified art families; broad numeric ranges were removed after visual checks exposed floors being misclassified. Floors, roads, water, carpets and bridge decks remain horizontal. House/front and tree/trunk parts join across layers and map seams; repeated vertical wall art stays in its floor plan; bounded grouping prevents giant groves. Animated-only scenery is included and its foot anchor stays stable. Authored wall cells take priority over automatic scenery, and thin foliage avoids thick shelf-like caps.
+
+Passed tools/test-scenery-world.cjs across the complete source collection: 47,576 scenery groups across 1,476 maps containing scenery, catalogue completeness, actual ground/bridge regressions, joined house/tree pieces, a two-map seam, alternate-only animation, repeated-wall separation and unchanged original source hash. Empty or ground-only maps remain valid.
+
+Passed hidden test-scenery-all-ui.cjs: all 1,520 maps rendered in both animation phases using actual software WebGL, with zero graphics/renderer errors. Largest individual map: 15,420 triangles with cutaway disabled. This is a bounded-geometry/render check, not a real-hardware frame-rate benchmark or proof that every automatic classification is artistically perfect. Twelve representative maps (Crendale, beach, forest, throne hall, castle, bank, tavern, ice cavern, dungeon, snow, lava and snowy field) were rendered and visually inspected. Findings corrected bridge planks standing up, raised floor sheets, overly tall repeated wall art and leaf-cap artifacts. Latest comparisons are in scenery-audit/maps-0.png through maps-2.png; the live stitched game preview is scene3d-game-preview.png.
+
+Passed hidden scene3d, Studio3D, browser/mobile, chat, combat, HUD and Studio suites. Passed server scene3d, chat, reimagined, safe-zone and map-library regressions. Final graphics checks and all-map render were repeated after the foliage/cap refinements, and final Node seam/animation/wall/dialogue checks passed afterward. All UI tests were invisible; account/world writes used temporary data, without desktop control or real-save modification.
+
+NPC history now explicitly records whether speech came from player interaction. Ambient barks remain in NPC chat and temporary speech bubbles but are excluded from the dialogue modal, including previously stored unclassified NPC lines. Known older player replies are retained. Tests cover ambient-before-interaction, ambient from another NPC during conversation, preservation of the active page/portrait, subsequent player replies, chat-log retention, save/reconnect and existing script rollback. Current help and 3D-VIEW.md describe the expanded conversion. Physical phone/GPU testing and individual artistic corrections remain outside this automated validation.
+
+## November 6 map-boundary freeze correction
+
+Reproduced synchronous 3D rebuild stalls in the invisible software-WebGL map-crossing fixture: 276.4–417.3 ms for one render call, including repeated backtracking. Each new 36 × 36 snapshot previously rebuilt both scenery/floor textures, read back grouped artwork repeatedly, sorted palettes and uploaded the whole scene before the game loop could continue.
+
+The renderer now shares its original artwork atlas, builds floor/front geometry directly from those textures, reuses bounded CPU silhouette templates, computes cap colors with a histogram, shares identical animation phases, and splits GPU buffer uploads. Ordinary gameplay boundaries prepare new scene bundles cooperatively with a roughly 4 ms work budget per frame. Existing surroundings remain visible with the coordinate shift applied to geometry, actors, labels and pointers until the new bundle is ready. A local view revision prevents chunked visual metadata from applying the boundary shift twice. Three recent complete scene bundles are cached; rapid returns cancel unfinished work and use the cached scene. Template storage is capped at 256 entries/16 MB, and leaving 3D frees pending/cached GPU resources. Custom-house material painting also uses a single pixel buffer instead of thousands of canvas draw calls. Initial 3D startup still loads its shared artwork; script/quest teleport freezes were not removed.
+
+Passed test-map-transition-ui.cjs: sampled new-boundary render calls 4.6–6.4 ms, cached returns 0.1–0.2 ms, versus the baseline above. New preparation completed over 24–49 frames (about 0.38–0.80 seconds) while the existing scene kept rendering; this is spread work rather than a blank loading pause. Tests cover coordinate/landmark continuity, metadata revisions, rapid reversal/cancellation, cache limits and resource cleanup. Exact timings depend on hardware and these figures measure CPU render calls under software WebGL, not universal frame rates.
+
+Passed test-map-crossing-game-ui.cjs with the actual Game view: 28 frames in the observed crossing interval, maximum frame gap 30.2 ms, held movement sent during 21 preparation frames, fast cached return, unchanged Traveling overlay for deliberate teleports, no graphics fallback and zero renderer errors. Passed scene3d, representative-map visual, Studio3D, browser/mobile and combat regressions. All 1,520 maps again rendered in both animation phases without WebGL errors. The complete-map source/layout audit also passed. Test accounts/data remained temporary; no desktop control or real-save changes were used.
+
+Evidence: map-transition-baseline.json, map-transition-test-result.json, map-crossing-game-test-result.json and scenery-audit/all-render-result.json. Client-side update: reopen the native game client or refresh browser clients to load it.
+
+## November 6 building backs, wall continuity and original NPC protection
+
+Reviewed all 1,405 used tile IDs against source artwork and map usage, with six inspection sheets and a per-tile inventory. Added explicit native-art families, connected castle gatehouses and house models, opaque roof materials, rear masonry/timber surfaces, continuous narrow side walls, and corrections for palms, fountains, stairs, carpets and furniture. Source maps, IDs, collisions and warps remain unchanged. Remaining assets still use automatic geometry; full render coverage does not establish that every asset is artistically finished.
+
+Passed test-tile-assemblies.cjs, including 3,200 wall-seam samples, roof opacity, grouping and rear-material checks. Passed test-scenery-world.cjs with unchanged original source hash. Final hidden test-building-backs-ui.cjs rendered eight front/rear views; exteriors-front-back.png and interiors-front-back.png were visually inspected. Final test-scenery-all-ui.cjs rendered all 1,520 maps in both animation phases with zero errors (maximum 23,912 triangles). Studio, browser/mobile, combat, chat and scene3d checks passed. Map-transition checks passed after the final rear-wall adjustment: new render calls 4.9–6.6 ms, cached returns 0.1–0.2 ms; held-movement crossing checks also passed. These are software-WebGL checks, not physical-phone/GPU benchmarks.
+
+Restored the original no-creature-combat map flag (bit 5, value 32), separate from PvP safety. All 1,520 map flags match the archived map binaries; 45 original maps carry this protection. Attacks are rejected before combat scripts, damage, XP or loot, including Crendale Keep's King and Jester. Friendly status alone does not grant immunity on other maps, preserving original quest combat. Studio exposes the flag as Protect NPCs / creatures and preserves it when changing PvP settings. Passed test-classic-map-combat.cjs across all protected maps and MMO/Story, Normal/Hardcore, including real attack packets and an attackable hostile Jester elsewhere. Passed reimagined, safe-zone, chat and map-library regressions. The protected-original checkbox and editable-copy save behavior passed the Studio UI test.
+
+Tests used temporary data and invisible windows without desktop control. Restart the server for combat protection and reopen/refresh clients for graphics and Studio changes. Existing NPC spawns are recreated on server restart.
+
+## November 6 guild hall, tree silhouettes, house fronts and idle NPCs
+
+South Crendale Guild Hall's broad grey wall caps were replaced with narrow textured surfaces. Thin side walls remain continuous. Draconis Tavern's timber walls are now upright, with modeled stools, tables and barrels and a visual lift for NPCs authored on stools. Original scenery/player collision and map data were not changed.
+
+The rounded tree experiment was rejected during visual review. Final tree geometry uses original sprite textures and outlines, modeled as bounded small volumes; no rounded green-canopy replacement is used. Repeated composite border trees no longer merge vertically. Standalone tree species remain separate even when their source IDs happen to be seven apart; only identified original multi-piece trees join. All guild-hall border trees remain one tile tall. Corrected non-tree art that the previous native-tree list included. Tree templates use the existing bounded cache; an over-detailed uncached mesh was reduced before final verification.
+
+Legacy house tiles 59–62 now form one two-row house, removing overlapping roof models. Original roof fragments are excluded from facade decals, and all original facade geometry ends below the eaves. Cutaway now applies on the camera-facing side of the player; authored-house fading requires the player to be inside the footprint. In test-cutaway-ui.cjs, an outside house front had zero changed pixels with cutaway on versus off at zoom 24, 40 and 64; inside occlusion still cleared (7,841 changed pixels). The near/far comparison and revised hall/tavern/tree previews were inspected. Evidence: scenery-audit/cutaway-result.json, house-near-far.png and interior-trees-0.png.
+
+Passed test-tile-assemblies.cjs for original tree sizes, actual depth, standalone-tree separation, the joined four-piece house, facade limits, furniture/visible seated NPC feet, narrow textured wall tops, roof opacity and 3,200 side-wall seam samples. Passed the complete 1,520-map source/layout audit with unchanged source hash. Final all-map rendering passed in both animation phases with zero errors, maximum 23,912 triangles per map. Actual stitched Crendale rendering passed with 29 draw calls; first-entry and ordinary-boundary work remain separate measurements. Boundary render samples were 5.8–7.8 ms with 0.1–0.3 ms cached returns; held movement during scene preparation passed. These software-WebGL results do not establish physical-phone or real-GPU performance.
+
+Restored idle wandering for friendly creature NPCs, guards and creatures without a target, using the original 30% movement chance and normal/fast movement flag. test-npc-wandering.cjs passed in MMO/Story and Normal/Hardcore: actor snapshots change, idle guards do not attack innocents, and collision, directional walls, occupancy, map bounds, warp avoidance and sanctuary are respected. Passed safe-zone, original 45-map combat protection, reimagined gameplay and chat regressions. Final scene3d, browser/mobile, Studio3D and combat UI checks passed. All automated windows were invisible and game data temporary; no desktop control or real-save edits were used. Restart the server and reopen clients to load all changes.

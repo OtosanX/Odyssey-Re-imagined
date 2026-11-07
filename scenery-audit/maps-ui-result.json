@@ -1,0 +1,102 @@
+{
+  "result": "PASS",
+  "metrics": [
+    {
+      "map": 1,
+      "name": "City of Crendale",
+      "drawCalls": 5,
+      "triangles": 7814,
+      "scenery": 52,
+      "prepareMs": 443
+    },
+    {
+      "map": 19,
+      "name": "Northern Beach",
+      "drawCalls": 4,
+      "triangles": 1140,
+      "scenery": 5,
+      "prepareMs": 13
+    },
+    {
+      "map": 30,
+      "name": "Darkcone Forest",
+      "drawCalls": 5,
+      "triangles": 11994,
+      "scenery": 67,
+      "prepareMs": 30
+    },
+    {
+      "map": 355,
+      "name": "Throne Hall",
+      "drawCalls": 3,
+      "triangles": 5434,
+      "scenery": 50,
+      "prepareMs": 30
+    },
+    {
+      "map": 114,
+      "name": "Castle Dragonia",
+      "drawCalls": 4,
+      "triangles": 4252,
+      "scenery": 23,
+      "prepareMs": 29
+    },
+    {
+      "map": 5,
+      "name": "Crendale Bank",
+      "drawCalls": 4,
+      "triangles": 7552,
+      "scenery": 65,
+      "prepareMs": 36
+    },
+    {
+      "map": 10,
+      "name": "Daventry's Tavern",
+      "drawCalls": 4,
+      "triangles": 6654,
+      "scenery": 62,
+      "prepareMs": 29
+    },
+    {
+      "map": 100,
+      "name": "Ice Cavern",
+      "drawCalls": 3,
+      "triangles": 5972,
+      "scenery": 24,
+      "prepareMs": 18
+    },
+    {
+      "map": 208,
+      "name": "Forgotten Dungeon",
+      "drawCalls": 3,
+      "triangles": 4526,
+      "scenery": 33,
+      "prepareMs": 23
+    },
+    {
+      "map": 625,
+      "name": "Snowland",
+      "drawCalls": 3,
+      "triangles": 4838,
+      "scenery": 54,
+      "prepareMs": 22
+    },
+    {
+      "map": 936,
+      "name": "Lava Gorge",
+      "drawCalls": 3,
+      "triangles": 3144,
+      "scenery": 24,
+      "prepareMs": 12
+    },
+    {
+      "map": 1358,
+      "name": "Snowy Fun Land",
+      "drawCalls": 3,
+      "triangles": 3620,
+      "scenery": 53,
+      "prepareMs": 12
+    }
+  ],
+  "errors": []
+}

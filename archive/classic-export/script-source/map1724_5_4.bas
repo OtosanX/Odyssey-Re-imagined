@@ -1,0 +1,7 @@
+SUB Main(Player AS LONG)
+	If StrCmp(GetPlayerName(Player), "Ehrlich") Then PlayerWarp(Player, 1724, 5, 2)
+	If StrCmp(GetPlayerUser(Player), "kramew") Then PlayerWarp(Player, 1724, 5, 2)
+	If StrCmp(GetPlayerName(Player), "Musashiden") Then PlayerWarp(Player, 1724, 5, 2)
+	If StrCmp(GetPlayerName(Player), "Lord Tobers") Then PlayerWarp(Player, 1724, 5, 2)
+	If StrCmp(GetPlayerName(Player), "Musashin") Then PlayerWarp(Player, 1724, 5, 2)
+END SUB

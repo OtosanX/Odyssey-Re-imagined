@@ -1,0 +1,56 @@
+{
+  "result": "PASS",
+  "rows": [
+    {
+      "map": 2,
+      "maxCallMs": 7.3,
+      "totalMs": 1290.9,
+      "frames": 80
+    },
+    {
+      "map": 1,
+      "maxCallMs": 0.1,
+      "totalMs": 0.1,
+      "frames": 1
+    },
+    {
+      "map": 2,
+      "maxCallMs": 0.2,
+      "totalMs": 0.2,
+      "frames": 1
+    },
+    {
+      "map": 30,
+      "maxCallMs": 7.9,
+      "totalMs": 496.4,
+      "frames": 31
+    },
+    {
+      "map": 31,
+      "maxCallMs": 7.7,
+      "totalMs": 1450.2,
+      "frames": 88
+    },
+    {
+      "map": 30,
+      "maxCallMs": 0.2,
+      "totalMs": 0.2,
+      "frames": 1
+    },
+    {
+      "map": 32,
+      "maxCallMs": 9.2,
+      "totalMs": 1685.9,
+      "frames": 102
+    }
+  ],
+  "diagnostics": {
+    "cacheHits": 4,
+    "builds": 7,
+    "cancelled": 2,
+    "templateHits": 5065,
+    "templateBuilds": 66
+  },
+  "continuity": true,
+  "errors": []
+}

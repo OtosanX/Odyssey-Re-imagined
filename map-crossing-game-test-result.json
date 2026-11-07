@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "frames": 26,
+  "maxGapMs": 44.9,
+  "movesDuringPreparation": 20,
+  "cacheHits": 1,
+  "errors": []
+}

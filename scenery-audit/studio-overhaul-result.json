@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "unifiedCamera": true,
+  "spriteComparison": true,
+  "connected3DEdit": true,
+  "comparison": true,
+  "shared3DEdit": true,
+  "picking": true,
+  "inspection": true,
+  "objectSelection": true,
+  "collisionIndependent": true,
+  "classicProtected": true,
+  "mouseOrbit": true,
+  "liveSpriteUpdate": true
+}

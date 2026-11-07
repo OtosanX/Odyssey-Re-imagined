@@ -1,0 +1,3 @@
+FUNCTION Main(Player AS LONG) AS LONG
+   Main = Continue
+END FUNCTION

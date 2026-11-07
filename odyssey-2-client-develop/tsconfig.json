@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "outDir": "src/bin",
+    "sourceMap": true,
+    "target": "es2019",
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "definitions/**/*.d.ts",
+    "lib/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "bin"
+  ]
+}

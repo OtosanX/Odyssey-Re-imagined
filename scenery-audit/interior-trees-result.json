@@ -1,0 +1,70 @@
+{
+  "result": "PASS",
+  "metrics": [
+    {
+      "map": 432,
+      "name": "South Crendale Guild Hall <PK>",
+      "drawCalls": 9,
+      "triangles": 17476,
+      "scenery": 79,
+      "prepareMs": 506
+    },
+    {
+      "map": 324,
+      "name": "Draconis Tavern",
+      "drawCalls": 7,
+      "triangles": 10614,
+      "scenery": 56,
+      "prepareMs": 46
+    },
+    {
+      "map": 1,
+      "name": "City of Crendale",
+      "drawCalls": 11,
+      "triangles": 16482,
+      "scenery": 58,
+      "prepareMs": 61
+    },
+    {
+      "map": 19,
+      "name": "Northern Beach",
+      "drawCalls": 7,
+      "triangles": 1616,
+      "scenery": 4,
+      "prepareMs": 17
+    },
+    {
+      "map": 107,
+      "name": "South of Crendale",
+      "drawCalls": 11,
+      "triangles": 12972,
+      "scenery": 45,
+      "prepareMs": 33
+    },
+    {
+      "map": 30,
+      "name": "Darkcone Forest",
+      "drawCalls": 9,
+      "triangles": 29674,
+      "scenery": 82,
+      "prepareMs": 34
+    },
+    {
+      "map": 355,
+      "name": "Throne Hall",
+      "drawCalls": 7,
+      "triangles": 7896,
+      "scenery": 49,
+      "prepareMs": 36
+    },
+    {
+      "map": 100,
+      "name": "Ice Cavern",
+      "drawCalls": 7,
+      "triangles": 3076,
+      "scenery": 24,
+      "prepareMs": 17
+    }
+  ],
+  "errors": []
+}

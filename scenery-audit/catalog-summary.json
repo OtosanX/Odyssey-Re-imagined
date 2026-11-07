@@ -1,0 +1,3135 @@
+{
+  "mapCount": 1520,
+  "tileCount": 1405,
+  "counts": {
+    "ground": 504,
+    "object": 589,
+    "plant": 78,
+    "building": 101,
+    "bridge": 3,
+    "wall": 130
+  },
+  "reviewed": 525,
+  "fallback": [
+    {
+      "id": 83,
+      "kind": "object",
+      "coverage": 0.395,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 90,
+      "kind": "object",
+      "coverage": 0.299,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 105,
+      "kind": "object",
+      "coverage": 0.119,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 112,
+      "kind": "object",
+      "coverage": 0.209,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 120,
+      "kind": "object",
+      "coverage": 0.688,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 124,
+      "kind": "object",
+      "coverage": 0.274,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 127,
+      "kind": "object",
+      "coverage": 0.346,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 129,
+      "kind": "object",
+      "coverage": 0.38,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 141,
+      "kind": "object",
+      "coverage": 0.306,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 151,
+      "kind": "object",
+      "coverage": 0.807,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 152,
+      "kind": "object",
+      "coverage": 0.141,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 155,
+      "kind": "object",
+      "coverage": 0.638,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 209,
+      "kind": "object",
+      "coverage": 0.204,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 210,
+      "kind": "object",
+      "coverage": 0.216,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 211,
+      "kind": "object",
+      "coverage": 0.388,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 212,
+      "kind": "object",
+      "coverage": 0.634,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 213,
+      "kind": "object",
+      "coverage": 0.634,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 214,
+      "kind": "object",
+      "coverage": 0.75,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 215,
+      "kind": "object",
+      "coverage": 0.684,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 216,
+      "kind": "object",
+      "coverage": 0.82,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 218,
+      "kind": "object",
+      "coverage": 0.231,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 219,
+      "kind": "object",
+      "coverage": 0.649,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 221,
+      "kind": "object",
+      "coverage": 0.036,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 222,
+      "kind": "object",
+      "coverage": 0.649,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 225,
+      "kind": "object",
+      "coverage": 0.445,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 226,
+      "kind": "object",
+      "coverage": 0.445,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 227,
+      "kind": "object",
+      "coverage": 0.361,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 228,
+      "kind": "object",
+      "coverage": 0.356,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 229,
+      "kind": "object",
+      "coverage": 0.317,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 230,
+      "kind": "object",
+      "coverage": 0.419,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 231,
+      "kind": "object",
+      "coverage": 0.435,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 232,
+      "kind": "object",
+      "coverage": 0.682,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 237,
+      "kind": "object",
+      "coverage": 0.377,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 238,
+      "kind": "object",
+      "coverage": 0.369,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 253,
+      "kind": "object",
+      "coverage": 0.587,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 254,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 255,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 256,
+      "kind": "object",
+      "coverage": 0.062,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 257,
+      "kind": "object",
+      "coverage": 0.058,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 258,
+      "kind": "object",
+      "coverage": 0.595,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 259,
+      "kind": "object",
+      "coverage": 0.686,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 260,
+      "kind": "object",
+      "coverage": 0.681,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 261,
+      "kind": "object",
+      "coverage": 0.635,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 262,
+      "kind": "object",
+      "coverage": 0.646,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 263,
+      "kind": "object",
+      "coverage": 0.346,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 264,
+      "kind": "object",
+      "coverage": 0.398,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 265,
+      "kind": "object",
+      "coverage": 0.089,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 271,
+      "kind": "object",
+      "coverage": 0.635,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 272,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 273,
+      "kind": "object",
+      "coverage": 0.794,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 274,
+      "kind": "object",
+      "coverage": 0.691,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 275,
+      "kind": "object",
+      "coverage": 0.635,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 276,
+      "kind": "object",
+      "coverage": 0.692,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 277,
+      "kind": "object",
+      "coverage": 0.794,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 278,
+      "kind": "object",
+      "coverage": 0.472,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 279,
+      "kind": "object",
+      "coverage": 0.635,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 280,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 281,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 282,
+      "kind": "object",
+      "coverage": 0.084,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 283,
+      "kind": "object",
+      "coverage": 0.084,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 284,
+      "kind": "object",
+      "coverage": 0.334,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 286,
+      "kind": "object",
+      "coverage": 0.334,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 287,
+      "kind": "object",
+      "coverage": 0.146,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 288,
+      "kind": "object",
+      "coverage": 0.594,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 294,
+      "kind": "object",
+      "coverage": 0.708,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 295,
+      "kind": "object",
+      "coverage": 0.708,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 296,
+      "kind": "object",
+      "coverage": 0.743,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 297,
+      "kind": "object",
+      "coverage": 0.743,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 298,
+      "kind": "object",
+      "coverage": 0.743,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 300,
+      "kind": "object",
+      "coverage": 0.157,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 301,
+      "kind": "object",
+      "coverage": 0.133,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 302,
+      "kind": "object",
+      "coverage": 0.357,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 303,
+      "kind": "object",
+      "coverage": 0.338,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 304,
+      "kind": "object",
+      "coverage": 0.358,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 305,
+      "kind": "object",
+      "coverage": 0.271,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 306,
+      "kind": "object",
+      "coverage": 0.379,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 312,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 313,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 314,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 315,
+      "kind": "object",
+      "coverage": 0.712,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 316,
+      "kind": "object",
+      "coverage": 0.8,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 317,
+      "kind": "object",
+      "coverage": 0.609,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 318,
+      "kind": "object",
+      "coverage": 0.592,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 319,
+      "kind": "object",
+      "coverage": 0.27,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 320,
+      "kind": "object",
+      "coverage": 0.265,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 321,
+      "kind": "object",
+      "coverage": 0.196,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 322,
+      "kind": "object",
+      "coverage": 0.232,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 323,
+      "kind": "object",
+      "coverage": 0.354,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 324,
+      "kind": "object",
+      "coverage": 0.486,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 325,
+      "kind": "object",
+      "coverage": 0.26,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 326,
+      "kind": "object",
+      "coverage": 0.305,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 327,
+      "kind": "object",
+      "coverage": 0.388,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 328,
+      "kind": "object",
+      "coverage": 0.388,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 329,
+      "kind": "object",
+      "coverage": 0.403,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 330,
+      "kind": "object",
+      "coverage": 0.404,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 331,
+      "kind": "object",
+      "coverage": 0.636,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 332,
+      "kind": "object",
+      "coverage": 0.364,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 333,
+      "kind": "object",
+      "coverage": 0.664,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 334,
+      "kind": "object",
+      "coverage": 0.607,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 335,
+      "kind": "object",
+      "coverage": 0.15,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 339,
+      "kind": "object",
+      "coverage": 0.287,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 340,
+      "kind": "object",
+      "coverage": 0.48,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 346,
+      "kind": "object",
+      "coverage": 0.635,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 347,
+      "kind": "object",
+      "coverage": 0.658,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 348,
+      "kind": "object",
+      "coverage": 0.165,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 349,
+      "kind": "object",
+      "coverage": 0.249,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 350,
+      "kind": "object",
+      "coverage": 0.174,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 353,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 354,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 356,
+      "kind": "object",
+      "coverage": 0.635,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 357,
+      "kind": "object",
+      "coverage": 0.894,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 358,
+      "kind": "object",
+      "coverage": 0.315,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 359,
+      "kind": "object",
+      "coverage": 0.363,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 360,
+      "kind": "object",
+      "coverage": 0.188,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 361,
+      "kind": "object",
+      "coverage": 0.209,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 362,
+      "kind": "object",
+      "coverage": 0.477,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 363,
+      "kind": "object",
+      "coverage": 0.477,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 364,
+      "kind": "object",
+      "coverage": 0.861,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 365,
+      "kind": "object",
+      "coverage": 0.165,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 393,
+      "kind": "object",
+      "coverage": 0.01,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 394,
+      "kind": "object",
+      "coverage": 0.168,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 399,
+      "kind": "object",
+      "coverage": 0.161,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 406,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 412,
+      "kind": "object",
+      "coverage": 0.293,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 419,
+      "kind": "object",
+      "coverage": 0.615,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 420,
+      "kind": "object",
+      "coverage": 0.94,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 423,
+      "kind": "object",
+      "coverage": 0.117,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 424,
+      "kind": "object",
+      "coverage": 0.003,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 425,
+      "kind": "object",
+      "coverage": 0.573,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 431,
+      "kind": "object",
+      "coverage": 0.328,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 434,
+      "kind": "object",
+      "coverage": 0.416,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 438,
+      "kind": "object",
+      "coverage": 0.801,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 461,
+      "kind": "object",
+      "coverage": 0.066,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 498,
+      "kind": "object",
+      "coverage": 0.466,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 499,
+      "kind": "object",
+      "coverage": 0.52,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 500,
+      "kind": "object",
+      "coverage": 0.527,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 501,
+      "kind": "object",
+      "coverage": 0.522,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 502,
+      "kind": "object",
+      "coverage": 0.406,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 505,
+      "kind": "object",
+      "coverage": 0.479,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 506,
+      "kind": "object",
+      "coverage": 0.477,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 507,
+      "kind": "object",
+      "coverage": 0.364,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 508,
+      "kind": "object",
+      "coverage": 0.53,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 509,
+      "kind": "object",
+      "coverage": 0.536,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 510,
+      "kind": "object",
+      "coverage": 0.535,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 511,
+      "kind": "object",
+      "coverage": 0.537,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 517,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 518,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 519,
+      "kind": "object",
+      "coverage": 0.635,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 520,
+      "kind": "object",
+      "coverage": 0.797,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 521,
+      "kind": "object",
+      "coverage": 0.695,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 526,
+      "kind": "object",
+      "coverage": 0.775,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 528,
+      "kind": "object",
+      "coverage": 0.627,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 529,
+      "kind": "object",
+      "coverage": 0.805,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 530,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 531,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 532,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 533,
+      "kind": "object",
+      "coverage": 0.53,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 534,
+      "kind": "object",
+      "coverage": 0.536,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 535,
+      "kind": "object",
+      "coverage": 0.535,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 536,
+      "kind": "object",
+      "coverage": 0.537,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 545,
+      "kind": "object",
+      "coverage": 0.219,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 548,
+      "kind": "object",
+      "coverage": 0.794,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 549,
+      "kind": "object",
+      "coverage": 0.692,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 550,
+      "kind": "object",
+      "coverage": 0.607,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 551,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 565,
+      "kind": "object",
+      "coverage": 0.898,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 596,
+      "kind": "object",
+      "coverage": 0.174,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 601,
+      "kind": "object",
+      "coverage": 0.151,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 602,
+      "kind": "object",
+      "coverage": 0.719,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 603,
+      "kind": "object",
+      "coverage": 0.332,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 605,
+      "kind": "object",
+      "coverage": 0.461,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 606,
+      "kind": "object",
+      "coverage": 0.594,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 607,
+      "kind": "object",
+      "coverage": 0.594,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 608,
+      "kind": "object",
+      "coverage": 0.145,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 609,
+      "kind": "object",
+      "coverage": 0.629,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 610,
+      "kind": "object",
+      "coverage": 0.191,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 612,
+      "kind": "object",
+      "coverage": 0.228,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 613,
+      "kind": "object",
+      "coverage": 0.959,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 614,
+      "kind": "object",
+      "coverage": 0.959,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 615,
+      "kind": "object",
+      "coverage": 0.253,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 616,
+      "kind": "object",
+      "coverage": 0.282,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 617,
+      "kind": "object",
+      "coverage": 0.545,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 619,
+      "kind": "object",
+      "coverage": 0.396,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 620,
+      "kind": "object",
+      "coverage": 0.705,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 621,
+      "kind": "object",
+      "coverage": 0.58,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 622,
+      "kind": "object",
+      "coverage": 0.678,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 623,
+      "kind": "object",
+      "coverage": 0.284,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 624,
+      "kind": "object",
+      "coverage": 0.575,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 626,
+      "kind": "object",
+      "coverage": 0.328,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 627,
+      "kind": "object",
+      "coverage": 0.705,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 628,
+      "kind": "object",
+      "coverage": 0.665,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 629,
+      "kind": "object",
+      "coverage": 0.598,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 630,
+      "kind": "object",
+      "coverage": 0.187,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 631,
+      "kind": "object",
+      "coverage": 0.137,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 633,
+      "kind": "object",
+      "coverage": 0.084,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 634,
+      "kind": "object",
+      "coverage": 0.14,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 635,
+      "kind": "object",
+      "coverage": 0.082,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 639,
+      "kind": "object",
+      "coverage": 0.352,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 640,
+      "kind": "object",
+      "coverage": 0.333,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 641,
+      "kind": "object",
+      "coverage": 0.959,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 642,
+      "kind": "object",
+      "coverage": 0.31,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 644,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 645,
+      "kind": "object",
+      "coverage": 0.396,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 648,
+      "kind": "object",
+      "coverage": 0.822,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 649,
+      "kind": "object",
+      "coverage": 0.219,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 658,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 674,
+      "kind": "object",
+      "coverage": 0.199,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 683,
+      "kind": "object",
+      "coverage": 0.493,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 688,
+      "kind": "object",
+      "coverage": 0.337,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 695,
+      "kind": "object",
+      "coverage": 0.667,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 702,
+      "kind": "object",
+      "coverage": 0.599,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 703,
+      "kind": "object",
+      "coverage": 0.264,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 706,
+      "kind": "object",
+      "coverage": 0.301,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 708,
+      "kind": "object",
+      "coverage": 0.969,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 709,
+      "kind": "object",
+      "coverage": 0.152,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 711,
+      "kind": "object",
+      "coverage": 0.973,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 712,
+      "kind": "object",
+      "coverage": 0.946,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 716,
+      "kind": "object",
+      "coverage": 0.153,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 727,
+      "kind": "object",
+      "coverage": 0.71,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 730,
+      "kind": "object",
+      "coverage": 0.046,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 735,
+      "kind": "object",
+      "coverage": 0.122,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 738,
+      "kind": "object",
+      "coverage": 0.239,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 739,
+      "kind": "object",
+      "coverage": 0.335,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 749,
+      "kind": "object",
+      "coverage": 0.551,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 750,
+      "kind": "object",
+      "coverage": 0,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 751,
+      "kind": "object",
+      "coverage": 0.242,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 752,
+      "kind": "object",
+      "coverage": 0,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 754,
+      "kind": "object",
+      "coverage": 0.244,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 761,
+      "kind": "object",
+      "coverage": 0.034,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 764,
+      "kind": "object",
+      "coverage": 0.034,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 769,
+      "kind": "object",
+      "coverage": 0.958,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 774,
+      "kind": "object",
+      "coverage": 0.05,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 775,
+      "kind": "object",
+      "coverage": 0.062,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 780,
+      "kind": "object",
+      "coverage": 0.701,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 782,
+      "kind": "object",
+      "coverage": 0.067,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 785,
+      "kind": "object",
+      "coverage": 0.09,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 789,
+      "kind": "object",
+      "coverage": 0.595,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 793,
+      "kind": "object",
+      "coverage": 0.271,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 795,
+      "kind": "object",
+      "coverage": 0.271,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 799,
+      "kind": "object",
+      "coverage": 0.549,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 800,
+      "kind": "object",
+      "coverage": 0.09,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 801,
+      "kind": "object",
+      "coverage": 0.383,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 803,
+      "kind": "object",
+      "coverage": 0.205,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 804,
+      "kind": "object",
+      "coverage": 0.183,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 806,
+      "kind": "object",
+      "coverage": 0.403,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 807,
+      "kind": "object",
+      "coverage": 0.127,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 808,
+      "kind": "object",
+      "coverage": 0.361,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 809,
+      "kind": "object",
+      "coverage": 0.24,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 811,
+      "kind": "object",
+      "coverage": 0.441,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 812,
+      "kind": "object",
+      "coverage": 0.339,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 813,
+      "kind": "object",
+      "coverage": 0.549,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 818,
+      "kind": "object",
+      "coverage": 0.479,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 820,
+      "kind": "object",
+      "coverage": 0.403,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 821,
+      "kind": "object",
+      "coverage": 0.445,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 822,
+      "kind": "object",
+      "coverage": 0.444,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 825,
+      "kind": "object",
+      "coverage": 0.489,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 826,
+      "kind": "object",
+      "coverage": 0.438,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 829,
+      "kind": "object",
+      "coverage": 0.24,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 831,
+      "kind": "object",
+      "coverage": 0.333,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 832,
+      "kind": "object",
+      "coverage": 0.332,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 848,
+      "kind": "object",
+      "coverage": 0.143,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 851,
+      "kind": "object",
+      "coverage": 0.651,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 853,
+      "kind": "object",
+      "coverage": 0.819,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 855,
+      "kind": "object",
+      "coverage": 0.234,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 857,
+      "kind": "object",
+      "coverage": 0.481,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 859,
+      "kind": "object",
+      "coverage": 0.646,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 860,
+      "kind": "object",
+      "coverage": 0.729,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 862,
+      "kind": "object",
+      "coverage": 0.271,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 863,
+      "kind": "object",
+      "coverage": 0.152,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 866,
+      "kind": "object",
+      "coverage": 0.364,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 867,
+      "kind": "object",
+      "coverage": 0.331,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 868,
+      "kind": "object",
+      "coverage": 0.382,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 869,
+      "kind": "object",
+      "coverage": 0.69,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 870,
+      "kind": "object",
+      "coverage": 0.141,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 871,
+      "kind": "object",
+      "coverage": 0.142,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 873,
+      "kind": "object",
+      "coverage": 0.312,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 876,
+      "kind": "object",
+      "coverage": 0.383,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 878,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 879,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 882,
+      "kind": "object",
+      "coverage": 0.614,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 888,
+      "kind": "object",
+      "coverage": 0.976,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 889,
+      "kind": "object",
+      "coverage": 0.587,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 890,
+      "kind": "object",
+      "coverage": 0.587,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 891,
+      "kind": "object",
+      "coverage": 0.231,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 893,
+      "kind": "object",
+      "coverage": 0.062,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 894,
+      "kind": "object",
+      "coverage": 0.058,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 896,
+      "kind": "object",
+      "coverage": 0.686,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 897,
+      "kind": "object",
+      "coverage": 0.681,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 898,
+      "kind": "object",
+      "coverage": 0.635,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 899,
+      "kind": "object",
+      "coverage": 0.646,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 901,
+      "kind": "object",
+      "coverage": 0.398,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 910,
+      "kind": "object",
+      "coverage": 0.794,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 911,
+      "kind": "object",
+      "coverage": 0.692,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 913,
+      "kind": "object",
+      "coverage": 0.692,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 914,
+      "kind": "object",
+      "coverage": 0.794,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 915,
+      "kind": "object",
+      "coverage": 0.472,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 917,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 918,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 919,
+      "kind": "object",
+      "coverage": 0.084,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 920,
+      "kind": "object",
+      "coverage": 0.084,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 924,
+      "kind": "object",
+      "coverage": 0.231,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 926,
+      "kind": "object",
+      "coverage": 0.708,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 927,
+      "kind": "object",
+      "coverage": 0.708,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 932,
+      "kind": "object",
+      "coverage": 0.708,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 933,
+      "kind": "object",
+      "coverage": 0.747,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 934,
+      "kind": "object",
+      "coverage": 0.747,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 935,
+      "kind": "object",
+      "coverage": 0.743,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 936,
+      "kind": "object",
+      "coverage": 0.226,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 938,
+      "kind": "object",
+      "coverage": 0.176,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 940,
+      "kind": "object",
+      "coverage": 0.341,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 949,
+      "kind": "object",
+      "coverage": 0.281,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 950,
+      "kind": "object",
+      "coverage": 0.281,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 952,
+      "kind": "object",
+      "coverage": 0.692,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 953,
+      "kind": "object",
+      "coverage": 0.794,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 954,
+      "kind": "object",
+      "coverage": 0.61,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 955,
+      "kind": "object",
+      "coverage": 0.592,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 958,
+      "kind": "object",
+      "coverage": 0.396,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 961,
+      "kind": "object",
+      "coverage": 0.636,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 962,
+      "kind": "object",
+      "coverage": 0.364,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 963,
+      "kind": "object",
+      "coverage": 0.666,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 964,
+      "kind": "object",
+      "coverage": 0.609,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 965,
+      "kind": "object",
+      "coverage": 0.15,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 970,
+      "kind": "object",
+      "coverage": 0.172,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 972,
+      "kind": "object",
+      "coverage": 0.492,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 973,
+      "kind": "object",
+      "coverage": 0.491,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 977,
+      "kind": "object",
+      "coverage": 0.291,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 978,
+      "kind": "object",
+      "coverage": 0.558,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 986,
+      "kind": "object",
+      "coverage": 0.035,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1036,
+      "kind": "object",
+      "coverage": 0.44,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1067,
+      "kind": "object",
+      "coverage": 0.281,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1077,
+      "kind": "object",
+      "coverage": 0.236,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1086,
+      "kind": "object",
+      "coverage": 0.439,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1087,
+      "kind": "object",
+      "coverage": 0.405,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1089,
+      "kind": "object",
+      "coverage": 0.242,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1117,
+      "kind": "ground",
+      "coverage": 0.998,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 1121,
+      "kind": "object",
+      "coverage": 0.449,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1123,
+      "kind": "object",
+      "coverage": 0.623,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1124,
+      "kind": "object",
+      "coverage": 0.843,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1156,
+      "kind": "object",
+      "coverage": 0.344,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1157,
+      "kind": "object",
+      "coverage": 0.344,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1163,
+      "kind": "object",
+      "coverage": 0.397,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1164,
+      "kind": "object",
+      "coverage": 0.373,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1170,
+      "kind": "object",
+      "coverage": 0.549,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1171,
+      "kind": "object",
+      "coverage": 0.549,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1175,
+      "kind": "object",
+      "coverage": 0.387,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1176,
+      "kind": "object",
+      "coverage": 0.328,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1178,
+      "kind": "object",
+      "coverage": 0.403,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1179,
+      "kind": "object",
+      "coverage": 0.263,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1182,
+      "kind": "object",
+      "coverage": 0,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1185,
+      "kind": "object",
+      "coverage": 0.549,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1186,
+      "kind": "object",
+      "coverage": 0.838,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1192,
+      "kind": "object",
+      "coverage": 0.403,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1193,
+      "kind": "object",
+      "coverage": 0.938,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1195,
+      "kind": "object",
+      "coverage": 0.89,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1196,
+      "kind": "object",
+      "coverage": 0.241,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1197,
+      "kind": "object",
+      "coverage": 0.242,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1198,
+      "kind": "object",
+      "coverage": 0.747,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1202,
+      "kind": "object",
+      "coverage": 0.252,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1203,
+      "kind": "object",
+      "coverage": 0.463,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1204,
+      "kind": "object",
+      "coverage": 0.509,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1205,
+      "kind": "object",
+      "coverage": 0.405,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1207,
+      "kind": "object",
+      "coverage": 0.496,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1208,
+      "kind": "object",
+      "coverage": 0.496,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1209,
+      "kind": "object",
+      "coverage": 0.216,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1210,
+      "kind": "object",
+      "coverage": 0.874,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1211,
+      "kind": "object",
+      "coverage": 0.896,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1212,
+      "kind": "object",
+      "coverage": 0.497,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1213,
+      "kind": "object",
+      "coverage": 0.496,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1216,
+      "kind": "object",
+      "coverage": 0.248,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1217,
+      "kind": "object",
+      "coverage": 0.225,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1218,
+      "kind": "object",
+      "coverage": 0.425,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1221,
+      "kind": "object",
+      "coverage": 0.29,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1222,
+      "kind": "object",
+      "coverage": 0.42,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1224,
+      "kind": "object",
+      "coverage": 0.122,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1225,
+      "kind": "object",
+      "coverage": 0.29,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1226,
+      "kind": "object",
+      "coverage": 0.301,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1227,
+      "kind": "object",
+      "coverage": 0.451,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1228,
+      "kind": "object",
+      "coverage": 0.094,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1229,
+      "kind": "object",
+      "coverage": 0.257,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1230,
+      "kind": "object",
+      "coverage": 0.71,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1231,
+      "kind": "object",
+      "coverage": 0.71,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1232,
+      "kind": "object",
+      "coverage": 0.282,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1234,
+      "kind": "object",
+      "coverage": 0.167,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1240,
+      "kind": "object",
+      "coverage": 0.278,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1256,
+      "kind": "object",
+      "coverage": 0.29,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1257,
+      "kind": "object",
+      "coverage": 0.236,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1258,
+      "kind": "object",
+      "coverage": 0.228,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1259,
+      "kind": "object",
+      "coverage": 0.199,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1260,
+      "kind": "object",
+      "coverage": 0.207,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1261,
+      "kind": "object",
+      "coverage": 0.119,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1263,
+      "kind": "object",
+      "coverage": 0.503,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1264,
+      "kind": "object",
+      "coverage": 0.499,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1266,
+      "kind": "object",
+      "coverage": 0.848,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1268,
+      "kind": "object",
+      "coverage": 0.121,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1269,
+      "kind": "object",
+      "coverage": 0.176,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1272,
+      "kind": "object",
+      "coverage": 0.36,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1273,
+      "kind": "object",
+      "coverage": 0.299,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1274,
+      "kind": "object",
+      "coverage": 0.326,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1275,
+      "kind": "object",
+      "coverage": 0.45,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1276,
+      "kind": "object",
+      "coverage": 0.45,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1277,
+      "kind": "object",
+      "coverage": 0.479,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1278,
+      "kind": "object",
+      "coverage": 0.422,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1279,
+      "kind": "object",
+      "coverage": 0.422,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1280,
+      "kind": "object",
+      "coverage": 0.479,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1281,
+      "kind": "object",
+      "coverage": 0.455,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1283,
+      "kind": "object",
+      "coverage": 0.242,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1284,
+      "kind": "object",
+      "coverage": 0.374,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1285,
+      "kind": "object",
+      "coverage": 0.374,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1287,
+      "kind": "object",
+      "coverage": 0.342,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1288,
+      "kind": "object",
+      "coverage": 0.343,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1289,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1294,
+      "kind": "object",
+      "coverage": 0.219,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1299,
+      "kind": "object",
+      "coverage": 0.213,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1301,
+      "kind": "object",
+      "coverage": 0.242,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1303,
+      "kind": "object",
+      "coverage": 0.587,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1304,
+      "kind": "object",
+      "coverage": 0.291,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1312,
+      "kind": "object",
+      "coverage": 0.605,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1323,
+      "kind": "object",
+      "coverage": 0.16,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1327,
+      "kind": "object",
+      "coverage": 0.238,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1328,
+      "kind": "object",
+      "coverage": 0.184,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1329,
+      "kind": "object",
+      "coverage": 0.184,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1330,
+      "kind": "object",
+      "coverage": 0.373,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1336,
+      "kind": "object",
+      "coverage": 0.073,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1343,
+      "kind": "object",
+      "coverage": 0.372,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1344,
+      "kind": "object",
+      "coverage": 0.265,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1347,
+      "kind": "object",
+      "coverage": 0.642,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1363,
+      "kind": "object",
+      "coverage": 0.854,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1364,
+      "kind": "object",
+      "coverage": 0.486,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1365,
+      "kind": "object",
+      "coverage": 0.764,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1366,
+      "kind": "ground",
+      "coverage": 0.982,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 1367,
+      "kind": "object",
+      "coverage": 0.783,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1368,
+      "kind": "object",
+      "coverage": 0.902,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1371,
+      "kind": "object",
+      "coverage": 0,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1372,
+      "kind": "object",
+      "coverage": 0.587,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1373,
+      "kind": "object",
+      "coverage": 0.729,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1374,
+      "kind": "object",
+      "coverage": 0.685,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1375,
+      "kind": "object",
+      "coverage": 0.792,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1376,
+      "kind": "object",
+      "coverage": 0.645,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1377,
+      "kind": "object",
+      "coverage": 0.85,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1378,
+      "kind": "object",
+      "coverage": 0.477,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1379,
+      "kind": "object",
+      "coverage": 0.8,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1382,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 1385,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 1407,
+      "kind": "object",
+      "coverage": 0,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1415,
+      "kind": "object",
+      "coverage": 0.635,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1416,
+      "kind": "object",
+      "coverage": 0.794,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1417,
+      "kind": "object",
+      "coverage": 0.692,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1418,
+      "kind": "object",
+      "coverage": 0.614,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1423,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 1424,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 1428,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1429,
+      "kind": "object",
+      "coverage": 0.635,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1430,
+      "kind": "object",
+      "coverage": 0.794,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1431,
+      "kind": "object",
+      "coverage": 0.692,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1433,
+      "kind": "object",
+      "coverage": 0.838,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1441,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1442,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1443,
+      "kind": "object",
+      "coverage": 0.592,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1444,
+      "kind": "object",
+      "coverage": 0.8,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1445,
+      "kind": "object",
+      "coverage": 0.712,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1446,
+      "kind": "object",
+      "coverage": 0.61,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1447,
+      "kind": "object",
+      "coverage": 0.797,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1455,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1456,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1457,
+      "kind": "object",
+      "coverage": 0.635,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1458,
+      "kind": "object",
+      "coverage": 0.798,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1459,
+      "kind": "object",
+      "coverage": 0.71,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1460,
+      "kind": "object",
+      "coverage": 0.627,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1469,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1470,
+      "kind": "object",
+      "coverage": 0.25,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1471,
+      "kind": "object",
+      "coverage": 0.635,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1472,
+      "kind": "object",
+      "coverage": 0.798,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1473,
+      "kind": "object",
+      "coverage": 0.711,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1475,
+      "kind": "object",
+      "coverage": 0.805,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1477,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 1486,
+      "kind": "object",
+      "coverage": 0.614,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1515,
+      "kind": "object",
+      "coverage": 0,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1525,
+      "kind": "object",
+      "coverage": 0.512,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1532,
+      "kind": "object",
+      "coverage": 0.82,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1557,
+      "kind": "object",
+      "coverage": 0,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1558,
+      "kind": "object",
+      "coverage": 0.397,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1559,
+      "kind": "object",
+      "coverage": 0.397,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1587,
+      "kind": "object",
+      "coverage": 0.797,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1589,
+      "kind": "object",
+      "coverage": 0.801,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1601,
+      "kind": "object",
+      "coverage": 0.801,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1603,
+      "kind": "object",
+      "coverage": 0.797,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1610,
+      "kind": "object",
+      "coverage": 0.51,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1623,
+      "kind": "object",
+      "coverage": 0.952,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1650,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 1652,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 1664,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 1666,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 1708,
+      "kind": "object",
+      "coverage": 0.242,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1710,
+      "kind": "object",
+      "coverage": 0.327,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1717,
+      "kind": "object",
+      "coverage": 0.356,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1753,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 1781,
+      "kind": "object",
+      "coverage": 0.377,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1783,
+      "kind": "object",
+      "coverage": 0.297,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1785,
+      "kind": "object",
+      "coverage": 0.126,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1812,
+      "kind": "object",
+      "coverage": 0.44,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1813,
+      "kind": "object",
+      "coverage": 0.49,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1814,
+      "kind": "object",
+      "coverage": 0.294,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1823,
+      "kind": "object",
+      "coverage": 0.478,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1825,
+      "kind": "object",
+      "coverage": 0.433,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1828,
+      "kind": "object",
+      "coverage": 0.384,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 1830,
+      "kind": "object",
+      "coverage": 0.467,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 2555,
+      "kind": "object",
+      "coverage": 0.359,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 2562,
+      "kind": "object",
+      "coverage": 0.349,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 2860,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 3070,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 3071,
+      "kind": "object",
+      "coverage": 0.656,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 3072,
+      "kind": "ground",
+      "coverage": 1,
+      "source": "opaque surface fallback"
+    },
+    {
+      "id": 3079,
+      "kind": "object",
+      "coverage": 0.516,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 3215,
+      "kind": "object",
+      "coverage": 0.719,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 3303,
+      "kind": "object",
+      "coverage": 0.688,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 3310,
+      "kind": "object",
+      "coverage": 0.434,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 4660,
+      "kind": "object",
+      "coverage": 0.429,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 4978,
+      "kind": "object",
+      "coverage": 0.397,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 4982,
+      "kind": "object",
+      "coverage": 0.226,
+      "source": "transparent scenery fallback"
+    },
+    {
+      "id": 4983,
+      "kind": "object",
+      "coverage": 0.344,
+      "source": "transparent scenery fallback"
+    }
+  ]
+}

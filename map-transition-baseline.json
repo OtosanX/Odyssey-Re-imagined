@@ -1,0 +1,49 @@
+{
+  "result": "PASS",
+  "rows": [
+    {
+      "map": 2,
+      "maxCallMs": 386.8,
+      "totalMs": 386.8,
+      "frames": 1
+    },
+    {
+      "map": 1,
+      "maxCallMs": 285.8,
+      "totalMs": 285.8,
+      "frames": 1
+    },
+    {
+      "map": 2,
+      "maxCallMs": 351.8,
+      "totalMs": 351.8,
+      "frames": 1
+    },
+    {
+      "map": 30,
+      "maxCallMs": 276.4,
+      "totalMs": 276.4,
+      "frames": 1
+    },
+    {
+      "map": 31,
+      "maxCallMs": 417.3,
+      "totalMs": 417.3,
+      "frames": 1
+    },
+    {
+      "map": 30,
+      "maxCallMs": 292.7,
+      "totalMs": 292.7,
+      "frames": 1
+    },
+    {
+      "map": 32,
+      "maxCallMs": 414.4,
+      "totalMs": 414.4,
+      "frames": 1
+    }
+  ],
+  "diagnostics": null,
+  "errors": []
+}

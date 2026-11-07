@@ -1,0 +1,10 @@
+Function Main(Player as Long) as Long
+dim Chance as Long, Object as Long
+
+Chance = 7
+Object = 129
+RunScript3("RareDrop", Player, Chance, Object)
+
+Main = Continue
+
+End Function

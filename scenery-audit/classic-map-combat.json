@@ -1,0 +1,240 @@
+{
+  "result": "PASS",
+  "mapsChecked": 1520,
+  "protectedMaps": [
+    {
+      "id": 192,
+      "name": "Castle Dragonia",
+      "flags": 49
+    },
+    {
+      "id": 199,
+      "name": "Throne Hall",
+      "flags": 42
+    },
+    {
+      "id": 226,
+      "name": "Bedrooms",
+      "flags": 51
+    },
+    {
+      "id": 325,
+      "name": "Wizard's Shop",
+      "flags": 35
+    },
+    {
+      "id": 427,
+      "name": "Congratulations!",
+      "flags": 43
+    },
+    {
+      "id": 492,
+      "name": "Underworld Guild Town <PK>",
+      "flags": 98
+    },
+    {
+      "id": 525,
+      "name": "The Lost City",
+      "flags": 60
+    },
+    {
+      "id": 580,
+      "name": "Super Secret Hangout Room [PK",
+      "flags": 106
+    },
+    {
+      "id": 599,
+      "name": "Overdose'aK{rXhrK{aKhrXhaK{aXh",
+      "flags": 97
+    },
+    {
+      "id": 638,
+      "name": "Throne Hall",
+      "flags": 42
+    },
+    {
+      "id": 647,
+      "name": "Secret Vault",
+      "flags": 114
+    },
+    {
+      "id": 662,
+      "name": "Cundi's Magic Shop",
+      "flags": 34
+    },
+    {
+      "id": 677,
+      "name": "Welcome to Odyssey Classic!",
+      "flags": 33
+    },
+    {
+      "id": 822,
+      "name": "The Tundra Tavern",
+      "flags": 106
+    },
+    {
+      "id": 823,
+      "name": "We Buy Skin",
+      "flags": 106
+    },
+    {
+      "id": 850,
+      "name": "Entrance to the Crypt",
+      "flags": 34
+    },
+    {
+      "id": 891,
+      "name": "The Tower of V'Drazzig",
+      "flags": 42
+    },
+    {
+      "id": 906,
+      "name": "Volcanic Island Village",
+      "flags": 56
+    },
+    {
+      "id": 907,
+      "name": "Volcanic Island Village",
+      "flags": 56
+    },
+    {
+      "id": 918,
+      "name": "Chief's Hut",
+      "flags": 42
+    },
+    {
+      "id": 922,
+      "name": "Amazon Outlet",
+      "flags": 42
+    },
+    {
+      "id": 966,
+      "name": "Tomb Entrance",
+      "flags": 34
+    },
+    {
+      "id": 982,
+      "name": "The Higgins Hideaway",
+      "flags": 122
+    },
+    {
+      "id": 1036,
+      "name": "Roaring Rock Castle < PK >",
+      "flags": 114
+    },
+    {
+      "id": 1120,
+      "name": "Elvish Tanner",
+      "flags": 34
+    },
+    {
+      "id": 1210,
+      "name": "First National Bank of Bab",
+      "flags": 34
+    },
+    {
+      "id": 1217,
+      "name": "Skull Helmet Shop",
+      "flags": 34
+    },
+    {
+      "id": 1232,
+      "name": "North Woods",
+      "flags": 32
+    },
+    {
+      "id": 1234,
+      "name": "Great Hall",
+      "flags": 42
+    },
+    {
+      "id": 1236,
+      "name": "North Woods",
+      "flags": 40
+    },
+    {
+      "id": 1238,
+      "name": "Great Hall",
+      "flags": 42
+    },
+    {
+      "id": 1287,
+      "name": "Summoning Chamber",
+      "flags": 46
+    },
+    {
+      "id": 1315,
+      "name": "Shadecall Summoner",
+      "flags": 98
+    },
+    {
+      "id": 1316,
+      "name": "Shadecall Enchantress",
+      "flags": 98
+    },
+    {
+      "id": 1317,
+      "name": "Shadecall Sparring Ring",
+      "flags": 224
+    },
+    {
+      "id": 1403,
+      "name": "Super Secret Hangout Room [PK",
+      "flags": 106
+    },
+    {
+      "id": 1518,
+      "name": "Castle Dragonia",
+      "flags": 43
+    },
+    {
+      "id": 1579,
+      "name": "Sonny's House",
+      "flags": 33
+    },
+    {
+      "id": 1580,
+      "name": "Babylonian Prison",
+      "flags": 96
+    },
+    {
+      "id": 1585,
+      "name": "Ruins of Old Babylon",
+      "flags": 96
+    },
+    {
+      "id": 1595,
+      "name": "Rivals Are Homos Room",
+      "flags": 98
+    },
+    {
+      "id": 1845,
+      "name": "Jimmy's Pick Shop",
+      "flags": 34
+    },
+    {
+      "id": 1984,
+      "name": "Scholar's Abode",
+      "flags": 34
+    },
+    {
+      "id": 1995,
+      "name": "Castle Park",
+      "flags": 114
+    },
+    {
+      "id": 2110,
+      "name": "Depths of the Volcano",
+      "flags": 106
+    }
+  ],
+  "modes": [
+    "story",
+    "mmo"
+  ],
+  "difficulties": [
+    "normal",
+    "hardcore"
+  ],
+  "blockedAttempts": 1080
+}

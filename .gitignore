@@ -1,0 +1,9 @@
+# Odyssey Reimagined workspace - ignore only generated build outputs and caches
+node_modules/
+dist/
+publish/
+logs/
+.map-library/
+.map-library-cache/
+.editor-test-profile/
+*.log
