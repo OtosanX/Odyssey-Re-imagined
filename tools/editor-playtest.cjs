@@ -7,4 +7,5 @@ function move(world,p,dir){const delta=[[0,-1],[1,0],[0,1],[-1,0]][dir];if(!delt
  if(to?.type===2){const destination=Object.values(world.maps||{}).find(m=>m.id===to.data[0]*256+to.data[1]);if(!destination)return {notice:'Teleport destination is not placed in this preview.'};x=destination.x+to.data[2];y=destination.y+to.data[3];if(x<0||y<0||x>=world.width||y>=world.height||world.blocked[y*world.width+x])return null;}
  return {x,y};
 }
-module.exports={move};
+function spriteDirection(direction){return [0,3,1,2][direction]??1;}
+module.exports={move,spriteDirection};

@@ -14,3 +14,9 @@
 .world-comparison{display:grid!important;grid-template-columns:var(--world-split,50%) minmax(0,1fr);grid-template-rows:auto minmax(220px,1fr) auto auto}.world-comparison>.toolbar:first-child{grid-column:1 / -1;grid-row:1}.world-comparison>.scroll{grid-column:1;grid-row:2}.world-comparison>.studio-world-3d{grid-column:2;grid-row:2;min-width:0}.world-comparison>.world-note{grid-column:1 / -1;grid-row:3}.world-comparison>.toolbar:last-child{grid-column:1 / -1;grid-row:4}.world-comparison.world-reversed>.scroll{grid-column:2}.world-comparison.world-reversed>.studio-world-3d{grid-column:1}
 
 .studio-state{padding:5px 20px;color:#b7cbd2;background:#172630;font-size:12px}
+:root .studio-access-notice{display:flex;align-items:center;gap:12px;padding:9px 14px;background:#203c36;border-left:4px solid #77bc92;margin:6px 10px}
+:root .studio-access-notice.protected{background:#473b24;border-color:#e5bb62}
+:root #studioActionStatus{padding:5px 14px;color:#ead297;min-height:25px}
+:root .studio-essential-tools{background:#243d49;border-bottom:2px solid #c4a464;position:sticky;top:0;z-index:3}
+:root .studio-advanced{margin:4px 10px;border:1px solid #415762;padding:7px 10px}
+:root .studio-advanced summary{cursor:pointer;color:#c4d2db}

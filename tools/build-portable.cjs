@@ -10,7 +10,7 @@ async function build(){
  if(process.platform!=='win32')throw Error('The portable build currently targets Windows x64.');
  const output=path.join(root,'dist','Odyssey-Reimagined-Windows-'+new Date().toISOString().replace(/[:.]/g,'-'));fs.mkdirSync(output,{recursive:false});
  for(const name of ['map-format.cjs','visual-format.cjs','THIRD-PARTY-NOTICES.md','community-server.json'])copy(path.join(root,name),path.join(output,name));
- copy(path.join(root,'DOWNLOAD-AND-HOST.md'),path.join(output,'README.md'));
+ copy(path.join(root,'docs','DOWNLOAD-AND-HOST.md'),path.join(output,'README.md'));
  for(const name of fs.readdirSync(path.join(root,'tools')).filter(n=>n.endsWith('.cjs')&&!n.startsWith('test-')))copy(path.join(root,'tools',name),path.join(output,'tools',name));
  const client='odyssey-2-client-develop',server='odyssey-2-server-develop';
  for(const name of ['src','package.json'])copy(path.join(root,client,name),path.join(output,client,name));

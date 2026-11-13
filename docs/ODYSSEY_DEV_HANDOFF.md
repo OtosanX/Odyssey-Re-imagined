@@ -1,5 +1,11 @@
 # Odyssey Reimagined — development handoff
 
+Wall-shape/facing follow-up: shared `wall-shapes.js` uses source-alpha strips for automatic side-wall footprints; explicit full/NS/EW, thickness and alignment metadata validated and exposed in paint/repair/profile workflows. Browser bundle includes the module. All 1,520 maps rendered without WebGL errors. Single-map and World Builder preview now convert map directions to gameplay sprite rows through `editor-playtest.spriteDirection`. Actual geometry dimensions and both preview controls verified in isolated UI tests. Details and audit counts: `SURFACE-REPAIR.md`, `scenery-audit/wall-shape-audit.json`.
+
+Editor usability follow-up: explicit Paint layer and independent Repair layer, prominent protected-map edit/copy actions and status, shared brush surface-setting bug fixed, advanced controls collapsed, player-limited default camera with opt-in free inspection. Verified Hell map floor repair, paint layer isolation, camera bounds, undo/save/reopen and full Studio overhaul regression in temporary worlds. See `SURFACE-REPAIR.md`.
+
+November 12, 2026 repair: restored the shared scenery catalog after a malformed family-list replacement broke client startup and Studio 3D. Preserved the current family edits. Offline entry into Crendale and all-map 3D rendering verified; see `STARTUP-3D-REPAIR.md`. Feature work is paused at the owner's request.
+
 Shared handoff for Codex/OpenCode sessions. Statuses reflect the code on disk; verify before trusting. No secrets. Last updated: November 7, 2026 (OpenCode, Priority 1 finished).
 
 ## Architecture (one paragraph per layer)
@@ -58,3 +64,14 @@ Shared handoff for Codex/OpenCode sessions. Statuses reflect the code on disk; v
 - Preserve everything that works; small controlled changes; isolated tests only; do not launch the user's apps; no desktop control.
 - Editor drafts and published game data are separate; never auto-publish.
 - Original artwork, tile IDs, map IDs, connections, collision and saves are inviolable.
+
+## November 12: automatic ground classification correction
+See CRENDALE-SURFACE-AUDIT.md. Removed lava147 from tables, blood47 from furnishings, dirt1450 from masonry; added ten reviewed ground IDs. Untouched protected Classic Hell now verified flat in Studio before any manual override. 3,029 placements across371 maps corrected; all1520 maps pass both-phase rendering. GOD/admin-item punishment rules and original world data unchanged. Explicit user overrides still win. Test: tools/test-reviewed-ground.cjs. Reopen client/editor to load updated shared catalog.
+
+
+## November 13: cave volumes and layered ruin corners
+Structural cave-rock now gets a closed full-cell volume only on original blocked tiles; manual wall shapes/openings win. Masonry tile122 blocked backing in stone-wall maps gets solid infill (explicit122 profiles disable inference). Layered240-244 corner/side pieces retain both directions instead of flattening to horizontal bars. Ruin spans maps133/134. Test tools/test-solid-rock-walls.cjs covers162 cave placements and layered corners; all original source data untouched. Reviewed six maps via scenery-audit/crendale-ruin-fixed-0.png. No claim of finished art for every map.
+
+
+## November 13: House of PK wall and floor pass
+Added floor-underlay.js shared renderer helper: keeps existing Ground artwork intact when walls are lifted from upper layers; when Ground itself is lifted, chooses nearby opaque floor within same segment instead of first square-scan result. Browser bundle includes helper. Stacked blocked240-242 masonry gets full-cell closed geometry (manual shape/opening overrides win) to close false strips/corridors seen in House of PK1960/1966/1949. No source map/collision changes. Eight PK map comparison previews scenery-audit/crendale-pk-after-0.png. Tests tools/test-floor-underlay.cjs, test-solid-rock-walls, tile-assemblies, instance reclassification pass. Original transparent floor patterns are deliberately preserved, not replaced with nearby grass. Reopen client/editor.

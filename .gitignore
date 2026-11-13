@@ -7,3 +7,23 @@ logs/
 .map-library-cache/
 .editor-test-profile/
 *.log
+
+# Regenerable test screenshots and inspection sheets (not game artwork)
+/*-preview.png
+/*test-result.txt
+/scenery-audit/*.png
+/distribution-audit/*.png
+/scenery-audit/map-snapshot-fail.txt
+
+# Local identities, saves and running-server state must never be published
+community-world/
+**/accounts.data*
+**/offline-profiles.json*
+**/progress-*.json*
+**/sessions/
+**/positions.json*
+**/.server.lock
+**/runtime-config.json
+**/.env
+**/.env.*
+odyssey-2-server-develop/data/undefined

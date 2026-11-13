@@ -2,14 +2,14 @@
   "mapCount": 1520,
   "tileCount": 1405,
   "counts": {
-    "ground": 504,
-    "object": 589,
+    "ground": 521,
+    "object": 573,
     "plant": 78,
     "building": 101,
     "bridge": 3,
-    "wall": 130
+    "wall": 129
   },
-  "reviewed": 525,
+  "reviewed": 539,
   "fallback": [
     {
       "id": 83,
@@ -21,12 +21,6 @@
       "id": 90,
       "kind": "object",
       "coverage": 0.299,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 105,
-      "kind": "object",
-      "coverage": 0.119,
       "source": "transparent scenery fallback"
     },
     {
@@ -852,12 +846,6 @@
       "source": "transparent scenery fallback"
     },
     {
-      "id": 507,
-      "kind": "object",
-      "coverage": 0.364,
-      "source": "transparent scenery fallback"
-    },
-    {
       "id": 508,
       "kind": "object",
       "coverage": 0.53,
@@ -1332,12 +1320,6 @@
       "source": "transparent scenery fallback"
     },
     {
-      "id": 735,
-      "kind": "object",
-      "coverage": 0.122,
-      "source": "transparent scenery fallback"
-    },
-    {
       "id": 738,
       "kind": "object",
       "coverage": 0.239,
@@ -1359,12 +1341,6 @@
       "id": 750,
       "kind": "object",
       "coverage": 0,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 751,
-      "kind": "object",
-      "coverage": 0.242,
       "source": "transparent scenery fallback"
     },
     {
@@ -1938,12 +1914,6 @@
       "source": "transparent scenery fallback"
     },
     {
-      "id": 965,
-      "kind": "object",
-      "coverage": 0.15,
-      "source": "transparent scenery fallback"
-    },
-    {
       "id": 970,
       "kind": "object",
       "coverage": 0.172,
@@ -2274,18 +2244,6 @@
       "source": "transparent scenery fallback"
     },
     {
-      "id": 1228,
-      "kind": "object",
-      "coverage": 0.094,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 1229,
-      "kind": "object",
-      "coverage": 0.257,
-      "source": "transparent scenery fallback"
-    },
-    {
       "id": 1230,
       "kind": "object",
       "coverage": 0.71,
@@ -2568,24 +2526,6 @@
       "source": "transparent scenery fallback"
     },
     {
-      "id": 1363,
-      "kind": "object",
-      "coverage": 0.854,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 1364,
-      "kind": "object",
-      "coverage": 0.486,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 1365,
-      "kind": "object",
-      "coverage": 0.764,
-      "source": "transparent scenery fallback"
-    },
-    {
       "id": 1366,
       "kind": "ground",
       "coverage": 0.982,
@@ -2610,12 +2550,6 @@
       "source": "transparent scenery fallback"
     },
     {
-      "id": 1372,
-      "kind": "object",
-      "coverage": 0.587,
-      "source": "transparent scenery fallback"
-    },
-    {
       "id": 1373,
       "kind": "object",
       "coverage": 0.729,
@@ -2637,24 +2571,6 @@
       "id": 1376,
       "kind": "object",
       "coverage": 0.645,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 1377,
-      "kind": "object",
-      "coverage": 0.85,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 1378,
-      "kind": "object",
-      "coverage": 0.477,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 1379,
-      "kind": "object",
-      "coverage": 0.8,
       "source": "transparent scenery fallback"
     },
     {

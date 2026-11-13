@@ -3,8 +3,9 @@ const fs=require('fs'),path=require('path');
 const {copy,walk}=require('./build-portable.cjs'),{SEED_FILES}=require('./desktop-runtime.cjs');
 const root=path.resolve(__dirname,'..'),dest=path.join(root,'publish','odyssey-reimagined');
 fs.mkdirSync(dest,{recursive:true});
-for(const name of ['map-format.cjs','visual-format.cjs','THIRD-PARTY-NOTICES.md','DOWNLOAD-AND-HOST.md','community-server.json','EDITOR-RENDERER-OVERHAUL.md'])copy(path.join(root,name),path.join(dest,name));
-copy(path.join(root,'DOWNLOAD-AND-HOST.md'),path.join(dest,'README.md'));
+for(const name of ['map-format.cjs','visual-format.cjs','THIRD-PARTY-NOTICES.md','community-server.json'])copy(path.join(root,name),path.join(dest,name));
+copy(path.join(root,'README.md'),path.join(dest,'README.md'));
+copy(path.join(root,'docs'),path.join(dest,'docs'));
 for(const name of fs.readdirSync(path.join(root,'tools')).filter(n=>/\.(cjs|ps1|cs)$/.test(n)))copy(path.join(root,'tools',name),path.join(dest,'tools',name));
 for(const project of ['odyssey-2-client-develop','odyssey-2-server-develop']){
  for(const name of ['src','lib','bin','definitions','scripts','tests','package.json','package-lock.json','tsconfig.json','LICENSE'])if(fs.existsSync(path.join(root,project,name)))copy(path.join(root,project,name),path.join(dest,project,name));

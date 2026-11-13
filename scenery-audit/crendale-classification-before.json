@@ -1,0 +1,1620 @@
+{
+  "maps": [
+    {
+      "id": 1,
+      "name": "City of Crendale"
+    },
+    {
+      "id": 12,
+      "name": "North of Crendale"
+    },
+    {
+      "id": 2,
+      "name": "City of Crendale"
+    },
+    {
+      "id": 107,
+      "name": "South of Crendale"
+    },
+    {
+      "id": 119,
+      "name": "West of Crendale"
+    },
+    {
+      "id": 13,
+      "name": "Crendale River Valley"
+    },
+    {
+      "id": 11,
+      "name": "North of Crendale"
+    },
+    {
+      "id": 118,
+      "name": "North-West of Crendale"
+    },
+    {
+      "id": 54,
+      "name": "East of Crendale"
+    },
+    {
+      "id": 97,
+      "name": "Vicinity of Crendale Keep"
+    },
+    {
+      "id": 108,
+      "name": "Crystal Lake"
+    },
+    {
+      "id": 120,
+      "name": "South-West of Crendale"
+    },
+    {
+      "id": 94,
+      "name": "Haunted Clearing"
+    },
+    {
+      "id": 5,
+      "name": "Crendale Bank"
+    },
+    {
+      "id": 6,
+      "name": "Crendale Inn"
+    },
+    {
+      "id": 14,
+      "name": "Crendale River Valley"
+    },
+    {
+      "id": 15,
+      "name": "Crendale River Valley"
+    },
+    {
+      "id": 16,
+      "name": "Crendale River Valley"
+    },
+    {
+      "id": 17,
+      "name": "Crendale River Valley"
+    },
+    {
+      "id": 18,
+      "name": "Crendale River Valley"
+    },
+    {
+      "id": 60,
+      "name": "South-East of Crendale"
+    },
+    {
+      "id": 121,
+      "name": "Crendale River Valley"
+    },
+    {
+      "id": 122,
+      "name": "Crendale River Valley"
+    },
+    {
+      "id": 133,
+      "name": "West of Crendale"
+    },
+    {
+      "id": 197,
+      "name": "Entry Hall to Crendale Keep"
+    },
+    {
+      "id": 205,
+      "name": "Below Crendale Keep"
+    },
+    {
+      "id": 207,
+      "name": "Below Crendale Keep"
+    },
+    {
+      "id": 233,
+      "name": "West Crendale Guild Hall <PK>"
+    },
+    {
+      "id": 260,
+      "name": "Below Crendale Keep"
+    },
+    {
+      "id": 334,
+      "name": "Under the Crendale River <PK>"
+    },
+    {
+      "id": 432,
+      "name": "South Crendale Guild Hall <PK>"
+    },
+    {
+      "id": 446,
+      "name": "Crendale Mines"
+    },
+    {
+      "id": 627,
+      "name": "Crendale Housing District"
+    },
+    {
+      "id": 747,
+      "name": "Crendale Housing District"
+    },
+    {
+      "id": 766,
+      "name": "North Crendale Guild Hall <PK>"
+    },
+    {
+      "id": 803,
+      "name": "Crendale Forest"
+    },
+    {
+      "id": 1000,
+      "name": "City of Crendale"
+    },
+    {
+      "id": 1005,
+      "name": "Vicinity of Crendale Keep"
+    },
+    {
+      "id": 1006,
+      "name": "South of Crendale"
+    },
+    {
+      "id": 1010,
+      "name": "Ruins of Crendale"
+    },
+    {
+      "id": 1011,
+      "name": "Ruins of Crendale"
+    },
+    {
+      "id": 1012,
+      "name": "North of Crendale Ruins"
+    },
+    {
+      "id": 1013,
+      "name": "Ruins of Crendale Keep"
+    },
+    {
+      "id": 1306,
+      "name": "City of Crendale"
+    },
+    {
+      "id": 1630,
+      "name": "Vicinity of Crendale Keep"
+    },
+    {
+      "id": 1999,
+      "name": "City of Crendale"
+    },
+    {
+      "id": 3,
+      "name": "Lord Bob's House"
+    },
+    {
+      "id": 320,
+      "name": "The Armoury"
+    },
+    {
+      "id": 951,
+      "name": "Down The Well"
+    },
+    {
+      "id": 7,
+      "name": "Potion Shop"
+    },
+    {
+      "id": 10,
+      "name": "Daventry's Tavern"
+    },
+    {
+      "id": 4,
+      "name": "Garad's Fine Arms"
+    },
+    {
+      "id": 9,
+      "name": "Erlington's Boats"
+    },
+    {
+      "id": 935,
+      "name": "Under the Forest"
+    },
+    {
+      "id": 331,
+      "name": "Crystal Lake Guild Hall <PK>"
+    },
+    {
+      "id": 400,
+      "name": "Haunted House"
+    },
+    {
+      "id": 1470,
+      "name": "Haunted Hall <PK>"
+    },
+    {
+      "id": 765,
+      "name": "River Valley Guild Hall <PK>"
+    },
+    {
+      "id": 1093,
+      "name": "ToS Run"
+    },
+    {
+      "id": 302,
+      "name": "The Dragon's Mouth Caves"
+    },
+    {
+      "id": 600,
+      "name": "Lower cellar"
+    },
+    {
+      "id": 1004,
+      "name": "???"
+    },
+    {
+      "id": 626,
+      "name": "GOONS HOUSE"
+    },
+    {
+      "id": 683,
+      "name": "Trevor's Map"
+    },
+    {
+      "id": 1262,
+      "name": "Denlor's Trading Post"
+    },
+    {
+      "id": 992,
+      "name": "Strontium's Trading Post"
+    },
+    {
+      "id": 1171,
+      "name": "Colt45 and 2 ZigZags"
+    },
+    {
+      "id": 804,
+      "name": "Underground"
+    },
+    {
+      "id": 636,
+      "name": "Maverik's Crib"
+    }
+  ],
+  "candidates": {
+    "49": {
+      "tile": 49,
+      "kind": "plant",
+      "family": "small-ground-plants",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        683
+      ]
+    },
+    "86": {
+      "tile": 86,
+      "kind": "building",
+      "family": "stone-gatehouse",
+      "uses": 1,
+      "layers": {
+        "0": 1
+      },
+      "maps": [
+        1013
+      ]
+    },
+    "89": {
+      "tile": 89,
+      "kind": "building",
+      "family": "stone-gatehouse",
+      "uses": 1,
+      "layers": {
+        "0": 1
+      },
+      "maps": [
+        1013
+      ]
+    },
+    "93": {
+      "tile": 93,
+      "kind": "building",
+      "family": "stone-gatehouse",
+      "uses": 1,
+      "layers": {
+        "0": 1
+      },
+      "maps": [
+        1013
+      ]
+    },
+    "94": {
+      "tile": 94,
+      "kind": "building",
+      "family": "stone-gatehouse",
+      "uses": 1,
+      "layers": {
+        "0": 1
+      },
+      "maps": [
+        1013
+      ]
+    },
+    "96": {
+      "tile": 96,
+      "kind": "building",
+      "family": "stone-gatehouse",
+      "uses": 1,
+      "layers": {
+        "0": 1
+      },
+      "maps": [
+        1013
+      ]
+    },
+    "100": {
+      "tile": 100,
+      "kind": "building",
+      "family": "stone-gatehouse",
+      "uses": 1,
+      "layers": {
+        "0": 1
+      },
+      "maps": [
+        97
+      ]
+    },
+    "101": {
+      "tile": 101,
+      "kind": "building",
+      "family": "stone-gatehouse",
+      "uses": 1,
+      "layers": {
+        "0": 1
+      },
+      "maps": [
+        1013
+      ]
+    },
+    "102": {
+      "tile": 102,
+      "kind": "building",
+      "family": "stone-gatehouse",
+      "uses": 1,
+      "layers": {
+        "0": 1
+      },
+      "maps": [
+        1013
+      ]
+    },
+    "149": {
+      "tile": 149,
+      "kind": "object",
+      "family": "tables-and-beds",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        636
+      ]
+    },
+    "150": {
+      "tile": 150,
+      "kind": "object",
+      "family": "tables-and-beds",
+      "uses": 2,
+      "layers": {
+        "1": 2
+      },
+      "maps": [
+        636
+      ]
+    },
+    "151": {
+      "tile": 151,
+      "kind": "object",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        636
+      ]
+    },
+    "240": {
+      "tile": 240,
+      "kind": "wall",
+      "uses": 167,
+      "layers": {
+        "0": 103,
+        "2": 1,
+        "4": 63
+      },
+      "maps": [
+        6,
+        133,
+        205,
+        207,
+        260,
+        432,
+        951,
+        400,
+        765,
+        600
+      ]
+    },
+    "241": {
+      "tile": 241,
+      "kind": "wall",
+      "uses": 14,
+      "layers": {
+        "0": 7,
+        "4": 7
+      },
+      "maps": [
+        133,
+        197,
+        205,
+        207,
+        432,
+        765,
+        600
+      ]
+    },
+    "242": {
+      "tile": 242,
+      "kind": "wall",
+      "uses": 19,
+      "layers": {
+        "0": 10,
+        "4": 9
+      },
+      "maps": [
+        133,
+        197,
+        205,
+        260,
+        432,
+        951,
+        765,
+        600
+      ]
+    },
+    "243": {
+      "tile": 243,
+      "kind": "wall",
+      "uses": 36,
+      "layers": {
+        "2": 7,
+        "4": 29
+      },
+      "maps": [
+        5,
+        6,
+        432,
+        7,
+        400,
+        765,
+        600
+      ]
+    },
+    "244": {
+      "tile": 244,
+      "kind": "wall",
+      "uses": 44,
+      "layers": {
+        "2": 19,
+        "4": 25
+      },
+      "maps": [
+        5,
+        6,
+        207,
+        260,
+        432,
+        7,
+        765,
+        600
+      ]
+    },
+    "245": {
+      "tile": 245,
+      "kind": "wall",
+      "family": "intentional-wall-openings",
+      "uses": 15,
+      "layers": {
+        "4": 15
+      },
+      "maps": [
+        6,
+        432,
+        400,
+        765
+      ]
+    },
+    "246": {
+      "tile": 246,
+      "kind": "wall",
+      "uses": 41,
+      "layers": {
+        "0": 17,
+        "1": 8,
+        "2": 8,
+        "4": 8
+      },
+      "maps": [
+        60,
+        803,
+        10,
+        4,
+        1470
+      ]
+    },
+    "247": {
+      "tile": 247,
+      "kind": "wall",
+      "uses": 6,
+      "layers": {
+        "0": 5,
+        "1": 1
+      },
+      "maps": [
+        60,
+        122,
+        4,
+        1470
+      ]
+    },
+    "249": {
+      "tile": 249,
+      "kind": "wall",
+      "uses": 13,
+      "layers": {
+        "1": 5,
+        "2": 7,
+        "4": 1
+      },
+      "maps": [
+        3,
+        10,
+        4,
+        1470
+      ]
+    },
+    "253": {
+      "tile": 253,
+      "kind": "object",
+      "uses": 2,
+      "layers": {
+        "1": 2
+      },
+      "maps": [
+        1470
+      ]
+    },
+    "266": {
+      "tile": 266,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 89,
+      "layers": {
+        "0": 49,
+        "2": 6,
+        "4": 34
+      },
+      "maps": [
+        766,
+        4,
+        9,
+        331,
+        804
+      ]
+    },
+    "267": {
+      "tile": 267,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 10,
+      "layers": {
+        "0": 9,
+        "4": 1
+      },
+      "maps": [
+        766,
+        331
+      ]
+    },
+    "268": {
+      "tile": 268,
+      "kind": "object",
+      "family": "portal-openings",
+      "uses": 15,
+      "layers": {
+        "0": 15
+      },
+      "maps": [
+        766,
+        4,
+        331,
+        804
+      ]
+    },
+    "269": {
+      "tile": 269,
+      "kind": "wall",
+      "family": "intentional-wall-openings",
+      "uses": 19,
+      "layers": {
+        "0": 1,
+        "2": 2,
+        "4": 16
+      },
+      "maps": [
+        766,
+        4,
+        331,
+        804
+      ]
+    },
+    "270": {
+      "tile": 270,
+      "kind": "wall",
+      "family": "intentional-wall-openings",
+      "uses": 28,
+      "layers": {
+        "0": 1,
+        "2": 1,
+        "4": 26
+      },
+      "maps": [
+        766,
+        331,
+        804
+      ]
+    },
+    "307": {
+      "tile": 307,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 49,
+      "layers": {
+        "0": 24,
+        "4": 25
+      },
+      "maps": [
+        320,
+        4,
+        1171
+      ]
+    },
+    "308": {
+      "tile": 308,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 16,
+      "layers": {
+        "2": 4,
+        "4": 12
+      },
+      "maps": [
+        320,
+        1171
+      ]
+    },
+    "309": {
+      "tile": 309,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 17,
+      "layers": {
+        "4": 17
+      },
+      "maps": [
+        320,
+        4,
+        1171
+      ]
+    },
+    "310": {
+      "tile": 310,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 4,
+      "layers": {
+        "0": 3,
+        "4": 1
+      },
+      "maps": [
+        1171
+      ]
+    },
+    "311": {
+      "tile": 311,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 4,
+      "layers": {
+        "0": 3,
+        "4": 1
+      },
+      "maps": [
+        1171
+      ]
+    },
+    "358": {
+      "tile": 358,
+      "kind": "object",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        54
+      ]
+    },
+    "495": {
+      "tile": 495,
+      "kind": "wall",
+      "uses": 19,
+      "layers": {
+        "2": 8,
+        "4": 11
+      },
+      "maps": [
+        1,
+        12,
+        120,
+        14,
+        197,
+        1000,
+        1010,
+        1306
+      ]
+    },
+    "502": {
+      "tile": 502,
+      "kind": "object",
+      "uses": 2,
+      "layers": {
+        "1": 2
+      },
+      "maps": [
+        120
+      ]
+    },
+    "503": {
+      "tile": 503,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 16,
+      "layers": {
+        "2": 13,
+        "4": 3
+      },
+      "maps": [
+        1,
+        12,
+        14,
+        197,
+        1000,
+        1010,
+        1306
+      ]
+    },
+    "509": {
+      "tile": 509,
+      "kind": "object",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        636
+      ]
+    },
+    "510": {
+      "tile": 510,
+      "kind": "object",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        636
+      ]
+    },
+    "522": {
+      "tile": 522,
+      "kind": "object",
+      "uses": 2,
+      "layers": {
+        "0": 2
+      },
+      "maps": [
+        765
+      ]
+    },
+    "540": {
+      "tile": 540,
+      "kind": "wall",
+      "family": "tavern-timber-walls",
+      "uses": 35,
+      "layers": {
+        "0": 25,
+        "4": 10
+      },
+      "maps": [
+        3,
+        10,
+        1171
+      ]
+    },
+    "541": {
+      "tile": 541,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 2,
+      "layers": {
+        "0": 1,
+        "4": 1
+      },
+      "maps": [
+        3
+      ]
+    },
+    "542": {
+      "tile": 542,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 2,
+      "layers": {
+        "0": 1,
+        "4": 1
+      },
+      "maps": [
+        3
+      ]
+    },
+    "543": {
+      "tile": 543,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 28,
+      "layers": {
+        "2": 11,
+        "4": 17
+      },
+      "maps": [
+        3,
+        10,
+        1171
+      ]
+    },
+    "544": {
+      "tile": 544,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 26,
+      "layers": {
+        "2": 11,
+        "4": 15
+      },
+      "maps": [
+        3,
+        10,
+        1171
+      ]
+    },
+    "547": {
+      "tile": 547,
+      "kind": "wall",
+      "family": "intentional-wall-openings",
+      "uses": 4,
+      "layers": {
+        "4": 4
+      },
+      "maps": [
+        3,
+        10
+      ]
+    },
+    "550": {
+      "tile": 550,
+      "kind": "object",
+      "uses": 2,
+      "layers": {
+        "0": 2
+      },
+      "maps": [
+        765
+      ]
+    },
+    "710": {
+      "tile": 710,
+      "kind": "wall",
+      "family": "structural-cave-rock",
+      "uses": 4,
+      "layers": {
+        "2": 1,
+        "4": 3
+      },
+      "maps": [
+        446,
+        951,
+        302
+      ]
+    },
+    "717": {
+      "tile": 717,
+      "kind": "wall",
+      "family": "structural-cave-rock",
+      "uses": 23,
+      "layers": {
+        "0": 23
+      },
+      "maps": [
+        60,
+        446,
+        1010,
+        951,
+        302
+      ]
+    },
+    "718": {
+      "tile": 718,
+      "kind": "wall",
+      "family": "structural-cave-rock",
+      "uses": 326,
+      "layers": {
+        "0": 326
+      },
+      "maps": [
+        60,
+        121,
+        122,
+        334,
+        446,
+        803,
+        1010,
+        951,
+        302
+      ]
+    },
+    "719": {
+      "tile": 719,
+      "kind": "wall",
+      "family": "structural-cave-rock",
+      "uses": 16,
+      "layers": {
+        "0": 16
+      },
+      "maps": [
+        121,
+        122,
+        446,
+        1010,
+        951,
+        302
+      ]
+    },
+    "723": {
+      "tile": 723,
+      "kind": "wall",
+      "family": "structural-cave-rock",
+      "uses": 43,
+      "layers": {
+        "0": 43
+      },
+      "maps": [
+        60,
+        121,
+        122
+      ]
+    },
+    "724": {
+      "tile": 724,
+      "kind": "wall",
+      "family": "structural-cave-rock",
+      "uses": 3,
+      "layers": {
+        "0": 3
+      },
+      "maps": [
+        446,
+        1010,
+        951
+      ]
+    },
+    "725": {
+      "tile": 725,
+      "kind": "wall",
+      "family": "structural-cave-rock",
+      "uses": 39,
+      "layers": {
+        "0": 39
+      },
+      "maps": [
+        446,
+        1010,
+        951,
+        302
+      ]
+    },
+    "726": {
+      "tile": 726,
+      "kind": "wall",
+      "family": "structural-cave-rock",
+      "uses": 9,
+      "layers": {
+        "0": 9
+      },
+      "maps": [
+        446,
+        1010,
+        951,
+        302
+      ]
+    },
+    "733": {
+      "tile": 733,
+      "kind": "wall",
+      "family": "structural-cave-rock",
+      "uses": 16,
+      "layers": {
+        "0": 16
+      },
+      "maps": [
+        334,
+        951
+      ]
+    },
+    "736": {
+      "tile": 736,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 3,
+      "layers": {
+        "2": 1,
+        "4": 2
+      },
+      "maps": [
+        334,
+        446,
+        1010
+      ]
+    },
+    "740": {
+      "tile": 740,
+      "kind": "wall",
+      "family": "intentional-wall-openings",
+      "uses": 14,
+      "layers": {
+        "4": 14
+      },
+      "maps": [
+        60,
+        334,
+        446,
+        302
+      ]
+    },
+    "741": {
+      "tile": 741,
+      "kind": "wall",
+      "family": "intentional-wall-openings",
+      "uses": 30,
+      "layers": {
+        "2": 7,
+        "4": 23
+      },
+      "maps": [
+        121,
+        122,
+        334,
+        446,
+        302
+      ]
+    },
+    "744": {
+      "tile": 744,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 6,
+      "layers": {
+        "2": 2,
+        "4": 4
+      },
+      "maps": [
+        446,
+        1010,
+        302
+      ]
+    },
+    "752": {
+      "tile": 752,
+      "kind": "object",
+      "uses": 1,
+      "layers": {
+        "0": 1
+      },
+      "maps": [
+        122
+      ]
+    },
+    "803": {
+      "tile": 803,
+      "kind": "object",
+      "uses": 2,
+      "layers": {
+        "1": 2
+      },
+      "maps": [
+        1470
+      ]
+    },
+    "804": {
+      "tile": 804,
+      "kind": "object",
+      "uses": 2,
+      "layers": {
+        "1": 2
+      },
+      "maps": [
+        1470
+      ]
+    },
+    "808": {
+      "tile": 808,
+      "kind": "object",
+      "uses": 3,
+      "layers": {
+        "1": 3
+      },
+      "maps": [
+        1470
+      ]
+    },
+    "809": {
+      "tile": 809,
+      "kind": "object",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        1470
+      ]
+    },
+    "812": {
+      "tile": 812,
+      "kind": "object",
+      "uses": 4,
+      "layers": {
+        "1": 4
+      },
+      "maps": [
+        1470
+      ]
+    },
+    "818": {
+      "tile": 818,
+      "kind": "object",
+      "uses": 2,
+      "layers": {
+        "1": 2
+      },
+      "maps": [
+        1470
+      ]
+    },
+    "891": {
+      "tile": 891,
+      "kind": "object",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        636
+      ]
+    },
+    "902": {
+      "tile": 902,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 8,
+      "layers": {
+        "2": 1,
+        "4": 7
+      },
+      "maps": [
+        1004
+      ]
+    },
+    "1176": {
+      "tile": 1176,
+      "kind": "object",
+      "uses": 2,
+      "layers": {
+        "1": 2
+      },
+      "maps": [
+        626
+      ]
+    },
+    "1226": {
+      "tile": 1226,
+      "kind": "object",
+      "uses": 4,
+      "layers": {
+        "1": 4
+      },
+      "maps": [
+        626
+      ]
+    },
+    "1228": {
+      "tile": 1228,
+      "kind": "object",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        683
+      ]
+    },
+    "1246": {
+      "tile": 1246,
+      "kind": "wall",
+      "uses": 3,
+      "layers": {
+        "4": 3
+      },
+      "maps": [
+        5
+      ]
+    },
+    "1247": {
+      "tile": 1247,
+      "kind": "wall",
+      "uses": 9,
+      "layers": {
+        "4": 9
+      },
+      "maps": [
+        5
+      ]
+    },
+    "1254": {
+      "tile": 1254,
+      "kind": "wall",
+      "uses": 20,
+      "layers": {
+        "0": 13,
+        "4": 7
+      },
+      "maps": [
+        5
+      ]
+    },
+    "1255": {
+      "tile": 1255,
+      "kind": "wall",
+      "uses": 6,
+      "layers": {
+        "4": 6
+      },
+      "maps": [
+        5
+      ]
+    },
+    "1279": {
+      "tile": 1279,
+      "kind": "object",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        54
+      ]
+    },
+    "1290": {
+      "tile": 1290,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 3,
+      "layers": {
+        "4": 3
+      },
+      "maps": [
+        7
+      ]
+    },
+    "1291": {
+      "tile": 1291,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 6,
+      "layers": {
+        "0": 4,
+        "4": 2
+      },
+      "maps": [
+        7
+      ]
+    },
+    "1298": {
+      "tile": 1298,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 1,
+      "layers": {
+        "4": 1
+      },
+      "maps": [
+        951
+      ]
+    },
+    "1408": {
+      "tile": 1408,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 33,
+      "layers": {
+        "0": 13,
+        "1": 20
+      },
+      "maps": [
+        683,
+        636
+      ]
+    },
+    "1409": {
+      "tile": 1409,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        636
+      ]
+    },
+    "1410": {
+      "tile": 1410,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 4,
+      "layers": {
+        "1": 4
+      },
+      "maps": [
+        636
+      ]
+    },
+    "1411": {
+      "tile": 1411,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 11,
+      "layers": {
+        "1": 2,
+        "2": 1,
+        "4": 8
+      },
+      "maps": [
+        683,
+        636
+      ]
+    },
+    "1412": {
+      "tile": 1412,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 27,
+      "layers": {
+        "1": 4,
+        "2": 6,
+        "4": 17
+      },
+      "maps": [
+        683,
+        636
+      ]
+    },
+    "1416": {
+      "tile": 1416,
+      "kind": "object",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        683
+      ]
+    },
+    "1419": {
+      "tile": 1419,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 4,
+      "layers": {
+        "1": 4
+      },
+      "maps": [
+        636
+      ]
+    },
+    "1422": {
+      "tile": 1422,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 10,
+      "layers": {
+        "0": 6,
+        "4": 4
+      },
+      "maps": [
+        9
+      ]
+    },
+    "1425": {
+      "tile": 1425,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 5,
+      "layers": {
+        "4": 5
+      },
+      "maps": [
+        9
+      ]
+    },
+    "1426": {
+      "tile": 1426,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 4,
+      "layers": {
+        "4": 4
+      },
+      "maps": [
+        9
+      ]
+    },
+    "1436": {
+      "tile": 1436,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 27,
+      "layers": {
+        "0": 20,
+        "4": 7
+      },
+      "maps": [
+        626,
+        992
+      ]
+    },
+    "1439": {
+      "tile": 1439,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 15,
+      "layers": {
+        "2": 1,
+        "3": 2,
+        "4": 12
+      },
+      "maps": [
+        626,
+        992
+      ]
+    },
+    "1440": {
+      "tile": 1440,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 16,
+      "layers": {
+        "2": 2,
+        "4": 14
+      },
+      "maps": [
+        626,
+        992
+      ]
+    },
+    "1441": {
+      "tile": 1441,
+      "kind": "object",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        626
+      ]
+    },
+    "1442": {
+      "tile": 1442,
+      "kind": "object",
+      "uses": 1,
+      "layers": {
+        "1": 1
+      },
+      "maps": [
+        626
+      ]
+    },
+    "1444": {
+      "tile": 1444,
+      "kind": "object",
+      "uses": 2,
+      "layers": {
+        "0": 2
+      },
+      "maps": [
+        626
+      ]
+    },
+    "1450": {
+      "tile": 1450,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 2,
+      "layers": {
+        "0": 2
+      },
+      "maps": [
+        9
+      ]
+    },
+    "1464": {
+      "tile": 1464,
+      "kind": "wall",
+      "family": "structural-masonry-surfaces",
+      "uses": 45,
+      "layers": {
+        "0": 41,
+        "4": 4
+      },
+      "maps": [
+        233,
+        766,
+        4,
+        1262,
+        992
+      ]
+    },
+    "1467": {
+      "tile": 1467,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 20,
+      "layers": {
+        "4": 20
+      },
+      "maps": [
+        233,
+        1262
+      ]
+    },
+    "1468": {
+      "tile": 1468,
+      "kind": "wall",
+      "family": "reviewed-side-walls",
+      "uses": 20,
+      "layers": {
+        "4": 20
+      },
+      "maps": [
+        233,
+        1262
+      ]
+    }
+  }
+}

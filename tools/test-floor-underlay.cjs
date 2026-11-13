@@ -1,0 +1,17 @@
+'use strict';
+const assert=require('assert/strict');
+const {floorUnderlay}=require('../odyssey-2-client-develop/src/views/game/floor-underlay');
+const {structuralFootprint}=require('../odyssey-2-client-develop/src/views/game/scenery-models');
+const w={width:3,height:3,layers:Array.from({length:6},()=>Array(9).fill(0)),blocked:Array(9).fill(0)};
+w.layers[0].fill(144);w.layers[2][7]=240;
+const art=()=>({coverage:1});
+assert.equal(floorUnderlay(w,1,2,new Set(['2:7']),art),0,'wall on upper layer does not replace existing floor');
+w.layers[0][7]=240;
+assert.equal(floorUnderlay(w,1,2,new Set(['0:7','2:7']),art),144,'south boundary gets complete nearby floor beneath raised ground wall');
+w.layers[0][7]=466;
+assert.equal(floorUnderlay(w,1,2,new Set(['2:7']),()=>({coverage:.8})),0,'preserve intentional floor artwork without inserting grass');
+w.layers[0][4]=240;w.layers[0][7]=240;w.blocked[7]=1;
+const c={x:1,y:2,parts:[{id:240}],profile:{kind:'wall'}};
+assert.equal(structuralFootprint(w,c,c.profile).d,1,'stacked blocked masonry has full depth, not separated strips');
+w.blocked[7]=0;assert.equal(structuralFootprint(w,c,c.profile),null,'walkable opening is not filled');
+console.log('PASS: southern floor underlay, upper-layer wall separation, original floor art, solid masonry and walkable openings.');

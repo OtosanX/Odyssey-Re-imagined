@@ -126,6 +126,6 @@
  new ResizeObserver(()=>{drawResults();renderWorld();}).observe(workspace);
  art.addEventListener('load',renderWorld);$('layer').addEventListener('change',renderWorld);$('mapGrid').addEventListener('change',renderWorld);
  window.studioBuilder={get selection(){return selection;},async input(type,p,e){const event={worldTile:p,virtual:true,button:e.button,buttons:e.buttons,clientX:e.clientX,clientY:e.clientY,pointerId:e.pointerId};wc['on'+type]?.(event);await paintQueue;},get model(){return builder;},get dirty(){return builder.unsaved;},render:renderWorld};
- window.studioLibrary={library,select,openMap,refresh,thumbnail,insert,dialog,get ready(){return ready;}};
+ window.studioLibrary={library,select,authorize,openMap,refresh,thumbnail,insert,dialog,get ready(){return ready;}};
  safe(async()=>{await library.init((n,message)=>{count.textContent=n?`Indexing ${n.toLocaleString()} maps…`:message;});ready=true;folders();worldChoices();refresh();status(`Map Library ready: ${library.entries.size.toLocaleString()} maps. Classic maps open read-only; drafts and folders do not change server data.`);});
 })();

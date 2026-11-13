@@ -1,0 +1,13 @@
+'use strict';
+const assert=require('assert/strict'),{repairSurface}=require('./surface-repair.cjs'),{sceneryLayout}=require('../odyssey-2-client-develop/src/views/game/scenery-layout'),{profileAt}=require('../odyssey-2-client-develop/src/views/game/scenery-profiles');
+const source=require('../odyssey-2-server-develop/data/classic-world.json').maps[666],before=JSON.stringify(source);
+const art=()=>({coverage:1,alpha:new Uint8Array(1024).fill(1)});
+const result=repairSurface(source,{kind:'ground',layer:0,tile:147});
+assert(result.changed>0);assert.deepEqual(result.map.layers,source.layers);assert.deepEqual(result.map.blocked,source.blocked);assert.deepEqual(result.map.attrs,source.attrs);assert.equal(JSON.stringify(source),before);
+for(const g of sceneryLayout(result.map,art).groups)for(const cell of g.cells)assert(!cell.parts.some(p=>p.layer===0&&p.id===147),'floor must not become a standing wall');
+const fire=repairSurface(result.map,{kind:'object',layer:2,tile:333}).map;
+for(const i of fire.visual3d.instances.filter(i=>i.tile===333))assert.equal(profileAt(fire,i.x,i.y,334).kind,'object','animated partner follows repair');
+const ceiling=repairSurface(fire,{kind:'ceiling',layer:0,region:{x:3,y:3,w:2,h:2},height:3}).map;
+assert.equal(profileAt(ceiling,3,3,ceiling.layers[0][39]).offsetY,3);assert.equal(profileAt(ceiling,3,3,ceiling.layers[0][39]).kind,'ceiling');
+assert.throws(()=>repairSurface(source,{kind:'ceiling',layer:0,tile:147,height:7}));
+console.log('PASS: real Hell floor correction, animated fire, selected ceiling height, source/collision unchanged, validation.');

@@ -109,6 +109,28 @@ function tree(scene,geometry,g,phase=0){
  if(cache){const model={quads:recorded,bytes:recorded.length*192};cache.set(key,model);scene.templateBytes.value+=model.bytes;scene.diagnostics.templateBuilds++;while(cache.size>256||scene.templateBytes.value>16*1024*1024){const oldest=cache.keys().next().value;scene.templateBytes.value-=cache.get(oldest).bytes;cache.delete(oldest);}}
  return true;
 }
+// Dense rock/masonry areas are volumes on the blocked footprint, not one
+// upright sprite sheet per map row. Never infer their footprint from alpha.
+function structuralFootprint(world,c,profile){
+ if(profile.wallShape&&profile.wallShape!=='auto'||profile.opening)return null;
+ const rock=profile.family==='structural-cave-rock';
+ const stoneAt=(x,y)=>x>=0&&y>=0&&x<world.width&&y<world.height&&world.layers?.some(l=>[240,241,242].includes(l[y*world.width+x]));
+ const masonry=c.profile?.family==='masonry-infill'||c.parts.some(p=>[240,241,242].includes(p.id))&&(stoneAt(c.x,c.y-1)||stoneAt(c.x,c.y+1));
+ if(!rock&&!masonry)return null;
+ const blocked=world.blocked?world.blocked[c.y*world.width+c.x]:world.tiles?.[c.y*world.width+c.x]===2;
+ if(!blocked)return null;
+ return {x:0,z:0,w:1,d:1,h:rock?1.5:1,source:'solid blocked structural footprint'};
+}
+function shapedWalls(scene,geometry,g,phase=0){
+ const handled=new Set();if(g.kind!=='wall')return handled;const {wallFootprints}=require('./wall-shapes'),{profileAt}=require('./scenery-profiles'),{quad}=scene.geometry;
+ for(const c of g.cells){const id=c.parts.map(p=>phase?p.alternate:p.id).find(Boolean);if(!id)continue;const profile=profileAt(scene.world,c.x,c.y,id),shapes=structuralFootprint(scene.world,c,profile)?[structuralFootprint(scene.world,c,profile)]:wallFootprints(c,profile),base=scene.terrain.at(c.x+.5,c.y+.5),tile=c.profile?.family==='masonry-infill'?scene.tileAtlas.tile(122):profile.family==='structural-cave-rock'?scene.tileAtlas.tile(717):patch(scene,id);for(const s of shapes){const x=c.x+s.x,z=c.y+s.z,w=s.w,d=s.d,h=base+(s.h||1);
+ quad(geometry,tile,[[x,base,z+d],[x+w,base,z+d],[x+w,h,z+d],[x,h,z+d]]);
+ quad(geometry,tile,[[x+w,base,z],[x,base,z],[x,h,z],[x+w,h,z]],[.7,.7,.7,1]);
+ quad(geometry,tile,[[x,base,z],[x,base,z+d],[x,h,z+d],[x,h,z]],[.75,.75,.75,1]);
+ quad(geometry,tile,[[x+w,base,z+d],[x+w,base,z],[x+w,h,z],[x+w,h,z+d]],[.9,.9,.9,1]);
+ quad(geometry,tile,[[x,h,z+d],[x+w,h,z+d],[x+w,h,z],[x,h,z]],[.95,.95,.95,1]);
+ }if(shapes.length)handled.add(c);}return handled;
+}
 function solidWalls(scene,geometry,g,phase=0){
  const handled=new Set();if(g.kind!=='wall')return handled;const catalog=require('./scenery-catalog'),{quad}=scene.geometry;
  for(const c of g.cells){const ids=c.parts.map(p=>phase?p.alternate:p.id).filter(Boolean);if(!ids.length||ids.some(id=>require('./scenery-profiles').profileAt(scene.world,c.x,c.y,id)?.opening))continue;let filled=0;for(const v of c.pixels)filled+=!!v;if(filled<940&&!ids.some(id=>require('./scenery-profiles').profileAt(scene.world,c.x,c.y,id)?.closed))continue;
@@ -124,4 +146,4 @@ function solidWalls(scene,geometry,g,phase=0){
   ids.forEach((id,n)=>quad(geometry,scene.tileAtlas.tile(id),[[x,base,front+.001+n*.001],[x+1,base,front+.001+n*.001],[x+1,base+1,front+.001+n*.001],[x,base+1,front+.001+n*.001]]));handled.add(c);
  }return handled;
 }
-module.exports={gatehouse,house,wallStrips,solidWalls,furniture,tree,rearMaterial:patch};
+module.exports={structuralFootprint,shapedWalls,gatehouse,house,wallStrips,solidWalls,furniture,tree,rearMaterial:patch};

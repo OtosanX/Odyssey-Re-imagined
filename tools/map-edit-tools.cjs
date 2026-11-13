@@ -8,11 +8,14 @@ function write(map,p,layer,value){if(p.x<0||p.y<0||p.x>=map.width||p.y>=map.heig
  if(layer==='collision'){if(value&&map.anchors.some(a=>a.x===p.x&&a.y===p.y))throw Error('Move the anchor before blocking its tile.');map.blocked[i]=value?1:0;}
  else {if(!/^[0-5]$/.test(String(layer)))throw Error('This tool requires a graphical or collision layer.');if(!Number.isInteger(value)||value<0||value>6979)throw Error('Invalid tile ID.');map.layers[+layer][i]=value;}
 }
-function apply(source,tool,a,b,layer,value){const map=clone(source);let points;
+function apply(source,tool,a,b,layer,value,{surface,wallProfile}={}){const map=clone(source);let points;
  if(tool==='fill'){const data=layer==='collision'?map.blocked:map.layers[+layer];if(!data)throw Error('Fill requires a graphical or collision layer.');const old=data[a.y*map.width+a.x],seen=new Set(),queue=[a];points=[];for(let n=0;n<queue.length;n++){const p=queue[n],i=p.y*map.width+p.x;if(p.x<0||p.y<0||p.x>=map.width||p.y>=map.height||seen.has(i)||data[i]!==old)continue;seen.add(i);points.push(p);for(const [dx,dy]of [[0,1],[0,-1],[1,0],[-1,0]])queue.push({x:p.x+dx,y:p.y+dy});}}
  else if(tool==='rectangle'){const r=rect(a,b);points=[];for(let y=r.y;y<r.y+r.h;y++)for(let x=r.x;x<r.x+r.w;x++)points.push({x,y});}
  else points=line(a,b);
- for(const p of points)write(map,p,layer,tool==='erase'?0:value);return validateMap(map);
+ for(const p of points){const i=p.y*map.width+p.x,old=map.layers[+layer]?.[i],id=tool==='erase'?0:value;write(map,p,layer,id);
+ if(/^[0-5]$/.test(String(layer))){if(map.visual3d?.instances&&old!==id&&!map.layers.some(l=>l[i]===old))map.visual3d.instances=map.visual3d.instances.filter(v=>v.x!==p.x||v.y!==p.y||v.tile!==old);
+ if(id&&surface&&surface!=='unchanged'){map.visual3d||={version:1};map.visual3d.instances||=[];let instance=map.visual3d.instances.find(v=>v.x===p.x&&v.y===p.y&&v.tile===id);if(!instance){instance={x:p.x,y:p.y,tile:id,profile:{}};map.visual3d.instances.push(instance);}instance.profile={...instance.profile,kind:surface};if(surface==='wall'&&wallProfile)Object.assign(instance.profile,wallProfile);if(surface==='ceiling')instance.profile.offsetY=2.5;else instance.profile.offsetY=0;}}
+ }return validateMap(map);
 }
 function copy(map,region,{visual=true}={}){
  const cells=[];

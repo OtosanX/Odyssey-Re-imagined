@@ -20,18 +20,13 @@
       "scenery": 142
     },
     {
-      "map": 409,
-      "triangles": 23912,
-      "scenery": 171
-    },
-    {
       "map": 49,
       "triangles": 23866,
       "scenery": 132
     },
     {
       "map": 813,
-      "triangles": 23834,
+      "triangles": 23798,
       "scenery": 138
     },
     {
@@ -50,11 +45,6 @@
       "scenery": 126
     },
     {
-      "map": 576,
-      "triangles": 22496,
-      "scenery": 147
-    },
-    {
       "map": 42,
       "triangles": 22146,
       "scenery": 124
@@ -63,6 +53,16 @@
       "map": 1223,
       "triangles": 21712,
       "scenery": 121
+    },
+    {
+      "map": 1225,
+      "triangles": 21712,
+      "scenery": 121
+    },
+    {
+      "map": 40,
+      "triangles": 21676,
+      "scenery": 120
     }
   ],
   "errors": []
