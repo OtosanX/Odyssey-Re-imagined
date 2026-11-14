@@ -2,6 +2,7 @@
 node_modules/
 dist/
 artifacts/publish/
+/artifacts/history-cleanup*/
 logs/
 .map-library/
 .map-library-cache/
