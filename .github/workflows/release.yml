@@ -13,10 +13,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm ci --prefix odyssey-2-server-develop
-      - run: npm ci --prefix odyssey-2-client-develop
-      - run: npm run build --prefix odyssey-2-server-develop
-      - run: npm run build --prefix odyssey-2-client-develop
+      - run: npm ci --prefix server
+      - run: npm ci --prefix client
+      - run: npm run build --prefix server
+      - run: npm run build --prefix client
       - run: node tools/test-desktop-runtime.cjs
       - run: node tools/build-portable.cjs
       - uses: actions/upload-artifact@v4

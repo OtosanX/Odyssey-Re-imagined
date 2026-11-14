@@ -16,4 +16,4 @@ Validation:
 - Wall shapes, tile assemblies, instance overrides, undo/redo, saved repair reopening and ceiling geometry checks pass.
 - Original world SHA-256 remains `58e2a4abebf84c6d748f2aa5a8b8d48fd97a84417145013a9f9e7b80c9924a70`.
 
-Before/after contact sheets: `scenery-audit/crendale-before-{0,1,2}.png` and `scenery-audit/crendale-after-{0,1,2}.png`.
+Before/after contact sheets: `artifacts/scenery/crendale-before-{0,1,2}.png` and `artifacts/scenery/crendale-after-{0,1,2}.png`.

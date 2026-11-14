@@ -12,7 +12,7 @@ async function build(){
  for(const name of ['map-format.cjs','visual-format.cjs','THIRD-PARTY-NOTICES.md','community-server.json'])copy(path.join(root,name),path.join(output,name));
  copy(path.join(root,'docs','DOWNLOAD-AND-HOST.md'),path.join(output,'README.md'));
  for(const name of fs.readdirSync(path.join(root,'tools')).filter(n=>n.endsWith('.cjs')&&!n.startsWith('test-')))copy(path.join(root,'tools',name),path.join(output,'tools',name));
- const client='odyssey-2-client-develop',server='odyssey-2-server-develop';
+ const client='client',server='server';
  for(const name of ['src','package.json'])copy(path.join(root,client,name),path.join(output,client,name));
  copy(path.join(root,client,'node_modules/mithril'),path.join(output,client,'node_modules/mithril'));
  copy(path.join(root,client,'node_modules/electron/dist'),path.join(output,client,'node_modules/electron/dist'));

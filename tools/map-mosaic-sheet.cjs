@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { png, readTiles } = require('./tile-art.cjs');
-const world = require('../odyssey-2-server-develop/data/classic-world.json');
+const world = require('../server/data/classic-world.json');
 const read = readTiles();
 const SC = 8;
 const cands = [];
@@ -39,7 +39,7 @@ list.forEach((c, n) => {
     }
   }
 });
-const out = path.join(__dirname, '../scenery-audit/plaza-candidates.png');
+const out = path.join(__dirname, '../artifacts/scenery/plaza-candidates.png');
 fs.mkdirSync(path.dirname(out), { recursive: true });
 fs.writeFileSync(out, png(W, H, px));
 console.log('wrote', out);

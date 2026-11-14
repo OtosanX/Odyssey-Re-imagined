@@ -1,0 +1,14 @@
+'use strict';
+const assert=require('assert/strict'),fs=require('fs'),path=require('path'),os=require('os');
+const root=path.resolve(__dirname,'..'),{worldData}=require('./world-paths.cjs'),{seedWorld}=require('./desktop-runtime.cjs');
+const temp=fs.mkdtempSync(path.join(os.tmpdir(),'ody-layout-'));
+const oldData=path.join(temp,'odyssey-2-server-develop','data');fs.mkdirSync(oldData,{recursive:true});
+fs.writeFileSync(path.join(oldData,'world.json'),'preserve existing saved world');
+assert.equal(worldData(temp),oldData);
+assert.equal(seedWorld(root,temp),oldData);
+assert.equal(fs.readFileSync(path.join(oldData,'world.json'),'utf8'),'preserve existing saved world');
+assert(!fs.existsSync(path.join(temp,'server')),'do not fork an existing save into an empty world');
+assert.equal(new (require('./map-library.cjs').MapLibrary)(temp).data,oldData);
+const fresh=path.join(temp,'fresh');assert.equal(seedWorld(root,fresh),path.join(fresh,'server','data'));
+for(const file of ['client/src/editor.html','server/bin/odyssey.js','Odyssey.exe','Odyssey Studio.exe','Odyssey Server.exe'])assert(fs.existsSync(path.join(root,file)),file);
+console.log('PASS: clean client/server layout, existing saved worlds retained, new worlds use server/data, Studio resolves legacy worlds.');

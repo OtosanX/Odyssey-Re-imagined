@@ -2,7 +2,7 @@
 
 # Scenery conversion checkpoint — November 6, 2026
 
-Resumed and verified. Current behavior and limits are documented in 3D-VIEW.md; test evidence is in VALIDATION.md and scenery-audit/.
+Resumed and verified. Current behavior and limits are documented in 3D-VIEW.md; test evidence is in VALIDATION.md and artifacts/scenery/.
 
 Completed: automatic whole-collection original-art scenery geometry, complete 1,405-tile catalogue, grouping across layers/map seams, stable animation anchors, original silhouettes with depth and matching caps, preserved horizontal floors/water/paths/bridge decks, retired generic Crendale overrides, shared Studio/browser rendering, authored-wall priority, and NPC conversation histories excluding ambient barks while preserving the chat log and player replies.
 
@@ -11,7 +11,7 @@ All 1,520 maps rendered successfully in both animation phases without WebGL erro
 Use the existing launchers, restart the server and reopen clients, then click 3D View. Classic remains the initial default. This is automatic sprite-silhouette geometry rather than handcrafted models for every asset; unusual scenery can still need individual visual corrections. Physical Android/iPhone and real GPU performance testing remain outstanding. Keep the user's constraint: ask before tests and never control their desktop.
 Map-transition follow-up: corrected the synchronous 3D rebuilding pause. See the November 6 map-boundary freeze section in VALIDATION.md and map-transition-test-result.json. The Game view now prepares ordinary boundary scenery cooperatively, retains aligned previous surroundings, shares artwork/templates, and caches three recent scenes. Held-movement, backtracking, metadata, cleanup, teleport and all-map checks passed. Reopen the client/refresh browser clients; no server protocol changes were required.
 
-Building-back follow-up completed: reviewed every used tile ID, added native seven-column art-family grouping, connected castle/house geometry with real rear surfaces and opaque roofs, and closed unintended narrow interior/cave wall seams. Corrected palms, fountains, stairs and floor decorations. Front/rear previews and final all-map rendering passed; transition performance remains bounded. See the latest section in VALIDATION.md and scenery-audit/exteriors-front-back.png.
+Building-back follow-up completed: reviewed every used tile ID, added native seven-column art-family grouping, connected castle/house geometry with real rear surfaces and opaque roofs, and closed unintended narrow interior/cave wall seams. Corrected palms, fountains, stairs and floor decorations. Front/rear previews and final all-map rendering passed; transition performance remains bounded. See the latest section in VALIDATION.md and artifacts/scenery/exteriors-front-back.png.
 
 Original NPC-combat protection restored for all 45 maps carrying flag 32, including King/Jester keeps; Studio now exposes this separately from PvP. Full original flag comparison and four-mode protection checks passed. Restart the server and reopen clients. No original map data or player saves were modified.
 

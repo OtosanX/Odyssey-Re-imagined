@@ -1,6 +1,6 @@
 'use strict';
-const assert=require('assert/strict'),{repairSurface}=require('./surface-repair.cjs'),{sceneryLayout}=require('../odyssey-2-client-develop/src/views/game/scenery-layout'),{profileAt}=require('../odyssey-2-client-develop/src/views/game/scenery-profiles');
-const source=require('../odyssey-2-server-develop/data/classic-world.json').maps[666],before=JSON.stringify(source);
+const assert=require('assert/strict'),{repairSurface}=require('./surface-repair.cjs'),{sceneryLayout}=require('../client/src/views/game/scenery-layout'),{profileAt}=require('../client/src/views/game/scenery-profiles');
+const source=require('../server/data/classic-world.json').maps[666],before=JSON.stringify(source);
 const art=()=>({coverage:1,alpha:new Uint8Array(1024).fill(1)});
 const result=repairSurface(source,{kind:'ground',layer:0,tile:147});
 assert(result.changed>0);assert.deepEqual(result.map.layers,source.layers);assert.deepEqual(result.map.blocked,source.blocked);assert.deepEqual(result.map.attrs,source.attrs);assert.equal(JSON.stringify(source),before);

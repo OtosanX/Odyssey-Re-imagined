@@ -78,7 +78,7 @@ The subsequent camera request supersedes the earlier separate Inspection Camera 
 - `tools/test-tile-assemblies.cjs`: house/castle assemblies, original entrances, tree volumes, furniture, seated NPCs and 3,200 side-wall seam samples.
 - `tools/test-scenery-world.cjs`: all **1,520 maps / 1,405 used tile IDs** indexed; original data unchanged.
 - `test-scenery-all-ui.cjs`: both animation phases on all 1,520 maps, no WebGL errors or runaway geometry; GPU cache bound checked.
-- Representative rendered views: Crendale (1), Northern Beach (19), Darkcone Forest (30), Ice Cavern (100), South of Crendale (107), castle (114), Draconis Tavern (324), Throne Hall (355), South Crendale Guild Hall (432). See `scenery-audit/interior-trees-*.png` and front/back sheets.
+- Representative rendered views: Crendale (1), Northern Beach (19), Darkcone Forest (30), Ice Cavern (100), South of Crendale (107), castle (114), Draconis Tavern (324), Throne Hall (355), South Crendale Guild Hall (432). See `artifacts/scenery/interior-trees-*.png` and front/back sheets.
 - `test-studio-overhaul-ui.cjs`: comparison, protected originals, 2D/3D edits, undo, source picking, overlapping tree selection, profile preview/undo, diagnostic hiding, connected edits, always-free camera, true top-down view, live sprite updates and an actual offscreen Alt-drag that leaves sprite pixels unchanged.
 - `tools/test-editor-foundation.cjs`: inverse projection, terrain editing, cross-segment tree ownership/move/undo, rollback on invalid destinations, atomic save failure/reopen checks.
 - `tools/test-geometry-cache.cjs`: shared-buffer reuse, bounded eviction, active ownership and exactly-once release.
@@ -89,7 +89,7 @@ The subsequent camera request supersedes the earlier separate Inspection Camera 
 
 ## Practical limits and unresolved review
 
-- Passing every map through the renderer proves functional coverage, **not artistic correctness of every asset**. Unclassified decorations still use conservative source-art geometry; ambiguous/partial assemblies are recorded in `scenery-audit/structure-audit.json` for review. No claim is made that every old wall opening is semantically identified.
+- Passing every map through the renderer proves functional coverage, **not artistic correctness of every asset**. Unclassified decorations still use conservative source-art geometry; ambiguous/partial assemblies are recorded in `artifacts/scenery/structure-audit.json` for review. No claim is made that every old wall opening is semantically identified.
 - Face coloring/hiding distinguishes generated surface orientation and structure kind; roof/cap diagnostics are not a complete hand-authored architectural model. Intentional openings must still be checked against source art when changing a profile.
 - Connected edits still scan the visible composition to discover changed batches; this is not a fully incremental world graph. GPU buffer reuse and template caches reduce repeated work, but very large layouts remain more expensive than a single map.
 - Offline playtest is a movement/rendering preview, not an isolated execution of every original quest, combat encounter or live multiplayer system. Unplaced teleport destinations are reported rather than invented.

@@ -1,5 +1,5 @@
 const fs=require('fs'),path=require('path');
-const equipment=require('../odyssey-2-client-develop/src/models/equipment');
+const equipment=require('../client/src/models/equipment');
 const {attachVisuals,collectVisuals}=require('./visual-world.cjs');
 class World{
  constructor(folder,options={}){

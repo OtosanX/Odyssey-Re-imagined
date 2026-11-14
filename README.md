@@ -15,10 +15,10 @@ The small EXEs checked into this source repository are workspace launchers, not 
 On Windows, install Node.js 22 or newer, then run from the project folder:
 
 ```powershell
-npm ci --prefix odyssey-2-server-develop
-npm ci --prefix odyssey-2-client-develop
-npm run build --prefix odyssey-2-server-develop
-npm run build --prefix odyssey-2-client-develop
+npm ci --prefix server
+npm ci --prefix client
+npm run build --prefix server
+npm run build --prefix client
 node tools/test-desktop-runtime.cjs
 node tools/build-portable.cjs
 ```
@@ -34,3 +34,16 @@ See the [hosting guide](docs/DOWNLOAD-AND-HOST.md) for offline profiles, communi
 Rendering and legacy gameplay compatibility remain under development. When reporting a bug, include the map name/ID, steps to reproduce, whether 2D or 3D is active, and a screenshot where useful. Do not upload account databases, passwords or private save files.
 
 Local accounts, saves and running-server state are excluded from new commits. See [third-party notices](THIRD-PARTY-NOTICES.md) for upstream credits.
+
+## Project folders
+
+- **client/** — game client and Studio.
+- **server/** — server source, compiled runtime and local server data.
+- **tools/** — build, import and verification tools.
+- **docs/** — guides and development notes.
+- **artifacts/** — generated review images, reports and source publishing output.
+- **dist/** — downloadable builds.
+- **archive/** — original Classic reference material.
+- **maps/** and **sprites/** — editor exports.
+
+Existing offline and community worlds keep their original save locations. New worlds use server/data inside their workspace. No saves are moved automatically.

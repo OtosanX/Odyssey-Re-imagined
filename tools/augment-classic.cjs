@@ -1,5 +1,5 @@
 const fs=require('fs'),path=require('path'),z=require('zlib');
-const root=path.resolve(__dirname,'..'),folder=path.join(root,'odyssey-2-server-develop/data'),file=path.join(folder,'classic-world.json'),world=JSON.parse(fs.readFileSync(file)),source=path.join(root,'archive/classic-export');
+const root=path.resolve(__dirname,'..'),folder=path.join(root,'server/data'),file=path.join(folder,'classic-world.json'),world=JSON.parse(fs.readFileSync(file)),source=path.join(root,'archive/classic-export');
 const load=n=>JSON.parse(fs.readFileSync(path.join(source,n+'.json'),'utf8').replace(/^\uFEFF/,''));
 world.scripts=Object.fromEntries(load('Scripts').map(s=>[s.Name.toLowerCase(),s.Source]));world.npcs=Object.fromEntries(load('NPCs').map(n=>[n.Number,n]));world.halls=Object.fromEntries(load('Halls').map(h=>[h.Number,{id:h.Number,name:h.Name,price:h.Price,upkeep:h.Upkeep,map:h.StartLocationMap,x:h.StartLocationX,y:h.StartLocationY}]));world.monsters=Object.fromEntries(load('Monsters').map(m=>[m.Number,m]));
 const d=load('Data');world.guildRules={createLevel:d.GuildNewLevel,createPrice:d.GuildNewPrice,joinLevel:d.GuildJoinLevel,joinPrice:d.GuildJoinPrice,minHallMembers:5};

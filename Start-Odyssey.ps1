@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
-$serverRoot = Join-Path $PSScriptRoot 'odyssey-2-server-develop'
-$clientRoot = Join-Path $PSScriptRoot 'odyssey-2-client-develop'
+$serverRoot = Join-Path $PSScriptRoot 'server'
+$clientRoot = Join-Path $PSScriptRoot 'client'
 $logRoot = Join-Path $PSScriptRoot 'logs'
 New-Item -ItemType Directory -Force -Path $logRoot | Out-Null
 $node = (Get-Command node.exe -ErrorAction Stop).Source

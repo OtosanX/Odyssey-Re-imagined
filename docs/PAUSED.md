@@ -4,22 +4,22 @@ Safety-and-preservation rules received from the user are now in force: inspect b
 
 ## Baseline established (2026-11-07)
 
-- `git init` at the workspace root created rollback commit **`be825c981655d7ca0d7bdfae62e9354c1a69af75`** (4,825 objects, ~121 MB) covering source, tools, docs, maps, sprites, `odyssey-2-server-develop/data/`, `community-world/` and the full untouched `archive/` originals. New `.gitignore` excludes only generated outputs: `node_modules/`, `dist/`, `publish/`, `logs/`, `.map-library/`, `.map-library-cache/`, `.editor-test-profile/`, `*.log`. US-ASCII file only; no working files touched.
-- Server TypeScript compiles clean: `npx tsc --noEmit` (exit 0) in `odyssey-2-server-develop`.
+- `git init` at the workspace root created rollback commit **`be825c981655d7ca0d7bdfae62e9354c1a69af75`** (4,825 objects, ~121 MB) covering source, tools, docs, maps, sprites, `server/data/`, `community-world/` and the full untouched `archive/` originals. New `.gitignore` excludes only generated outputs: `node_modules/`, `dist/`, `publish/`, `logs/`, `.map-library/`, `.map-library-cache/`, `.editor-test-profile/`, `*.log`. US-ASCII file only; no working files touched.
+- Server TypeScript compiles clean: `npx tsc --noEmit` (exit 0) in `server`.
 - `node tools/test-reimagined.cjs`: all three PASS groups (five errand chains/rewards/repeat preven­tion/rollback/teleport freeze; Normal+Hardcore deaths, safe-zone loot theft rules; dialogue interaction, accept/decline, invalid replies, ambient speech; story capacity/isolation; story respawn; market escrow; guilds halls persistence).
 - `node smoke-test.cjs`: PASS (import backup, invalid import rejection, six layers, anchors, spawn, accounts, movement, saved position, fragmented TCP header). Caveat: it spawns an isolated server that also binds the mobile web port 8080; a run executed in parallel with other heavy Node processes failed transiently with ECONNREFUSED and then passed when run alone. Run it alone.
-- Client build (`odyssey-2-client-develop`) compiles `lib/**` to `src/bin/` only; it cannot overwrite hand-written sources. Not run in this turn.
+- Client build (`client`) compiles `lib/**` to `src/bin/` only; it cannot overwrite hand-written sources. Not run in this turn.
 
 ## Known pre-existing conditions (not caused by this turn)
 
 - The inherited server Mocha suite (`npm test`) still references the removed ClassicServer module and fails before running; README and REIMAGINED document this and the smoke/reimagined checks are the intended validation.
-- Stray odyssey-2-server-develop/data/undefined file (0.3 KB) exists; left untouched and included in the baseline snapshot.
+- Stray server/data/undefined file (0.3 KB) exists; left untouched and included in the baseline snapshot.
 - Operational constraints carried over: user permits isolated tests only, no desktop automation, do not launch the user's apps.
 
 ## Priority 1 completed (2026-11-07): explicit surface classification
 
-- Diagnosed floor-as-wall root causes with visual evidence sheets (scenery-audit/selected-0.png runs): catalogue per-tile-ID heuristic plus transparent floor decals rendered upright; per-asset mass reclassification rejected as unsound (711-class cliff art is often a wall foundation row).
-- Implemented per-placement classification precedence — instance > map assetProfiles > installation overrides > catalogue — in `odyssey-2-client-develop/src/views/game/scenery-profiles.js` (instance merge inside profileAt with cache signature on instance counts; scenery-layout/models consume it).
+- Diagnosed floor-as-wall root causes with visual evidence sheets (artifacts/scenery/selected-0.png runs): catalogue per-tile-ID heuristic plus transparent floor decals rendered upright; per-asset mass reclassification rejected as unsound (711-class cliff art is often a wall foundation row).
+- Implemented per-placement classification precedence — instance > map assetProfiles > installation overrides > catalogue — in `client/src/views/game/scenery-profiles.js` (instance merge inside profileAt with cache signature on instance counts; scenery-layout/models consume it).
 - Studio: repair panel unlocks surface type/opening at instance scope (studio-profile-tools.js); Structure Inspector reports effective merged profile + provenance (studio-workspace.js); Surface (3D) paint selector with erase/dedupe/1024 cap, 2D badges, eyedropper sampling (editor.js + editor.html + studio-workspace.js).
 - Rendering-property clipboard: tools/map-edit-tools.cjs copy/paste capture instances, heights/walls/wallTiles sub-grids, houses; overlay/replace modes; instance lifecycle; house footprint takeover; collision/anchors/connections untouched. Object clipboard carries instances (studio-workspace.js).
 - Tests added: tools/test-instance-reclassification.cjs, tools/test-clipboard-visual.cjs. All regressions green incl. all-1,520-map renderer and studio overhaul UI. See VALIDATION.md 'November 7' section.
@@ -70,7 +70,7 @@ Original script triggers include joinmap{map}, mapsay{map}, map{map}_{x}_{y} for
 - tools/session-world.cjs: router per client to independent world instances; MMO normal/hardcore; story create/join 8-char code with limit8. Room metadata persisted in data/sessions/rooms.json. World options id0 JSON; id8 leave. Default empty id0 backward-compatible MMO Normal. Session manifest and fresh-session resource cleanup/caps need review.
 - tools/world-runtime.cjs: modified by tools/patch-runtime.cjs (do not rerun blindly; string edits are not guaranteed idempotent). Base constructor now accepts options, save file override, content/savedGame. State and save call feature methods. Adds XP/flags defaults, protected loot filtering, calls attackMonster and monsterView, special-PvP exception for guild restrictions. Exports enhanced World via game-features.extend. Saved file/game metadata, base persistence compatibility require tests.
 - tools/patch-features.cjs and patch-market.cjs already ran. Do not rerun blindly.
-- odyssey-2-server-develop/src/game/world.ts now exports require('../../../tools/session-world.cjs').SessionWorld instead of previous World. NOT compiled in this feature batch! Compiled bin/game/world.js remains baseline export of tools/world-runtime.cjs. So built server won't use room router until build.
+- server/src/game/world.ts now exports require('../../../tools/session-world.cjs').SessionWorld instead of previous World. NOT compiled in this feature batch! Compiled bin/game/world.js remains baseline export of tools/world-runtime.cjs. So built server won't use room router until build.
 - tools/export-classic.ps1 modified; tools/augment-classic.cjs added.
 
 ## Must do next on resume

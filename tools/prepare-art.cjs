@@ -11,7 +11,7 @@ for(const name of ['tiles','sprites','objects']){
  const s=off+(h-1-(Math.floor(t/cols)*32+y))*stride+((t%cols)*32+x)*3,d=((Math.floor(t/32)*32+y)*outW+(t%32)*32+x)*4;
  p[d]=b[s+2];p[d+1]=b[s+1];p[d+2]=b[s];p[d+3]=(b[s]===0&&b[s+1]===0&&b[s+2]===0)?0:255;
  }
- fs.writeFileSync(path.join(__dirname,'../odyssey-2-client-develop/src/assets',name+'.png'),png(outW,outH,p));console.log(name,count,outW,outH);
- if(name==='tiles')fs.writeFileSync(path.join(__dirname,'../odyssey-2-client-develop/src/assets/tiles-preview.png'),png(outW,320,p.subarray(0,outW*320*4)));
+ fs.writeFileSync(path.join(__dirname,'../client/src/assets',name+'.png'),png(outW,outH,p));console.log(name,count,outW,outH);
+ if(name==='tiles')fs.writeFileSync(path.join(__dirname,'../client/src/assets/tiles-preview.png'),png(outW,320,p.subarray(0,outW*320*4)));
 }
 

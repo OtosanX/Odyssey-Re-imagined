@@ -1,9 +1,9 @@
 'use strict';
 const assert=require('assert/strict'),fs=require('fs'),crypto=require('crypto');
 const {readTiles}=require('./tile-art.cjs');
-const {sceneryLayout}=require('../odyssey-2-client-develop/src/views/game/scenery-layout');
-const catalog=require('../odyssey-2-client-develop/src/views/game/scenery-catalog');
-const file=require.resolve('../odyssey-2-server-develop/data/classic-world.json');
+const {sceneryLayout}=require('../client/src/views/game/scenery-layout');
+const catalog=require('../client/src/views/game/scenery-catalog');
+const file=require.resolve('../server/data/classic-world.json');
 const hash=()=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 const before=hash(),{maps}=require(file),read=readTiles(),cache=new Map();
 const art=id=>{if(!cache.has(id)){const pixels=read(id),alpha=Uint8Array.from({length:1024},(_,n)=>pixels[n*4+3]?1:0);cache.set(id,{alpha,coverage:alpha.reduce((a,b)=>a+b,0)/1024});}return cache.get(id);};

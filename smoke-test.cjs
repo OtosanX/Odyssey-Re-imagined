@@ -1,7 +1,7 @@
 process.env.ODYSSEY_WEB_PORT='0';
 const {spawn}=require('child_process');
 const fs=require('fs'),os=require('os'),path=require('path'),assert=require('assert');
-const root=path.join(__dirname,'odyssey-2-server-develop');
+const root=path.join(__dirname,'server');
 const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'odyssey-test-'));
 const {installMap}=require('./tools/import-map.cjs');
 const fixture=JSON.parse(fs.readFileSync(path.join(root,'data/world.json'),'utf8'));
@@ -13,7 +13,7 @@ assert.throws(()=>installMap(invalid,tmp));
 assert.deepEqual(JSON.parse(fs.readFileSync(path.join(tmp,'world.json'),'utf8')),fixture,'invalid import leaves map intact');
 const config={game:{accounts:{file:'accounts.data'}},server:{port:15751,adminPort:13000,dataFolder:tmp,interval:100},scripts:{directory:'scripts'}};
 fs.writeFileSync(path.join(tmp,'config.json'),JSON.stringify(config));
-const {Network}=require('./odyssey-2-client-develop/src/bin/network');
+const {Network}=require('./client/src/bin/network');
 const server=spawn(process.execPath,['bin/odyssey.js','--config',path.join(tmp,'config.json')],{cwd:root,stdio:['ignore','pipe','pipe']});
 let output='';server.stdout.on('data',d=>output+=d);server.stderr.on('data',d=>output+=d);
 const delay=ms=>new Promise(r=>setTimeout(r,ms));

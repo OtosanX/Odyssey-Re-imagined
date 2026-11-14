@@ -5,8 +5,8 @@ const {MapLibrary,streamMaps,hash}=require('./map-library.cjs');
 const {WorldBuilder}=require('./world-builder-model.cjs');
 const {newMap}=require('../map-format.cjs');
 async function run(){
- const root=fs.mkdtempSync(path.join(os.tmpdir(),'odyssey-library-')),data=path.join(root,'odyssey-2-server-develop/data');fs.mkdirSync(data,{recursive:true});
- const real=path.join(__dirname,'../odyssey-2-server-develop/data/classic-world.json'),source=path.join(data,'classic-world.json');fs.copyFileSync(real,source);
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'odyssey-library-')),data=path.join(root,'server/data');fs.mkdirSync(data,{recursive:true});
+ const real=path.join(__dirname,'../server/data/classic-world.json'),source=path.join(data,'classic-world.json');fs.copyFileSync(real,source);
  const original=JSON.parse(fs.readFileSync(real,'utf8')),before=hash(fs.readFileSync(source,'utf8'));let count=0;
  for await(const record of streamMaps(real)){assert.deepEqual(record.map,original.maps[record.id]);count++;}assert.equal(count,Object.keys(original.maps).length);assert(count>1000);
  // Root key discovery must ignore quoted maps/braces inside unrelated data.

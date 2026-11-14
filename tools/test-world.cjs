@@ -29,8 +29,8 @@ for(const opts of [{flags:1},{safeTile:true},{flags:0}]){const {w}=fixture(opts)
  const {w}=fixture(),a=enter(w);for(let i=0;i<7;i++)move(w,a,1);assert.equal(a.latest(2).map,2);assert.equal(w.players.get(a).x,0);assert.equal(a.latest(0).shiftX,-12,'crossing preserves scroll continuity');
 }
 {
- const root=path.resolve(__dirname,'..'),world=JSON.parse(fs.readFileSync(path.join(root,'odyssey-2-server-develop/data/classic-world.json')));let maps=0;for(const m of Object.values(world.maps)){assert.equal(m.layers.length,6);assert(m.layers.every(l=>l.length===144&&l.every(t=>Number.isInteger(t)&&t>=0&&t<=6979)));assert.equal(m.attrs.length,144);maps++;}assert.equal(maps,1520);assert.equal(world.items.length,542);assert.equal(world.drops.length,1413);
- const dir=fs.mkdtempSync(path.join(os.tmpdir(),'ody-archive-'));fs.copyFileSync(path.join(root,'odyssey-2-server-develop/data/classic-world.json'),path.join(dir,'classic-world.json'));const w=new World(dir),c=enter(w);assert.equal(c.latest(2).map,355);assert.equal(c.latest(2).mapName,world.maps[355].name);
+ const root=path.resolve(__dirname,'..'),world=JSON.parse(fs.readFileSync(path.join(root,'server/data/classic-world.json')));let maps=0;for(const m of Object.values(world.maps)){assert.equal(m.layers.length,6);assert(m.layers.every(l=>l.length===144&&l.every(t=>Number.isInteger(t)&&t>=0&&t<=6979)));assert.equal(m.attrs.length,144);maps++;}assert.equal(maps,1520);assert.equal(world.items.length,542);assert.equal(world.drops.length,1413);
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'ody-archive-'));fs.copyFileSync(path.join(root,'server/data/classic-world.json'),path.join(dir,'classic-world.json'));const w=new World(dir),c=enter(w);assert.equal(c.latest(2).map,355);assert.equal(c.latest(2).mapName,world.maps[355].name);
  for(const m of Object.values(world.maps)){w.players.get(c).map=m.id;w.snapshot(c);c.messages=[];}
  const {installMap}=require('./import-map.cjs');const edit={...JSON.parse(JSON.stringify(world.maps[355])),classicId:355,name:'Edited hall'};
  installMap(edit,dir);const imported=JSON.parse(fs.readFileSync(path.join(dir,'classic-world.json')));

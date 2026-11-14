@@ -30,7 +30,7 @@ async function* streamMaps(file){
 }
 class MapLibrary{
  constructor(root){
-  this.root=root;this.data=path.join(root,'odyssey-2-server-develop/data');this.source=path.join(this.data,'classic-world.json');this.home=path.join(root,'.map-library');this.cache=path.join(root,'.map-library-cache');
+  this.root=root;this.data=require('./world-paths.cjs').worldData(root);this.source=path.join(this.data,'classic-world.json');this.home=path.join(root,'.map-library');this.cache=path.join(root,'.map-library-cache');
   fs.mkdirSync(this.home,{recursive:true});fs.mkdirSync(this.cache,{recursive:true});
   this.metaFile=path.join(this.home,'library.json');
   this.meta=fs.existsSync(this.metaFile)?JSON.parse(fs.readFileSync(this.metaFile,'utf8')):{version:1,folders:[],entries:{},worlds:[]};

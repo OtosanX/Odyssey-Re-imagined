@@ -1,5 +1,5 @@
 const assert=require('assert'),fs=require('fs'),os=require('os'),path=require('path');const {World}=require('./world-runtime.cjs'),{SessionWorld}=require('./session-world.cjs'),market=require('./market.cjs');
-const dir=fs.mkdtempSync(path.join(os.tmpdir(),'ody-reimagined-'));fs.copyFileSync(path.join(__dirname,'../odyssey-2-server-develop/data/classic-world.json'),path.join(dir,'classic-world.json'));let serial=0;
+const dir=fs.mkdtempSync(path.join(os.tmpdir(),'ody-reimagined-'));fs.copyFileSync(path.join(__dirname,'../server/data/classic-world.json'),path.join(dir,'classic-world.json'));let serial=0;
 class Client{constructor(id,name='player'+id){this.index=id;this.account={username:name};this.messages=[];}send(system,id,data){assert(data.length<=65535,'packet size');this.messages.push({system,id,data:JSON.parse(data)});}last(id){return this.messages.filter(m=>m.id===id).at(-1)?.data;}}
 function fresh(options={}){return new World(dir,{file:path.join(dir,'test-'+(++serial)+'.json'),...options});}
 function player(w,id=1){const c=new Client(id),p={id,name:c.account.username,map:355,x:5,y:6,hp:42,maxHP:42,level:50,experience:0,inventory:Array(20).fill(null),equipment:{},guild:0,direction:2,flags:{},questsSeen:[],journal:[]};w.players.set(c,p);return {p,c};}

@@ -1,6 +1,6 @@
 # Third-party notices
 
-Odyssey Reimagined builds on Odyssey Online Classic and the OdysseyClassicHistoryBook Odyssey 2 projects. The original server source includes an MIT license, preserved in `odyssey-2-server-develop/LICENSE`. Original game maps, tile art, sprites, names and scripts are credited to their original Odyssey contributors. They are not newly authored artwork and are not relicensed by this project.
+Odyssey Reimagined builds on Odyssey Online Classic and the OdysseyClassicHistoryBook Odyssey 2 projects. The original server source includes an MIT license, preserved in `server/LICENSE`. Original game maps, tile art, sprites, names and scripts are credited to their original Odyssey contributors. They are not newly authored artwork and are not relicensed by this project.
 
 - Original game and resources: https://odysseyonlineclassic.com/
 - Historical source: https://github.com/OdysseyClassicHistoryBook

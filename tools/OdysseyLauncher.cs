@@ -31,10 +31,10 @@ internal static class OdysseyLauncher
             if (!owned) { MessageBox.Show(title + " is already running.", title); return; }
             try
             {
-                string clientRoot = Path.Combine(root, "odyssey-2-client-develop");
-                string serverRoot = Path.Combine(root, "odyssey-2-server-develop");
+                string clientRoot = Path.Combine(root, "client");
+                string serverRoot = Path.Combine(root, "server");
                 string electron = Path.Combine(clientRoot, "node_modules", "electron", "dist", "electron.exe");
-                if (!serverOnly && !File.Exists(electron)) throw new Exception("The bundled client runtime is missing. Keep this launcher in the ody server folder alongside odyssey-2-client-develop.");
+                if (!serverOnly && !File.Exists(electron)) throw new Exception("The bundled client runtime is missing. Keep this launcher in the ody server folder alongside client.");
                 Directory.CreateDirectory(Path.Combine(root, "logs"));
                 if (serverOnly && Listening()) throw new Exception("A server is already listening on port 5751.");
                 if (!editor && !Listening())

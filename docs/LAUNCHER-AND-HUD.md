@@ -31,7 +31,7 @@ Character summaries are a read-only extension of the existing Story-save protoco
 
 New Story and MMO characters, in both difficulties, now start in **City of Crendale, map 1, tile (5,5)**. The arrival tile is protected. Configuration is separate from the original collection:
 
-`odyssey-2-server-develop/data/start-location.json`
+`server/data/start-location.json`
 
 The runtime validates that the configured tile is walkable and does not overlap a special tile. Studio publication rejects changes that would block this configured start. Valid existing character positions are preserved. The Crendale start is also the fallback respawn location; existing valid map-specific respawn destinations still apply. Standalone custom-map mode keeps its existing anchor-based start.
 

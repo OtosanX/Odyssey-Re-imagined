@@ -40,7 +40,7 @@ Publication checks that the server source and drafts have not changed since plan
 
 - `tools/map-library.cjs`: streaming Classic index, lazy per-map files, custom discovery, metadata, draft/folder/layout storage and backed-up publish transactions.
 - `tools/world-builder-model.cjs`: segment placement, staged edges, bounded map cache, cross-map clipboard and undo/redo.
-- `odyssey-2-client-develop/src/js/map-library.js` and `src/studio-library.css`: integrated visual browser and canvas. Existing Map and Sprite editor tools remain available.
+- `client/src/js/map-library.js` and `src/studio-library.css`: integrated visual browser and canvas. Existing Map and Sprite editor tools remain available.
 - `.map-library/library.json`: folders, favorite flags, stable custom/server IDs and saved-layout list. `.map-library/worlds/` holds layouts. Back up `.map-library/` along with your maps to retain organization and drafts.
 - `.map-library-cache/`: disposable per-map Classic cache, lightweight index and generated PNG thumbnails. Thumbnails use the original tile atlas and static frame of ground/background/foreground rendering; alternate animation layers are not stacked over their base frames. Map content and atlas changes invalidate cached thumbnails. Maps load lazily, thumbnail jobs are limited to two at once, and non-dirty World Builder maps use a bounded cache.
 - Server item/NPC catalogues now load only when their Studio tab is opened, so they do not force full collection parsing during library startup.

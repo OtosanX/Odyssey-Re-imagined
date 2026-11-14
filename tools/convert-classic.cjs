@@ -1,5 +1,5 @@
 const fs=require('fs'),path=require('path'),zlib=require('zlib');
-const root=path.resolve(__dirname,'..'),source=path.join(root,'archive/classic-export'),out=path.join(root,'odyssey-2-server-develop/data');
+const root=path.resolve(__dirname,'..'),source=path.join(root,'archive/classic-export'),out=path.join(root,'server/data');
 const load=n=>JSON.parse(fs.readFileSync(path.join(source,n+'.json'),'utf8').replace(/^\uFEFF/,''));
 const maps={},warnings=[];for(const file of fs.readdirSync(path.join(source,'maps'))){const id=+file.split('.')[0],raw=fs.readFileSync(path.join(source,'maps',file)),b=zlib.inflateSync(raw.subarray(4));if(b.length!==2677)throw Error('Unexpected map size '+id);
  const m={id,version:1,name:b.subarray(0,30).toString('latin1').replace(/\0/g,'').trim()||'Map '+id,width:12,height:12,layers:Array.from({length:6},()=>[]),blocked:[],attrs:[],exits:[b.readUInt16BE(37),b.readUInt16BE(43),b.readUInt16BE(39),b.readUInt16BE(41)],flags:b[53],death:{map:b.readUInt16BE(49),x:b[51],y:b[52]},anchors:[],spawnAnchor:'spawn'};

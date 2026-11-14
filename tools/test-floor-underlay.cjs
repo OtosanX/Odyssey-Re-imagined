@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('assert/strict');
-const {floorUnderlay}=require('../odyssey-2-client-develop/src/views/game/floor-underlay');
-const {structuralFootprint}=require('../odyssey-2-client-develop/src/views/game/scenery-models');
+const {floorUnderlay}=require('../client/src/views/game/floor-underlay');
+const {structuralFootprint}=require('../client/src/views/game/scenery-models');
 const w={width:3,height:3,layers:Array.from({length:6},()=>Array(9).fill(0)),blocked:Array(9).fill(0)};
 w.layers[0].fill(144);w.layers[2][7]=240;
 const art=()=>({coverage:1});

@@ -2,7 +2,7 @@
 const fs=require('fs'),path=require('path'),os=require('os'),assert=require('assert/strict');
 const {SessionWorld}=require('./session-world.cjs');
 const folder=fs.mkdtempSync(path.join(os.tmpdir(),'ody-launcher-'));
-for(const name of ['classic-world.json','start-location.json'])fs.copyFileSync(path.join(__dirname,'../odyssey-2-server-develop/data',name),path.join(folder,name));
+for(const name of ['classic-world.json','start-location.json'])fs.copyFileSync(path.join(__dirname,'../server/data',name),path.join(folder,name));
 class Client{constructor(name,index){this.account={username:name};this.index=index;this.packets=[];}send(system,id,data){assert(data.length<=65535);this.packets.push({id,data:JSON.parse(data)});}last(id){return this.packets.filter(m=>m.id===id).at(-1)?.data;}}
 const msg=(id,data)=>({id,data:Buffer.from(JSON.stringify(data))});
 async function run(){

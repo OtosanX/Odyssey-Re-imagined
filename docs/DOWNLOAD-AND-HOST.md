@@ -16,7 +16,7 @@ Windows x64 is the packaged platform. This is an unsigned testing build. Classic
 
 ## Saves and backups
 
-Offline profiles and saves live under `%APPDATA%/OdysseyReimagined/`. Each local profile has a separate world under `offline/<profile-id>/odyssey-2-server-develop/data/`. Back up that entire profile directory, including `offline-profiles.json`, which holds the local profile credentials used behind the scenes. These are local game identities, not online account passwords.
+Offline profiles and saves live under `%APPDATA%/OdysseyReimagined/`. Each local profile has a separate world under `offline/<profile-id>/server/data/`. Back up that entire profile directory, including `offline-profiles.json`, which holds the local profile credentials used behind the scenes. These are local game identities, not online account passwords.
 
 Story saves are stored independently of join codes. Losing or rotating a join code does not delete a save. Online progress stays on the chosen community server. A server address change currently creates a separate remembered-account list; existing server accounts still work with their original credentials.
 
@@ -35,7 +35,7 @@ Edit `community-server.json` beside the EXEs:
 }
 ```
 
-Start **Odyssey Server.exe**, then click **Start server**. The first start copies the seed maps into `community-world/odyssey-2-server-develop/data/`. Accounts, MMO progress, Story saves, drops, markets and guilds are owned by this world. The bundled seed is never a copy of the developer's accounts or saves.
+Start **Odyssey Server.exe**, then click **Start server**. The first start copies the seed maps into `community-world/server/data/`. Accounts, MMO progress, Story saves, drops, markets and guilds are owned by this world. The bundled seed is never a copy of the developer's accounts or saves.
 
 Players on your LAN use this PC's LAN IP and the configured port. Players on other networks need a reachable public address, forwarded TCP port or suitable private-network/tunnel service. This build does not automatically change firewall/router settings. The native game protocol currently uses plain TCP; use a trusted private network or encrypted tunnel for testing across the internet and a unique game password. A public production MMO requires transport hardening and deployment review.
 
@@ -58,10 +58,10 @@ Story mode can run on a player's PC with up to eight participants, using the hos
 Install Node.js 22 or newer and run:
 
 ```powershell
-npm ci --prefix odyssey-2-server-develop
-npm ci --prefix odyssey-2-client-develop
-npm run build --prefix odyssey-2-server-develop
-npm run build --prefix odyssey-2-client-develop
+npm ci --prefix server
+npm ci --prefix client
+npm run build --prefix server
+npm run build --prefix client
 node tools/test-desktop-runtime.cjs
 node tools/build-portable.cjs
 ```

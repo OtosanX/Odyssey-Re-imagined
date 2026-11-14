@@ -1,9 +1,9 @@
 'use strict';
 const assert=require('assert/strict');
-const {structuralFootprint}=require('../odyssey-2-client-develop/src/views/game/scenery-models');
-const {wallFootprints}=require('../odyssey-2-client-develop/src/views/game/wall-shapes');
-const maps=require('../odyssey-2-server-develop/data/classic-world.json').maps;
-const catalog=require('../odyssey-2-client-develop/src/views/game/scenery-catalog');
+const {structuralFootprint}=require('../client/src/views/game/scenery-models');
+const {wallFootprints}=require('../client/src/views/game/wall-shapes');
+const maps=require('../server/data/classic-world.json').maps;
+const catalog=require('../client/src/views/game/scenery-catalog');
 let checked=0;
 for(const n of [446,951,60,134]){const m=maps[n];for(let i=0;i<144;i++)for(const id of m.layers.map(l=>l[i])){
  const profile=catalog[id];if(profile?.family!=='structural-cave-rock')continue;

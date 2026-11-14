@@ -3,11 +3,11 @@
 // instance scope participates in classification with precedence
 // instance > map region assetProfiles > installation overrides > catalogue.
 const assert=require('assert');
-const profiles=require('../odyssey-2-client-develop/src/views/game/scenery-profiles');
-const {sceneryLayout}=require('../odyssey-2-client-develop/src/views/game/scenery-layout');
+const profiles=require('../client/src/views/game/scenery-profiles');
+const {sceneryLayout}=require('../client/src/views/game/scenery-layout');
 const {validateVisual}=require('../visual-format.cjs');
-const catalog=require('../odyssey-2-client-develop/src/views/game/scenery-catalog');
-const overridesFile=require('../odyssey-2-client-develop/src/views/game/scenery-profile-overrides');
+const catalog=require('../client/src/views/game/scenery-catalog');
+const overridesFile=require('../client/src/views/game/scenery-profile-overrides');
 
 const art=()=>({alpha:new Uint8Array(1024),coverage:1});
 const wallId=Object.keys(catalog).map(Number).find(id=>catalog[id].kind==='wall'&&!catalog[id].family&&!catalog[id].join&&!catalog[id].collisionOnly);
@@ -64,7 +64,7 @@ const baseWorld=()=>({width:4,height:4,layers:[0,1,2,3,4,5].map(()=>new Array(16
  assert.throws(()=>validateVisual({version:1,instances:[{x:0,y:0,tile:337,profile:{kind:'wall',opening:true,closed:true}}]},2,2));
 }
 // Selected structures report the effective profile and its provenance.
-const toolSource=require('fs').readFileSync(__dirname+'/../odyssey-2-client-develop/src/js/studio-workspace.js','utf8');
+const toolSource=require('fs').readFileSync(__dirname+'/../client/src/js/studio-workspace.js','utf8');
 assert(toolSource.includes('effectiveKind')&&toolSource.includes('scopeContributions'),'Structure Inspector exposes the effective merged profile');
 assert(toolSource.includes('scope.value!==')===false,'repair panel no longer hides re-classification at instance scope');
 console.log('PASS: instance-scope reclassification with explicit precedence, unchanged automatic classification without overrides, idempotent group profile transforms, morphology validation and inspector provenance.');

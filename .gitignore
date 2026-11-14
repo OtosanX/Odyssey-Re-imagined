@@ -1,7 +1,7 @@
 # Odyssey Reimagined workspace - ignore only generated build outputs and caches
 node_modules/
 dist/
-publish/
+artifacts/publish/
 logs/
 .map-library/
 .map-library-cache/
@@ -11,9 +11,9 @@ logs/
 # Regenerable test screenshots and inspection sheets (not game artwork)
 /*-preview.png
 /*test-result.txt
-/scenery-audit/*.png
-/distribution-audit/*.png
-/scenery-audit/map-snapshot-fail.txt
+/artifacts/scenery/*.png
+/artifacts/distribution/*.png
+/artifacts/scenery/map-snapshot-fail.txt
 
 # Local identities, saves and running-server state must never be published
 community-world/
@@ -26,4 +26,4 @@ community-world/
 **/runtime-config.json
 **/.env
 **/.env.*
-odyssey-2-server-develop/data/undefined
+server/data/undefined

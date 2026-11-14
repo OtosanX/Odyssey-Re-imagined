@@ -17,5 +17,5 @@ function installMap(map,directory){
  fs.writeFileSync(target+'.tmp',JSON.stringify(map,null,2));fs.renameSync(target+'.tmp',target);fs.writeFileSync(path.join(directory,'world-mode.json'),JSON.stringify({mode:'custom'}));return target;
 }
 module.exports={installMap};
-if(require.main===module){try{const input=process.argv[2];if(!input)throw Error('Usage: node tools/import-map.cjs map.json');console.log('Imported:',installMap(JSON.parse(fs.readFileSync(input,'utf8')),path.join(__dirname,'../odyssey-2-server-develop/data')));console.log('Restart the modern server to load the map.');}catch(e){console.error(e.message);process.exitCode=1;}}
+if(require.main===module){try{const input=process.argv[2];if(!input)throw Error('Usage: node tools/import-map.cjs map.json');console.log('Imported:',installMap(JSON.parse(fs.readFileSync(input,'utf8')),path.join(__dirname,'../server/data')));console.log('Restart the modern server to load the map.');}catch(e){console.error(e.message);process.exitCode=1;}}
 
