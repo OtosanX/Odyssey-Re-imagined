@@ -28,3 +28,8 @@ community-world/
 **/.env
 **/.env.*
 server/data/undefined
+
+# Device login and private hosting settings
+/community-server.local.json
+**/launcher-accounts.json*
+**/saved-servers.json

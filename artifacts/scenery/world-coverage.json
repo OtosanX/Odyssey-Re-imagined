@@ -2,13 +2,13 @@
   "maps": 1520,
   "cataloguedTiles": 1405,
   "mapsWithScenery": 1470,
-  "objects": 55885,
+  "objects": 56683,
   "maxPerMap": 144,
   "types": {
     "building": 456,
-    "object": 17813,
+    "object": 17005,
     "wall": 22694,
-    "plant": 14922
+    "plant": 16528
   },
   "originalSourceHash": "58e2a4abebf84c6d748f2aa5a8b8d48fd97a84417145013a9f9e7b80c9924a70"
 }

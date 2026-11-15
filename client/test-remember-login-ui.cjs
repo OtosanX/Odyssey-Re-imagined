@@ -1,0 +1,12 @@
+'use strict';
+const {app,BrowserWindow,safeStorage}=require('electron'),fs=require('fs'),path=require('path'),os=require('os'),assert=require('assert/strict');
+const home=process.env.ODYSSEY_PROFILE_ROOT=fs.mkdtempSync(path.join(os.tmpdir(),'ody-remember-'));process.env.ODYSSEY_HEADLESS_TEST='1';require('./src/main');
+const delay=ms=>new Promise(r=>setTimeout(r,ms));setTimeout(()=>app.exit(1),45000).unref();
+app.whenReady().then(async()=>{const win=BrowserWindow.getAllWindows()[0],js=s=>win.webContents.executeJavaScript(s);async function until(s){for(let i=0;i<200;i++){try{if(await js(s))return;}catch{}await delay(40);}throw Error('Timed out: '+s);}let failed=false;try{
+assert(safeStorage.isEncryptionAvailable());await until("!!document.querySelector('#newAccount')");await delay(100);await js("document.querySelector('#newAccount').click();document.querySelector('#username').value='RememberTester';document.querySelector('#password').value='password123';document.querySelector('#rememberPassword').checked=true;document.querySelector('#loginForm').requestSubmit()");await until("!document.querySelector('#modes').hidden");
+const file=path.join(home,'launcher-passwords/accounts.json');assert(!fs.readFileSync(file,'utf8').includes('password123'));assert(JSON.parse(fs.readFileSync(file))[0].secret);
+await win.loadFile(path.join(__dirname,'src/desktop.html'));await until("!!document.querySelector('#logout')");await delay(100);await js("document.querySelector('#logout').click()");await until("!document.querySelector('#login').hidden&&document.querySelector('#password').value==='password123'");assert(await js("document.querySelector('#rememberPassword').checked"));
+await delay(800);await js("document.querySelector('#rememberPassword').checked=false;document.querySelector('#loginForm').requestSubmit()");await until("!document.querySelector('#modes').hidden");assert(!JSON.parse(fs.readFileSync(file))[0].secret);
+await js("document.querySelector('#logout').click()");await until("!document.querySelector('#login').hidden");assert.equal(await js("document.querySelector('#password').value"),'');assert.equal(await js("document.querySelector('#rememberPassword').checked"),false);
+console.log('PASS: real Windows-encrypted password saved after login, restored after page reload/account selection, removed on unchecked sign-in; no plaintext password stored.');
+}catch(e){failed=true;console.error(e);}finally{app.exit(failed?1:0);}});

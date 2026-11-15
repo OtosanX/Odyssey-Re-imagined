@@ -13,5 +13,8 @@ assert.equal(floorUnderlay(w,1,2,new Set(['2:7']),()=>({coverage:.8})),0,'preser
 w.layers[0][4]=240;w.layers[0][7]=240;w.blocked[7]=1;
 const c={x:1,y:2,parts:[{id:240}],profile:{kind:'wall'}};
 assert.equal(structuralFootprint(w,c,c.profile).d,1,'stacked blocked masonry has full depth, not separated strips');
+w.layers[4][7]=56;
+assert.equal(structuralFootprint(w,c,c.profile),null,'overgrown layered ruin keeps its wall silhouette instead of becoming a filled slab');
+w.layers[4][7]=0;
 w.blocked[7]=0;assert.equal(structuralFootprint(w,c,c.profile),null,'walkable opening is not filled');
 console.log('PASS: southern floor underlay, upper-layer wall separation, original floor art, solid masonry and walkable openings.');

@@ -89,6 +89,7 @@ export class GameState {
   }
 
   processMessage(msg: Message, client: Client) {
+        if (require('../../../tools/server-directory.cjs').gate(this, msg, client)) return;
     console.log(`Message ${msg.id} [${msg.data.length}] - ` + (client.account ? client.account.username : client.address));
     console.log(`Playing: ${client.playing}`);
 

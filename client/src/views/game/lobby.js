@@ -27,7 +27,7 @@ module.exports=net=>{
   if(msg.system!==4||msg.id!==8)return;const data=JSON.parse(msg.data.toString());
   if(data.invite){joinBusy=false;const found=data.invite;if(found.character?.started)continueCharacter(found.character);else startCreation({invite:found});m.redraw();return;}
   if(data.error){error=data.error;loading=false;joinBusy=false;mutation=false;clearTimeout(timer);m.redraw();return;}
-  if(data.characters&&data.capabilities){characters=data.characters;capabilities=data.capabilities;loading=false;mutation=false;warning=data.warning||'';error=net.worldError||'';net.worldError='';clearTimeout(timer);if(!appearanceData&&!artLoading)loadArt();}
+  if(data.characters&&data.capabilities){characters=data.characters;capabilities=data.capabilities;loading=false;mutation=false;warning=data.warning||'';error=net.worldError||'';net.worldError='';clearTimeout(timer);if(!appearanceData&&!artLoading)loadArt();if(net.createStory||net.openStorySave){const save=characters.find(c=>c.saveId===net.openStorySave);net.createStory=false;net.openStorySave=null;mode='story';startCreation(save?{save}:{});}}
   else if(mutation){mutation=false;renameId='';refresh();}else if(data.saves&&!capabilities){loading=false;clearTimeout(timer);error='Restart the server to enable the updated character launcher.';}
   m.redraw();
  }
@@ -46,7 +46,7 @@ module.exports=net=>{
   m('.rpg-actions',[button(c.started?'Continue':'Create Character',()=>continueCharacter(c),{class:'rpg-primary continue-character',disabled:loading}),c.mode==='story'&&c.mine?button('Rename',()=>{renameId=c.id;renameName=c.name;error='';}):null,c.mode==='story'&&c.mine?button('New Join Code',()=>{if(confirm('Replace the join code? Your save and existing members stay available.')){mutation=true;request({action:'rotate',saveId:c.saveId});}},{disabled:mutation}):null])
  ]);}
  function selection(){const entries=characters.filter(c=>c.mode===mode),full=mode==='mmo'&&capabilities&&!capabilities.mmoSlots.some(s=>s.available);return [
-  m('.screen-heading',[button('← Game Modes',()=>{stage='modes';error='';},{class:'rpg-back'}),button(loading?'Loading…':'Refresh Characters',refresh,{disabled:loading})]),
+  m('.screen-heading',[button('← Game Modes',()=>{if(net.returnHome&&net.preferredMode)return net.returnHome();stage='modes';error='';},{class:'rpg-back'}),button(loading?'Loading…':'Refresh Characters',refresh,{disabled:loading})]),
   loading?m('p.rpg-loading',{role:'status'},'Loading your characters…'):null,
   !loading&&!entries.length?m('p.rpg-intro','Your '+modeName()+' adventure starts with a new character.'):null,
   mode==='mmo'?m('p.rpg-muted','MMO currently supports one character per difficulty on this account. Existing characters are never overwritten.'):null,
@@ -83,7 +83,7 @@ module.exports=net=>{
   ])
  ];}
  return {
-  oninit(){alive=true;window.addEventListener('resize',resized);error=net.worldError||'';if(net.launcherReset||previousUser!==net.username){stage='modes';mode=null;draft=null;characters=[];capabilities=null;net.launcherReset=false;}else if(error&&draft){mode=draft.mode;difficulty=draft.difficulty;sprite=draft.sprite;name=draft.name;invite=draft.invite;existingSave=draft.existingSave;stage='create';}else if(mode)stage='characters';previousUser=net.username;net.on('message',reply);const worldError=error;refresh();if(worldError)error=worldError;animation=setInterval(()=>{if(alive&&stage==='create'&&walking){tick++;m.redraw();}},150);},
+  oninit(){alive=true;window.addEventListener('resize',resized);error=net.worldError||'';if(net.launcherReset||previousUser!==net.username){stage=net.preferredMode?'characters':'modes';mode=net.preferredMode||null;draft=null;characters=[];capabilities=null;net.launcherReset=false;}else if(error&&draft){mode=draft.mode;difficulty=draft.difficulty;sprite=draft.sprite;name=draft.name;invite=draft.invite;existingSave=draft.existingSave;stage='create';}else if(mode)stage='characters';previousUser=net.username;net.on('message',reply);const worldError=error;refresh();if(worldError)error=worldError;animation=setInterval(()=>{if(alive&&stage==='create'&&walking){tick++;m.redraw();}},150);},
   onremove(){alive=false;window.removeEventListener('resize',resized);clearInterval(animation);clearTimeout(timer);net.removeListener('message',reply);},
   view:()=>m('main.lobby.rpg-shell',[
    top(),net.profileWarning?m('p.inline-error',net.profileWarning):null,warning?m('p.rpg-muted',warning):null,

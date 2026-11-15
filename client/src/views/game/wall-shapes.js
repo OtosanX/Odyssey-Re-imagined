@@ -24,4 +24,12 @@ function wallFootprints(cell,profile={}){
  if(!runs.length||runs.some(r=>r.end-r.start>15||r.count<60))return [];
  return runs.map(r=>({x:r.start/32,z:-.01,w:(r.end-r.start)/32,d:1.02,source:'original layered side-wall silhouette'}));
 }
-module.exports={wallFootprints};
+// Ruin corner art points toward the next wall row. Only bridge that span when
+// the original map actually contains blocked masonry there; never seal paths.
+function ruinReturns(world,cell,profile){
+ const y=cell.y+1,i=y*world.width+cell.x;
+ const stone=y<world.height&&world.layers?.some(l=>[240,241,242].includes(l[i]));
+ const blocked=world.blocked?world.blocked[i]:world.tiles?.[i]===2;
+ return wallFootprints(cell,profile).filter(s=>s.w<1&&s.d>=1).map(s=>({...s,z:stone&&blocked?1:0,d:stone&&blocked?1:.78}));
+}
+module.exports={wallFootprints,ruinReturns};

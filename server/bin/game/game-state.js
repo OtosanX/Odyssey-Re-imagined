@@ -72,6 +72,7 @@ class GameState {
         return (tick[0] * 1e9 + tick[1]) / 1000000;
     }
     processMessage(msg, client) {
+        if (require('../../../tools/server-directory.cjs').gate(this, msg, client)) return;
         console.log(`Message ${msg.id} [${msg.data.length}] - ` + (client.account ? client.account.username : client.address));
         console.log(`Playing: ${client.playing}`);
         switch (msg.system) {

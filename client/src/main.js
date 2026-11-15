@@ -15,7 +15,19 @@ const profileRoot=process.env.ODYSSEY_PROFILE_ROOT||path.join(app.getPath('appDa
 const installRoot=path.resolve(__dirname,'../..');
 const {DesktopRuntime,endpoint,vaultKey,seedWorld}=require('../../tools/desktop-runtime.cjs');
 const runtime=new DesktopRuntime(installRoot,profileRoot,fs.existsSync(path.join(installRoot,'runtime/node.exe'))?path.join(installRoot,'runtime/node.exe'):process.execPath);
-let selectedServer=null,quitting=false;
+const identity=new (require('../../tools/launcher-accounts.cjs').LauncherAccounts)(profileRoot);
+const directory=new (require('../../tools/server-browser.cjs').ServerBrowser)(installRoot,profileRoot);
+let selectedServer=null,quitting=false,chosenMode=null;
+const launcherPasswords=new Vault(path.join(profileRoot,'launcher-passwords'),safeStorage);
+ipcMain.handle('launcher:accounts',()=>identity.list());
+ipcMain.handle('launcher:password',(_e,name)=>{const account=identity.list().find(a=>a.username.toLowerCase()===String(name).toLowerCase());return {...(account?launcherPasswords.load(account.username):{password:''}),canRemember:safeStorage.isEncryptionAvailable()};});
+ipcMain.handle('launcher:login',async(_e,data)=>{if(data.remember&&!safeStorage.isEncryptionAvailable())throw Error('Windows-protected password storage is unavailable. Sign in without remembering the password.');const account=await identity.login(data.username,data.password,data.create);await launcherPasswords.save(account.username,data.password,data.remember===true);return account;});
+ipcMain.handle('launcher:logout',async()=>{await runtime.stop();identity.current=null;chosenMode=null;});
+ipcMain.handle('launcher:mode',(_e,mode)=>{identity.require();if(mode!==null&&!['story','mmo'].includes(mode))throw Error('Choose Story or MMO.');chosenMode=mode;});
+ipcMain.handle('servers:list',()=>{identity.require();return directory.list();});
+ipcMain.handle('servers:add',(_e,server)=>{identity.require();return directory.add(server);});
+ipcMain.handle('servers:remove',(_e,server)=>{identity.require();directory.remove(server);});
+ipcMain.handle('servers:configure',(_e,input)=>{identity.require();if(chosenMode!=='mmo')throw Error('Choose MMO to host a server.');runtime.saveHost(input);});
 let lease;
 if(!process.argv.includes('--editor')&&!process.argv.includes('--host')){lease=reserveClient(path.join(profileRoot,'locks'));if(lease){const clientData=path.join(profileRoot,'clients',String(lease.slot));fs.mkdirSync(clientData,{recursive:true});app.setPath('userData',clientData);}app.on('will-quit',()=>{if(lease)lease.release();});}
 function vault(){if(!selectedServer)throw Error('Choose a server first.');return new Vault(selectedServer.host==='127.0.0.1'&&selectedServer.port===5751?profileRoot:path.join(profileRoot,'servers',vaultKey(selectedServer)),safeStorage);}
@@ -23,15 +35,21 @@ ipcMain.handle('accounts:list',()=>vault().list());
 ipcMain.handle('accounts:load',(_e,name)=>vault().load(name));
 ipcMain.handle('accounts:save',(_e,data)=>vault().save(data.username,data.password,data.remember));
 ipcMain.handle('accounts:remove',(_e,name)=>vault().remove(name));
-ipcMain.handle('desktop:info',()=>({profiles:runtime.list().map(({id,name})=>({id,name})),hosting:!!runtime.child,profileRoot,hostConfig:runtime.hostConfig(),hostOnly:process.argv.includes('--host')}));
-ipcMain.handle('desktop:add',(_e,name)=>runtime.add(name));
-ipcMain.handle('desktop:offline',async(_e,id)=>{if(!lease)throw Error('Open Odyssey.exe to play. This window hosts the server.');selectedServer=await runtime.offline(id);await win.loadFile(path.join(__dirname,'index.html'));});
-ipcMain.handle('desktop:share-profile',async(_e,id)=>{if(!lease)throw Error('Open Odyssey.exe to play.');selectedServer=await runtime.offline(id,true);await win.loadFile(path.join(__dirname,'index.html'));});
-ipcMain.handle('desktop:connect',async(_e,server)=>{if(!lease)throw Error('Open Odyssey.exe to play. This window hosts the server.');selectedServer=endpoint(server.host,server.port);await win.loadFile(path.join(__dirname,'index.html'));});
+ipcMain.handle('desktop:info',()=>({profiles:runtime.list().map(({id,name})=>({id,name})),hosting:!!runtime.child,profileRoot,identity:identity.current,mode:chosenMode,hostConfig:((c)=>({name:c.name,port:c.port,workspace:path.basename(c.workspace),locked:!!c.joinLock}))(runtime.hostConfig()),hostOnly:process.argv.includes('--host')}));
+ipcMain.handle('story:list',()=>{identity.require();return require('../../tools/story-launcher.cjs').storyCards(runtime);});
+ipcMain.handle('story:open',async(_e,choice)=>{const account=identity.require();if(!lease||chosenMode!=='story')throw Error('Choose Story to play.');let profileId=choice.profileId,save;
+ if(choice.newStory){const profile=runtime.list().find(p=>p.name.toLowerCase()===account.username.toLowerCase());profileId=profile?.id||runtime.add(account.username);}
+ else{save=(await require('../../tools/story-launcher.cjs').storyCards(runtime)).find(s=>s.profileId===profileId&&(choice.saveId?s.saveId===choice.saveId:s.legacy));if(!save)throw Error('Story save not found. Refresh your saves.');if(choice.host&&!save.mine)throw Error('Only the save owner can host this Story.');}
+ selectedServer={...await runtime.offline(profileId,choice.host===true),mode:'story',storySaveId:save?.saveId,storyStarted:save?.started,createStory:choice.newStory===true,rotateStoryCode:choice.host===true&&!!save?.saveId};await win.loadFile(path.join(__dirname,'index.html'));
+});
+ipcMain.handle('desktop:add',(_e,name)=>{identity.require();return runtime.add(name);});
+ipcMain.handle('desktop:offline',async(_e,id)=>{if(!lease)throw Error('Open Odyssey.exe to play. This window hosts the server.');identity.require();if(chosenMode!=='story')throw Error('Offline play belongs to Story.');selectedServer={...await runtime.offline(id),mode:'story'};await win.loadFile(path.join(__dirname,'index.html'));});
+ipcMain.handle('desktop:share-profile',async(_e,id)=>{if(!lease)throw Error('Open Odyssey.exe to play.');identity.require();if(chosenMode!=='story')throw Error('Choose Story first.');selectedServer={...await runtime.offline(id,true),mode:'story'};await win.loadFile(path.join(__dirname,'index.html'));});
+ipcMain.handle('desktop:connect',async(_e,server)=>{if(!lease)throw Error('Open Odyssey.exe to play. This window hosts the server.');identity.require();if(!chosenMode)throw Error('Choose Story or MMO first.');selectedServer={...endpoint(server.host,server.port),mode:chosenMode};await win.loadFile(path.join(__dirname,'index.html'));});
 ipcMain.handle('desktop:session',()=>selectedServer||endpoint(process.env.ODYSSEY_HOST||'127.0.0.1',process.env.ODYSSEY_PORT||5751));
-ipcMain.handle('desktop:host',()=>runtime.host());
+ipcMain.handle('desktop:host',()=>{identity.require();if(chosenMode!=='mmo')throw Error('Choose MMO first.');return runtime.host();});
 ipcMain.handle('desktop:stop',()=>runtime.stop());
-ipcMain.handle('desktop:home',async()=>{await runtime.stop();selectedServer=null;await win.loadFile(path.join(__dirname,'desktop.html'));});
+ipcMain.handle('desktop:home',async()=>{if(runtime.session?.offline)await runtime.stop();selectedServer=null;await win.loadFile(path.join(__dirname,'desktop.html'));});
 ipcMain.handle('desktop:studio',(_e,target)=>{
  const workspace=target==='community'?runtime.hostConfig().workspace:target==='offline'?runtime.session?.workspace:null;
  if(!workspace)throw Error('Select a world to edit.');seedWorld(installRoot,workspace);

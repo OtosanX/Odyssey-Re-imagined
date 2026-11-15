@@ -78,3 +78,34 @@ Added floor-underlay.js shared renderer helper: keeps existing Ground artwork in
 
 ## November 13: project layout
 Active folders renamed to client/ and server/. Review outputs moved to artifacts/scenery and artifacts/distribution; source staging to artifacts/publish; root JSON audit results to artifacts/reports. Updated scripts, docs, GitHub workflow and rebuilt all three EXE launchers. tools/world-paths.cjs preserves existing legacy offline/community save folders; new worlds use server/data. Source preparation uses a fresh timestamped destination so old staged files cannot leak into a new package. Real desktop test entered Crendale in 3D using the new layout. Do not globally replace legacy path literals in world-paths or its regression test.
+
+## November 14: tree assembly first pass
+Source-art audit found swamp trees801/808 and812/819, plus tall stump804/811/818, were generic objects. Generic grouping merged separate trees and unrelated decorations into3–4-row sheets. Added explicit plant families/piece coordinates in tools/scenery-families.cjs and regenerated shared catalog. Existing vegetation-layout now separates overlapping trees and anchors each at its own trunk. Tests check all16,528 plant instances against documented height, same-family composition, duplicate layers, separate anchors and connected-map seams. 1,606 corrected instances across68 maps. Genuine3-piece source trees are retained, not globally shrunk. Eight maps visually reviewed (94,151,379,1307,1313,1470,772,4). Source world/collision and2D art unchanged. Local changes only.
+
+
+## November 14: overgrown ruin correction
+Joined133/134 preview reproduced the large stretched slabs. Stacked-wall solid inference now leaves vegetation-overlaid stone faces to directional wall geometry; actual masonry fronts240–242 use full original tile artwork instead of stretching a small material patch. Blocked bare masonry stays solid and manual shape profiles retain precedence. test-floor-underlay covers this distinction. Reviewed combined ruin and House of PK1949/1966 with hidden renderer; source collision and2D artwork untouched. test-crendale-review accepts ODYSSEY_REVIEW_RUIN=1 for the joined fixture. Changes remain local.
+
+
+## November 14: ruin outline correction supersedes beam-only fix
+User confirmed narrow beams still did not match. Root cause: base wall artwork was extruded whole although upper vegetation masks much of that stone in Classic. layeredRuinWall now extracts visible stone (wall alpha minus upper plant alpha), greedily meshes its exact pixel silhouette with shallow depth and original texture crops, and leaves explicit wallShape overrides authoritative. Applies only auto ground-layer240–242 overgrown faces; ordinary bare interior walls unchanged. Original collision unchanged. tools/test-ruin-outline.cjs verifies exact visible face area for18 actual ruin cells across133/134. Joined preview artifacts/scenery/crendale-ruin-outline-0.png. This is a source-silhouette reconstruction, not a new hand-modeled castle asset.
+
+
+## November 14: ruin north–south joins
+Accepted EW visible-stone silhouette retained. layeredRuinWall previously returned early and skipped all NS geometry. shapedWalls now adds the original corner/side returns after generating the silhouette. ruinReturns extends toward next row only where original blocked masonry exists, matching front planes across the133/134 seam. Six real corner cells regression-tested for contact and refusal to extend into walkable cells. Roofs/enclosure remain separate from wall connectivity; no roof is inferred from these joins. Treat open ruins, outdoor walls and explicit roofed structures separately as work expands.
+
+
+## 2026-11-14 — view distance and visible server login
+- Added Settings → 3D map view distance: Normal (up to 3×3) / Far (up to 5×5 reciprocal connected maps). Far scenery does not expand gameplay, NPC or chat range. Bounded chunk transfer preserves packet limits and uses per-client coordinate offsets; Classic returns to normal range. Restart server and reopen client to use it.
+- Launcher now presents server Sign in / Create account first; account picker has a direct username/password sign-in button. Offline profiles explicitly remain password-free and separate from server accounts. No real saves or passwords changed.
+- Passed test-view-distance, test-world, test-scene3d and hidden test-desktop-ui with temporary data. Desktop test verifies actual 60×60 3D render, offline creation/reopen, remote account creation and password sign-in.
+
+## 2026-11-14 — Odyssey login before Story/MMO
+- Desktop now opens a device-local Odyssey username/password login with remembered account names; mode selection follows login. Story alone exposes offline/host-with-friends. MMO exposes server list and hosting. Existing per-server accounts remain separate; launcher password is never sent to community hosts. No central identity service has been deployed.
+- Server list queries same game endpoint for live player counts and password-lock status; Official labels come only from release-maintained server-directory.json (currently empty). Saved addresses live in AppData. No automatic global discovery service is claimed.
+- Added host name/port/world folder/password configuration, salted PBKDF2 join lock and HMAC nonce admission before accounts/gameplay, including browser admission. Private host settings go to ignored community-server.local.json. MMO hosting stays alive on menu return.
+- Tests: test-launcher-directory covers local auth/hash, lock rejection/replay, player counts, inventory separation and official-label spoofing; test-launcher-flow-ui covers real hidden login → Story/MMO, offline placement, locked-server list/join, account creation/login, MMO character/game, count 0→1 and 60×60 3D render. Existing desktop-ui entry delegates to it.
+
+## 2026-11-14 — Remember opening-login password
+- Opening Odyssey login now offers Remember password on this PC. Uses a separate Electron safeStorage-backed vault under AppData/launcher-passwords, saving only after successful authentication. Selecting a saved account restores its password; unchecked successful sign-in removes it. Last selected username only is stored in localStorage. Server credentials remain separate.
+- Hidden test-remember-login-ui passed with real Windows encryption and temporary accounts: save, reload/select, no plaintext on disk, and removal.

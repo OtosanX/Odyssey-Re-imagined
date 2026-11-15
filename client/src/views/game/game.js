@@ -1,4 +1,5 @@
 const Camera=require('../../models/camera-settings');
+const {MapChunks}=require('../../models/map-chunks');
 const m = require('mithril');
 const {Controls}=require('../../models/controls');
 const Panels=require('./panels');
@@ -25,18 +26,21 @@ module.exports = function(net) {
     if (!id || !image.complete || !image.naturalWidth) return;
     const n = id - 1; ctx.drawImage(image,(n%32)*32,Math.floor(n/32)*32,32,32,x,y,size,size);
   }
+  let mapChunks=new MapChunks(),requestedRadius=null;
   let world, viewRevision=0, players = [], sprites = new Map(), keys = new Set(), frame, canvas, ctx, last = 0;
   let zoom = 32, camera = {x:24,y:35},renderer3D=null;
+  controls.refreshView=()=>{const radius=controls.settings.viewMode==='3d'&&controls.settings.viewDistance===2?2:1;if(world&&requestedRadius!==radius){requestedRadius=radius;net.send(4,18,Buffer.from([radius]));}};
   function toggleView(){controls.clear();intent.reset();controls.settings.viewMode=controls.settings.viewMode==='3d'?'classic':'3d';controls.save();}
   const message = msg => {
     if (msg.system !== 4) return;
     const data = JSON.parse(msg.data.toString());
+    if(msg.id===18){const assembled=mapChunks.add(data);if(assembled)message({system:4,id:0,data:assembled});return;}
     if(msg.id===16){chat.add(data);return;}
     if(msg.id===17){if(world?.scene3dPending?.revision!==data.revision)return;world.sceneParts||=[];world.sceneParts[data.index]=data.segment;if(world.sceneParts.filter(Boolean).length===world.scene3dPending.count){world={...world,scene3d:{version:1,segments:world.sceneParts}};delete world.scene3dPending;delete world.sceneParts;}return;}
     if (msg.id === 0) {
       if(data.teleport){ui.closeDialogue();floating=[];speech=[];intent.reset();controls.clear();sprites.clear();camera.x=data.centerX;camera.y=data.centerY;}
       else if(data.shiftX||data.shiftY){for(const f of floating){f.x+=data.shiftX;f.y+=data.shiftY;}for(const p of sprites.values()){p.x+=data.shiftX;p.rx+=data.shiftX;p.fx+=data.shiftX;p.y+=data.shiftY;p.ry+=data.shiftY;p.fy+=data.shiftY;}camera.x+=data.shiftX;camera.y+=data.shiftY;}
-      world = {...data,viewRevision:++viewRevision};
+      world = {...data,viewRevision:++viewRevision};controls.refreshView();
     }
     if (msg.id === 2) { stats=data;ui.onState(data);chat.onState(data);if(data.ambientDialogue&&data.ambientDialogue.actor&&data.ambientDialogue.revision!==speechRevision){speechRevision=data.ambientDialogue.revision;speech.push({actor:data.ambientDialogue.actor.id,text:data.ambientDialogue.messages.filter(line=>!/^\d+[.)]/.test(line)).at(-1)?.slice(0,110)||'',started:performance.now()});speech=speech.slice(-8);}if(!stats.dead){respawning=false;clearTimeout(respawnTimer);}if(data.roomCode)localStorage.setItem('odyssey-last-story',data.roomCode);freezeUntil=performance.now()+(data.freezeMs||0); }
     if (msg.id === 5) {net.worldError=data.error;m.route.set('/lobby');return;}
@@ -113,7 +117,7 @@ module.exports = function(net) {
     frame=requestAnimationFrame(draw);
   }
   return {
-    oninit(){hud.init(net.username||'guest');net.on('message',message);net.on('status',status);stats={hp:0,maxHP:42,inventory:[]};drops=[];sprites.clear();world=null;chat.reset();ui.resetDialogue();speech=[];speechRevision=0;net.send(4,0,Buffer.from(JSON.stringify(net.worldOptions||{})));window.addEventListener('keydown',down);window.addEventListener('keyup',up);window.addEventListener('blur',blur);},
+    oninit(){hud.init(net.username||'guest');net.on('message',message);net.on('status',status);stats={hp:0,maxHP:42,inventory:[]};drops=[];sprites.clear();world=null;mapChunks=new MapChunks();requestedRadius=null;chat.reset();ui.resetDialogue();speech=[];speechRevision=0;net.send(4,0,Buffer.from(JSON.stringify(net.worldOptions||{})));window.addEventListener('keydown',down);window.addEventListener('keyup',up);window.addEventListener('blur',blur);},
     onremove(){renderer3D?.dispose();renderer3D=null;hud.destroy();net.removeListener('message',message);net.removeListener('status',status);controls.clear();intent.reset();clearTimeout(respawnTimer);cancelAnimationFrame(frame);window.removeEventListener('keydown',down);window.removeEventListener('keyup',up);window.removeEventListener('blur',blur);},
     view:()=>m('.game.hud-shell',[hud.view({
       utility:m('header',[m('strong','ODYSSEY'),m('span',`${world?.name || 'Connecting…'} · ${stats.zone || ''}`),m('button.view-mode-toggle',{'aria-label':'Toggle 3D view',onclick:toggleView},controls.settings.viewMode==='3d'?'Classic View':'3D View'),m('button',{onclick:()=>openPanel('journal')},'Quests'),m('button',{onclick:()=>openPanel('guild')},'Guild'),m('button',{onclick:()=>openPanel('market')},'Market'),m('button',{onclick:()=>openPanel('settings')},'Settings'),m('button',{onclick:()=>{net.send(4,8,Buffer.alloc(0));m.route.set('/lobby');}},'Worlds'),m('button',{onclick:()=>{net.send(1,2,Buffer.alloc(0));m.route.set('/login');}},'Sign out'),m('.game-status',[m('span',((stats.mode||'')+' '+(stats.difficulty||'')).trim()),m('span',players.filter(p=>!p.monster).length+' nearby'),m('span.game-control-hint','Enter to chat · Controls in Settings'),stats.roomCode?m(InviteCode,{code:stats.roomCode}):null])]),

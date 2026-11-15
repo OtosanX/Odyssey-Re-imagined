@@ -1412,5 +1412,76 @@ module.exports=[
       1229,
       1450
     ]
+  },
+  {
+    "id": "swamp-bare-tree",
+    "kind": "plant",
+    "tiles": [
+      801,
+      808
+    ],
+    "join": "source",
+    "model": "tree",
+    "form": "tree",
+    "depth": 0.12,
+    "pieces": {
+      "801": [
+        0,
+        0
+      ],
+      "808": [
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "swamp-branched-tree",
+    "kind": "plant",
+    "tiles": [
+      812,
+      819
+    ],
+    "join": "source",
+    "model": "tree",
+    "form": "tree",
+    "depth": 0.12,
+    "pieces": {
+      "812": [
+        0,
+        0
+      ],
+      "819": [
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "swamp-tall-stump",
+    "kind": "plant",
+    "tiles": [
+      804,
+      811,
+      818
+    ],
+    "join": "source",
+    "model": "tree",
+    "form": "tree",
+    "depth": 0.12,
+    "pieces": {
+      "804": [
+        0,
+        0
+      ],
+      "811": [
+        0,
+        1
+      ],
+      "818": [
+        0,
+        2
+      ]
+    }
   }
 ];

@@ -115,20 +115,47 @@ function structuralFootprint(world,c,profile){
  if(profile.wallShape&&profile.wallShape!=='auto'||profile.opening)return null;
  const rock=profile.family==='structural-cave-rock';
  const stoneAt=(x,y)=>x>=0&&y>=0&&x<world.width&&y<world.height&&world.layers?.some(l=>[240,241,242].includes(l[y*world.width+x]));
- const masonry=c.profile?.family==='masonry-infill'||c.parts.some(p=>[240,241,242].includes(p.id))&&(stoneAt(c.x,c.y-1)||stoneAt(c.x,c.y+1));
+ // Vegetation layered directly over ground-wall artwork describes exposed
+ // ruin faces, not a filled building footprint. Preserve their narrow returns.
+ const overgrown=world.layers?.some(l=>{const id=l[c.y*world.width+c.x];return id&&require('./scenery-profiles').profileAt(world,c.x,c.y,id).kind==='plant';});
+ const masonry=c.profile?.family==='masonry-infill'||!overgrown&&c.parts.some(p=>[240,241,242].includes(p.id))&&(stoneAt(c.x,c.y-1)||stoneAt(c.x,c.y+1));
  if(!rock&&!masonry)return null;
  const blocked=world.blocked?world.blocked[c.y*world.width+c.x]:world.tiles?.[c.y*world.width+c.x]===2;
  if(!blocked)return null;
  return {x:0,z:0,w:1,d:1,h:rock?1.5:1,source:'solid blocked structural footprint'};
 }
+// Preserve Classic's visible stone silhouette where upper vegetation layers
+// cover ground-wall tiles. Extruding the entire base tile invents solid beams.
+function layeredRuinWall(scene,geometry,c,profile,phase){
+ if(profile.wallShape&&profile.wallShape!=='auto')return false;
+ const wall=c.parts.find(p=>p.layer===0&&[240,241,242].includes(phase?p.alternate:p.id));if(!wall)return false;
+ const i=c.y*scene.world.width+c.x,id=phase?wall.alternate:wall.id,plants=[];
+ for(const l of [1,phase&&scene.world.layers[3]?.[i]?3:2,phase&&scene.world.layers[5]?.[i]?5:4]){const t=scene.world.layers[l]?.[i];if(t&&require('./scenery-profiles').profileAt(scene.world,c.x,c.y,t).kind==='plant')plants.push(scene.artAnalysis(t));}
+ if(!plants.length)return false;
+ const visible=scene.artAnalysis(id).alpha.slice();for(let n=0;n<1024;n++)if(plants.some(a=>a.alpha[n]))visible[n]=0;
+ const {quad}=scene.geometry,base=scene.terrain.at(c.x+.5,c.y+.5),front=c.y+1,back=front-.22,material=patch(scene,id);
+ // Greedy rectangles preserve pixel-sized gaps without a quad per pixel.
+ for(let y=0;y<32;y++)for(let x=0;x<32;x++){if(!visible[y*32+x])continue;let w=1;while(x+w<32&&visible[y*32+x+w])w++;let h=1;while(y+h<32&&Array.from({length:w},(_,k)=>visible[(y+h)*32+x+k]).every(Boolean))h++;
+  for(let yy=y;yy<y+h;yy++)visible.fill(0,yy*32+x,yy*32+x+w);
+  const a=c.x+x/32,b=a+w/32,top=base+(32-y)/32,bottom=top-h/32,tile=crop(scene.tileAtlas.tile(id),x/32,y/32,(x+w)/32,(y+h)/32);
+  quad(geometry,tile,[[a,bottom,front],[b,bottom,front],[b,top,front],[a,top,front]]);
+  quad(geometry,tile,[[b,bottom,back],[a,bottom,back],[a,top,back],[b,top,back]],[.7,.7,.7,1]);
+  quad(geometry,material,[[a,top,front],[b,top,front],[b,top,back],[a,top,back]],[.9,.9,.9,1]);
+  quad(geometry,material,[[a,bottom,back],[a,bottom,front],[a,top,front],[a,top,back]],[.75,.75,.75,1]);
+  quad(geometry,material,[[b,bottom,front],[b,bottom,back],[b,top,back],[b,top,front]],[.85,.85,.85,1]);
+ }
+ return true;
+}
 function shapedWalls(scene,geometry,g,phase=0){
- const handled=new Set();if(g.kind!=='wall')return handled;const {wallFootprints}=require('./wall-shapes'),{profileAt}=require('./scenery-profiles'),{quad}=scene.geometry;
- for(const c of g.cells){const id=c.parts.map(p=>phase?p.alternate:p.id).find(Boolean);if(!id)continue;const profile=profileAt(scene.world,c.x,c.y,id),shapes=structuralFootprint(scene.world,c,profile)?[structuralFootprint(scene.world,c,profile)]:wallFootprints(c,profile),base=scene.terrain.at(c.x+.5,c.y+.5),tile=c.profile?.family==='masonry-infill'?scene.tileAtlas.tile(122):profile.family==='structural-cave-rock'?scene.tileAtlas.tile(717):patch(scene,id);for(const s of shapes){const x=c.x+s.x,z=c.y+s.z,w=s.w,d=s.d,h=base+(s.h||1);
+ const handled=new Set();if(g.kind!=='wall')return handled;const {wallFootprints,ruinReturns}=require('./wall-shapes'),{profileAt}=require('./scenery-profiles'),{quad}=scene.geometry;
+ for(const c of g.cells){const id=c.parts.map(p=>phase?p.alternate:p.id).find(Boolean);if(!id)continue;const profile=profileAt(scene.world,c.x,c.y,id);const layered=layeredRuinWall(scene,geometry,c,profile,phase);if(layered)handled.add(c);const shapes=layered?ruinReturns(scene.world,c,profile):structuralFootprint(scene.world,c,profile)?[structuralFootprint(scene.world,c,profile)]:wallFootprints(c,profile),base=scene.terrain.at(c.x+.5,c.y+.5),tile=c.profile?.family==='masonry-infill'?scene.tileAtlas.tile(122):profile.family==='structural-cave-rock'?scene.tileAtlas.tile(717):patch(scene,id);for(const s of shapes){const x=c.x+s.x,z=c.y+s.z,w=s.w,d=s.d,h=base+(s.h||1);
  quad(geometry,tile,[[x,base,z+d],[x+w,base,z+d],[x+w,h,z+d],[x,h,z+d]]);
  quad(geometry,tile,[[x+w,base,z],[x,base,z],[x,h,z],[x+w,h,z]],[.7,.7,.7,1]);
  quad(geometry,tile,[[x,base,z],[x,base,z+d],[x,h,z+d],[x,h,z]],[.75,.75,.75,1]);
  quad(geometry,tile,[[x+w,base,z+d],[x+w,base,z],[x+w,h,z],[x+w,h,z+d]],[.9,.9,.9,1]);
  quad(geometry,tile,[[x,h,z+d],[x+w,h,z+d],[x+w,h,z],[x,h,z]],[.95,.95,.95,1]);
+ // Preserve the full masonry face instead of stretching an eight-pixel patch.
+ if([240,241,242].includes(id)&&w===1&&d<.3)quad(geometry,scene.tileAtlas.tile(id),[[x,base,z+d+.002],[x+w,base,z+d+.002],[x+w,h,z+d+.002],[x,h,z+d+.002]]);
  }if(shapes.length)handled.add(c);}return handled;
 }
 function solidWalls(scene,geometry,g,phase=0){
@@ -146,4 +173,4 @@ function solidWalls(scene,geometry,g,phase=0){
   ids.forEach((id,n)=>quad(geometry,scene.tileAtlas.tile(id),[[x,base,front+.001+n*.001],[x+1,base,front+.001+n*.001],[x+1,base+1,front+.001+n*.001],[x,base+1,front+.001+n*.001]]));handled.add(c);
  }return handled;
 }
-module.exports={structuralFootprint,shapedWalls,gatehouse,house,wallStrips,solidWalls,furniture,tree,rearMaterial:patch};
+module.exports={layeredRuinWall,structuralFootprint,shapedWalls,gatehouse,house,wallStrips,solidWalls,furniture,tree,rearMaterial:patch};

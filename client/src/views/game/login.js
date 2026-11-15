@@ -20,11 +20,11 @@ module.exports=function Login(net){
      ...accounts.map(a=>{const sprite=a.avatar||Appearances.remembered(a.username);return m('.account-card',{key:a.username},[
       m('button.account-choice',{disabled:busy,onclick:()=>choose(a.username)},[sprite?m(Appearances.Portrait,{sprite,scale:3}):m('span.account-avatar',a.username[0].toUpperCase()),m('strong',a.username),m('span.card-action','Sign In →')]),
       m('button.forget-account',{disabled:busy,title:'Remove this account from this device only',onclick:async()=>{try{await vault.remove(a.username);await refresh();}catch(e){auth.status=e.message;}}},'Forget on this device')]);}),
-     m('button.account-card.add-account',{disabled:busy,onclick:()=>begin('create')},[m('span.plus','+'),m('strong','Add Account'),m('small','Create an account or sign in to another')])
-    ]),m('p.account-status',{role:'status'},loadingAccount?'Opening saved account…':auth.status)
+     m('button.account-card.add-account',{disabled:busy,onclick:()=>begin('create')},[m('span.plus','+'),m('strong','Add Account'),m('small','Create a new server account')])
+    ]),m('button.rpg-primary',{disabled:busy,onclick:()=>begin('existing')},'Sign in with username and password'),m('p.account-status',{role:'status'},loadingAccount?'Opening saved account…':auth.status)
    ]:m('form.account-form.rpg-panel',{onsubmit:e=>{e.preventDefault();if(form==='create')auth.createAccount();else auth.login();}},[
     m('span.rpg-eyebrow',form==='create'?'A NEW BEGINNING':'WELCOME BACK'),m('h2',form==='create'?'Create Account':'Sign In'),
-    m('p.rpg-muted',form==='create'?'Username: 3–24 characters. Password: 6–24 characters. Use letters, numbers or underscores.':'Enter your password to continue.'),
+    m('p.rpg-muted',form==='create'?'Username: 3–24 characters. Password: 6–24 characters. Use letters, numbers or underscores.':'Enter your username and password for this server.'),
     m('label',['Username',m('input',{type:'text',disabled:busy,value:auth.username,readonly:form==='signin',autocomplete:'username',maxLength:24,oninput:e=>username(e.target.value)})]),
     form==='create'?m('p.availability',{class:availability.includes('taken')?'error':'',role:'status'},availability):null,
     m('label',['Password',m('.password-field',[m('input',{type:showPassword?'text':'password',disabled:busy,value:auth.password,autocomplete:form==='create'?'new-password':'current-password',oninput:e=>auth.setPassword(e.target.value)}),m('button.password-toggle',{type:'button',disabled:busy,'aria-label':showPassword?'Hide password':'Show password','aria-pressed':showPassword,onclick:()=>showPassword=!showPassword},showPassword?'Hide':'Show')])]),

@@ -1,6 +1,7 @@
 'use strict';
 const {app,BrowserWindow}=require('electron'),fs=require('fs'),path=require('path'),os=require('os');
 const root=path.resolve(__dirname,'..'),world=require('../server/data/classic-world.json'),ids=process.env.ODYSSEY_REVIEW_MAPS?process.env.ODYSSEY_REVIEW_MAPS.split(',').map(Number):[666,1,2,3,4,5,6,7,9,10,97,197,205,207,260,432,233,766,446,107,54,60,94,951];
+if(process.env.ODYSSEY_REVIEW_RUIN){const a=world.maps[133],b=world.maps[134];world.maps[-1]={id:-1,name:'Overgrown ruin — connected maps 133/134',width:12,height:12,layers:a.layers.map((l,n)=>l.slice(72).concat(b.layers[n].slice(0,72))),blocked:a.blocked.slice(72).concat(b.blocked.slice(0,72))};ids.unshift(-1);}
 app.setPath('userData',fs.mkdtempSync(path.join(os.tmpdir(),'ody-crendale-review-')));app.commandLine.appendSwitch('use-angle','swiftshader');app.commandLine.appendSwitch('enable-unsafe-swiftshader');
 app.whenReady().then(async()=>{let win;try{win=new BrowserWindow({show:false,webPreferences:{nodeIntegration:true,contextIsolation:false,offscreen:true,backgroundThrottling:false}});await win.loadFile(path.join(__dirname,'src/test-combat-ui.html'));
 await win.webContents.executeJavaScript('window.reviewMaps='+JSON.stringify(ids.map(id=>({...world.maps[id],tiles:world.maps[id].blocked,stepMs:150})))+';true;');

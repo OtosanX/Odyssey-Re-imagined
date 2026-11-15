@@ -9,7 +9,9 @@ function walk(folder){return fs.readdirSync(folder,{withFileTypes:true}).flatMap
 async function build(){
  if(process.platform!=='win32')throw Error('The portable build currently targets Windows x64.');
  const output=path.join(root,'dist','Odyssey-Reimagined-Windows-'+new Date().toISOString().replace(/[:.]/g,'-'));fs.mkdirSync(output,{recursive:false});
- for(const name of ['map-format.cjs','visual-format.cjs','THIRD-PARTY-NOTICES.md','community-server.json'])copy(path.join(root,name),path.join(output,name));
+ for(const name of ['map-format.cjs','visual-format.cjs','THIRD-PARTY-NOTICES.md','server-directory.json'])copy(path.join(root,name),path.join(output,name));
+ fs.writeFileSync(path.join(output,'community-server.json'),JSON.stringify({name:'My Odyssey server',host:'0.0.0.0',port:5751,workspace:'community-world'},null,2));
+ copy(path.join(root,'docs','SERVER_HOSTING.md'),path.join(output,'SERVER_HOSTING.md'));
  copy(path.join(root,'docs','DOWNLOAD-AND-HOST.md'),path.join(output,'README.md'));
  for(const name of fs.readdirSync(path.join(root,'tools')).filter(n=>n.endsWith('.cjs')&&!n.startsWith('test-')))copy(path.join(root,'tools',name),path.join(output,'tools',name));
  const client='client',server='server';
@@ -22,7 +24,7 @@ async function build(){
  copy(process.execPath,path.join(output,'runtime/node.exe'));
  const license=await fetch('https://raw.githubusercontent.com/nodejs/node/'+process.version+'/LICENSE');if(!license.ok)throw Error('Cannot fetch the matching Node runtime license.');fs.writeFileSync(path.join(output,'runtime/LICENSE.node'),await license.text());
  execFileSync('powershell.exe',['-NoProfile','-ExecutionPolicy','Bypass','-File',path.join(root,'tools/build-launchers.ps1'),'-OutputDirectory',output],{stdio:'inherit',windowsHide:true});
- const files=walk(output);for(const file of files){const relative=path.relative(output,file).replace(/\\/g,'/');if(/(^|\/)(accounts\.data|offline-profiles\.json|progress-[^/]*|rooms\.json|story-saves\.json|\.env|\.server.lock)$/.test(relative)||relative.includes('/sessions/'))throw Error('Private data in release: '+relative);}
+ const files=walk(output);for(const file of files){const relative=path.relative(output,file).replace(/\\/g,'/');if(/(^|\/)(accounts\.data|launcher-accounts\.json|saved-servers\.json|community-server\.local\.json|offline-profiles\.json|progress-[^/]*|rooms\.json|story-saves\.json|\.env|\.server.lock)$/.test(relative)||relative.includes('/sessions/'))throw Error('Private data in release: '+relative);}
  fs.writeFileSync(path.join(output,'release-manifest.json'),JSON.stringify({format:1,platform:'win32-x64',node:process.version,files:files.map(file=>({path:path.relative(output,file).replace(/\\/g,'/'),sha256:crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')}))},null,2));
  const archive=output+'.zip';execFileSync('powershell.exe',['-NoProfile','-File',path.join(root,'tools/zip-release.ps1'),'-SourceDirectory',output,'-ArchivePath',archive],{stdio:'inherit',windowsHide:true});
  const sha=crypto.createHash('sha256').update(fs.readFileSync(archive)).digest('hex');fs.writeFileSync(archive+'.sha256',sha+'  '+path.basename(archive)+'\n');

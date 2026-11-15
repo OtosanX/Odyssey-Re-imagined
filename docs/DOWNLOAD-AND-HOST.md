@@ -6,11 +6,13 @@ A work-in-progress reimagining of Odyssey Online Classic, with a downloadable Wi
 
 Download the Windows ZIP from Releases and **extract the entire ZIP** into a writable folder. Open **Odyssey.exe**. No Node.js installation, browser account or internet connection is required for offline play. Keep the EXE and its accompanying folders together.
 
-- **Play offline:** add a local profile, select it, and play. No password prompt. The same game simulation runs privately on loopback, with its own accounts and saves. Story and MMO rules are available; choosing MMO rules offline does not connect to a public MMO.
-- **Host profile for friends:** opens that same local profile and its existing Story saves on the configured game port. Friends connect to your reachable address, create accounts on your host, then enter the Story join code. Closing/signing out of the host saves and ends the session; saves remain available for offline play later.
-- **Join a server:** enter the host's hostname/IP and game port (default 5751). Create or select an account on that server. Saved passwords are separated by server address and port.
-- **Host & create:** start a separate community server or open its world in Studio. Keep the hosting window open while people play.
-- **Odyssey Server.exe** opens the hosting launcher. **Odyssey Studio.exe** opens the editor. For a configured community world, use **Edit community world** in the launcher to select the exact server workspace.
+Create or select your Odyssey account on this PC and sign in, then choose **Story** or **MMO**. This opening login works without a central service and never sends its password to community hosts.
+
+- **Story:** play an offline profile, host its saves for friends, or connect to a friend's host and enter their Story join code. Offline play appears only here.
+- **MMO:** browse saved/bundled servers with live player counts, password-lock status and Official/Community labels. Add an address to join a community. Each server keeps separate accounts, characters and inventories.
+- **Host your own MMO server:** configure name, port, world folder and optional join password, save, then start. Hosting instructions appear alongside the server browser.
+- On a first server visit, create or select that server's account. Existing account credentials remain valid and remembered passwords stay scoped by address and port.
+- **Odyssey Server.exe** opens the launcher for hosting. **Odyssey Studio.exe** opens the editor. Use **Edit this server's world** under MMO hosting to edit the selected community workspace.
 
 Windows x64 is the packaged platform. This is an unsigned testing build. Classic 2D and modern 3D are both available in the game. Four simultaneous game clients are allowed per Windows user.
 
@@ -24,7 +26,7 @@ The first launch seeds maps into a new world. Subsequent launches preserve the w
 
 ## Run your own server
 
-Edit `community-server.json` beside the EXEs:
+Use the hosting form under MMO. Changes are saved to private `community-server.local.json`. The bundled `community-server.json` supplies defaults:
 
 ```json
 {
@@ -35,7 +37,7 @@ Edit `community-server.json` beside the EXEs:
 }
 ```
 
-Start **Odyssey Server.exe**, then click **Start server**. The first start copies the seed maps into `community-world/server/data/`. Accounts, MMO progress, Story saves, drops, markets and guilds are owned by this world. The bundled seed is never a copy of the developer's accounts or saves.
+Start **Odyssey Server.exe**, sign in, choose **MMO**, then click **Start MMO server**. The first start copies the seed maps into `community-world/server/data/`. Accounts, MMO progress, Story saves, drops, markets and guilds are owned by this world. The bundled seed is never a copy of the developer's accounts or saves.
 
 Players on your LAN use this PC's LAN IP and the configured port. Players on other networks need a reachable public address, forwarded TCP port or suitable private-network/tunnel service. This build does not automatically change firewall/router settings. The native game protocol currently uses plain TCP; use a trusted private network or encrypted tunnel for testing across the internet and a unique game password. A public production MMO requires transport hardening and deployment review.
 
@@ -43,7 +45,7 @@ The managed desktop host disables the legacy admin API and browser listener. Exi
 
 ## Edit maps and worlds
 
-Click **Edit community world**. Studio indexes all original maps automatically, supports searchable folders, Player Made copies, 2D/3D editing, connected worlds, sprite artwork and publishing. Publish the intended changes to this server, then save/stop and restart it. Preserve map IDs/connections when updating existing worlds. Other server owners can modify their own copies without changing yours.
+Click **Edit this server’s world** under MMO hosting. Studio indexes all original maps automatically, supports searchable folders, Player Made copies, 2D/3D editing, connected worlds, sprite artwork and publishing. Publish the intended changes to this server, then save/stop and restart it. Preserve map IDs/connections when updating existing worlds. Other server owners can modify their own copies without changing yours.
 
 Studio's map library and drafts live in the selected workspace. Global scenery profile overrides and artwork belong to the installed game copy; distributing new artwork/profile code currently requires giving players the updated client too. Server map data is transmitted by the existing game protocol.
 
