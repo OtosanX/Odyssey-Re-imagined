@@ -27,7 +27,7 @@ module.exports=net=>{
   if(msg.system!==4||msg.id!==8)return;const data=JSON.parse(msg.data.toString());
   if(data.invite){joinBusy=false;const found=data.invite;if(found.character?.started)continueCharacter(found.character);else startCreation({invite:found});m.redraw();return;}
   if(data.error){error=data.error;loading=false;joinBusy=false;mutation=false;clearTimeout(timer);m.redraw();return;}
-  if(data.characters&&data.capabilities){characters=data.characters;capabilities=data.capabilities;loading=false;mutation=false;warning=data.warning||'';error=net.worldError||'';net.worldError='';clearTimeout(timer);if(!appearanceData&&!artLoading)loadArt();if(net.createStory||net.openStorySave){const save=characters.find(c=>c.saveId===net.openStorySave);net.createStory=false;net.openStorySave=null;mode='story';startCreation(save?{save}:{});}}
+  if(data.characters&&data.capabilities){characters=data.characters;capabilities=data.capabilities;loading=false;mutation=false;warning=data.warning||'';error=net.worldError||'';net.worldError='';clearTimeout(timer);if(!appearanceData&&!artLoading)loadArt();if(net.pendingStoryCode){const code=net.pendingStoryCode;net.pendingStoryCode=null;joinCode=code;joinBusy=true;request({action:'inspectInvite',code});}if(net.createStory||net.openStorySave){const save=characters.find(c=>c.saveId===net.openStorySave);net.createStory=false;net.openStorySave=null;mode='story';startCreation(save?{save}:{});}}
   else if(mutation){mutation=false;renameId='';refresh();}else if(data.saves&&!capabilities){loading=false;clearTimeout(timer);error='Restart the server to enable the updated character launcher.';}
   m.redraw();
  }

@@ -109,3 +109,8 @@ Accepted EW visible-stone silhouette retained. layeredRuinWall previously return
 ## 2026-11-14 — Remember opening-login password
 - Opening Odyssey login now offers Remember password on this PC. Uses a separate Electron safeStorage-backed vault under AppData/launcher-passwords, saving only after successful authentication. Selecting a saved account restores its password; unchecked successful sign-in removes it. Last selected username only is stored in localStorage. Server credentials remain separate.
 - Hidden test-remember-login-ui passed with real Windows encryption and temporary accounts: save, reload/select, no plaintext on disk, and removal.
+
+## 2026-11-15 — Finished Story save-card launcher
+- Replaced the profile dropdown with actual saved-character cards (skin, level, location, difficulty). Continue offers Play Offline or Host for Friends for that exact save. New adventure opens character creation directly. Existing save IDs remain unchanged.
+- Hosting rotates the random invitation through the running server before continuing; codes use XXXXXXXX with eye/copy controls. Joining a friend is a collapsed form; host address remains necessary without a rendezvous service. Generic MMO connection panel is hidden in Story.
+- Hidden full launcher test passed: create Story, render/reveal/mask card, offline resume, hosted resume with code rotation, MMO admission/login and 3D far view. Inspected artifacts/distribution/story-save-cards.png. Updated older mask assertions.

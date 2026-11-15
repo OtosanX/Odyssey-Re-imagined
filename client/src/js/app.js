@@ -3,7 +3,7 @@ window.accountVault={list:()=>ipcRenderer.invoke('accounts:list'),load:name=>ipc
 const m=require('mithril'),{Network}=require('./bin/network');
 (async()=>{
  const session=await ipcRenderer.invoke('desktop:session');
- const net=new Network(session.host,session.port);net.offline=!!session.offline;net.preferredMode=session.mode;net.returnHome=()=>home();net.hostingPort=session.shared?session.port:null;
+ const net=new Network(session.host,session.port);net.offline=!!session.offline;net.preferredMode=session.mode;net.pendingStoryCode=session.storyCode;net.returnHome=()=>home();net.hostingPort=session.shared?session.port:null;
  const home=async()=>{net.socket.destroy();await ipcRenderer.invoke('desktop:home');};
  const login=session.offline?{oninit:()=>{if(net.username)home();},view:()=>m('.login',[m('h1','Offline play'),m('p','Opening your local profile…'),m('button',{onclick:home},'Back to launcher')])}:require('./views/game/login')(net);
  const original=login.view;login.view=function(...args){return m('div',[original.apply(this,args),!session.offline&&m('button',{style:{position:'fixed',top:'8px',right:'8px'},onclick:home},'Servers / Offline')]);};
