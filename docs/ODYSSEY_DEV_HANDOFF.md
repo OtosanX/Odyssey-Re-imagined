@@ -114,3 +114,27 @@ Accepted EW visible-stone silhouette retained. layeredRuinWall previously return
 - Replaced the profile dropdown with actual saved-character cards (skin, level, location, difficulty). Continue offers Play Offline or Host for Friends for that exact save. New adventure opens character creation directly. Existing save IDs remain unchanged.
 - Hosting rotates the random invitation through the running server before continuing; codes use XXXXXXXX with eye/copy controls. Joining a friend is a collapsed form; host address remains necessary without a rendezvous service. Generic MMO connection panel is hidden in Story.
 - Hidden full launcher test passed: create Story, render/reveal/mask card, offline resume, hosted resume with code rotation, MMO admission/login and 3D far view. Inspected artifacts/distribution/story-save-cards.png. Updated older mask assertions.
+
+## 2026-11-15 — Automatic temporary Story forwarding
+- Added bounded NAT-PMP/UPnP support restricted to default private Windows IPv4 gateway, 120s requested lease / 600s maximum, owned-rule verification and cleanup. Story hosting uses a fresh port; forwarding failure stops host; offline/join paths do not touch router. Mapping renewal failure stops host. Renderer crashes/window closure stop managed servers; parent forced termination relies on lease expiry.
+- Full masked ODY1 invitations encode endpoint plus random save code; desktop join decodes/validates them. No online directory or relay required for these longer invitations; eight-character-only global lookup remains unavailable. CGNAT/unsupported router errors are explicit.
+- Added public-input bounds, auth/invitation rate limits, and selected-save policy for shared Story hosts. Tests use localhost mock routers and temporary worlds; no live-router changes made. Forced-termination test confirms listener gone and stale save lock recovery.
+- Updated docs/SERVER_HOSTING.md with operational/security limitations.
+
+- Final verification: mock-router tests and lifecycle failure/forced-exit tests passed; hidden real launcher test passed with simulated mapping, full ODY1 reveal/decode, offline/hosted Story, locked MMO sign-in and 3D far rendering. Fixed stale Mithril password-prompt redraw by mounting it in its own container before routing. No physical-router changes or live remote connectivity test performed.
+
+## NPC trade repair — 2026-11-15
+- Dirt Hermit (map 806) exchanges one Day Flower (111, dropped by Horticulterist) for Mud Key (112). Trades now appear inside the existing portrait dialogue and record player/reward history.
+- Original non-stack trade values mean one item, not a quantity. Equipped items are excluded; capacity is checked before reward scripts; original get/drop restrictions execute. Script TakeObj follows Classic count/absent-item behavior. Dialogue teleports now immediately send map updates; silent merchants have a manual greeting.
+- Validation: tools/test-npc-trades.cjs audits 566 map/offer combinations (565 complete, one original god-item restriction), item protection, capacity, ration rules, history and warp delivery. tools/test-reimagined.cjs passes five quest chains plus dialogue/rollback regressions. client/test-npc-trade-ui.cjs passes hidden dialogue UI checks.
+- This does not claim every archived script is implemented: Sanctuary Wench and Thelonious Monk remain marked archive-incomplete. Existing saves were not modified. Restart running game/server processes to load changes.
+
+## Accepted-only quest log — 2026-11-15
+- Story and MMO log entries now require actual quest progress or explicit acceptance. Old questsSeen discovery arrays and read-only flag checks no longer expose quests.
+- Lumberjack and Alchemy use Accept quest in the portrait dialogue; simply entering with the required item no longer silently consumes it. Acceptance persists separately from original completion flags. Existing progressed/completed flags remain visible.
+- Quest panel now has Active and collapsible Completed sections, objectives, destinations and tracking. Conversation history stays in the NPC window and chat. /quests uses the same accepted-only list.
+- Passed acceptance/persistence tests in both modes, five original errand-chain tests, 566 merchant offers and hidden interface checks including acceptance and Active/Completed groups.
+- Full archive static audit: 2,826 scripts parse; 2,532 directly supported, 294 contain missing APIs. This is not full behavioral validation. quest-chain-audit.json inventories stage writes for all seven quests in the original questlog; Sanctuary Wench and Thelonious Monk remain unfinished in the archive. No invented completion/rewards added.
+
+## Hardcore guidance defaults — 2026-11-15
+Hardcore Story and MMO now default quest tracker/arrows off, using separate hardcoreTracker/hardcoreArrows opt-ins so Normal preferences cannot enable them. Original quest scripts/rewards, accepted-only log, portrait dialogue, selectable 2D/3D, and requested Hardcore death penalties remain. Checked defaults, Normal isolation and explicit opt-in. This is a Classic-oriented mode, not a claim of complete original engine parity.

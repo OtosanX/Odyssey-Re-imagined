@@ -40,12 +40,12 @@ ipcMain.handle('story:list',()=>{identity.require();return require('../../tools/
 ipcMain.handle('story:open',async(_e,choice)=>{const account=identity.require();if(!lease||chosenMode!=='story')throw Error('Choose Story to play.');let profileId=choice.profileId,save;
  if(choice.newStory){const profile=runtime.list().find(p=>p.name.toLowerCase()===account.username.toLowerCase());profileId=profile?.id||runtime.add(account.username);}
  else{save=(await require('../../tools/story-launcher.cjs').storyCards(runtime)).find(s=>s.profileId===profileId&&(choice.saveId?s.saveId===choice.saveId:s.legacy));if(!save)throw Error('Story save not found. Refresh your saves.');if(choice.host&&!save.mine)throw Error('Only the save owner can host this Story.');}
- selectedServer={...await runtime.offline(profileId,choice.host===true),mode:'story',storySaveId:save?.saveId,storyStarted:save?.started,createStory:choice.newStory===true,rotateStoryCode:choice.host===true&&!!save?.saveId};await win.loadFile(path.join(__dirname,'index.html'));
+ selectedServer={...await runtime.offline(profileId,choice.host===true,save?.saveId),mode:'story',storySaveId:save?.saveId,storyStarted:save?.started,createStory:choice.newStory===true,rotateStoryCode:choice.host===true&&!!save?.saveId};await win.loadFile(path.join(__dirname,'index.html'));
 });
 ipcMain.handle('desktop:add',(_e,name)=>{identity.require();return runtime.add(name);});
 ipcMain.handle('desktop:offline',async(_e,id)=>{if(!lease)throw Error('Open Odyssey.exe to play. This window hosts the server.');identity.require();if(chosenMode!=='story')throw Error('Offline play belongs to Story.');selectedServer={...await runtime.offline(id),mode:'story'};await win.loadFile(path.join(__dirname,'index.html'));});
 ipcMain.handle('desktop:share-profile',async(_e,id)=>{if(!lease)throw Error('Open Odyssey.exe to play.');identity.require();if(chosenMode!=='story')throw Error('Choose Story first.');selectedServer={...await runtime.offline(id,true),mode:'story'};await win.loadFile(path.join(__dirname,'index.html'));});
-ipcMain.handle('desktop:connect',async(_e,server)=>{if(!lease)throw Error('Open Odyssey.exe to play. This window hosts the server.');identity.require();if(!chosenMode)throw Error('Choose Story or MMO first.');if(chosenMode==='story'&&!/^[A-Z2-9]{8}$/.test(server.storyCode||''))throw Error('Enter the host’s eight-character Story code.');selectedServer={...endpoint(server.host,server.port),mode:chosenMode,storyCode:chosenMode==='story'?server.storyCode:undefined};await win.loadFile(path.join(__dirname,'index.html'));});
+ipcMain.handle('desktop:connect',async(_e,server)=>{if(server.invitation)server=require('../../tools/story-invitation.cjs').decode(server.invitation);if(!lease)throw Error('Open Odyssey.exe to play. This window hosts the server.');identity.require();if(!chosenMode)throw Error('Choose Story or MMO first.');if(chosenMode==='story'&&!/^[A-Z2-9]{8}$/.test(server.storyCode||''))throw Error('Enter the host’s eight-character Story code.');selectedServer={...endpoint(server.host,server.port),mode:chosenMode,storyCode:chosenMode==='story'?server.storyCode:undefined};await win.loadFile(path.join(__dirname,'index.html'));});
 ipcMain.handle('desktop:session',()=>selectedServer||endpoint(process.env.ODYSSEY_HOST||'127.0.0.1',process.env.ODYSSEY_PORT||5751));
 ipcMain.handle('desktop:host',()=>{identity.require();if(chosenMode!=='mmo')throw Error('Choose MMO first.');return runtime.host();});
 ipcMain.handle('desktop:stop',()=>runtime.stop());
@@ -81,6 +81,7 @@ function createWindow() {
     GameState: GameState,
     Network: Network,
   }
+  win.webContents.on('render-process-gone',()=>{if(runtime.child)runtime.stop().catch(()=>{});});
   win.setMenu(null);
   win.webContents.setWindowOpenHandler(()=>({action:'deny'}));
   win.webContents.on('will-navigate',(event,destination)=>{if(!destination.startsWith('file:'))event.preventDefault();});
@@ -100,7 +101,7 @@ function createWindow() {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
-    win = null
+    win = null;runtime.stop().catch(()=>{});
   })
 }
 

@@ -1,0 +1,8 @@
+'use strict';
+// Bound public game traffic before parsing JSON or starting password hashing.
+function allow(game,msg,client){const now=Date.now();if(!client.inputWindow||now-client.inputWindow.at>=1000)client.inputWindow={at:now,count:0};if(++client.inputWindow.count>160||![1,4].includes(msg.system)||msg.data.length>(msg.system===1?200:16384)){client.socket?.destroy();return false;}
+ if(msg.system===1&&(msg.id===0||msg.id===1)){game.authWindows||=new Map();const address=client.address||'local';let budget=game.authWindows.get(address);if(!budget||now-budget.at>=60000){for(const [key,value]of game.authWindows)if(now-value.at>=60000)game.authWindows.delete(key);if(game.authWindows.size>=2048&&!budget){client.socket?.destroy();return false;}budget={at:now,count:0};game.authWindows.set(address,budget);}if(++budget.count>60){client.send(1,msg.id,Buffer.from([255]));return false;}}
+ if(msg.system===4&&(msg.id===0||msg.id===15)){let request;try{request=JSON.parse(msg.data.toString());}catch{return true;}if(request&&(request.code||request.action==='inspectInvite')){game.inviteWindows||=new Map();const key=client.address||'local';let entry=game.inviteWindows.get(key);if(!entry||now-entry.at>=60000){for(const [k,v]of game.inviteWindows)if(now-v.at>=60000)game.inviteWindows.delete(k);if(game.inviteWindows.size>=2048&&!entry){client.socket?.destroy();return false;}entry={at:now,count:0};game.inviteWindows.set(key,entry);}if(++entry.count>30){client.send(4,msg.id===15?8:5,Buffer.from(JSON.stringify({error:'Too many invitation attempts. Wait a minute and try again.'})));return false;}}}
+ return true;
+}
+module.exports={allow};

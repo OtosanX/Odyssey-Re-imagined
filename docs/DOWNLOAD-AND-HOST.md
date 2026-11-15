@@ -8,7 +8,7 @@ Download the Windows ZIP from Releases and **extract the entire ZIP** into a wri
 
 Create or select your Odyssey account on this PC and sign in, then choose **Story** or **MMO**. This opening login works without a central service and never sends its password to community hosts.
 
-- **Story:** play an offline profile, host its saves for friends, or connect to a friend's host and enter their Story join code. Offline play appears only here.
+- **Story:** play an offline profile, host its saves for friends with a temporary router mapping, or paste a friend's full ODY1 invitation. Offline play appears only here.
 - **MMO:** browse saved/bundled servers with live player counts, password-lock status and Official/Community labels. Add an address to join a community. Each server keeps separate accounts, characters and inventories.
 - **Host your own MMO server:** configure name, port, world folder and optional join password, save, then start. Hosting instructions appear alongside the server browser.
 - On a first server visit, create or select that server's account. Existing account credentials remain valid and remembered passwords stay scoped by address and port.
@@ -53,7 +53,7 @@ Studio's map library and drafts live in the selected workspace. Global scenery p
 
 GitHub hosts source, issue tracking and downloadable releases. GitHub Pages serves static websites; it cannot run this always-on Node/TCP game server. Use a server/VPS or your own computer for the MMO process and durable data storage.
 
-Story mode can run on a player's PC with up to eight participants, using the host's reachable community-server address and then the Story join code. Current codes identify a Story save **on that server**, not an internet address. Automatic code-only joining through arbitrary home routers is not implemented in this release. It needs a separately hosted rendezvous/relay service; GitHub is not that service. A future relay should keep saves on the host PC, forward only game traffic, expire invitations and preserve save IDs across new codes. Offline mode deliberately opens no internet listener.
+Story mode runs on the host’s PC with up to eight participants. On Windows, Host for Friends requests an expiring NAT-PMP/UPnP TCP mapping and creates a full ODY1 invitation containing connection details and the save code. Friends paste it without entering an IP or port. Normal shutdown removes the mapping; a crash stops renewal, so its lease expires (requested 120 seconds; maximum accepted 600 seconds). Routers that cannot supply temporary mappings and CGNAT are unsupported for this method; hosting stops with an error and offline saves stay intact. No firewall rules are automatically changed. Windows may request network access. The invitation is longer than eight characters; short-code global lookup and relay fallback are not deployed. The existing game connection is not newly encrypted by this feature. See SERVER_HOSTING.md for limits.
 
 ## Build from source
 

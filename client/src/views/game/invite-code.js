@@ -11,7 +11,7 @@ const InviteCode={
  onbeforeupdate(v){if(v.state.code!==v.attrs.code){clearTimeout(v.state.timer);Object.assign(v.state,{code:v.attrs.code,visible:false,copied:false,error:false});}},
  onremove(v){v.state.alive=false;clearTimeout(v.state.timer);},
  view(v){const s=v.state;return m('span.invite-code',[
-  m('span.invite-label','Join code'),m('code.invite-value',{'aria-label':s.visible?'Join code':'Join code hidden'},s.visible?v.attrs.code:'XXXXXXXX'),
+  m('span.invite-label',v.attrs.label||'Join code'),m('code.invite-value',{'aria-label':s.visible?'Join code':'Join code hidden'},s.visible?v.attrs.code:'XXXXXXXX'),
   m('button.invite-eye',{type:'button',title:s.visible?'Hide join code':'Show join code','aria-label':s.visible?'Hide join code':'Show join code','aria-pressed':s.visible,onclick:()=>s.visible=!s.visible},m('svg',{viewBox:'0 0 24 24',width:18,height:18,fill:'none',stroke:'currentColor','stroke-width':1.8,'aria-hidden':'true'},[m('path',{d:'M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z'}),m('circle',{cx:12,cy:12,r:3}),s.visible?null:m('path',{d:'m3 3 18 18'})])),
   m('button.invite-copy',{type:'button','aria-label':'Copy join code',onclick:async()=>{const code=v.attrs.code;try{await InviteCode.copyText(code);if(s.alive&&s.code===code){s.copied=true;s.error=false;clearTimeout(s.timer);s.timer=setTimeout(()=>{s.copied=false;m.redraw();},2000);}}catch{if(s.alive&&s.code===code)s.error=true;}m.redraw();}},s.copied?'Copied!':'Copy'),
   m('span.invite-feedback',{role:'status'},s.error?'Copy unavailable. Reveal and select the code.':s.copied?'Join code copied.':'')

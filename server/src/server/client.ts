@@ -29,6 +29,7 @@ export class SocketClient extends Client {
 
   constructor(protected socket: net.Socket) {
     super();
+    socket.setTimeout(15000,()=>{if(!this.account)socket.destroy();});
     socket.on('data', this.onData.bind(this));
     socket.on('close', this.onEnd.bind(this));
     socket.on('error', this.onError.bind(this));
@@ -78,6 +79,7 @@ export class SocketClient extends Client {
       let system: Enums.Systems = data.readUInt8(0);
       let msgId = data.readUInt8(1);
       let length = data.readUInt16BE(2);
+      if (![1,4].includes(system) || length > (system === 1 ? 200 : 16384)) { this.socket.destroy(); return; }
       this.msg = new Message(system, msgId, length);
       remainingData = this.msg.append(data.slice(4));
     }
@@ -90,7 +92,7 @@ export class SocketClient extends Client {
       this.msg = null;
     }
 
-    if (remainingData.length > 0) {
+    if (!this.socket.destroyed && remainingData.length > 0) {
       this.onData(remainingData);
     }
   }

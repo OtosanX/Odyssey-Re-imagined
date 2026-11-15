@@ -1,0 +1,193 @@
+{
+  "note": "Every archived script parsed and checked separately for API support. Stage writes below inventory the original named quest chains; they are not proof that every path is executable.",
+  "quests": [
+    {
+      "flag": 91,
+      "name": "Lumberjack",
+      "writes": [
+        {
+          "script": "joinmap54",
+          "statement": "SetPlayerFlag(Player, 91, 1)"
+        },
+        {
+          "script": "map54_3_5",
+          "statement": "SetPlayerFlag(Player, 91, 1)"
+        }
+      ],
+      "behaviorallyTested": true
+    },
+    {
+      "flag": 93,
+      "name": "Alchemy",
+      "writes": [
+        {
+          "script": "joinmap1003",
+          "statement": "SetPlayerFlag(Player, 93, 1)"
+        }
+      ],
+      "behaviorallyTested": true
+    },
+    {
+      "flag": 92,
+      "name": "Gibberish",
+      "writes": [
+        {
+          "script": "mapsay342",
+          "statement": "SetPlayerFlag(Player, 92, 1)"
+        },
+        {
+          "script": "mapsay342",
+          "statement": "SetPlayerFlag(Player, 92, 2)"
+        },
+        {
+          "script": "mapsay342",
+          "statement": "SetPlayerFlag(Player, 92, 0)"
+        },
+        {
+          "script": "mapsay342",
+          "statement": "SetPlayerFlag(Player, 92, 3)"
+        },
+        {
+          "script": "mapsay342",
+          "statement": "SetPlayerFlag(Player, 92, 0)"
+        },
+        {
+          "script": "joinmap342",
+          "statement": "If GetPlayerFlag(Player, 92) < 3 Then SetPlayerFlag(Player, 92, 0)"
+        },
+        {
+          "script": "joinmap342",
+          "statement": "SetPlayerFlag(Player, 92, 5)"
+        },
+        {
+          "script": "partmap342",
+          "statement": "SetPlayerFlag(Player, 92, 0)"
+        },
+        {
+          "script": "joinmap662",
+          "statement": "SetPlayerFlag(Player, 92, 4)"
+        }
+      ],
+      "behaviorallyTested": true
+    },
+    {
+      "flag": 242,
+      "name": "Trapper Joe",
+      "writes": [
+        {
+          "script": "mapsay585",
+          "statement": "SetPlayerFlag(Player, 242, 1)"
+        },
+        {
+          "script": "mapsay585",
+          "statement": "SetPlayerFlag(Player, 242, 0)"
+        },
+        {
+          "script": "mapsay585",
+          "statement": "SetPlayerFlag(Player, 242, 2)"
+        },
+        {
+          "script": "mapsay585",
+          "statement": "SetPlayerFlag(Player, 242, 0)"
+        },
+        {
+          "script": "mapsay585",
+          "statement": "SetPlayerFlag(Player, 242, 2)"
+        },
+        {
+          "script": "mapsay585",
+          "statement": "SetPlayerFlag(Player, 242, 4)"
+        },
+        {
+          "script": "mapsay585",
+          "statement": "SetPlayerFlag(Player, 242, 2)"
+        },
+        {
+          "script": "mapsay585",
+          "statement": "SetPlayerFlag(Player, 242, 2)"
+        },
+        {
+          "script": "mapsay585",
+          "statement": "SetPlayerFlag(Player, 242, 6)"
+        },
+        {
+          "script": "mapsay585",
+          "statement": "SetPlayerFlag(Player, 242, 2)"
+        },
+        {
+          "script": "joinmap1120",
+          "statement": "SetPlayerFlag(Player, 242, 3)"
+        },
+        {
+          "script": "joinmap325",
+          "statement": "SetPlayerFlag(Player, 242, 5)"
+        }
+      ],
+      "behaviorallyTested": true
+    },
+    {
+      "flag": 240,
+      "name": "Manny Farmer",
+      "writes": [
+        {
+          "script": "joinmap4",
+          "statement": "SetPlayerFlag(Player, 240, 4)"
+        },
+        {
+          "script": "attackmonster8",
+          "statement": "SetPlayerFlag(Player, 240, 6)"
+        },
+        {
+          "script": "joinmap300",
+          "statement": "SetPlayerFlag(Player, 240, 2)"
+        },
+        {
+          "script": "mapsay595",
+          "statement": "SetPlayerFlag(Player, 240, 1)"
+        },
+        {
+          "script": "mapsay300",
+          "statement": "SetPlayerFlag(Player, 240, 2)"
+        },
+        {
+          "script": "mapsay4",
+          "statement": "SetPlayerFlag(Player, 240, 3)"
+        },
+        {
+          "script": "mapsay4",
+          "statement": "SetPlayerFlag(Player, 240, 3)"
+        },
+        {
+          "script": "craftnc",
+          "statement": "SetPlayerFlag(Player, 240, 5)"
+        },
+        {
+          "script": "map595_7_5",
+          "statement": "SetPlayerFlag(Player, 240, 7)"
+        }
+      ],
+      "behaviorallyTested": true
+    },
+    {
+      "flag": 243,
+      "name": "Sanctuary Wench",
+      "writes": [
+        {
+          "script": "mapsay593",
+          "statement": "SetPlayerFlag(Player, 243, 1)"
+        },
+        {
+          "script": "mapsay1655",
+          "statement": "SetPlayerFlag(Player, 243, 2)"
+        }
+      ],
+      "behaviorallyTested": false
+    },
+    {
+      "flag": 241,
+      "name": "Thelonious Monk",
+      "writes": [],
+      "behaviorallyTested": false
+    }
+  ]
+}

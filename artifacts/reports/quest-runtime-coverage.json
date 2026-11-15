@@ -1,7 +1,7 @@
 {
   "total": 2826,
   "parsed": 2826,
-  "directApiComplete": 2529,
+  "directApiComplete": 2532,
   "note": "Static API coverage is not gameplay verification. Nested RunScript dependencies may require additional APIs. Five named errand chains have separate behavioral tests.",
   "unsupported": [
     {
@@ -53,21 +53,9 @@
       ]
     },
     {
-      "name": "ctfwarp",
-      "missing": [
-        "getplayerexperience"
-      ]
-    },
-    {
       "name": "deathball",
       "missing": [
         "setplayerguild"
-      ]
-    },
-    {
-      "name": "ecarn",
-      "missing": [
-        "getplayerexperience"
       ]
     },
     {
@@ -373,12 +361,6 @@
       "missing": [
         "magicattackplayer",
         "attackmonster"
-      ]
-    },
-    {
-      "name": "map320_8_3",
-      "missing": [
-        "getplayerexperience"
       ]
     },
     {

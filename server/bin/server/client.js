@@ -21,7 +21,8 @@ class SocketClient extends Client {
         super();
         this.socket = socket;
         this.cache = Buffer.alloc(0);
-        socket.on('data', this.onData.bind(this));
+        socket.setTimeout(15000,()=>{if(!this.account)socket.destroy();});
+    socket.on('data', this.onData.bind(this));
         socket.on('close', this.onEnd.bind(this));
         socket.on('error', this.onError.bind(this));
     }
@@ -65,6 +66,7 @@ class SocketClient extends Client {
             let system = data.readUInt8(0);
             let msgId = data.readUInt8(1);
             let length = data.readUInt16BE(2);
+      if (![1,4].includes(system) || length > (system === 1 ? 200 : 16384)) { this.socket.destroy(); return; }
             this.msg = new shared_1.Message(system, msgId, length);
             remainingData = this.msg.append(data.slice(4));
         }
@@ -75,7 +77,7 @@ class SocketClient extends Client {
             this.emit('message', this.msg);
             this.msg = null;
         }
-        if (remainingData.length > 0) {
+        if (!this.socket.destroyed && remainingData.length > 0) {
             this.onData(remainingData);
         }
     }
