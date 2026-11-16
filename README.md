@@ -1,5 +1,17 @@
 # Odyssey Reimagined
 
+## Play on Windows
+
+**[Download the complete Windows game ZIP](https://github.com/OtosanX/Odyssey-Re-imagined/releases/latest/download/Odyssey-Reimagined-Windows.zip)** · [Release notes and checksum](https://github.com/OtosanX/Odyssey-Re-imagined/releases/latest)
+
+1. Download **Odyssey-Reimagined-Windows.zip** using the link above.
+2. Extract **all** files into a folder.
+3. Open **Odyssey.exe** inside that folder. Keep its accompanying folders together.
+
+**Do not use the green Code button → Download ZIP to play.** That downloads developer source files without the game runtime. No Node.js installation is needed for the complete Windows game ZIP.
+
+The November 16, 2026 testing build includes the game, server launcher and Studio. Its extracted files, three launchers and fresh-profile login screen were checked before publication. Gameplay compatibility and some original quests are still unfinished.
+
 A work-in-progress reimagining of Odyssey Online Classic, with Classic 2D and optional 3D graphics, offline play, player-run servers, and Odyssey Studio for map and sprite editing.
 
 [Documentation](docs/README.md) · [Playing and hosting](docs/DOWNLOAD-AND-HOST.md) · [Report a bug](https://github.com/OtosanX/Odyssey-Re-imagined/issues)
