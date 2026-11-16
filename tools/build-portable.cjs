@@ -9,7 +9,7 @@ function walk(folder){return fs.readdirSync(folder,{withFileTypes:true}).flatMap
 async function build(){
  if(process.platform!=='win32')throw Error('The portable build currently targets Windows x64.');
  const output=path.join(root,'dist','Odyssey-Reimagined-Windows-'+new Date().toISOString().replace(/[:.]/g,'-'));fs.mkdirSync(output,{recursive:false});
- for(const name of ['map-format.cjs','visual-format.cjs','THIRD-PARTY-NOTICES.md','server-directory.json'])copy(path.join(root,name),path.join(output,name));
+ for(const name of ['map-format.cjs','visual-format.cjs','THIRD-PARTY-NOTICES.md','CHANGELOG.md','server-directory.json'])copy(path.join(root,name),path.join(output,name));
  fs.writeFileSync(path.join(output,'community-server.json'),JSON.stringify({name:'My Odyssey server',host:'0.0.0.0',port:5751,workspace:'community-world'},null,2));
  copy(path.join(root,'docs','SERVER_HOSTING.md'),path.join(output,'SERVER_HOSTING.md'));
  copy(path.join(root,'docs','DOWNLOAD-AND-HOST.md'),path.join(output,'README.md'));

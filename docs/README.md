@@ -1,5 +1,7 @@
 # Project documentation
 
+[Changelog and release history](../CHANGELOG.md)
+
 ## Playing and hosting
 
 - [Download, offline play and hosting](DOWNLOAD-AND-HOST.md)

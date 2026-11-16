@@ -14,7 +14,7 @@ The November 16, 2026 testing build includes the game, server launcher and Studi
 
 A work-in-progress reimagining of Odyssey Online Classic, with Classic 2D and optional 3D graphics, offline play, player-run servers, and Odyssey Studio for map and sprite editing.
 
-[Documentation](docs/README.md) · [Playing and hosting](docs/DOWNLOAD-AND-HOST.md) · [Report a bug](https://github.com/OtosanX/Odyssey-Re-imagined/issues)
+[Changelog](CHANGELOG.md) · [Documentation](docs/README.md) · [Playing and hosting](docs/DOWNLOAD-AND-HOST.md) · [Report a bug](https://github.com/OtosanX/Odyssey-Re-imagined/issues)
 
 ## Get started
 

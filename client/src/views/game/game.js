@@ -103,7 +103,8 @@ module.exports = function(net) {
         tile(spriteImage,Appearances.frameId(p.sprite||1,p.dir*3+(walking?Math.floor(now/120)%2:0)),x-zoom/2,y-zoom,zoom);
         ctx.globalAlpha=1;
         ctx.fillStyle='#341c20';ctx.fillRect(x-zoom/2,y-zoom-9,zoom,4);ctx.fillStyle='#8dc56b';ctx.fillRect(x-zoom/2,y-zoom-9,zoom*Math.max(0,p.hp/p.maxHP),4);
-        ctx.font='12px sans-serif';ctx.textAlign='center';ctx.fillStyle='#fff';ctx.fillText(p.name,x,y-zoom*.55);
+        // Classic sprites extend one tile above their foot anchor; keep names above the health bar.
+        ctx.font='12px sans-serif';ctx.textAlign='center';ctx.textBaseline='alphabetic';ctx.fillStyle='#fff';ctx.fillText(p.name,x,y-zoom-14);
       }
       if(world.layers)for(let y=Math.max(0,Math.floor(top));y<Math.min(world.height,top+h/zoom+1);y++)for(let x=Math.max(0,Math.floor(left));x<Math.min(world.width,left+w/zoom+1);x++){const layer=Math.floor(now/400)%2&&world.layers[5][y*world.width+x]?5:4;tile(tilesImage,world.layers[layer][y*world.width+x],Math.round((x-left)*zoom),Math.round((y-top)*zoom),zoom);}
       }else{for(const p of sprites.values()){const anchor=scene.anchors.get(p.id);if(!anchor)continue;const {x,y,size}=anchor;ctx.fillStyle='#341c20';ctx.fillRect(x-size/2,y-size-12,size,4);ctx.fillStyle='#8dc56b';ctx.fillRect(x-size/2,y-size-12,size*Math.max(0,p.hp/(p.maxHP||1)),4);ctx.textAlign='center';ctx.font='12px sans-serif';ctx.fillStyle='#fff';ctx.lineWidth=3;ctx.strokeStyle='#13212a';ctx.strokeText(p.name,x,y-size-16);ctx.fillText(p.name,x,y-size-16);}}
