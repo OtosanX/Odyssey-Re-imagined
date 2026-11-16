@@ -4,7 +4,7 @@ on:
   push:
     tags: ['v*']
 permissions:
-  contents: read
+  contents: write
 jobs:
   windows:
     runs-on: windows-latest
@@ -19,9 +19,21 @@ jobs:
       - run: npm run build --prefix client
       - run: node tools/test-desktop-runtime.cjs
       - run: node tools/build-portable.cjs
+      - run: powershell -NoProfile -File tools/test-portable.ps1
       - uses: actions/upload-artifact@v4
         with:
           name: Odyssey-Reimagined-Windows
           path: |
             dist/*.zip
             dist/*.sha256
+      - name: Publish playable Windows download
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          $build = Get-Content dist/latest.json -Raw | ConvertFrom-Json
+          Copy-Item -LiteralPath $build.archive -Destination dist/Odyssey-Reimagined-Windows.zip
+          $hash = (Get-FileHash dist/Odyssey-Reimagined-Windows.zip -Algorithm SHA256).Hash.ToLower()
+          "$hash  Odyssey-Reimagined-Windows.zip" | Set-Content dist/Odyssey-Reimagined-Windows.zip.sha256
+          gh release create $env:GITHUB_REF_NAME dist/Odyssey-Reimagined-Windows.zip dist/Odyssey-Reimagined-Windows.zip.sha256 --title "Odyssey Reimagined $env:GITHUB_REF_NAME" --notes "Download Odyssey-Reimagined-Windows.zip under Assets, extract all files, then run Odyssey.exe. Source code archives are for developers."

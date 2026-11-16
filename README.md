@@ -6,9 +6,11 @@ A work-in-progress reimagining of Odyssey Online Classic, with Classic 2D and op
 
 ## Get started
 
-For a packaged Windows build, extract the entire ZIP and open **Odyssey.exe**. Keep the accompanying folders together. **Odyssey Studio.exe** opens the editor, and **Odyssey Server.exe** opens the hosting launcher.
+**[Download the Windows game](https://github.com/OtosanX/Odyssey-Re-imagined/releases/latest)** — choose **Odyssey-Reimagined-Windows.zip** under Assets. GitHub’s **Code → Download ZIP** and **Source code (zip)** contain source files, not a playable game.
 
-The small EXEs checked into this source repository are workspace launchers, not standalone downloads. For a complete portable package, build from source or use the **Windows testing build** workflow under GitHub Actions. Download its artifact after a successful run.
+For the Windows game download, extract the entire ZIP and open **Odyssey.exe**. Keep the accompanying folders together. **Odyssey Studio.exe** opens the editor, and **Odyssey Server.exe** opens the hosting launcher.
+
+The small EXEs checked into this source repository are workspace launchers, not standalone downloads. Use the Windows game download above to play. Developers can build a portable package from source or use the **Windows testing build** workflow under GitHub Actions.
 
 ## Build from source
 

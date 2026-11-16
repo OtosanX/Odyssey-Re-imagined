@@ -4,7 +4,7 @@ A work-in-progress reimagining of Odyssey Online Classic, with a downloadable Wi
 
 ## Download and play
 
-Download the Windows ZIP from Releases and **extract the entire ZIP** into a writable folder. Open **Odyssey.exe**. No Node.js installation, browser account or internet connection is required for offline play. Keep the EXE and its accompanying folders together.
+Download **Odyssey-Reimagined-Windows.zip** from [Releases](https://github.com/OtosanX/Odyssey-Re-imagined/releases/latest). Do not use **Code → Download ZIP** or **Source code (zip)**; those omit the game runtime. Download the complete game ZIP and **extract the entire ZIP** into a writable folder. Open **Odyssey.exe**. No Node.js installation, browser account or internet connection is required for offline play. Keep the EXE and its accompanying folders together.
 
 Create or select your Odyssey account on this PC and sign in, then choose **Story** or **MMO**. This opening login works without a central service and never sends its password to community hosts.
 

@@ -7,7 +7,7 @@
       "drawCalls": 3,
       "triangles": 5500,
       "scenery": 60,
-      "prepareMs": 453
+      "prepareMs": 518
     },
     {
       "map": 1,
@@ -15,7 +15,7 @@
       "drawCalls": 5,
       "triangles": 8498,
       "scenery": 58,
-      "prepareMs": 50
+      "prepareMs": 55
     },
     {
       "map": 68,
@@ -23,7 +23,7 @@
       "drawCalls": 3,
       "triangles": 4362,
       "scenery": 62,
-      "prepareMs": 33
+      "prepareMs": 32
     },
     {
       "map": 197,
@@ -31,7 +31,7 @@
       "drawCalls": 3,
       "triangles": 5090,
       "scenery": 54,
-      "prepareMs": 26
+      "prepareMs": 27
     },
     {
       "map": 133,
@@ -39,7 +39,7 @@
       "drawCalls": 6,
       "triangles": 20068,
       "scenery": 90,
-      "prepareMs": 37
+      "prepareMs": 39
     },
     {
       "map": 324,
@@ -47,7 +47,7 @@
       "drawCalls": 3,
       "triangles": 4584,
       "scenery": 53,
-      "prepareMs": 32
+      "prepareMs": 33
     },
     {
       "map": 1750,
@@ -63,7 +63,7 @@
       "drawCalls": 4,
       "triangles": 8676,
       "scenery": 81,
-      "prepareMs": 37
+      "prepareMs": 40
     }
   ],
   "errors": []

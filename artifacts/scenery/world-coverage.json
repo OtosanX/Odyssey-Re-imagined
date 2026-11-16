@@ -2,11 +2,11 @@
   "maps": 1520,
   "cataloguedTiles": 1405,
   "mapsWithScenery": 1471,
-  "objects": 56612,
+  "objects": 56371,
   "maxPerMap": 144,
   "types": {
     "building": 456,
-    "object": 16934,
+    "object": 16693,
     "wall": 22694,
     "plant": 16528
   },

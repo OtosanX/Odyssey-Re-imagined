@@ -72,13 +72,13 @@ function gatehouse(scene,geometry,g){
 function furniture(scene,geometry,g,phase=0){
  const model=g.profile?.model;
  if(model==='chair'){
-  for(const c of g.cells){const id=c.parts.map(p=>phase?p.alternate:p.id).find(Boolean);if(!id)continue;const x=c.x+.22,z=c.y+.26,b=scene.terrain.at(x+.28,z+.28),wood=patch(scene,id),box=(x,z,w,d,y,h)=>scene.box(geometry,x,z,w,d,y,h,wood);
+  for(const c of g.cells){const id=c.parts.map(p=>phase?p.alternate:p.id).find(Boolean);if(!id)continue;const x=c.x+.22,z=c.y+.26,b=scene.terrain.at(x+.28,z+.28),wood=crop(scene.tileAtlas.tile(149),.15,.15,.65,.55),box=(x,z,w,d,y,h)=>scene.box(geometry,x,z,w,d,y,h,wood);
    box(x,z,.56,.52,b+.39,.085);for(const dx of [0,.48])for(const dz of [0,.44])box(x+dx,z+dz,.08,.08,b,.39);
    for(const dx of [0,.48])box(x+dx,z,.08,.07,b+.47,.43);box(x,z,.56,.07,b+.79,.11);box(x,z,.56,.06,b+.59,.07);
   }return true;
  }
  if(model==='fountain'){
-  const cx=g.x+g.width/2,cz=g.y+.55,b=scene.terrain.at(cx,cz),rx=Math.min(1,g.width*.46),rz=.5,stone=patch(scene,234),water=crop(scene.tileAtlas.tile(phase?233:234),.21,.62,.6,.72),quad=scene.geometry.quad;
+  const cx=g.x+g.width/2,cz=g.y+.55,b=scene.terrain.at(cx,cz),rx=Math.min(1,g.width*.46),rz=.5,stone=patch(scene,131),water=crop(scene.tileAtlas.tile(phase?233:234),.21,.62,.6,.72),quad=scene.geometry.quad;
   // Ring cross-sections make a hollow basin, with its water below the rim.
   const ring=(radiusX,radiusZ,y0,y1,mat)=>{for(let n=0;n<24;n++){const a=n*Math.PI/12,z=(n+1)*Math.PI/12;quad(geometry,mat,[[cx+Math.cos(z)*radiusX,y0,cz+Math.sin(z)*radiusZ],[cx+Math.cos(a)*radiusX,y0,cz+Math.sin(a)*radiusZ],[cx+Math.cos(a)*radiusX,y1,cz+Math.sin(a)*radiusZ],[cx+Math.cos(z)*radiusX,y1,cz+Math.sin(z)*radiusZ]]);}};
   const rim=(outerX,outerZ,innerX,innerZ,y)=>{for(let n=0;n<24;n++){const a=n*Math.PI/12,z=(n+1)*Math.PI/12;quad(geometry,stone,[[cx+Math.cos(a)*outerX,y,cz+Math.sin(a)*outerZ],[cx+Math.cos(z)*outerX,y,cz+Math.sin(z)*outerZ],[cx+Math.cos(z)*innerX,y,cz+Math.sin(z)*innerZ],[cx+Math.cos(a)*innerX,y,cz+Math.sin(a)*innerZ]]);}};
