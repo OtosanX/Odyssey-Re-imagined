@@ -138,3 +138,31 @@ Accepted EW visible-stone silhouette retained. layeredRuinWall previously return
 
 ## Hardcore guidance defaults — 2026-11-15
 Hardcore Story and MMO now default quest tracker/arrows off, using separate hardcoreTracker/hardcoreArrows opt-ins so Normal preferences cannot enable them. Original quest scripts/rewards, accepted-only log, portrait dialogue, selectable 2D/3D, and requested Hardcore death penalties remain. Checked defaults, Normal isolation and explicit opt-in. This is a Classic-oriented mode, not a claim of complete original engine parity.
+
+## Named characters and difficulty descriptions — 2026-11-15
+- Character creation requires a separate 3–24-character name (ASCII letters/digits/underscore, first character a letter). Name uniqueness is case-insensitive across this server's saved characters; independent servers/offline installations have independent registries.
+- sessions/characters.json binds opaque character IDs, names, accounts and rooms. MMO supports multiple characters per difficulty with separate inventories/progress. Ownership is checked for catalogue/continuation; existing username-based characters remain accessible. Story currently retains one character per account per save, with different names across saves.
+- Difficulty cards explain Normal XP/equipment protection and exceptions, Hardcore full drops/one level loss, guidance defaults, and safe-area loot protection. In-world names, chat, dialogue portraits and save cards use the chosen character identity.
+- Passed server tests for multiple names/inventory isolation, duplicate/case collision rejection, ownership/impostor protection, persistence, Story continuation, legacy launcher behavior and offline runtime; hidden focused creation UI verified input and submitted identity.
+- Full hidden launcher regression also passed: account/password flow, named Story/MMO Normal/Hardcore creation/continuation, 642 sprite appearances, save rename, hidden invitations, account switching and joined Story continuation.
+
+## Classic key use and inventory double-click — 2026-11-15
+- Implemented type-7 key use: adjacent tile in the player's facing direction must be attribute 3 and match the little-endian key ID. Original item data[0] decides consumption (0 consumes; nonzero reusable). Wrong key/facing preserves inventory and provides feedback.
+- Inventory double-click now invokes the same use/equip action as the button, excluding empty slots and dead players.
+- tools/test-key-doors.cjs passed the actual Day Flower trade → Mud Key → map 806 door opening → movement through doorway → occupied-safe reclosure chain, plus 342 original standard key-door pairs. Existing script-specific use handlers retain precedence. Hidden client/test-inventory-use-ui.cjs verified double-click/button packet equivalence and guards.
+- Earlier merchant audit verified exchange only, not downstream key use. Do not describe that audit as full quest-chain coverage.
+
+## Quest follow-up audit — 2026-11-15
+Fixed shared item-use dispatch: original USEOBJ returning Continue (0) now permits the normal equipment/consumable/key action if the same item remains. Stop, script failures, consumption/removal and dead players prevent fallback. Previously every script suppressed base use, breaking scripted keys and level-gated equipment.
+
+Validation: test-quest-followups.cjs passed an original scripted key door, Northcoast ticket opening both gates, recipe scroll prerequisites/learning/consumption, equipment level denial and Continue, god-item warp to Hell, prize-item warp with client snapshot, and the available Wench stages. Existing five chain regressions and all 342 standard key-door pairs pass. No live saves used.
+
+The complete item-use audit is artifacts/reports/quest-item-use-audit.json: 146 scripts inventoried, 97 with no statically unresolved APIs/dependencies, 112 successful baseline executions, 34 baseline failures. These are not 112 fully verified quest chains; conditional branches and dynamic dependencies need further tests. Major remaining failures include item prefix/suffix effects, special projectiles/damage, and scripts accessing absent player slots. Unsupported interactions still fail closed with rollback rather than invented effects.
+
+Missing quest content:
+- Sanctuary Wench: only flag 243 stages 1 and 2 are written. Existing dialogue requests Granny's potion, then the Shaman's Amulet obtained using Lord Bob's Broadsword. Troll Shaman (155) has no configured drops and no attackmonster155 script. Implement the conditional amulet award, Granny's item exchange/potion, return conversation, completion flag/reward, and recovery/repeat protections. Exact missing stages/rewards cannot be recovered from these scripts and require new design or another original archive.
+- Thelonious Monk: no writes to flag 241 exist. map590_2_5 checks this flag to allow entry to map597; otherwise sends the player back and says the door is locked. Needs an actual acceptance dialogue, objectives, progression, access unlock conditions, turn-in, completion and reward definitions. Existing questlog expects completion at stage 6 but supplies no progression.
+
+## Non-tree furnishing review — 2026-11-15
+Reviewed original tile artwork and corrected 16 tile classifications/assemblies used on 353 maps: upright independent gravestones/crosses (76/141), low stools (85/148), horizontal rectangular tables (149/150), full double/single bed assemblies (185/186/192/193 and 199/200/206/207), small ground stones (201/221). Models retain original pixel textures and map footprints. Generated catalogue rebuilt from source families. No original maps, collision data or Classic 2D art changed.
+Passed tools/test-furnishings.cjs (assembly, separated graves, horizontal low geometry), all-map scenery indexing (1,520 maps/1,405 tiles), and hidden WebGL renders of maps 10,37,68,598,133,324,1750,235. Inspected artifacts/scenery/furnishings-0.png and furnishings-1.png; bed lower halves corrected after first visual review. Usage details in furnishings-audit.json. This is a reviewed prop-family pass, not visual certification of every non-tree sprite.

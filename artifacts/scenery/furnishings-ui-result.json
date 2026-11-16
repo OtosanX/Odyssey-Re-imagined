@@ -1,0 +1,70 @@
+{
+  "result": "PASS",
+  "metrics": [
+    {
+      "map": 10,
+      "name": "Daventry's Tavern",
+      "drawCalls": 3,
+      "triangles": 5500,
+      "scenery": 60,
+      "prepareMs": 453
+    },
+    {
+      "map": 1,
+      "name": "City of Crendale",
+      "drawCalls": 5,
+      "triangles": 8498,
+      "scenery": 58,
+      "prepareMs": 50
+    },
+    {
+      "map": 68,
+      "name": "Carnage Waiting Room",
+      "drawCalls": 3,
+      "triangles": 4362,
+      "scenery": 62,
+      "prepareMs": 33
+    },
+    {
+      "map": 197,
+      "name": "Entry Hall to Crendale Keep",
+      "drawCalls": 3,
+      "triangles": 5090,
+      "scenery": 54,
+      "prepareMs": 26
+    },
+    {
+      "map": 133,
+      "name": "West of Crendale",
+      "drawCalls": 6,
+      "triangles": 20068,
+      "scenery": 90,
+      "prepareMs": 37
+    },
+    {
+      "map": 324,
+      "name": "Draconis Tavern",
+      "drawCalls": 3,
+      "triangles": 4584,
+      "scenery": 53,
+      "prepareMs": 32
+    },
+    {
+      "map": 1750,
+      "name": "Desert Cabin",
+      "drawCalls": 3,
+      "triangles": 4134,
+      "scenery": 50,
+      "prepareMs": 17
+    },
+    {
+      "map": 235,
+      "name": "Dragonian River Hall",
+      "drawCalls": 4,
+      "triangles": 8676,
+      "scenery": 81,
+      "prepareMs": 37
+    }
+  ],
+  "errors": []
+}

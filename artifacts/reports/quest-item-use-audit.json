@@ -1,0 +1,1146 @@
+{
+  "note": "All item-use scripts checked statically, including literal nested scripts/timers. Baseline executions exercise only starting conditions, not every branch; failures remain explicit.",
+  "items": [
+    {
+      "script": "useobj482",
+      "item": 482,
+      "name": "Teddy!",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj454",
+      "item": 454,
+      "name": "Recipe Book",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj456",
+      "item": 456,
+      "name": "Recipe Scroll",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj457",
+      "item": 457,
+      "name": "Recipe Scroll",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj477",
+      "item": 477,
+      "name": "Landlords Key",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj259",
+      "item": 259,
+      "name": "Frostburn Tome",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj351",
+      "item": 351,
+      "name": "Explosives",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj370",
+      "item": 370,
+      "name": "The Demonblade",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj389",
+      "item": 389,
+      "name": "Dragonia Candle",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj400",
+      "item": 400,
+      "name": "SPACE WASTER",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj362",
+      "item": 362,
+      "name": "Dodgeball",
+      "dependenciesNeedingWork": [
+        "createplayermagicprojectile"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj455",
+      "item": 455,
+      "name": "Deaths Advocate",
+      "dependenciesNeedingWork": [
+        "attackplayer"
+      ],
+      "baselineError": "Script player is not present."
+    },
+    {
+      "script": "useobj485",
+      "item": 485,
+      "name": "Push",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj487",
+      "item": 487,
+      "name": "Halloween Trix",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj489",
+      "item": 489,
+      "name": "Front Gate Key",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj490",
+      "item": 490,
+      "name": "Cracker",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj501",
+      "item": 501,
+      "name": "Map Checker",
+      "dependenciesNeedingWork": [
+        "getobjnum"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj506",
+      "item": 506,
+      "name": "God Weapon",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj510",
+      "item": 510,
+      "name": "Incognito",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj6",
+      "item": 6,
+      "name": "Gold Coins",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj450",
+      "item": 450,
+      "name": "Flamewave Sabre",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj214",
+      "item": 214,
+      "name": "Protection Ring",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj59",
+      "item": 59,
+      "name": "Odin's Shard",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj464",
+      "item": 464,
+      "name": "Bucket of Milk",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj484",
+      "item": 484,
+      "name": "Uber Present!!",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj349",
+      "item": 349,
+      "name": "Last Stand",
+      "dependenciesNeedingWork": [
+        "setitemsuffix",
+        "setitemprefix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj237",
+      "item": 237,
+      "name": "Hammer of Frost",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj495",
+      "item": 495,
+      "name": "Ultra Hammer",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj393",
+      "item": 393,
+      "name": "Babylon Torch",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj447",
+      "item": 447,
+      "name": "Stout Potion",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj449",
+      "item": 449,
+      "name": "Sharp Potion",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj498",
+      "item": 498,
+      "name": "Vorp Helm",
+      "dependenciesNeedingWork": [
+        "setitemprefix",
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemprefix"
+    },
+    {
+      "script": "useobj439",
+      "item": 439,
+      "name": "Runed Scroll",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj453",
+      "item": 453,
+      "name": "All Show No Go",
+      "dependenciesNeedingWork": [
+        "createplayermagicprojectile"
+      ],
+      "baselineError": "Unsupported script API: createplayermagicprojectile"
+    },
+    {
+      "script": "useobj347",
+      "item": 347,
+      "name": "Frost Reaver",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj409",
+      "item": 409,
+      "name": "Antidote",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj466",
+      "item": 466,
+      "name": "Bucket",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj499",
+      "item": 499,
+      "name": "Champs Axe",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj500",
+      "item": 500,
+      "name": "Witchs Book",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj462",
+      "item": 462,
+      "name": "Bremens Cape",
+      "dependenciesNeedingWork": [
+        "setitemprefix",
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemprefix"
+    },
+    {
+      "script": "useobj398",
+      "item": 398,
+      "name": "Elderfire",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj195",
+      "item": 195,
+      "name": "Shield of Krogg",
+      "dependenciesNeedingWork": [
+        "setitemprefix",
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemprefix"
+    },
+    {
+      "script": "useobj135",
+      "item": 135,
+      "name": "Excalibur",
+      "dependenciesNeedingWork": [
+        "setitemprefix",
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemprefix"
+    },
+    {
+      "script": "useobj159",
+      "item": 159,
+      "name": "Sun Blade",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj497",
+      "item": 497,
+      "name": "Name Change",
+      "dependenciesNeedingWork": [
+        "getplayerdesc",
+        "setplayername"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj280",
+      "item": 280,
+      "name": "Gibberish",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj281",
+      "item": 281,
+      "name": "Translated Text",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj483",
+      "item": 483,
+      "name": "Present",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj383",
+      "item": 383,
+      "name": "Snowtossers",
+      "dependenciesNeedingWork": [
+        "createplayermagicprojectile"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj187",
+      "item": 187,
+      "name": "Knight's Helmet",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj53",
+      "item": 53,
+      "name": "Gem of Valhalla",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj284",
+      "item": 284,
+      "name": "Joe's Jacket",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj319",
+      "item": 319,
+      "name": "Joe's Jacket",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj502",
+      "item": 502,
+      "name": "Spirit Idol",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj444",
+      "item": 444,
+      "name": "Fireworks!",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj255",
+      "item": 255,
+      "name": "Magic Map",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj119",
+      "item": 119,
+      "name": "Gourmet Meal",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj34",
+      "item": 34,
+      "name": "A Good Book",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj74",
+      "item": 74,
+      "name": "Candle",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj104",
+      "item": 104,
+      "name": "Elvish Ring",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj164",
+      "item": 164,
+      "name": "Wish",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj80",
+      "item": 80,
+      "name": "Cigarettes",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj188",
+      "item": 188,
+      "name": "Ink",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj81",
+      "item": 81,
+      "name": "BetterThanCake",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj251",
+      "item": 251,
+      "name": "Map",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj1",
+      "item": 1,
+      "name": "Rusty Dagger",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj196",
+      "item": 196,
+      "name": "Staff of Wardos",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj231",
+      "item": 231,
+      "name": "Snowballs",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj232",
+      "item": 232,
+      "name": "Gryphn's Claw",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj241",
+      "item": 241,
+      "name": "Flare Scroll",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj249",
+      "item": 249,
+      "name": "Summoner Key",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj253",
+      "item": 253,
+      "name": "Elitist Pass",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj258",
+      "item": 258,
+      "name": "Spiced Rum",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj411",
+      "item": 411,
+      "name": "Living Essence",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj410",
+      "item": 410,
+      "name": "BOMB",
+      "dependenciesNeedingWork": [
+        "monstermagicattackplayer",
+        "magicattackplayer",
+        "magicattackmonster"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj156",
+      "item": 156,
+      "name": "Bread Crumbs",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj152",
+      "item": 152,
+      "name": "Medium Fish",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj153",
+      "item": 153,
+      "name": "Small Fish",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj148",
+      "item": 148,
+      "name": "Big Fish",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj141",
+      "item": 141,
+      "name": "Evol",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj96",
+      "item": 96,
+      "name": "Axe of the Ruin",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj391",
+      "item": 391,
+      "name": "Treasure Key",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj160",
+      "item": 160,
+      "name": "Teddy Bear",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj176",
+      "item": 176,
+      "name": "Iron Rich Soil",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj136",
+      "item": 136,
+      "name": "Winter Rose",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj165",
+      "item": 165,
+      "name": "Wedding Gown",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj177",
+      "item": 177,
+      "name": "Aitertcul root",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj220",
+      "item": 220,
+      "name": "Faith",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj50",
+      "item": 50,
+      "name": "King's Boots",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj63",
+      "item": 63,
+      "name": "Cane",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj87",
+      "item": 87,
+      "name": "Climbing Rope",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj89",
+      "item": 89,
+      "name": "Hook",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj88",
+      "item": 88,
+      "name": "Barrel of Fun",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj254",
+      "item": 254,
+      "name": "Book of Paper",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj120",
+      "item": 120,
+      "name": "Freya's Charm",
+      "dependenciesNeedingWork": [
+        "setitemprefix",
+        "setequippeditemsuffix",
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemprefix"
+    },
+    {
+      "script": "useobj49",
+      "item": 49,
+      "name": "Champagne",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj56",
+      "item": 56,
+      "name": "Jewel of Fenrir",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj480",
+      "item": 480,
+      "name": "Minor God Plate",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj55",
+      "item": 55,
+      "name": "Book",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj434",
+      "item": 434,
+      "name": "Perfect Diamond",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj481",
+      "item": 481,
+      "name": "Lottery Ticket",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj445",
+      "item": 445,
+      "name": "Strength Potion",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj446",
+      "item": 446,
+      "name": "Vigorous Potion",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj458",
+      "item": 458,
+      "name": "Cut Amethyst",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj441",
+      "item": 441,
+      "name": "Clear Emerald",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj438",
+      "item": 438,
+      "name": "Bright Sapphire",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj376",
+      "item": 376,
+      "name": "Boat Ticket",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj435",
+      "item": 435,
+      "name": "Shining Ruby",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj82",
+      "item": 82,
+      "name": "Amethyst",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj84",
+      "item": 84,
+      "name": "Emerald",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj86",
+      "item": 86,
+      "name": "Sapphire",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj85",
+      "item": 85,
+      "name": "Ruby",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj83",
+      "item": 83,
+      "name": "Diamond",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj511",
+      "item": 511,
+      "name": "Test Buff",
+      "dependenciesNeedingWork": [
+        "setequippeditemsuffix"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj602",
+      "item": 602,
+      "name": "Lavos' Chest",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj513",
+      "item": 513,
+      "name": "Duck Present",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj514",
+      "item": 514,
+      "name": "Duck Prize",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj515",
+      "item": 515,
+      "name": "Duck Treasure",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj605",
+      "item": 605,
+      "name": "Guild Trust",
+      "dependenciesNeedingWork": [
+        "setguildbank"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj606",
+      "item": 606,
+      "name": "Fort Warper",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj599",
+      "item": 599,
+      "name": "Test Monster",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj608",
+      "item": 608,
+      "name": "Hero's Guard",
+      "dependenciesNeedingWork": [
+        "setitemprefix"
+      ],
+      "baselineError": "Unsupported script API: setitemprefix"
+    },
+    {
+      "script": "useobj609",
+      "item": 609,
+      "name": "Heroic Shard",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj601",
+      "item": 601,
+      "name": "Lavos' Necklace",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj615",
+      "item": 615,
+      "name": "Heroic Jewel",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj614",
+      "item": 614,
+      "name": "Heroic Charm",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj617",
+      "item": 617,
+      "name": "Heroic Gem",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj618",
+      "item": 618,
+      "name": "Cleansing Juice",
+      "dependenciesNeedingWork": [
+        "getguildsprite",
+        "missing script: sprite2"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj619",
+      "item": 619,
+      "name": "TestSpell",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj620",
+      "item": 620,
+      "name": "TestSpell2",
+      "dependenciesNeedingWork": [
+        "getplayerdamage",
+        "magicattackplayer",
+        "magicattackmonster"
+      ],
+      "baselineError": "Unsupported script API: getplayerdamage"
+    },
+    {
+      "script": "useobj230",
+      "item": 230,
+      "name": "Guardian Plate",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj247",
+      "item": 247,
+      "name": "Aegis",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj250",
+      "item": 250,
+      "name": "Ztiwhsborflail",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj168",
+      "item": 168,
+      "name": "Vorpal Jacket",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj248",
+      "item": 248,
+      "name": "Hero's Guard",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj117",
+      "item": 117,
+      "name": "Soulbinders",
+      "dependenciesNeedingWork": [
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemsuffix"
+    },
+    {
+      "script": "useobj612",
+      "item": 612,
+      "name": "Crown of Zuegg",
+      "dependenciesNeedingWork": [
+        "setitemprefix",
+        "setitemsuffix"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj197",
+      "item": 197,
+      "name": "Crown of Zeugg",
+      "dependenciesNeedingWork": [
+        "setitemprefix",
+        "setitemsuffix"
+      ],
+      "baselineError": "Unsupported script API: setitemprefix"
+    },
+    {
+      "script": "useobj621",
+      "item": 621,
+      "name": "MageSpell",
+      "dependenciesNeedingWork": [
+        "getplayerdamage",
+        "createplayermagicprojectile"
+      ],
+      "baselineError": "Unsupported script API: getplayerdamage"
+    },
+    {
+      "script": "useobj622",
+      "item": 622,
+      "name": "MageSpell2",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj624",
+      "item": 624,
+      "name": "testspell3",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj625",
+      "item": 625,
+      "name": "testspell4",
+      "dependenciesNeedingWork": [
+        "getmapname"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj626",
+      "item": 626,
+      "name": "testspell5",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj627",
+      "item": 627,
+      "name": "testspell6",
+      "dependenciesNeedingWork": [
+        "getplayerdamage",
+        "magicattackplayer",
+        "magicattackmonster"
+      ],
+      "baselineError": null
+    },
+    {
+      "script": "useobj628",
+      "item": 628,
+      "name": "testspell7",
+      "dependenciesNeedingWork": [],
+      "baselineError": null
+    },
+    {
+      "script": "useobj629",
+      "item": 629,
+      "name": "testspell8",
+      "dependenciesNeedingWork": [
+        "getplayerdamage"
+      ],
+      "baselineError": null
+    }
+  ],
+  "total": 146,
+  "staticSupported": 97,
+  "baselinePassed": 112
+}

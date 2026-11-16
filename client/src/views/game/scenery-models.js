@@ -70,7 +70,34 @@ function gatehouse(scene,geometry,g){
 // Furniture has a real footprint and horizontal top instead of an extruded
 // upright picture. Each source cell stays anchored to its original map cell.
 function furniture(scene,geometry,g,phase=0){
- const model=g.profile?.model;if(model!=='round-table'&&model!=='barrel')return false;
+ const model=g.profile?.model;
+ if(model==='chair'){
+  for(const c of g.cells){const id=c.parts.map(p=>phase?p.alternate:p.id).find(Boolean);if(!id)continue;const x=c.x+.22,z=c.y+.26,b=scene.terrain.at(x+.28,z+.28),wood=patch(scene,id),box=(x,z,w,d,y,h)=>scene.box(geometry,x,z,w,d,y,h,wood);
+   box(x,z,.56,.52,b+.39,.085);for(const dx of [0,.48])for(const dz of [0,.44])box(x+dx,z+dz,.08,.08,b,.39);
+   for(const dx of [0,.48])box(x+dx,z,.08,.07,b+.47,.43);box(x,z,.56,.07,b+.79,.11);box(x,z,.56,.06,b+.59,.07);
+  }return true;
+ }
+ if(model==='fountain'){
+  const cx=g.x+g.width/2,cz=g.y+.55,b=scene.terrain.at(cx,cz),rx=Math.min(1,g.width*.46),rz=.5,stone=patch(scene,234),water=crop(scene.tileAtlas.tile(phase?233:234),.21,.62,.6,.72),quad=scene.geometry.quad;
+  // Ring cross-sections make a hollow basin, with its water below the rim.
+  const ring=(radiusX,radiusZ,y0,y1,mat)=>{for(let n=0;n<24;n++){const a=n*Math.PI/12,z=(n+1)*Math.PI/12;quad(geometry,mat,[[cx+Math.cos(z)*radiusX,y0,cz+Math.sin(z)*radiusZ],[cx+Math.cos(a)*radiusX,y0,cz+Math.sin(a)*radiusZ],[cx+Math.cos(a)*radiusX,y1,cz+Math.sin(a)*radiusZ],[cx+Math.cos(z)*radiusX,y1,cz+Math.sin(z)*radiusZ]]);}};
+  const rim=(outerX,outerZ,innerX,innerZ,y)=>{for(let n=0;n<24;n++){const a=n*Math.PI/12,z=(n+1)*Math.PI/12;quad(geometry,stone,[[cx+Math.cos(a)*outerX,y,cz+Math.sin(a)*outerZ],[cx+Math.cos(z)*outerX,y,cz+Math.sin(z)*outerZ],[cx+Math.cos(z)*innerX,y,cz+Math.sin(z)*innerZ],[cx+Math.cos(a)*innerX,y,cz+Math.sin(a)*innerZ]]);}};
+  ring(rx,rz,b,b+.24,stone);ring(rx-.09,rz-.07,b+.24,b+.14,stone);rim(rx,rz,rx-.09,rz-.07,b+.24);
+  for(let n=0;n<24;n++){const a=n*Math.PI/12,z=(n+1)*Math.PI/12;quad(geometry,water,[[cx,b+.16,cz],[cx+Math.cos(a)*(rx-.09),b+.16,cz+Math.sin(a)*(rz-.07)],[cx+Math.cos(z)*(rx-.09),b+.16,cz+Math.sin(z)*(rz-.07)],[cx,b+.16,cz]],[.85,.95,1,1]);}
+  ring(.14,.12,b+.16,b+.72,stone);ring(.28,.23,b+.64,b+.76,stone);rim(.28,.23,.07,.06,b+.76);ring(.065,.06,b+.76,b+.97,water);
+  for(const sign of [-1,1])quad(geometry,water,[[cx+sign*.13,b+.73,cz-.035],[cx+sign*.23,b+.73,cz+.035],[cx+sign*(rx-.14),b+.18,cz+.035],[cx+sign*(rx-.22),b+.18,cz-.035]],[.8,.95,1,1]);
+  return true;
+ }
+ if(model==='rect-table'||model==='bed'){
+  const bed=model==='bed',height=bed?.42:.62,z=g.y+.12,depth=bed?g.height*.82:.76,base=scene.terrain.at(g.x+g.width/2,z+depth/2),first=g.cells[0].parts.find(p=>p.id||p.alternate),wood=patch(scene,first.id||first.alternate);
+  // Horizontal surfaces follow the original map footprint, never sprite height.
+  scene.box(geometry,g.x,z,g.width,depth,base+height-.09,.08,wood);
+  for(const x of [g.x+.08,g.x+g.width-.16])for(const dz of [z+.06,z+depth-.14])scene.box(geometry,x,dz,.08,.08,base,height-.09,wood);
+  for(const c of g.cells){const id=c.parts.map(p=>phase?p.alternate:p.id).find(Boolean);if(!id)continue;const surface=crop(scene.tileAtlas.tile(id),0,0,1,bed?1:.8),front=bed?z+(c.y-g.y)*.82:z,back=bed?front+.82:z+depth;scene.geometry.quad(geometry,surface,[[c.x,base+height,back],[c.x+1,base+height,back],[c.x+1,base+height,front],[c.x,base+height,front]]);}
+  if(bed)scene.box(geometry,g.x,z-.035,g.width,.065,base+height,.19,wood);
+  return true;
+ }
+ if(model!=='round-table'&&model!=='barrel')return false;
  const {quad}=scene.geometry;
  for(const c of g.cells){const id=c.parts.map(p=>phase?p.alternate:p.id).find(Boolean);if(!id)continue;
   const barrel=model==='barrel',large=id===220,r=barrel?.31:large?.43:.28,h=barrel?.7:large?.64:.38,cx=c.x+.5,cz=c.y+.55,base=scene.terrain.at(cx,cz),wood=patch(scene,id),top=base+h;

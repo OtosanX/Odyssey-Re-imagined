@@ -484,8 +484,9 @@ module.exports=[
       235
     ],
     "join": "source",
-    "maxHeight": 3,
-    "depth": 0.35
+    "maxHeight": 1,
+    "depth": 1.1,
+    "model": "fountain"
   },
   {
     "id": "stairs-surfaces",
@@ -1483,5 +1484,88 @@ module.exports=[
         2
       ]
     }
+  },
+  {
+    "id": "upright-gravestones",
+    "kind": "object",
+    "tiles": [
+      76,
+      141
+    ],
+    "join": "individual",
+    "maxHeight": 1,
+    "depth": 0.12
+  },
+  {
+    "id": "low-round-stools",
+    "kind": "object",
+    "tiles": [
+      85,
+      148
+    ],
+    "join": "individual",
+    "model": "round-table",
+    "maxHeight": 1,
+    "depth": 0.5
+  },
+  {
+    "id": "horizontal-rectangular-tables",
+    "kind": "object",
+    "tiles": [
+      149,
+      150,
+      151
+    ],
+    "join": "assembly",
+    "maxHeight": 1,
+    "model": "rect-table",
+    "depth": 0.8
+  },
+  {
+    "id": "horizontal-double-beds",
+    "kind": "object",
+    "tiles": [
+      185,
+      186,
+      192,
+      193
+    ],
+    "join": "source",
+    "maxHeight": 2,
+    "model": "bed",
+    "depth": 0.85
+  },
+  {
+    "id": "horizontal-single-beds",
+    "kind": "object",
+    "tiles": [
+      199,
+      200,
+      206,
+      207
+    ],
+    "join": "source",
+    "maxHeight": 2,
+    "model": "bed",
+    "depth": 0.85
+  },
+  {
+    "id": "small-ground-stones",
+    "kind": "ground",
+    "tiles": [
+      201,
+      221
+    ]
+  },
+  {
+    "id": "wooden-chairs",
+    "kind": "object",
+    "tiles": [
+      124
+    ],
+    "join": "individual",
+    "maxHeight": 1,
+    "model": "chair",
+    "depth": 0.55
   }
 ];
