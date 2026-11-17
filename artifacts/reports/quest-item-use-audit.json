@@ -121,9 +121,7 @@
       "script": "useobj501",
       "item": 501,
       "name": "Map Checker",
-      "dependenciesNeedingWork": [
-        "getobjnum"
-      ],
+      "dependenciesNeedingWork": [],
       "baselineError": null
     },
     {
@@ -1141,6 +1139,6 @@
     }
   ],
   "total": 146,
-  "staticSupported": 97,
+  "staticSupported": 98,
   "baselinePassed": 112
 }

@@ -1567,5 +1567,33 @@ module.exports=[
     "maxHeight": 1,
     "model": "chair",
     "depth": 0.55
+  },
+  {
+    "id": "stone-ring-campfires",
+    "kind": "object",
+    "tiles": [
+      112,
+      119,
+      123,
+      300,
+      1272,
+      1273,
+      1274
+    ],
+    "join": "individual",
+    "maxHeight": 1,
+    "model": "campfire",
+    "depth": 0.65
+  },
+  {
+    "id": "wooden-rowboats",
+    "kind": "object",
+    "tiles": [
+      190
+    ],
+    "join": "individual",
+    "maxHeight": 1,
+    "model": "boat",
+    "depth": 0.85
   }
 ];

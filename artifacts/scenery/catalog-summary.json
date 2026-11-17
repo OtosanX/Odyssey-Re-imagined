@@ -2,14 +2,14 @@
   "mapCount": 1520,
   "tileCount": 1405,
   "counts": {
-    "ground": 521,
-    "object": 566,
+    "ground": 520,
+    "object": 567,
     "plant": 85,
     "building": 101,
     "bridge": 3,
     "wall": 129
   },
-  "reviewed": 550,
+  "reviewed": 555,
   "fallback": [
     {
       "id": 83,
@@ -21,12 +21,6 @@
       "id": 90,
       "kind": "object",
       "coverage": 0.299,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 112,
-      "kind": "object",
-      "coverage": 0.209,
       "source": "transparent scenery fallback"
     },
     {
@@ -393,12 +387,6 @@
       "id": 298,
       "kind": "object",
       "coverage": 0.743,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 300,
-      "kind": "object",
-      "coverage": 0.157,
       "source": "transparent scenery fallback"
     },
     {
@@ -2277,24 +2265,6 @@
       "id": 1269,
       "kind": "object",
       "coverage": 0.176,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 1272,
-      "kind": "object",
-      "coverage": 0.36,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 1273,
-      "kind": "object",
-      "coverage": 0.299,
-      "source": "transparent scenery fallback"
-    },
-    {
-      "id": 1274,
-      "kind": "object",
-      "coverage": 0.326,
       "source": "transparent scenery fallback"
     },
     {

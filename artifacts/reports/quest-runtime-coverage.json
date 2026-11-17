@@ -1,7 +1,7 @@
 {
   "total": 2826,
   "parsed": 2826,
-  "directApiComplete": 2532,
+  "directApiComplete": 2545,
   "note": "Static API coverage is not gameplay verification. Nested RunScript dependencies may require additional APIs. Five named errand chains have separate behavioral tests.",
   "unsupported": [
     {
@@ -120,13 +120,6 @@
       ]
     },
     {
-      "name": "map70_1_6",
-      "missing": [
-        "getobjnum",
-        "destroyobject"
-      ]
-    },
-    {
       "name": "joingame",
       "missing": [
         "getmapname",
@@ -205,16 +198,6 @@
       "name": "teamfortress",
       "missing": [
         "setplayerguild"
-      ]
-    },
-    {
-      "name": "warpitems",
-      "missing": [
-        "getobjx",
-        "getobjy",
-        "getobjval",
-        "getobjnum",
-        "destroyobject"
       ]
     },
     {
@@ -300,21 +283,6 @@
       "name": "useobj455",
       "missing": [
         "attackplayer"
-      ]
-    },
-    {
-      "name": "useobj501",
-      "missing": [
-        "getobjnum"
-      ]
-    },
-    {
-      "name": "getobj443",
-      "missing": [
-        "getobjnum",
-        "getobjx",
-        "getobjy",
-        "destroyobject"
       ]
     },
     {
@@ -533,14 +501,6 @@
       ]
     },
     {
-      "name": "stakeeq",
-      "missing": [
-        "getobjnum",
-        "getobjx",
-        "getobjy"
-      ]
-    },
-    {
       "name": "useobj453",
       "missing": [
         "createplayermagicprojectile"
@@ -716,13 +676,6 @@
       ]
     },
     {
-      "name": "map78_10_6",
-      "missing": [
-        "getobjnum",
-        "destroyobject"
-      ]
-    },
-    {
       "name": "winter",
       "missing": [
         "setplayerguild"
@@ -740,15 +693,6 @@
       "missing": [
         "setitemprefix",
         "setitemsuffix"
-      ]
-    },
-    {
-      "name": "getobj491",
-      "missing": [
-        "getobjnum",
-        "getobjx",
-        "getobjy",
-        "destroyobject"
       ]
     },
     {
@@ -944,14 +888,6 @@
       ]
     },
     {
-      "name": "map1253_2_1",
-      "missing": [
-        "getobjx",
-        "getobjy",
-        "destroyobject"
-      ]
-    },
-    {
       "name": "map150_1_6",
       "missing": [
         "bootplayer",
@@ -977,14 +913,6 @@
       "missing": [
         "readinistr",
         "writeinistr"
-      ]
-    },
-    {
-      "name": "tradeswitch",
-      "missing": [
-        "getobjx",
-        "getobjy",
-        "getobjnum"
       ]
     },
     {
@@ -1015,14 +943,6 @@
       "name": "map938_6_2",
       "missing": [
         "resetmap"
-      ]
-    },
-    {
-      "name": "refreshmarket",
-      "missing": [
-        "getobjx",
-        "getobjy",
-        "destroyobject"
       ]
     },
     {
@@ -1115,20 +1035,6 @@
       "name": "joinmap555",
       "missing": [
         "resetmap"
-      ]
-    },
-    {
-      "name": "map355_9_9",
-      "missing": [
-        "getobjnum",
-        "destroyobject"
-      ]
-    },
-    {
-      "name": "map1551_1_2",
-      "missing": [
-        "getobjnum",
-        "destroyobject"
       ]
     },
     {
@@ -1349,8 +1255,6 @@
     {
       "name": "footballtackle",
       "missing": [
-        "getobjx",
-        "getobjy",
         "resetmap"
       ]
     },
@@ -1513,13 +1417,6 @@
       "name": "ctfbluescore",
       "missing": [
         "setplayerguild"
-      ]
-    },
-    {
-      "name": "ctfresetflags",
-      "missing": [
-        "getobjnum",
-        "destroyobject"
       ]
     },
     {

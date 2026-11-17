@@ -1,0 +1,70 @@
+{
+  "result": "PASS",
+  "metrics": [
+    {
+      "map": 1,
+      "name": "City of Crendale",
+      "drawCalls": 5,
+      "triangles": 8562,
+      "scenery": 58,
+      "prepareMs": 484
+    },
+    {
+      "map": 2,
+      "name": "City of Crendale",
+      "drawCalls": 5,
+      "triangles": 6980,
+      "scenery": 46,
+      "prepareMs": 47
+    },
+    {
+      "map": 9,
+      "name": "Erlington's Boats",
+      "drawCalls": 3,
+      "triangles": 2582,
+      "scenery": 29,
+      "prepareMs": 29
+    },
+    {
+      "map": 19,
+      "name": "Northern Beach",
+      "drawCalls": 3,
+      "triangles": 988,
+      "scenery": 4,
+      "prepareMs": 13
+    },
+    {
+      "map": 107,
+      "name": "South of Crendale",
+      "drawCalls": 5,
+      "triangles": 6704,
+      "scenery": 45,
+      "prepareMs": 34
+    },
+    {
+      "map": 119,
+      "name": "West of Crendale",
+      "drawCalls": 5,
+      "triangles": 7094,
+      "scenery": 41,
+      "prepareMs": 33
+    },
+    {
+      "map": 10,
+      "name": "Daventry's Tavern",
+      "drawCalls": 3,
+      "triangles": 5500,
+      "scenery": 60,
+      "prepareMs": 38
+    },
+    {
+      "map": 37,
+      "name": "Undead Graveyard",
+      "drawCalls": 6,
+      "triangles": 13648,
+      "scenery": 84,
+      "prepareMs": 30
+    }
+  ],
+  "errors": []
+}

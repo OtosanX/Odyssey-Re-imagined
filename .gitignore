@@ -33,3 +33,7 @@ server/data/undefined
 /community-server.local.json
 **/launcher-accounts.json*
 **/saved-servers.json
+
+# Regenerable character-art audit previews
+/artifacts/characters/*.png
+/artifacts/characters/ids.json

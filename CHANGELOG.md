@@ -2,6 +2,23 @@
 
 This log summarizes implemented changes from repository history and development notes. A passing audit is not a claim that every original quest or map is fully restored.
 
+## Source update — 2026-11-17
+
+These changes are in the source repository. The downloadable Windows ZIP remains at v0.1.0-testing.20261116.2 until the next packaged release.
+
+- Restored 971 Classic map item-spawn locations (194 item types), including missing quest objects and ingredients, with saved collection state, original empty-map refill delay and no-reset flags.
+- Fixed scripted Norse Gem pickup/reward, stable ground-object script slots, removal broadcasts, dead-player pickup guards and script inventory-value queries. Audited quest item sources across all maps; unresolved archive content is documented in docs/QUEST-ITEM-AUDIT.md.
+
+- Stabilized character appearance hover, mouse-wheel scrolling and selection by isolating preview animation from the picker. Selection borders keep a fixed size. Added hidden mouse/keyboard/mobile regression checks.
+- Added unique visual names for all 643 nonblank character sprites, searchable by name or ID. Existing sprite IDs and saved characters are preserved.
+- Extended 3D campfires to log-fire tiles 123/300 and larger ring-fire tiles 1272–1274, with separate flame crops. Shared campfire and boat models now cover 175 maps (316 campfires and 118 boats).
+
+- Corrected inverted campfire back-face textures and cropped flame artwork to keep the fire seated on the logs.
+
+- Added shared 3D campfire stone rings/logs/flame planes and rowboat hulls/rims/seats. Original flame animation frames remain in use.
+- Prevented identical non-tree scenery art painted on multiple layers from creating duplicate mesh faces. Verified modeled scenery suppresses flat drawing layers across all 1,520 maps; original map data and Classic 2D remain unchanged.
+- Inspected eight hidden map renders around Crendale and the boat yard. New scenery changes are not yet in the downloadable Windows ZIP.
+
 ## v0.1.0-testing.20261116.2 — 2026-11-16
 
 ### Fixed

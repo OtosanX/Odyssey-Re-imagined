@@ -71,6 +71,23 @@ function gatehouse(scene,geometry,g){
 // upright picture. Each source cell stays anchored to its original map cell.
 function furniture(scene,geometry,g,phase=0){
  const model=g.profile?.model;
+ if(model==='campfire'){
+  for(const c of g.cells){const id=c.parts.map(p=>phase?p.alternate:p.id).find(Boolean);if(!id)continue;const cx=c.x+.5,cz=c.y+.55,b=scene.terrain.at(cx,cz),stone=patch(scene,131),wood=crop(scene.tileAtlas.tile(149),.2,.2,.6,.5);
+   for(let n=0;![123,300].includes(id)&&n<10;n++){const a=n*Math.PI/5;scene.box(geometry,cx+Math.cos(a)*.29-.065,cz+Math.sin(a)*.23-.06,.13,.12,b,.11,stone);}
+   scene.box(geometry,cx-.24,cz-.055,.48,.11,b+.03,.08,wood);scene.box(geometry,cx-.055,cz-.2,.11,.4,b+.07,.08,wood);
+   // Crop each original animation family above its logs/stones, retaining sparks.
+    const flame=[112,119].includes(id)?[7,8,26,19,.46]:[123,300].includes(id)?[5,8,28,25,.57]:[5,0,27,22,.72];
+    const fire=crop(scene.tileAtlas.tile(id),...flame.slice(0,4).map(v=>v/32)),quad=scene.geometry.quad;for(const [dx,dz]of [[.27,0],[0,.22]]){const points=[[cx-dx,b+.12,cz-dz],[cx+dx,b+.12,cz+dz],[cx+dx,b+flame[4],cz+dz],[cx-dx,b+flame[4],cz-dz]];quad(geometry,fire,points);quad(geometry,fire,[points[1],points[0],points[3],points[2]]);}
+  }return true;
+ }
+ if(model==='boat'){
+  for(const c of g.cells){const cx=c.x+.5,cz=c.y+.5,b=scene.terrain.at(cx,cz),wood=crop(scene.tileAtlas.tile(149),.18,.18,.6,.55),dark=[.55,.42,.3,1],quad=scene.geometry.quad;
+   const point=(along,across,y)=>[cx+(along+across)*.7071,b+y,cz+(-along+across)*.7071];
+   const ring=[];for(let n=0;n<16;n++){const a=n*Math.PI/8;ring.push([Math.cos(a)*.53,Math.sin(a)*.23]);}
+   for(let n=0;n<16;n++){const a=ring[n],d=ring[(n+1)%16],outerA=point(a[0],a[1],.25),outerB=point(d[0],d[1],.25),innerA=point(a[0]*.83,a[1]*.72,.25),innerB=point(d[0]*.83,d[1]*.72,.25);quad(geometry,wood,[point(d[0]*.7,d[1]*.55,.035),point(a[0]*.7,a[1]*.55,.035),outerA,outerB]);quad(geometry,wood,[outerA,outerB,innerB,innerA]);quad(geometry,wood,[innerB,innerA,point(a[0]*.7,a[1]*.5,.08),point(d[0]*.7,d[1]*.5,.08)],dark);quad(geometry,wood,[point(0,0,.08),point(a[0]*.7,a[1]*.5,.08),point(d[0]*.7,d[1]*.5,.08),point(0,0,.08)],dark);}
+   for(const t of [-.19,.19])quad(geometry,wood,[point(t-.045,-.17,.23),point(t+.045,-.17,.23),point(t+.045,.17,.23),point(t-.045,.17,.23)]);
+  }return true;
+ }
  if(model==='chair'){
   for(const c of g.cells){const id=c.parts.map(p=>phase?p.alternate:p.id).find(Boolean);if(!id)continue;const x=c.x+.22,z=c.y+.26,b=scene.terrain.at(x+.28,z+.28),wood=crop(scene.tileAtlas.tile(149),.15,.15,.65,.55),box=(x,z,w,d,y,h)=>scene.box(geometry,x,z,w,d,y,h,wood);
    box(x,z,.56,.52,b+.39,.085);for(const dx of [0,.48])for(const dz of [0,.44])box(x+dx,z+dz,.08,.08,b,.39);

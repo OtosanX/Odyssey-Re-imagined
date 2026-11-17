@@ -1,5 +1,6 @@
 'use strict';
-const m=require('mithril');
+const m=require('mithril'),names=require('./appearance-names.json');
+function name(id){return names[id]||('Appearance '+id);}
 let atlas=null,pending=null;
 function load(min=1,max=Infinity){
  if(atlas)return Promise.resolve({...atlas,items:atlas.items.filter(i=>i.id>=min&&i.id<=max)});
@@ -16,9 +17,9 @@ function load(min=1,max=Infinity){
 }
 function valid(id,min=1,max=Infinity){return Number.isInteger(id)&&id>=min&&id<=max&&(!atlas||atlas.items.some(i=>i.id===id));}
 function style(id,scale=3,frame=3){const cols=atlas?.cols||32,item=atlas?.items.find(i=>i.id===id);if(item&&!item.frames.includes(frame))frame=item.frames[0];const index=(id-1)*12+frame;return {width:32*scale+'px',height:32*scale+'px',backgroundImage:'url(assets/sprites.png)',backgroundSize:(atlas?.width||1024)*scale+'px auto',backgroundPosition:`-${index%cols*32*scale}px -${Math.floor(index/cols)*32*scale}px`};}
-const Portrait={view:v=>valid(v.attrs.sprite,1,v.attrs.max??Infinity)?m('.rpg-portrait',{style:style(v.attrs.sprite,v.attrs.scale||3,v.attrs.frame??3),role:'img','aria-label':'Appearance '+v.attrs.sprite}):m('.rpg-portrait.unavailable',{style:{width:32*(v.attrs.scale||3)+'px',height:32*(v.attrs.scale||3)+'px'},role:'img','aria-label':'Saved appearance unavailable'},'?')};
+const Portrait={view:v=>valid(v.attrs.sprite,1,v.attrs.max??Infinity)?m('.rpg-portrait',{style:style(v.attrs.sprite,v.attrs.scale||3,v.attrs.frame??3),role:'img','aria-label':name(v.attrs.sprite)}):m('.rpg-portrait.unavailable',{style:{width:32*(v.attrs.scale||3)+'px',height:32*(v.attrs.scale||3)+'px'},role:'img','aria-label':'Saved appearance unavailable'},'?')};
 function remember(username,sprite){if(!username||!valid(sprite))return;try{const rows=JSON.parse(localStorage.getItem('odyssey-account-avatars')||'{}');rows[username]=sprite;localStorage.setItem('odyssey-account-avatars',JSON.stringify(rows));}catch{}}
 function remembered(username){try{return JSON.parse(localStorage.getItem('odyssey-account-avatars')||'{}')[username];}catch{return null;}}
 function renderable(id){return valid(id,1,atlas?Math.floor(atlas.width/32*atlas.height/32/12):Infinity)?id:1;}
 function frameId(id,frame=3){id=renderable(id);const item=atlas?.items.find(i=>i.id===id);if(item&&!item.frames.includes(frame)){const base=Math.floor(frame/3)*3;frame=item.frames.includes(base)?base:item.frames[0];}return (id-1)*12+frame+1;}
-module.exports={load,valid,style,Portrait,remember,remembered,renderable,frameId};
+module.exports={name,load,valid,style,Portrait,remember,remembered,renderable,frameId};

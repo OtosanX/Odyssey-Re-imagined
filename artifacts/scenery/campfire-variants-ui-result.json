@@ -1,0 +1,62 @@
+{
+  "result": "PASS",
+  "metrics": [
+    {
+      "map": 112,
+      "name": "Campfire tile 112",
+      "drawCalls": 2,
+      "triangles": 416,
+      "scenery": 1,
+      "prepareMs": 467
+    },
+    {
+      "map": 119,
+      "name": "Campfire tile 119",
+      "drawCalls": 2,
+      "triangles": 416,
+      "scenery": 1,
+      "prepareMs": 14
+    },
+    {
+      "map": 123,
+      "name": "Campfire tile 123",
+      "drawCalls": 2,
+      "triangles": 316,
+      "scenery": 1,
+      "prepareMs": 13
+    },
+    {
+      "map": 300,
+      "name": "Campfire tile 300",
+      "drawCalls": 2,
+      "triangles": 316,
+      "scenery": 1,
+      "prepareMs": 13
+    },
+    {
+      "map": 1272,
+      "name": "Campfire tile 1272",
+      "drawCalls": 2,
+      "triangles": 416,
+      "scenery": 1,
+      "prepareMs": 12
+    },
+    {
+      "map": 1273,
+      "name": "Campfire tile 1273",
+      "drawCalls": 2,
+      "triangles": 416,
+      "scenery": 1,
+      "prepareMs": 13
+    },
+    {
+      "map": 1274,
+      "name": "Campfire tile 1274",
+      "drawCalls": 2,
+      "triangles": 416,
+      "scenery": 1,
+      "prepareMs": 13
+    }
+  ],
+  "errors": []
+}

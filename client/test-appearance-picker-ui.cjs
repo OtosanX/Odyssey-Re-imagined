@@ -1,0 +1,35 @@
+'use strict';
+// Hidden-window regression: no desktop input or real account data.
+const {app,BrowserWindow}=require('electron'),fs=require('fs'),os=require('os'),path=require('path'),assert=require('assert/strict');
+app.setPath('userData',fs.mkdtempSync(path.join(os.tmpdir(),'ody-picker-')));app.commandLine.appendSwitch('disable-gpu');
+app.whenReady().then(async()=>{let w;try{
+ w=new BrowserWindow({show:false,width:1280,height:1000,webPreferences:{nodeIntegration:true,contextIsolation:false,offscreen:true,backgroundThrottling:false}});
+ w.webContents.on('console-message',(_,level,msg)=>{if(level===3)console.error(msg);});
+ await w.loadFile(path.join(__dirname,'src/test-combat-ui.html'));
+ const js=s=>w.webContents.executeJavaScript(s),delay=ms=>new Promise(r=>setTimeout(r,ms)),wait=async expr=>{for(let i=0;i<200;i++){if(await js(`!!(${expr})`))return;await delay(50);}throw Error('Timeout '+expr);};
+ await js(`window.testNet=new (require('events').EventEmitter)();testNet.username='AccountName';testNet.send=()=>{};const lib=require('mithril');lib.mount(document.body,require('./views/game/lobby')(testNet));lib.route.set=()=>{window.entered=true;};testNet.emit('message',{system:4,id:8,data:Buffer.from(JSON.stringify({characters:[],capabilities:{spriteMin:1,spriteMax:643,mmoSlots:[{difficulty:'normal',available:true},{difficulty:'hardcore',available:true}]}}))});true;`);
+ await wait(`document.querySelector('[data-mode="mmo"]')`);await js(`document.querySelector('[data-mode="mmo"]').click()`);
+ await wait(`document.querySelector('.create-character-card')&&!document.querySelector('.create-character-card').disabled`);await js(`document.querySelector('.create-character-card').click()`);
+ await wait(`document.querySelectorAll('[data-sprite-id]').length===64`);
+ await js(`window.grid=document.querySelector('.appearance-grid');grid.scrollIntoView({block:'center'});grid.scrollTop=120;window.mutations=0;window.observer=new MutationObserver(()=>mutations++);observer.observe(grid,{subtree:true,attributes:true,childList:true});`);
+ const point=await js(`(()=>{const r=grid.getBoundingClientRect();return{x:Math.round(r.x+r.width/2),y:Math.round(r.y+80)};})()`);
+ w.webContents.sendInputEvent({type:'mouseMove',...point});await delay(250);
+ w.webContents.sendInputEvent({type:'mouseWheel',...point,deltaY:-110,deltaX:0,canScroll:true});await delay(400);
+ assert(await js(`grid.scrollTop>120`),'Mouse wheel must scroll the picker');assert.equal(await js('mutations'),0,'Animation/hover must not rewrite the picker');
+ const target=await js(`(()=>{const b=document.elementFromPoint(${point.x},${point.y}).closest('[data-sprite-id]');if(!b)throw Error('No target');return b.dataset.spriteId;})()`);
+ await js('observer.disconnect()');w.webContents.sendInputEvent({type:'mouseDown',button:'left',clickCount:1,...point});w.webContents.sendInputEvent({type:'mouseUp',button:'left',clickCount:1,...point});
+ await wait(`document.querySelector('[data-sprite-id="${target}"]').getAttribute('aria-pressed')==='true'`);
+ const before=await js('grid.scrollTop');await delay(400);assert.equal(await js('grid.scrollTop'),before);
+ await js(`window.search=document.querySelector('.appearance-search');search.value='reaper';search.dispatchEvent(new Event('input',{bubbles:true}));`);await wait(`document.querySelectorAll('[data-sprite-id]').length<64`);
+ assert(await js(`Array.from(grid.querySelectorAll('button')).every(b=>b.textContent.toLowerCase().includes('reaper'))`),'Name search');
+ await js(`search.value='127';search.dispatchEvent(new Event('input',{bubbles:true}));`);await wait(`grid.querySelectorAll('button').length===1`);assert(await js(`!!grid.querySelector('[data-sprite-id="127"]')`),'ID search');
+ await js(`grid.querySelector('button').click();search.value='';search.dispatchEvent(new Event('input',{bubbles:true}));`);await wait(`grid.querySelectorAll('button').length===64`);
+ await js(`document.querySelector('.appearance-pagination button:last-child').click()`);await wait(`document.querySelector('.appearance-pagination').textContent.includes('Page 2')`);
+ await js(`const b=grid.querySelector('button');b.focus();b.dispatchEvent(new KeyboardEvent('keydown',{code:'ArrowRight',bubbles:true}));`);await delay(100);
+ assert(await js(`document.activeElement.matches('[data-sprite-id]')`),'Keyboard focus');
+ await js(`const i=document.querySelector('[aria-label="Character name"]');i.value='NewAdventurer';i.dispatchEvent(new Event('input',{bubbles:true}));`);await wait(`!document.querySelector('.create-and-play').disabled`);
+ fs.mkdirSync('artifacts/characters',{recursive:true});await js(`grid.scrollIntoView({block:'center'})`);fs.writeFileSync('artifacts/characters/picker-desktop.png',(await w.webContents.capturePage()).toPNG());
+ w.setSize(390,844);await delay(200);assert(await js(`document.documentElement.scrollWidth<=window.innerWidth`),'Mobile must not overflow');fs.writeFileSync('artifacts/characters/picker-mobile.png',(await w.webContents.capturePage()).toPNG());
+ await js(`document.querySelector('.create-and-play').click();if(testNet.worldOptions.characterName!=='NewAdventurer'||!entered)throw Error('Selection not submitted');`);
+ console.log('PASS: real mouse hover/wheel/click, stable scroll during animation, name/ID search, pagination, keyboard focus, mobile width and creation.');w.destroy();app.exit(0);
+}catch(e){console.error(e);w?.destroy();app.exit(1);}});

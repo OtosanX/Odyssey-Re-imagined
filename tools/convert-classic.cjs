@@ -2,7 +2,7 @@ const fs=require('fs'),path=require('path'),zlib=require('zlib');
 const root=path.resolve(__dirname,'..'),source=path.join(root,'archive/classic-export'),out=path.join(root,'server/data');
 const load=n=>JSON.parse(fs.readFileSync(path.join(source,n+'.json'),'utf8').replace(/^\uFEFF/,''));
 const maps={},warnings=[];for(const file of fs.readdirSync(path.join(source,'maps'))){const id=+file.split('.')[0],raw=fs.readFileSync(path.join(source,'maps',file)),b=zlib.inflateSync(raw.subarray(4));if(b.length!==2677)throw Error('Unexpected map size '+id);
- const m={id,version:1,name:b.subarray(0,30).toString('latin1').replace(/\0/g,'').trim()||'Map '+id,width:12,height:12,layers:Array.from({length:6},()=>[]),blocked:[],attrs:[],exits:[b.readUInt16BE(37),b.readUInt16BE(43),b.readUInt16BE(39),b.readUInt16BE(41)],flags:b[53],death:{map:b.readUInt16BE(49),x:b[51],y:b[52]},anchors:[],spawnAnchor:'spawn'};
+ const m={id,version:1,name:b.subarray(0,30).toString('latin1').replace(/\0/g,'').trim()||'Map '+id,width:12,height:12,layers:Array.from({length:6},()=>[]),blocked:[],attrs:[],exits:[b.readUInt16BE(37),b.readUInt16BE(43),b.readUInt16BE(39),b.readUInt16BE(41)],flags:b[53],flags2:b[54],death:{map:b.readUInt16BE(49),x:b[51],y:b[52]},anchors:[],spawnAnchor:'spawn'};
  for(let i=0;i<144;i++){const o=85+i*18;for(let l=0;l<6;l++){const tile=b.readUInt16BE(o+l*2);if(tile>6979){warnings.push({map:id,layer:l,cell:i,tile});m.layers[l].push(0);}else m.layers[l].push(tile);}const a={type:b[o+12],data:Array.from(b.subarray(o+13,o+17)),type2:b[o+17]};m.attrs.push(a);m.blocked.push([1,3,13,14,15,16].includes(a.type)?1:0);}
  const i=m.blocked.findIndex(v=>!v);m.anchors.push({id:'spawn',name:'Map entry',x:i%12,y:Math.floor(i/12)});maps[id]=m;
 }

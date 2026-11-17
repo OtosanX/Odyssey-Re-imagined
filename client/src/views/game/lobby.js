@@ -10,7 +10,7 @@ module.exports=net=>{
  function refresh(){loading=true;error='';clearTimeout(timer);request({action:'catalogue'});timer=setTimeout(()=>{if(alive&&loading){loading=false;error='The character list did not load. Please retry.';m.redraw();}},12000);}
  function modeName(){return mode==='story'?'Story':'MMO';}
  function available(d){return capabilities?.mmoSlots.find(s=>s.difficulty===d)?.available===true;}
- function filteredSprites(){const terms=query.trim().toLowerCase();return (appearanceData?.items||[]).filter(s=>!terms||String(s.id).includes(terms)||('appearance '+s.id).includes(terms));}
+ function filteredSprites(){const terms=query.trim().toLowerCase();return (appearanceData?.items||[]).filter(s=>!terms||String(s.id).includes(terms)||Appearances.name(s.id).toLowerCase().includes(terms));}
  function selectedFrame(){const item=appearanceData?.items.find(s=>s.id===sprite),base=facing*3,step=walking?tick%2:0;return item?.frames.includes(base+step)?base+step:item?.frames.includes(base)?base:item?.frames[0]??3;}
  async function loadArt(){if(artLoading)return;artLoading=true;artError='';try{appearanceData=await Appearances.load(capabilities.spriteMin,capabilities.spriteMax);if(!appearanceData.items.length)throw Error('No selectable character artwork was found.');if(stage==='create'&&!appearanceData.items.some(s=>s.id===sprite))sprite=appearanceData.items[0].id;}catch(e){artError=e.message;}artLoading=false;if(alive)m.redraw();}
  function startCreation(context={}){
@@ -56,11 +56,11 @@ module.exports=net=>{
  function difficultyIcon(hard){return m('svg',{viewBox:'0 0 32 32',width:32,height:32,fill:'none',stroke:'currentColor','stroke-width':2,'aria-hidden':'true'},hard?[m('path',{d:'M8 23v-3C1 13 6 3 16 3s15 10 8 17v3H8Zm3 0v6h10v-6M16 24v5'}),m('circle',{cx:11,cy:13,r:2}),m('circle',{cx:21,cy:13,r:2}),m('path',{d:'m14 20 2-4 2 4'})]:[m('path',{d:'M16 2 28 7v10c0 6-12 13-12 13S4 23 4 17V7L16 2Z'}),m('path',{d:'m10 15 4 4 8-9'})]);}
  function spriteGrid(){const choices=filteredSprites(),pages=Math.max(1,Math.ceil(choices.length/PAGE_SIZE));page=Math.min(page,pages-1);const visible=choices.slice(page*PAGE_SIZE,(page+1)*PAGE_SIZE);return m('.appearance-section',[
   m('.screen-heading',[m('h3','Choose your appearance'),m('span.rpg-muted',(appearanceData?.items.length||0)+' available')]),
-  m('input.appearance-search',{type:'search','aria-label':'Search appearance ID',placeholder:'Search appearance ID…',value:query,oninput:e=>{query=e.target.value;page=0;}}),
+  m('input.appearance-search',{type:'search','aria-label':'Search appearance name or ID',placeholder:'Search name or ID…',value:query,oninput:e=>{query=e.target.value;page=0;}}),
   artLoading?m('p.rpg-loading',{role:'status'},'Discovering character artwork…'):null,artError?m('.inline-error',[m('p',artError),button('Retry artwork',loadArt)]):null,
-  m('.appearance-grid',{role:'group','aria-label':'Character appearances'},visible.map(item=>m('button.appearance-card',{key:item.id,type:'button',class:sprite===item.id?'selected':'','data-sprite-id':item.id,'aria-pressed':sprite===item.id,tabindex:sprite===item.id||!visible.some(s=>s.id===sprite)&&item===visible[0]?0:-1,onclick:()=>sprite=item.id,onkeydown:e=>{
+  m('.appearance-grid',{role:'group','aria-label':'Character appearances'},visible.map(item=>m('button.appearance-card',{key:item.id,type:'button',class:sprite===item.id?'selected':'','data-sprite-id':item.id,'aria-pressed':String(sprite===item.id),title:Appearances.name(item.id)+' · ID '+item.id,tabindex:sprite===item.id||!visible.some(s=>s.id===sprite)&&item===visible[0]?0:-1,onclick:()=>sprite=item.id,onkeydown:e=>{
    if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(e.code))return;e.preventDefault();const grid=e.currentTarget.parentElement,cols=Math.max(1,getComputedStyle(grid).gridTemplateColumns.split(/\s+/).filter(Boolean).length),index=choices.findIndex(s=>s.id===sprite),next=e.code==='Home'?0:e.code==='End'?choices.length-1:Math.max(0,Math.min(choices.length-1,index+({ArrowLeft:-1,ArrowRight:1,ArrowUp:-cols,ArrowDown:cols}[e.code])));sprite=choices[next].id;page=Math.floor(next/PAGE_SIZE);m.redraw();setTimeout(()=>document.querySelector('.appearance-grid [data-sprite-id="'+sprite+'"]')?.focus(),30);
-  }},[m(Appearances.Portrait,{sprite:item.id,scale:2}),m('span','ID '+item.id),sprite===item.id?m('span.appearance-check',{'aria-hidden':'true'},'✓'):null]))),
+  }},[m(Appearances.Portrait,{sprite:item.id,scale:2}),m('span',Appearances.name(item.id)),sprite===item.id?m('span.appearance-check',{'aria-hidden':'true'},'✓'):null]))),
   !artLoading&&!artError&&!visible.length?m('p.rpg-muted','No appearances match this search.'):null,
   m('.appearance-pagination',[button('← Previous Page',()=>page--,{disabled:page===0}),m('span',`Page ${page+1} of ${pages}`),button('Next Page →',()=>page++,{disabled:page>=pages-1})])
  ]);}
@@ -75,7 +75,7 @@ module.exports=net=>{
     spriteGrid()
    ]),
    m('aside.creation-preview.rpg-panel',[
-    m('span.rpg-eyebrow','YOUR CHARACTER'),m('h2',characterName||'Your character'),m('.large-appearance',m(Appearances.Portrait,{sprite,scale:window.innerWidth<=680?4:6,frame:selectedFrame()})),m('strong.selected-appearance','Appearance '+sprite),
+    m('span.rpg-eyebrow','YOUR CHARACTER'),m('h2',characterName||'Your character'),m('.large-appearance',m(Appearances.Portrait,{sprite,scale:window.innerWidth<=680?4:6,frame:selectedFrame()})),m('strong.selected-appearance',Appearances.name(sprite)),
     m('label',['Facing',m('select',{'aria-label':'Preview facing',value:facing,onchange:e=>facing=+e.target.value},['North','South','West','East'].map((label,i)=>m('option',{value:i},label)))]),
     m('label.preview-walking',[m('input',{type:'checkbox',checked:walking,onchange:e=>walking=e.target.checked}),'Walking preview']),
     m('dl.creation-summary',[m('dt','Game Mode'),m('dd',modeName()),m('dt','Difficulty'),m('dd',{class:difficulty},difficulty==='hardcore'?'Hardcore':'Normal'),m('dt','Appearance'),m('dd','ID '+sprite),mode==='story'?m('dt','Story Save'):null,mode==='story'?m('dd',invite?.name||name):null]),
@@ -84,7 +84,7 @@ module.exports=net=>{
   ])
  ];}
  return {
-  oninit(){alive=true;window.addEventListener('resize',resized);error=net.worldError||'';if(net.launcherReset||previousUser!==net.username){stage=net.preferredMode?'characters':'modes';mode=net.preferredMode||null;draft=null;characters=[];capabilities=null;net.launcherReset=false;}else if(error&&draft){mode=draft.mode;difficulty=draft.difficulty;sprite=draft.sprite;name=draft.name;characterName=draft.characterName||'';invite=draft.invite;existingSave=draft.existingSave;stage='create';}else if(mode)stage='characters';previousUser=net.username;net.on('message',reply);const worldError=error;refresh();if(worldError)error=worldError;animation=setInterval(()=>{if(alive&&stage==='create'&&walking){tick++;m.redraw();}},150);},
+  oninit(){alive=true;window.addEventListener('resize',resized);error=net.worldError||'';if(net.launcherReset||previousUser!==net.username){stage=net.preferredMode?'characters':'modes';mode=net.preferredMode||null;draft=null;characters=[];capabilities=null;net.launcherReset=false;}else if(error&&draft){mode=draft.mode;difficulty=draft.difficulty;sprite=draft.sprite;name=draft.name;characterName=draft.characterName||'';invite=draft.invite;existingSave=draft.existingSave;stage='create';}else if(mode)stage='characters';previousUser=net.username;net.on('message',reply);const worldError=error;refresh();if(worldError)error=worldError;animation=setInterval(()=>{if(alive&&stage==='create'&&walking){tick++;const portrait=document.querySelector('.large-appearance .rpg-portrait');if(portrait)Object.assign(portrait.style,Appearances.style(sprite,window.innerWidth<=680?4:6,selectedFrame()));}},150);},
   onremove(){alive=false;window.removeEventListener('resize',resized);clearInterval(animation);clearTimeout(timer);net.removeListener('message',reply);},
   view:()=>m('main.lobby.rpg-shell',[
    top(),net.profileWarning?m('p.inline-error',net.profileWarning):null,warning?m('p.rpg-muted',warning):null,
