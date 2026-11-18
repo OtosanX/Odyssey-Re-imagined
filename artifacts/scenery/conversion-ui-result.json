@@ -1,0 +1,45 @@
+{
+  "result": "PASS",
+  "report": [
+    {
+      "id": 94,
+      "name": "Haunted Clearing",
+      "walls": 0,
+      "floors": 33,
+      "trees": 61,
+      "warnings": 14
+    },
+    {
+      "id": 1974,
+      "name": "House of PK <Free For All>",
+      "walls": 16,
+      "floors": 16,
+      "trees": 0,
+      "warnings": 30
+    },
+    {
+      "id": 446,
+      "name": "Crendale Mines",
+      "walls": 0,
+      "floors": 0,
+      "trees": 0,
+      "warnings": 55
+    },
+    {
+      "id": 951,
+      "name": "Down The Well",
+      "walls": 37,
+      "floors": 30,
+      "trees": 0,
+      "warnings": 51
+    },
+    {
+      "id": 666,
+      "name": "!HELL!",
+      "walls": 0,
+      "floors": 0,
+      "trees": 0,
+      "warnings": 37
+    }
+  ]
+}

@@ -2,6 +2,23 @@
 
 This log summarizes implemented changes from repository history and development notes. A passing audit is not a claim that every original quest or map is fully restored.
 
+## Source update — 2026-11-18
+
+Source update only; the downloadable Windows ZIP has not been rebuilt.
+
+### Editor wall controls
+- Added thin corner wall shapes and automatic L-shaped wall recognition.
+- Kept conversion review status visible outside the collapsed experiment panel.
+- Added Click & edit with Ctrl-drag artwork movement, tile snapping, undo, cancellation and overwrite protection; collision remains separately editable.
+
+### Experimental conversion
+
+- Conversion now opens a visible Needs review notice naming the map, with readable tile-coordinate warnings. Selection-only checks are explicitly scoped, and stale warnings clear when the test is discarded or the map changes.
+
+- Added an opt-in, preview-only 3D conversion panel with whole-map/selected-region analysis, current-versus-experimental comparison, manual wall direction/thickness, floor tile and tree scale controls.
+- Tests wall/floor separation using nearby floor artwork and narrow side-wall recognition; preserves known multi-tile tree grouping and reports incomplete assemblies. Original map layers, collision and game defaults stay unchanged.
+- Checked all 1,520 maps for input/collision preservation and rendered five problem maps. Ambiguous rock walls and Hell artwork remain review cases; this is not a universal conversion replacement.
+
 ## Source update — 2026-11-17
 
 These changes are in the source repository. The downloadable Windows ZIP remains at v0.1.0-testing.20261116.2 until the next packaged release.

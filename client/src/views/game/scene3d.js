@@ -85,7 +85,7 @@ class Scene3D{
   if(world!==this.requestWorld||!!settings.inspection!==this.inspectGeometry){this.inspectGeometry=!!settings.inspection;
    if(this.pending){this.pending.steps.return();this.release(this.pending.stage);this.pending=null;this.diagnostics.cancelled++;}
    this.requestWorld=world;const coordinateRevision=world.viewRevision??world;if(coordinateRevision!==this.coordinateRevision){this.offset.x+=world.shiftX||0;this.offset.y+=world.shiftY||0;this.coordinateRevision=coordinateRevision;}
-   const key=JSON.stringify([world.width,world.height,world.layers||world.tiles,world.scene3d||null,world.visual3d||null,world.blocked||world.tiles,this.inspectGeometry]);
+   const key=JSON.stringify([world.width,world.height,world.layers||world.tiles,world.scene3d||null,world.visual3d||null,world._conversionPreview||null,world.blocked||world.tiles,this.inspectGeometry]);
    if(this.cache.has(key)){this.diagnostics.cacheHits++;this.activate(this.cache.get(key),key);return true;}
    const stage=Object.assign(Object.create(Scene3D.prototype),{gl:this.gl,bufferCache:this.bufferCache,sharedMaterials:this.sharedMaterials,world,meshes:[],frames:[],tileAtlas:this.tileAtlas,whitePage:this.whitePage,artAnalysis:this.artAnalysis,inspectGeometry:this.inspectGeometry,inspectionObjects:[],geometry:{Atlas,quad},templates:this.templates,templateBytes:this.templateBytes,diagnostics:this.diagnostics});this.pending={stage,key,steps:stage.buildWorld(world,assets)};this.hideOld=!!world.teleport;this.diagnostics.builds++;
   }

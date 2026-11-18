@@ -3,7 +3,7 @@ const {profileAt}=require('./scenery-profiles');
 // Classic often paints a wall directly into Ground. Reconstruct the complete
 // floor beneath it from nearby opaque floor art, not a clipped sprite remnant.
 function floorUnderlay(world,x,y,removed,art){
- const i=y*world.width+x,base=world.layers?.[0]?.[i];
+ const i=y*world.width+x;if(world._conversionPreview?.floorTiles?.[i])return world._conversionPreview.floorTiles[i];const base=world.layers?.[0]?.[i];
  if(base&&!removed.has('0:'+i))return 0;
  const eligible=(id,xx,yy,l,j)=>id&&!removed.has(l+':'+j)&&profileAt(world,xx,yy,id).kind==='ground'&&art(id).coverage>=.98;
  if(eligible(base,x,y,0,i))return 0;
