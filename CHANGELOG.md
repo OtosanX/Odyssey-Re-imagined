@@ -2,6 +2,14 @@
 
 This log summarizes implemented changes from repository history and development notes. A passing audit is not a claim that every original quest or map is fully restored.
 
+## Source update — 2026-11-18: conversion corrections
+
+- Auto conversion preserves map-edge geometry and flags uncertain boundary connections instead of rebuilding them. Added Classic #1966 House of PK to render checks.
+- Covered wall layers and ambiguous partial artwork are left unchanged; Auto no longer forces walls closed. Explicit manual interpretation remains available.
+
+- Converted wall faces now use the full generated wall texture instead of stretching an 8-pixel material sample. Applies to straight walls, corners and both animation frames; ordinary rendering is unchanged.
+- Verified full texture coordinates and five hidden map renders.
+
 ## Source update — 2026-11-18
 
 Source update only; the downloadable Windows ZIP has not been rebuilt.

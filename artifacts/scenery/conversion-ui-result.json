@@ -2,20 +2,20 @@
   "result": "PASS",
   "report": [
     {
-      "id": 94,
-      "name": "Haunted Clearing",
-      "walls": 0,
-      "floors": 33,
-      "trees": 61,
-      "warnings": 14
+      "id": 1966,
+      "name": "[House of <PK>]",
+      "walls": 5,
+      "floors": 5,
+      "trees": 0,
+      "warnings": 31
     },
     {
       "id": 1974,
       "name": "House of PK <Free For All>",
-      "walls": 16,
-      "floors": 16,
+      "walls": 13,
+      "floors": 13,
       "trees": 0,
-      "warnings": 30
+      "warnings": 33
     },
     {
       "id": 446,
@@ -28,10 +28,10 @@
     {
       "id": 951,
       "name": "Down The Well",
-      "walls": 37,
-      "floors": 30,
+      "walls": 34,
+      "floors": 29,
       "trees": 0,
-      "warnings": 51
+      "warnings": 54
     },
     {
       "id": 666,

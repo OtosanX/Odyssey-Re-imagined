@@ -18,50 +18,50 @@
   {
     "map": 3,
     "name": "Lord Bob's House",
-    "walls": 6,
-    "floors": 6,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 60
+    "reviewNotes": 64
   },
   {
     "map": 4,
     "name": "Garad's Fine Arms",
-    "walls": 16,
-    "floors": 14,
+    "walls": 14,
+    "floors": 13,
     "trees": 15,
-    "reviewNotes": 26
+    "reviewNotes": 28
   },
   {
     "map": 5,
     "name": "Crendale Bank",
-    "walls": 10,
-    "floors": 10,
+    "walls": 6,
+    "floors": 6,
     "trees": 7,
-    "reviewNotes": 43
+    "reviewNotes": 47
   },
   {
     "map": 6,
     "name": "Crendale Inn",
-    "walls": 46,
-    "floors": 37,
+    "walls": 39,
+    "floors": 32,
     "trees": 11,
-    "reviewNotes": 25
+    "reviewNotes": 32
   },
   {
     "map": 7,
     "name": "Potion Shop",
-    "walls": 7,
-    "floors": 6,
+    "walls": 5,
+    "floors": 5,
     "trees": 8,
-    "reviewNotes": 22
+    "reviewNotes": 23
   },
   {
     "map": 8,
     "name": "Second Level of Inn",
-    "walls": 48,
+    "walls": 41,
     "floors": 40,
     "trees": 5,
-    "reviewNotes": 1
+    "reviewNotes": 8
   },
   {
     "map": 9,
@@ -74,10 +74,10 @@
   {
     "map": 10,
     "name": "Daventry's Tavern",
-    "walls": 17,
-    "floors": 16,
+    "walls": 15,
+    "floors": 14,
     "trees": 12,
-    "reviewNotes": 35
+    "reviewNotes": 37
   },
   {
     "map": 11,
@@ -258,10 +258,10 @@
   {
     "map": 33,
     "name": "Darkcone Forest <PK>",
-    "walls": 25,
+    "walls": 19,
     "floors": 19,
     "trees": 116,
-    "reviewNotes": 29
+    "reviewNotes": 35
   },
   {
     "map": 34,
@@ -538,26 +538,26 @@
   {
     "map": 68,
     "name": "Carnage Waiting Room",
-    "walls": 24,
-    "floors": 16,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 52
   },
   {
     "map": 69,
     "name": "House of < PK > - CARNAGE",
-    "walls": 74,
-    "floors": 48,
+    "walls": 13,
+    "floors": 13,
     "trees": 0,
-    "reviewNotes": 6
+    "reviewNotes": 67
   },
   {
     "map": 70,
     "name": "Red Base",
-    "walls": 11,
-    "floors": 6,
+    "walls": 10,
+    "floors": 5,
     "trees": 0,
-    "reviewNotes": 60
+    "reviewNotes": 61
   },
   {
     "map": 71,
@@ -578,18 +578,18 @@
   {
     "map": 73,
     "name": "Red Territory",
-    "walls": 4,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 32
+    "reviewNotes": 36
   },
   {
     "map": 74,
     "name": "Neutral Territory",
-    "walls": 14,
-    "floors": 13,
+    "walls": 12,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 45
+    "reviewNotes": 47
   },
   {
     "map": 75,
@@ -626,10 +626,10 @@
   {
     "map": 79,
     "name": "CTF Waiting Room",
-    "walls": 44,
-    "floors": 34,
+    "walls": 10,
+    "floors": 10,
     "trees": 4,
-    "reviewNotes": 0
+    "reviewNotes": 34
   },
   {
     "map": 80,
@@ -650,10 +650,10 @@
   {
     "map": 82,
     "name": "Jail",
-    "walls": 4,
-    "floors": 4,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 54
+    "reviewNotes": 58
   },
   {
     "map": 83,
@@ -666,10 +666,10 @@
   {
     "map": 84,
     "name": "Jail",
-    "walls": 4,
-    "floors": 4,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 54
+    "reviewNotes": 58
   },
   {
     "map": 85,
@@ -682,10 +682,10 @@
   {
     "map": 86,
     "name": "Chess Piece Carnage",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 1
   },
   {
     "map": 87,
@@ -714,10 +714,10 @@
   {
     "map": 90,
     "name": "Boss Battle",
-    "walls": 68,
-    "floors": 46,
+    "walls": 28,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 26
+    "reviewNotes": 66
   },
   {
     "map": 91,
@@ -762,10 +762,10 @@
   {
     "map": 96,
     "name": "Ancient Church",
-    "walls": 24,
-    "floors": 19,
+    "walls": 21,
+    "floors": 17,
     "trees": 9,
-    "reviewNotes": 11
+    "reviewNotes": 14
   },
   {
     "map": 97,
@@ -786,34 +786,34 @@
   {
     "map": 99,
     "name": "Crystal Lake",
-    "walls": 13,
-    "floors": 13,
+    "walls": 0,
+    "floors": 0,
     "trees": 12,
-    "reviewNotes": 107
+    "reviewNotes": 120
   },
   {
     "map": 100,
     "name": "Ice Cavern",
-    "walls": 5,
-    "floors": 5,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 65
+    "reviewNotes": 66
   },
   {
     "map": 101,
     "name": "Ice Caverns",
-    "walls": 14,
-    "floors": 14,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 51
+    "reviewNotes": 59
   },
   {
     "map": 102,
     "name": "Ice Caverns",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 63
+    "reviewNotes": 66
   },
   {
     "map": 103,
@@ -874,26 +874,26 @@
   {
     "map": 110,
     "name": "Team Fortress Carnage",
-    "walls": 16,
-    "floors": 16,
+    "walls": 10,
+    "floors": 10,
     "trees": 6,
-    "reviewNotes": 26
+    "reviewNotes": 32
   },
   {
     "map": 111,
     "name": "Team Wonderland Carnage",
-    "walls": 16,
-    "floors": 16,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 26
+    "reviewNotes": 32
   },
   {
     "map": 112,
     "name": "Underworld Guild Vault <PK>",
-    "walls": 46,
-    "floors": 44,
+    "walls": 35,
+    "floors": 34,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 23
   },
   {
     "map": 113,
@@ -978,26 +978,26 @@
   {
     "map": 123,
     "name": "Underworld Guild Vault <PK>",
-    "walls": 9,
-    "floors": 9,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 66
+    "reviewNotes": 75
   },
   {
     "map": 124,
     "name": "Team Fortress CTF <Blue>",
-    "walls": 23,
-    "floors": 19,
+    "walls": 6,
+    "floors": 5,
     "trees": 21,
-    "reviewNotes": 33
+    "reviewNotes": 50
   },
   {
     "map": 125,
     "name": "Northcoast Armory",
-    "walls": 12,
-    "floors": 12,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 40
   },
   {
     "map": 126,
@@ -1026,10 +1026,10 @@
   {
     "map": 129,
     "name": "Dragonian River Valley",
-    "walls": 6,
-    "floors": 6,
+    "walls": 3,
+    "floors": 3,
     "trees": 22,
-    "reviewNotes": 10
+    "reviewNotes": 13
   },
   {
     "map": 130,
@@ -1058,42 +1058,42 @@
   {
     "map": 133,
     "name": "West of Crendale",
-    "walls": 7,
+    "walls": 0,
     "floors": 7,
     "trees": 81,
-    "reviewNotes": 19
+    "reviewNotes": 26
   },
   {
     "map": 134,
     "name": "Draconis Ridge",
-    "walls": 13,
+    "walls": 0,
     "floors": 11,
     "trees": 35,
-    "reviewNotes": 83
+    "reviewNotes": 96
   },
   {
     "map": 135,
     "name": "Underworld Secret Vault <PK>",
-    "walls": 15,
-    "floors": 12,
+    "walls": 12,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 115
+    "reviewNotes": 118
   },
   {
     "map": 136,
     "name": "Underworld Guild Vault <PK>",
-    "walls": 44,
-    "floors": 38,
+    "walls": 17,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 35
+    "reviewNotes": 62
   },
   {
     "map": 137,
     "name": "Underworld Meeting Throne <PK>",
-    "walls": 48,
-    "floors": 45,
+    "walls": 17,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 6
+    "reviewNotes": 37
   },
   {
     "map": 138,
@@ -1106,10 +1106,10 @@
   {
     "map": 139,
     "name": "Northern Beach",
-    "walls": 9,
+    "walls": 7,
     "floors": 7,
     "trees": 8,
-    "reviewNotes": 4
+    "reviewNotes": 6
   },
   {
     "map": 140,
@@ -1178,10 +1178,10 @@
   {
     "map": 148,
     "name": "TAG!",
-    "walls": 5,
+    "walls": 4,
     "floors": 4,
     "trees": 5,
-    "reviewNotes": 31
+    "reviewNotes": 32
   },
   {
     "map": 149,
@@ -1194,10 +1194,10 @@
   {
     "map": 150,
     "name": "Team Fortress CTF <Red>",
-    "walls": 20,
-    "floors": 17,
+    "walls": 5,
+    "floors": 5,
     "trees": 21,
-    "reviewNotes": 35
+    "reviewNotes": 50
   },
   {
     "map": 151,
@@ -1282,10 +1282,10 @@
   {
     "map": 161,
     "name": "Team Swamp Carnage",
-    "walls": 11,
-    "floors": 16,
+    "walls": 0,
+    "floors": 5,
     "trees": 20,
-    "reviewNotes": 28
+    "reviewNotes": 39
   },
   {
     "map": 162,
@@ -1410,10 +1410,10 @@
   {
     "map": 177,
     "name": "The Sanctuary",
-    "walls": 3,
-    "floors": 6,
+    "walls": 2,
+    "floors": 5,
     "trees": 5,
-    "reviewNotes": 92
+    "reviewNotes": 93
   },
   {
     "map": 178,
@@ -1466,10 +1466,10 @@
   {
     "map": 184,
     "name": "Guard Quarters <PK>",
-    "walls": 71,
-    "floors": 71,
+    "walls": 29,
+    "floors": 29,
     "trees": 0,
-    "reviewNotes": 39
+    "reviewNotes": 81
   },
   {
     "map": 185,
@@ -1546,74 +1546,74 @@
   {
     "map": 194,
     "name": "Castle Sanctuary",
-    "walls": 4,
-    "floors": 4,
+    "walls": 2,
+    "floors": 2,
     "trees": 9,
-    "reviewNotes": 41
+    "reviewNotes": 43
   },
   {
     "map": 195,
     "name": "Castle Garden",
-    "walls": 6,
-    "floors": 6,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 10
+    "reviewNotes": 13
   },
   {
     "map": 196,
     "name": "Castle Dragonia",
-    "walls": 12,
-    "floors": 10,
+    "walls": 10,
+    "floors": 9,
     "trees": 14,
-    "reviewNotes": 33
+    "reviewNotes": 35
   },
   {
     "map": 197,
     "name": "Entry Hall to Crendale Keep",
-    "walls": 16,
-    "floors": 16,
+    "walls": 14,
+    "floors": 14,
     "trees": 14,
-    "reviewNotes": 18
+    "reviewNotes": 20
   },
   {
     "map": 198,
     "name": "Keep Courtyard",
-    "walls": 34,
-    "floors": 32,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 34
   },
   {
     "map": 199,
     "name": "Throne Hall",
-    "walls": 5,
-    "floors": 5,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 36
+    "reviewNotes": 41
   },
   {
     "map": 200,
     "name": "The Study",
-    "walls": 20,
-    "floors": 13,
+    "walls": 7,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 31
+    "reviewNotes": 44
   },
   {
     "map": 201,
     "name": "Messhall",
-    "walls": 11,
-    "floors": 11,
+    "walls": 1,
+    "floors": 1,
     "trees": 0,
-    "reviewNotes": 48
+    "reviewNotes": 58
   },
   {
     "map": 202,
     "name": "Storeroom",
-    "walls": 20,
+    "walls": 19,
     "floors": 19,
     "trees": 0,
-    "reviewNotes": 30
+    "reviewNotes": 31
   },
   {
     "map": 203,
@@ -1626,10 +1626,10 @@
   {
     "map": 204,
     "name": "Tal von Ubel",
-    "walls": 6,
-    "floors": 6,
+    "walls": 2,
+    "floors": 2,
     "trees": 22,
-    "reviewNotes": 4
+    "reviewNotes": 8
   },
   {
     "map": 205,
@@ -1642,50 +1642,50 @@
   {
     "map": 206,
     "name": "The Armory",
-    "walls": 27,
-    "floors": 27,
-    "trees": 0,
-    "reviewNotes": 10
-  },
-  {
-    "map": 207,
-    "name": "Below Crendale Keep",
-    "walls": 7,
-    "floors": 7,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
     "reviewNotes": 28
   },
   {
+    "map": 207,
+    "name": "Below Crendale Keep",
+    "walls": 5,
+    "floors": 5,
+    "trees": 0,
+    "reviewNotes": 30
+  },
+  {
     "map": 208,
     "name": "Forgotten Dungeon",
-    "walls": 35,
-    "floors": 29,
+    "walls": 18,
+    "floors": 18,
     "trees": 0,
-    "reviewNotes": 25
+    "reviewNotes": 42
   },
   {
     "map": 209,
     "name": "Secret Lair",
-    "walls": 13,
-    "floors": 13,
+    "walls": 12,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 25
+    "reviewNotes": 26
   },
   {
     "map": 210,
     "name": "Shrine to Kair Norax",
-    "walls": 16,
-    "floors": 16,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 41
+    "reviewNotes": 49
   },
   {
     "map": 211,
     "name": "Rusalka's Song",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 4
+    "reviewNotes": 5
   },
   {
     "map": 212,
@@ -1714,15 +1714,15 @@
   {
     "map": 215,
     "name": "Shrine to Kair-Norax",
-    "walls": 4,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 3
+    "reviewNotes": 5
   },
   {
     "map": 216,
     "name": "Elvish Dwelling",
-    "walls": 18,
+    "walls": 17,
     "floors": 6,
     "trees": 22,
     "reviewNotes": 38
@@ -1730,10 +1730,10 @@
   {
     "map": 217,
     "name": "Victory",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 2
   },
   {
     "map": 218,
@@ -1754,10 +1754,10 @@
   {
     "map": 220,
     "name": "A Dark Cave",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 122
+    "reviewNotes": 123
   },
   {
     "map": 221,
@@ -1770,50 +1770,50 @@
   {
     "map": 222,
     "name": "Castle Dragonia",
-    "walls": 10,
-    "floors": 8,
+    "walls": 8,
+    "floors": 7,
     "trees": 17,
-    "reviewNotes": 43
+    "reviewNotes": 45
   },
   {
     "map": 223,
     "name": "Castle Dragonia",
-    "walls": 11,
-    "floors": 11,
+    "walls": 9,
+    "floors": 9,
     "trees": 29,
-    "reviewNotes": 35
+    "reviewNotes": 37
   },
   {
     "map": 224,
     "name": "Castle Dragonia",
-    "walls": 4,
-    "floors": 4,
+    "walls": 3,
+    "floors": 3,
     "trees": 37,
-    "reviewNotes": 43
+    "reviewNotes": 44
   },
   {
     "map": 225,
     "name": "Captains Table Inn",
-    "walls": 35,
-    "floors": 34,
+    "walls": 13,
+    "floors": 15,
     "trees": 2,
-    "reviewNotes": 18
+    "reviewNotes": 40
   },
   {
     "map": 226,
     "name": "Bedrooms",
-    "walls": 52,
-    "floors": 49,
+    "walls": 22,
+    "floors": 22,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 30
   },
   {
     "map": 227,
     "name": "Impish Lair",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 43
+    "reviewNotes": 46
   },
   {
     "map": 228,
@@ -1858,10 +1858,10 @@
   {
     "map": 233,
     "name": "West Crendale Guild Hall <PK>",
-    "walls": 10,
-    "floors": 14,
+    "walls": 0,
+    "floors": 4,
     "trees": 11,
-    "reviewNotes": 58
+    "reviewNotes": 68
   },
   {
     "map": 234,
@@ -1874,10 +1874,10 @@
   {
     "map": 235,
     "name": "Dragonian River Hall",
-    "walls": 11,
-    "floors": 11,
+    "walls": 9,
+    "floors": 9,
     "trees": 31,
-    "reviewNotes": 49
+    "reviewNotes": 51
   },
   {
     "map": 236,
@@ -1914,202 +1914,202 @@
   {
     "map": 240,
     "name": "Ice Caverns",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 63
+    "reviewNotes": 66
   },
   {
     "map": 241,
     "name": "Ice Caverns",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 63
+    "reviewNotes": 66
   },
   {
     "map": 242,
     "name": "Ice Caverns",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 63
+    "reviewNotes": 66
   },
   {
     "map": 243,
     "name": "Ice Caverns",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 63
+    "reviewNotes": 66
   },
   {
     "map": 244,
     "name": "Ice Caverns",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 63
+    "reviewNotes": 66
   },
   {
     "map": 245,
     "name": "Ice Caverns",
-    "walls": 14,
-    "floors": 14,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 51
+    "reviewNotes": 59
   },
   {
     "map": 246,
     "name": "Ice Caverns",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 63
+    "reviewNotes": 66
   },
   {
     "map": 247,
     "name": "Ice Caverns",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 63
+    "reviewNotes": 66
   },
   {
     "map": 248,
     "name": "Ice Caverns",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 63
+    "reviewNotes": 66
   },
   {
     "map": 249,
     "name": "Ice Caverns",
-    "walls": 12,
-    "floors": 12,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 76
+    "reviewNotes": 78
   },
   {
     "map": 250,
     "name": "The Hermit's Hut",
-    "walls": 16,
-    "floors": 14,
+    "walls": 15,
+    "floors": 13,
     "trees": 40,
-    "reviewNotes": 40
+    "reviewNotes": 41
   },
   {
     "map": 251,
     "name": "Darkcone Guild Hall <PK>",
-    "walls": 38,
-    "floors": 27,
+    "walls": 36,
+    "floors": 25,
     "trees": 33,
-    "reviewNotes": 37
+    "reviewNotes": 39
   },
   {
     "map": 252,
     "name": "A Cave <PK>",
-    "walls": 16,
-    "floors": 16,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 115
+    "reviewNotes": 123
   },
   {
     "map": 253,
     "name": "Ice Caverns",
-    "walls": 12,
-    "floors": 12,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 76
+    "reviewNotes": 78
   },
   {
     "map": 254,
     "name": "Ice Caverns",
-    "walls": 8,
-    "floors": 8,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 55
+    "reviewNotes": 59
   },
   {
     "map": 255,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 56
+    "reviewNotes": 59
   },
   {
     "map": 256,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 61
   },
   {
     "map": 257,
     "name": "Ice Caverns",
-    "walls": 11,
-    "floors": 11,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 56
+    "reviewNotes": 63
   },
   {
     "map": 258,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 61
   },
   {
     "map": 259,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 61
   },
   {
     "map": 260,
     "name": "Below Crendale Keep",
-    "walls": 21,
-    "floors": 16,
+    "walls": 14,
+    "floors": 14,
     "trees": 0,
-    "reviewNotes": 31
+    "reviewNotes": 38
   },
   {
     "map": 261,
     "name": "Sewer",
-    "walls": 22,
-    "floors": 11,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 26
+    "reviewNotes": 40
   },
   {
     "map": 262,
     "name": "Sewer",
-    "walls": 20,
-    "floors": 13,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 43
+    "reviewNotes": 60
   },
   {
     "map": 263,
     "name": "Sewers",
-    "walls": 15,
-    "floors": 8,
+    "walls": 5,
+    "floors": 5,
     "trees": 0,
-    "reviewNotes": 33
+    "reviewNotes": 43
   },
   {
     "map": 264,
     "name": "Sewer",
-    "walls": 27,
-    "floors": 14,
+    "walls": 11,
+    "floors": 11,
     "trees": 0,
-    "reviewNotes": 39
+    "reviewNotes": 55
   },
   {
     "map": 265,
@@ -2122,18 +2122,18 @@
   {
     "map": 266,
     "name": "Entrance of the Pyramid",
-    "walls": 70,
-    "floors": 39,
+    "walls": 33,
+    "floors": 29,
     "trees": 0,
-    "reviewNotes": 16
+    "reviewNotes": 53
   },
   {
     "map": 267,
     "name": "Inside the Pyramid",
-    "walls": 18,
-    "floors": 15,
+    "walls": 12,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 18
+    "reviewNotes": 24
   },
   {
     "map": 268,
@@ -2146,18 +2146,18 @@
   {
     "map": 269,
     "name": "Rear of the Pyramid",
-    "walls": 50,
-    "floors": 36,
+    "walls": 30,
+    "floors": 28,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 48
   },
   {
     "map": 270,
     "name": "Secret Tomb",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 35
+    "reviewNotes": 36
   },
   {
     "map": 271,
@@ -2178,50 +2178,50 @@
   {
     "map": 273,
     "name": "Choose a Path",
-    "walls": 4,
-    "floors": 4,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 18
+    "reviewNotes": 19
   },
   {
     "map": 274,
     "name": "Passageway",
-    "walls": 10,
-    "floors": 10,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 13
   },
   {
     "map": 275,
     "name": "Priest's Tomb",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 32
+    "reviewNotes": 33
   },
   {
     "map": 276,
     "name": "Passageway",
-    "walls": 10,
-    "floors": 10,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 13
   },
   {
     "map": 277,
     "name": "Priests Curse",
-    "walls": 8,
-    "floors": 8,
+    "walls": 1,
+    "floors": 1,
     "trees": 0,
-    "reviewNotes": 27
+    "reviewNotes": 34
   },
   {
     "map": 278,
     "name": "The Pyramid Trap",
-    "walls": 31,
-    "floors": 31,
+    "walls": 17,
+    "floors": 17,
     "trees": 0,
-    "reviewNotes": 4
+    "reviewNotes": 18
   },
   {
     "map": 279,
@@ -2234,34 +2234,34 @@
   {
     "map": 280,
     "name": "Passageway",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 17
+    "reviewNotes": 18
   },
   {
     "map": 281,
     "name": "Priest's Tomb",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 27
+    "reviewNotes": 28
   },
   {
     "map": 282,
     "name": "Priest's Reward",
-    "walls": 16,
-    "floors": 16,
+    "walls": 15,
+    "floors": 15,
     "trees": 0,
-    "reviewNotes": 41
+    "reviewNotes": 42
   },
   {
     "map": 283,
     "name": "Priest's Sanctuary",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 23
+    "reviewNotes": 25
   },
   {
     "map": 284,
@@ -2282,10 +2282,10 @@
   {
     "map": 286,
     "name": "The Jeweled Door",
-    "walls": 5,
-    "floors": 5,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 23
   },
   {
     "map": 287,
@@ -2314,10 +2314,10 @@
   {
     "map": 290,
     "name": "Hall of Donations",
-    "walls": 17,
-    "floors": 16,
+    "walls": 16,
+    "floors": 15,
     "trees": 0,
-    "reviewNotes": 7
+    "reviewNotes": 8
   },
   {
     "map": 291,
@@ -2370,10 +2370,10 @@
   {
     "map": 297,
     "name": "Shady Hall <PK>",
-    "walls": 18,
-    "floors": 15,
+    "walls": 8,
+    "floors": 6,
     "trees": 11,
-    "reviewNotes": 33
+    "reviewNotes": 43
   },
   {
     "map": 298,
@@ -2386,18 +2386,18 @@
   {
     "map": 300,
     "name": "House of Leather and Woods",
-    "walls": 30,
-    "floors": 28,
+    "walls": 19,
+    "floors": 19,
     "trees": 3,
-    "reviewNotes": 10
+    "reviewNotes": 21
   },
   {
     "map": 301,
     "name": "Jail",
-    "walls": 50,
-    "floors": 43,
+    "walls": 21,
+    "floors": 21,
     "trees": 0,
-    "reviewNotes": 18
+    "reviewNotes": 47
   },
   {
     "map": 302,
@@ -2426,10 +2426,10 @@
   {
     "map": 305,
     "name": "Secure Trading Rooms",
-    "walls": 22,
-    "floors": 22,
+    "walls": 16,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 13
+    "reviewNotes": 19
   },
   {
     "map": 306,
@@ -2498,50 +2498,50 @@
   {
     "map": 314,
     "name": "Mr. G's House of Death",
-    "walls": 23,
-    "floors": 19,
+    "walls": 7,
+    "floors": 7,
     "trees": 0,
-    "reviewNotes": 60
+    "reviewNotes": 76
   },
   {
     "map": 315,
     "name": "Castle Guild Hall <PK>",
-    "walls": 55,
-    "floors": 41,
+    "walls": 33,
+    "floors": 25,
     "trees": 11,
-    "reviewNotes": 12
+    "reviewNotes": 34
   },
   {
     "map": 316,
     "name": "Castle Guild Hall <PK>",
-    "walls": 39,
-    "floors": 32,
+    "walls": 20,
+    "floors": 15,
     "trees": 3,
-    "reviewNotes": 9
+    "reviewNotes": 28
   },
   {
     "map": 317,
     "name": "Castle Guild Hall <PK>",
-    "walls": 37,
-    "floors": 32,
+    "walls": 33,
+    "floors": 29,
     "trees": 10,
-    "reviewNotes": 26
+    "reviewNotes": 30
   },
   {
     "map": 318,
     "name": "Castle Guild Hall <PK>",
-    "walls": 35,
-    "floors": 30,
+    "walls": 31,
+    "floors": 27,
     "trees": 4,
-    "reviewNotes": 28
+    "reviewNotes": 32
   },
   {
     "map": 319,
     "name": "Darkcone Guild Hall",
-    "walls": 24,
-    "floors": 23,
+    "walls": 19,
+    "floors": 18,
     "trees": 35,
-    "reviewNotes": 41
+    "reviewNotes": 46
   },
   {
     "map": 320,
@@ -2562,18 +2562,18 @@
   {
     "map": 322,
     "name": "The Sword Shoppe",
-    "walls": 19,
-    "floors": 14,
+    "walls": 8,
+    "floors": 8,
     "trees": 19,
-    "reviewNotes": 14
+    "reviewNotes": 25
   },
   {
     "map": 323,
     "name": "Troll Shoppe",
-    "walls": 9,
+    "walls": 7,
     "floors": 7,
     "trees": 7,
-    "reviewNotes": 13
+    "reviewNotes": 15
   },
   {
     "map": 324,
@@ -2602,34 +2602,34 @@
   {
     "map": 327,
     "name": "The Tailor Shop",
-    "walls": 10,
-    "floors": 8,
+    "walls": 8,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 27
+    "reviewNotes": 29
   },
   {
     "map": 328,
     "name": "Hidden Guild Hall <PK>",
-    "walls": 57,
-    "floors": 50,
+    "walls": 16,
+    "floors": 17,
     "trees": 24,
-    "reviewNotes": 19
+    "reviewNotes": 60
   },
   {
     "map": 329,
     "name": "Hidden Guild Hall <PK>",
-    "walls": 37,
-    "floors": 32,
+    "walls": 12,
+    "floors": 11,
     "trees": 48,
-    "reviewNotes": 60
+    "reviewNotes": 85
   },
   {
     "map": 330,
     "name": "Hidden Guild Hall <PK>",
-    "walls": 43,
-    "floors": 39,
+    "walls": 23,
+    "floors": 19,
     "trees": 57,
-    "reviewNotes": 47
+    "reviewNotes": 67
   },
   {
     "map": 331,
@@ -2642,18 +2642,18 @@
   {
     "map": 334,
     "name": "Under the Crendale River <PK>",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 126
+    "reviewNotes": 127
   },
   {
     "map": 335,
     "name": "Northern Beach Guild Hall <PK>",
-    "walls": 48,
-    "floors": 34,
+    "walls": 34,
+    "floors": 30,
     "trees": 2,
-    "reviewNotes": 29
+    "reviewNotes": 43
   },
   {
     "map": 336,
@@ -2682,34 +2682,34 @@
   {
     "map": 342,
     "name": "The Ruby Center",
-    "walls": 29,
-    "floors": 24,
+    "walls": 23,
+    "floors": 21,
     "trees": 3,
-    "reviewNotes": 18
+    "reviewNotes": 24
   },
   {
     "map": 345,
     "name": "Two Rivers Castle <PK>",
-    "walls": 20,
-    "floors": 18,
+    "walls": 14,
+    "floors": 12,
     "trees": 12,
-    "reviewNotes": 19
+    "reviewNotes": 25
   },
   {
     "map": 346,
     "name": "Two Rivers Castle <PK>",
-    "walls": 51,
-    "floors": 40,
+    "walls": 19,
+    "floors": 17,
     "trees": 1,
-    "reviewNotes": 17
+    "reviewNotes": 49
   },
   {
     "map": 347,
     "name": "Two Rivers Castle <PK>",
-    "walls": 37,
-    "floors": 29,
+    "walls": 14,
+    "floors": 13,
     "trees": 4,
-    "reviewNotes": 27
+    "reviewNotes": 50
   },
   {
     "map": 350,
@@ -2730,39 +2730,39 @@
   {
     "map": 352,
     "name": "Castle Dragonia",
-    "walls": 9,
-    "floors": 9,
+    "walls": 7,
+    "floors": 7,
     "trees": 17,
-    "reviewNotes": 33
+    "reviewNotes": 35
   },
   {
     "map": 353,
     "name": "Castle Dragonia",
-    "walls": 24,
-    "floors": 22,
+    "walls": 17,
+    "floors": 16,
     "trees": 20,
-    "reviewNotes": 27
+    "reviewNotes": 34
   },
   {
     "map": 354,
     "name": "Castle Dragonia",
-    "walls": 10,
-    "floors": 10,
+    "walls": 6,
+    "floors": 6,
     "trees": 21,
-    "reviewNotes": 39
+    "reviewNotes": 43
   },
   {
     "map": 355,
     "name": "Throne Hall",
-    "walls": 37,
-    "floors": 20,
+    "walls": 0,
+    "floors": 0,
     "trees": 2,
-    "reviewNotes": 20
+    "reviewNotes": 57
   },
   {
     "map": 358,
     "name": "Shadecall Bog",
-    "walls": 1,
+    "walls": 0,
     "floors": 0,
     "trees": 0,
     "reviewNotes": 67
@@ -2770,130 +2770,130 @@
   {
     "map": 359,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
-    "trees": 0,
-    "reviewNotes": 58
-  },
-  {
-    "map": 360,
-    "name": "Ice Caverns",
-    "walls": 6,
-    "floors": 6,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
     "reviewNotes": 61
   },
   {
+    "map": 360,
+    "name": "Ice Caverns",
+    "walls": 3,
+    "floors": 3,
+    "trees": 0,
+    "reviewNotes": 64
+  },
+  {
     "map": 361,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 61
   },
   {
     "map": 362,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 61
   },
   {
     "map": 363,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 61
   },
   {
     "map": 364,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 61
   },
   {
     "map": 365,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 61
   },
   {
     "map": 366,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 61
   },
   {
     "map": 367,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 61
   },
   {
     "map": 368,
     "name": "Ice Caverns",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 61
   },
   {
     "map": 369,
     "name": "Ice Caverns",
-    "walls": 14,
-    "floors": 14,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 51
+    "reviewNotes": 59
   },
   {
     "map": 370,
     "name": "Ice Caverns",
-    "walls": 14,
-    "floors": 14,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 51
+    "reviewNotes": 59
   },
   {
     "map": 371,
     "name": "Pacman Carnage",
-    "walls": 52,
-    "floors": 9,
+    "walls": 12,
+    "floors": 7,
     "trees": 4,
-    "reviewNotes": 41
+    "reviewNotes": 45
   },
   {
     "map": 372,
     "name": "Ice Caverns",
-    "walls": 14,
-    "floors": 14,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 51
+    "reviewNotes": 59
   },
   {
     "map": 373,
     "name": "Ice Cavern",
-    "walls": 5,
-    "floors": 5,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 48
+    "reviewNotes": 49
   },
   {
     "map": 374,
     "name": "Ice Caverns",
-    "walls": 14,
-    "floors": 14,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 51
+    "reviewNotes": 59
   },
   {
     "map": 375,
@@ -2962,10 +2962,10 @@
   {
     "map": 384,
     "name": "Shadecall Bog",
-    "walls": 1,
-    "floors": 2,
+    "walls": 0,
+    "floors": 1,
     "trees": 20,
-    "reviewNotes": 76
+    "reviewNotes": 77
   },
   {
     "map": 386,
@@ -3018,26 +3018,26 @@
   {
     "map": 392,
     "name": "Passageway",
-    "walls": 10,
-    "floors": 10,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 13
   },
   {
     "map": 393,
     "name": "Passageway",
-    "walls": 10,
-    "floors": 10,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 13
   },
   {
     "map": 394,
     "name": "Passageway",
-    "walls": 10,
-    "floors": 10,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 13
   },
   {
     "map": 395,
@@ -3082,58 +3082,58 @@
   {
     "map": 400,
     "name": "Haunted House",
-    "walls": 36,
-    "floors": 22,
+    "walls": 12,
+    "floors": 11,
     "trees": 0,
-    "reviewNotes": 23
+    "reviewNotes": 47
   },
   {
     "map": 401,
     "name": "Dining Hall",
-    "walls": 21,
-    "floors": 20,
+    "walls": 7,
+    "floors": 7,
     "trees": 0,
-    "reviewNotes": 15
+    "reviewNotes": 29
   },
   {
     "map": 402,
     "name": "Haunted House",
-    "walls": 19,
-    "floors": 16,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 38
   },
   {
     "map": 403,
     "name": "Mess Hall",
-    "walls": 22,
-    "floors": 18,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 41
   },
   {
     "map": 404,
     "name": "Library",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 0,
-    "reviewNotes": 33
+    "reviewNotes": 34
   },
   {
     "map": 405,
     "name": "Library",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 25
   },
   {
     "map": 406,
     "name": "Haunted House",
-    "walls": 6,
-    "floors": 6,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 34
   },
   {
     "map": 407,
@@ -3146,10 +3146,10 @@
   {
     "map": 408,
     "name": "Guest Parlor",
-    "walls": 6,
-    "floors": 6,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 55
+    "reviewNotes": 59
   },
   {
     "map": 409,
@@ -3250,10 +3250,10 @@
   {
     "map": 421,
     "name": "Under The Morgue",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 26
   },
   {
     "map": 422,
@@ -3290,18 +3290,18 @@
   {
     "map": 426,
     "name": "Final Battle",
-    "walls": 15,
-    "floors": 13,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 35
   },
   {
     "map": 427,
     "name": "Congratulations!",
-    "walls": 6,
-    "floors": 6,
+    "walls": 0,
+    "floors": 0,
     "trees": 10,
-    "reviewNotes": 51
+    "reviewNotes": 57
   },
   {
     "map": 428,
@@ -3338,10 +3338,10 @@
   {
     "map": 432,
     "name": "South Crendale Guild Hall <PK>",
-    "walls": 36,
-    "floors": 28,
+    "walls": 29,
+    "floors": 24,
     "trees": 33,
-    "reviewNotes": 41
+    "reviewNotes": 48
   },
   {
     "map": 434,
@@ -3370,10 +3370,10 @@
   {
     "map": 437,
     "name": "Drab Vaults <PK>",
-    "walls": 25,
-    "floors": 19,
+    "walls": 17,
+    "floors": 15,
     "trees": 0,
-    "reviewNotes": 17
+    "reviewNotes": 25
   },
   {
     "map": 438,
@@ -3418,18 +3418,18 @@
   {
     "map": 448,
     "name": "A Cool Cave",
-    "walls": 15,
-    "floors": 15,
+    "walls": 14,
+    "floors": 14,
     "trees": 0,
-    "reviewNotes": 18
+    "reviewNotes": 19
   },
   {
     "map": 449,
     "name": "A Cold Passage",
-    "walls": 13,
-    "floors": 13,
+    "walls": 12,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 37
+    "reviewNotes": 38
   },
   {
     "map": 450,
@@ -3442,18 +3442,18 @@
   {
     "map": 451,
     "name": "Secret Ice Passage",
-    "walls": 5,
-    "floors": 5,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 15
+    "reviewNotes": 16
   },
   {
     "map": 452,
     "name": "Ice Passage",
-    "walls": 10,
-    "floors": 10,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 31
+    "reviewNotes": 32
   },
   {
     "map": 453,
@@ -3466,42 +3466,42 @@
   {
     "map": 454,
     "name": "Ice Passage",
-    "walls": 4,
-    "floors": 4,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 37
+    "reviewNotes": 39
   },
   {
     "map": 455,
     "name": "Ice Passage",
-    "walls": 7,
-    "floors": 7,
-    "trees": 0,
-    "reviewNotes": 25
-  },
-  {
-    "map": 456,
-    "name": "Ice Passage",
-    "walls": 5,
-    "floors": 5,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
     "reviewNotes": 26
   },
   {
+    "map": 456,
+    "name": "Ice Passage",
+    "walls": 4,
+    "floors": 4,
+    "trees": 0,
+    "reviewNotes": 27
+  },
+  {
     "map": 457,
     "name": "Ice Passage",
-    "walls": 8,
-    "floors": 8,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 30
   },
   {
     "map": 458,
     "name": "Freezing Cave",
-    "walls": 5,
-    "floors": 5,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 23
+    "reviewNotes": 24
   },
   {
     "map": 459,
@@ -3586,82 +3586,82 @@
   {
     "map": 469,
     "name": "Inside the Ice Castle",
-    "walls": 18,
-    "floors": 18,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 26
+    "reviewNotes": 44
   },
   {
     "map": 470,
     "name": "A Very Hot Room <PK>",
-    "walls": 19,
-    "floors": 19,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 21
+    "reviewNotes": 40
   },
   {
     "map": 471,
     "name": "Enchanted Courtyard",
-    "walls": 39,
-    "floors": 36,
+    "walls": 0,
+    "floors": 0,
     "trees": 1,
-    "reviewNotes": 0
+    "reviewNotes": 39
   },
   {
     "map": 472,
     "name": "A Damp Room <PK>",
-    "walls": 19,
-    "floors": 19,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 21
+    "reviewNotes": 40
   },
   {
     "map": 473,
     "name": "Hellish Arena <PK>",
-    "walls": 20,
-    "floors": 20,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 18
+    "reviewNotes": 38
   },
   {
     "map": 474,
     "name": "Ice Castle Throne Room",
-    "walls": 18,
-    "floors": 18,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 38
   },
   {
     "map": 475,
     "name": "Sea Breeze Castle <PK>",
-    "walls": 56,
-    "floors": 34,
+    "walls": 20,
+    "floors": 14,
     "trees": 6,
-    "reviewNotes": 9
+    "reviewNotes": 45
   },
   {
     "map": 476,
     "name": "Sea Breeze Castle <PK>",
-    "walls": 59,
-    "floors": 41,
+    "walls": 15,
+    "floors": 11,
     "trees": 2,
-    "reviewNotes": 4
+    "reviewNotes": 48
   },
   {
     "map": 477,
     "name": "Private Beach <PK>",
-    "walls": 22,
-    "floors": 22,
+    "walls": 13,
+    "floors": 13,
     "trees": 6,
-    "reviewNotes": 13
+    "reviewNotes": 22
   },
   {
     "map": 478,
     "name": "Sea Breeze Castle <PK>",
-    "walls": 43,
-    "floors": 38,
+    "walls": 18,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 29
+    "reviewNotes": 54
   },
   {
     "map": 479,
@@ -3674,26 +3674,26 @@
   {
     "map": 480,
     "name": "Peaceful Indoor Ponds",
-    "walls": 37,
-    "floors": 37,
+    "walls": 0,
+    "floors": 0,
     "trees": 3,
-    "reviewNotes": 0
+    "reviewNotes": 37
   },
   {
     "map": 481,
     "name": "An Unbelievably Dry Room <PK>",
-    "walls": 13,
-    "floors": 13,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 27
+    "reviewNotes": 40
   },
   {
     "map": 482,
     "name": "A Frozen Room <PK>",
-    "walls": 16,
-    "floors": 16,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 40
   },
   {
     "map": 483,
@@ -3706,130 +3706,130 @@
   {
     "map": 484,
     "name": "Warmer Meeting Room <PK>",
-    "walls": 17,
-    "floors": 16,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 38
+    "reviewNotes": 49
   },
   {
     "map": 485,
     "name": "Sun Tower Guild Hall <PK>",
-    "walls": 12,
+    "walls": 8,
+    "floors": 8,
+    "trees": 0,
+    "reviewNotes": 65
+  },
+  {
+    "map": 486,
+    "name": "Outdoor Meeting Room <PK>",
+    "walls": 0,
+    "floors": 0,
+    "trees": 5,
+    "reviewNotes": 34
+  },
+  {
+    "map": 487,
+    "name": "Water Tower Guild Hall <PK>",
+    "walls": 15,
     "floors": 12,
     "trees": 0,
     "reviewNotes": 61
   },
   {
-    "map": 486,
-    "name": "Outdoor Meeting Room <PK>",
-    "walls": 2,
-    "floors": 2,
-    "trees": 5,
-    "reviewNotes": 32
-  },
-  {
-    "map": 487,
-    "name": "Water Tower Guild Hall <PK>",
-    "walls": 43,
-    "floors": 40,
-    "trees": 0,
-    "reviewNotes": 33
-  },
-  {
     "map": 488,
     "name": "Island Meeting Room <PK>",
-    "walls": 40,
-    "floors": 40,
+    "walls": 0,
+    "floors": 0,
     "trees": 2,
-    "reviewNotes": 0
+    "reviewNotes": 40
   },
   {
     "map": 489,
     "name": "Flaming Tower Guild Hall <PK>",
-    "walls": 59,
-    "floors": 49,
+    "walls": 24,
+    "floors": 17,
     "trees": 0,
-    "reviewNotes": 14
+    "reviewNotes": 49
   },
   {
     "map": 490,
     "name": "Smoldering Meeting Room <PK>",
-    "walls": 25,
-    "floors": 25,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 16
+    "reviewNotes": 38
   },
   {
     "map": 491,
     "name": "Underworld of the Sewers",
-    "walls": 30,
-    "floors": 28,
+    "walls": 21,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 27
+    "reviewNotes": 36
   },
   {
     "map": 492,
     "name": "Underworld Guild Town <PK>",
-    "walls": 23,
-    "floors": 23,
+    "walls": 12,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 19
+    "reviewNotes": 30
   },
   {
     "map": 493,
     "name": "Underworld of the Sewers",
-    "walls": 18,
-    "floors": 18,
+    "walls": 14,
+    "floors": 14,
     "trees": 0,
-    "reviewNotes": 14
+    "reviewNotes": 18
   },
   {
     "map": 494,
     "name": "Caved in Sewers",
-    "walls": 24,
-    "floors": 19,
+    "walls": 20,
+    "floors": 17,
     "trees": 0,
-    "reviewNotes": 9
+    "reviewNotes": 11
   },
   {
     "map": 495,
     "name": "Below the Wishing Well",
-    "walls": 27,
-    "floors": 27,
+    "walls": 25,
+    "floors": 25,
     "trees": 0,
-    "reviewNotes": 4
+    "reviewNotes": 6
   },
   {
     "map": 496,
     "name": "Through the Cold Cavern",
-    "walls": 17,
-    "floors": 17,
+    "walls": 14,
+    "floors": 14,
     "trees": 0,
-    "reviewNotes": 10
+    "reviewNotes": 13
   },
   {
     "map": 497,
     "name": "Frozen Cavern",
-    "walls": 8,
-    "floors": 8,
-    "trees": 0,
-    "reviewNotes": 16
-  },
-  {
-    "map": 498,
-    "name": "Underworld of the Sewers",
-    "walls": 23,
-    "floors": 23,
+    "walls": 7,
+    "floors": 7,
     "trees": 0,
     "reviewNotes": 17
   },
   {
-    "map": 499,
+    "map": 498,
     "name": "Underworld of the Sewers",
-    "walls": 19,
+    "walls": 18,
     "floors": 18,
     "trees": 0,
-    "reviewNotes": 26
+    "reviewNotes": 22
+  },
+  {
+    "map": 499,
+    "name": "Underworld of the Sewers",
+    "walls": 16,
+    "floors": 15,
+    "trees": 0,
+    "reviewNotes": 29
   },
   {
     "map": 500,
@@ -3890,10 +3890,10 @@
   {
     "map": 507,
     "name": "Earth Gate",
-    "walls": 4,
-    "floors": 4,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 61
+    "reviewNotes": 63
   },
   {
     "map": 508,
@@ -4034,10 +4034,10 @@
   {
     "map": 525,
     "name": "The Lost City",
-    "walls": 4,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 6,
-    "reviewNotes": 46
+    "reviewNotes": 50
   },
   {
     "map": 526,
@@ -4090,26 +4090,26 @@
   {
     "map": 532,
     "name": "Small Island",
-    "walls": 14,
+    "walls": 13,
     "floors": 12,
     "trees": 28,
-    "reviewNotes": 6
+    "reviewNotes": 7
   },
   {
     "map": 533,
     "name": "Brown Town",
-    "walls": 7,
-    "floors": 8,
+    "walls": 2,
+    "floors": 4,
     "trees": 18,
-    "reviewNotes": 69
+    "reviewNotes": 73
   },
   {
     "map": 534,
     "name": "Skills Market",
-    "walls": 24,
-    "floors": 22,
+    "walls": 22,
+    "floors": 20,
     "trees": 9,
-    "reviewNotes": 17
+    "reviewNotes": 19
   },
   {
     "map": 535,
@@ -4178,26 +4178,26 @@
   {
     "map": 543,
     "name": "Fire Gate",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 24
   },
   {
     "map": 544,
     "name": "Water Gate",
-    "walls": 10,
-    "floors": 10,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 30
   },
   {
     "map": 545,
     "name": "Ice Gate",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 77
+    "reviewNotes": 79
   },
   {
     "map": 546,
@@ -4218,34 +4218,34 @@
   {
     "map": 548,
     "name": "Sky Gate",
-    "walls": 17,
-    "floors": 17,
+    "walls": 15,
+    "floors": 15,
     "trees": 1,
-    "reviewNotes": 8
+    "reviewNotes": 10
   },
   {
     "map": 549,
     "name": "Skills Market",
-    "walls": 24,
-    "floors": 22,
+    "walls": 22,
+    "floors": 20,
     "trees": 14,
-    "reviewNotes": 17
+    "reviewNotes": 19
   },
   {
     "map": 550,
     "name": "Maloch's House of Horror",
-    "walls": 16,
-    "floors": 15,
+    "walls": 13,
+    "floors": 13,
     "trees": 0,
-    "reviewNotes": 17
+    "reviewNotes": 20
   },
   {
     "map": 551,
     "name": "House of Witchcraft",
-    "walls": 7,
-    "floors": 7,
+    "walls": 3,
+    "floors": 3,
     "trees": 5,
-    "reviewNotes": 38
+    "reviewNotes": 42
   },
   {
     "map": 552,
@@ -4266,34 +4266,34 @@
   {
     "map": 554,
     "name": "Secure Trading Rooms",
-    "walls": 33,
-    "floors": 29,
+    "walls": 16,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 54
+    "reviewNotes": 71
   },
   {
     "map": 555,
     "name": "NEW TUT",
-    "walls": 11,
-    "floors": 11,
+    "walls": 4,
+    "floors": 7,
     "trees": 71,
-    "reviewNotes": 37
+    "reviewNotes": 44
   },
   {
     "map": 556,
     "name": "The Lost Bank",
-    "walls": 6,
-    "floors": 6,
+    "walls": 5,
+    "floors": 5,
     "trees": 4,
-    "reviewNotes": 34
+    "reviewNotes": 35
   },
   {
     "map": 557,
     "name": "Tumbled Down House",
-    "walls": 25,
+    "walls": 20,
     "floors": 20,
     "trees": 0,
-    "reviewNotes": 21
+    "reviewNotes": 26
   },
   {
     "map": 558,
@@ -4338,18 +4338,18 @@
   {
     "map": 563,
     "name": "The Frost Crags",
-    "walls": 12,
-    "floors": 12,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 44
+    "reviewNotes": 47
   },
   {
     "map": 564,
     "name": "The Frost Crags",
-    "walls": 14,
-    "floors": 14,
+    "walls": 7,
+    "floors": 7,
     "trees": 0,
-    "reviewNotes": 34
+    "reviewNotes": 41
   },
   {
     "map": 565,
@@ -4410,10 +4410,10 @@
   {
     "map": 572,
     "name": "The Ice Throne",
-    "walls": 28,
-    "floors": 28,
+    "walls": 27,
+    "floors": 27,
     "trees": 0,
-    "reviewNotes": 2
+    "reviewNotes": 3
   },
   {
     "map": 573,
@@ -4458,10 +4458,10 @@
   {
     "map": 578,
     "name": "Underworld Guild Vault <PK>",
-    "walls": 32,
-    "floors": 28,
+    "walls": 18,
+    "floors": 14,
     "trees": 0,
-    "reviewNotes": 14
+    "reviewNotes": 28
   },
   {
     "map": 579,
@@ -4482,10 +4482,10 @@
   {
     "map": 581,
     "name": "The Sanctuary",
-    "walls": 4,
-    "floors": 4,
+    "walls": 0,
+    "floors": 0,
     "trees": 30,
-    "reviewNotes": 49
+    "reviewNotes": 53
   },
   {
     "map": 582,
@@ -4498,10 +4498,10 @@
   {
     "map": 583,
     "name": "The Sanctuary",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 21,
-    "reviewNotes": 53
+    "reviewNotes": 54
   },
   {
     "map": 584,
@@ -4586,10 +4586,10 @@
   {
     "map": 594,
     "name": "The Sanctuary",
-    "walls": 10,
-    "floors": 10,
+    "walls": 5,
+    "floors": 5,
     "trees": 3,
-    "reviewNotes": 70
+    "reviewNotes": 75
   },
   {
     "map": 595,
@@ -4610,10 +4610,10 @@
   {
     "map": 597,
     "name": "The Sanctuary Monestry",
-    "walls": 18,
-    "floors": 18,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 42
   },
   {
     "map": 598,
@@ -4626,10 +4626,10 @@
   {
     "map": 599,
     "name": "Overdose'aK{rXhrK{aKhrXhaK{aXh",
-    "walls": 103,
-    "floors": 63,
+    "walls": 57,
+    "floors": 33,
     "trees": 0,
-    "reviewNotes": 15
+    "reviewNotes": 61
   },
   {
     "map": 600,
@@ -4642,10 +4642,10 @@
   {
     "map": 601,
     "name": "Overdose's Vault",
-    "walls": 103,
-    "floors": 63,
+    "walls": 57,
+    "floors": 33,
     "trees": 0,
-    "reviewNotes": 15
+    "reviewNotes": 61
   },
   {
     "map": 602,
@@ -4714,10 +4714,10 @@
   {
     "map": 610,
     "name": "Team Space Carnage",
-    "walls": 13,
-    "floors": 13,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 4
+    "reviewNotes": 11
   },
   {
     "map": 611,
@@ -4746,10 +4746,10 @@
   {
     "map": 614,
     "name": "Musa's Lair",
-    "walls": 5,
-    "floors": 5,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 30
+    "reviewNotes": 33
   },
   {
     "map": 615,
@@ -4770,18 +4770,18 @@
   {
     "map": 617,
     "name": "Sanctuary Games Room",
-    "walls": 17,
-    "floors": 22,
+    "walls": 11,
+    "floors": 16,
     "trees": 18,
-    "reviewNotes": 46
+    "reviewNotes": 52
   },
   {
     "map": 618,
     "name": "Sanctuary Bank",
-    "walls": 31,
-    "floors": 30,
+    "walls": 25,
+    "floors": 25,
     "trees": 20,
-    "reviewNotes": 20
+    "reviewNotes": 26
   },
   {
     "map": 619,
@@ -4810,10 +4810,10 @@
   {
     "map": 622,
     "name": "Deathblow's Pad",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 4,
-    "reviewNotes": 34
+    "reviewNotes": 36
   },
   {
     "map": 623,
@@ -4826,26 +4826,26 @@
   {
     "map": 624,
     "name": "Minigame Prize Room",
-    "walls": 4,
-    "floors": 4,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 36
+    "reviewNotes": 38
   },
   {
     "map": 625,
     "name": "Snowland",
-    "walls": 27,
-    "floors": 19,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 46
+    "reviewNotes": 73
   },
   {
     "map": 626,
     "name": "GOONS HOUSE",
-    "walls": 6,
-    "floors": 6,
+    "walls": 0,
+    "floors": 0,
     "trees": 10,
-    "reviewNotes": 42
+    "reviewNotes": 48
   },
   {
     "map": 627,
@@ -4858,18 +4858,18 @@
   {
     "map": 628,
     "name": "Death Valley",
-    "walls": 12,
-    "floors": 12,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 33
+    "reviewNotes": 43
   },
   {
     "map": 629,
     "name": "Maverik's Paradise",
-    "walls": 3,
-    "floors": 3,
+    "walls": 2,
+    "floors": 2,
     "trees": 16,
-    "reviewNotes": 3
+    "reviewNotes": 4
   },
   {
     "map": 630,
@@ -4890,26 +4890,26 @@
   {
     "map": 632,
     "name": "Cookie's Death For All",
-    "walls": 18,
-    "floors": 16,
+    "walls": 10,
+    "floors": 10,
     "trees": 8,
-    "reviewNotes": 16
+    "reviewNotes": 24
   },
   {
     "map": 633,
     "name": "Trapper Joe's House",
-    "walls": 27,
-    "floors": 25,
+    "walls": 23,
+    "floors": 23,
     "trees": 20,
-    "reviewNotes": 9
+    "reviewNotes": 13
   },
   {
     "map": 634,
     "name": "The Square Of Death",
-    "walls": 16,
-    "floors": 15,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 34
+    "reviewNotes": 41
   },
   {
     "map": 635,
@@ -4922,34 +4922,34 @@
   {
     "map": 636,
     "name": "Maverik's Crib",
-    "walls": 1,
-    "floors": 2,
+    "walls": 0,
+    "floors": 1,
     "trees": 26,
-    "reviewNotes": 58
+    "reviewNotes": 59
   },
   {
     "map": 637,
     "name": "¿»ÐÓñT ÐÏÈ«¿- XOXOXO Love, Ed.",
-    "walls": 12,
-    "floors": 12,
+    "walls": 11,
+    "floors": 11,
     "trees": 10,
-    "reviewNotes": 3
+    "reviewNotes": 4
   },
   {
     "map": 638,
     "name": "Throne Hall",
-    "walls": 5,
-    "floors": 5,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 36
+    "reviewNotes": 41
   },
   {
     "map": 639,
     "name": "Locksmith Willy's",
-    "walls": 27,
+    "walls": 25,
     "floors": 23,
     "trees": 0,
-    "reviewNotes": 23
+    "reviewNotes": 25
   },
   {
     "map": 640,
@@ -4970,50 +4970,50 @@
   {
     "map": 642,
     "name": "Grey Stone Castle",
-    "walls": 16,
-    "floors": 12,
+    "walls": 12,
+    "floors": 8,
     "trees": 2,
-    "reviewNotes": 18
+    "reviewNotes": 22
   },
   {
     "map": 643,
     "name": "Grey Stone Castle",
-    "walls": 4,
-    "floors": 4,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 4
   },
   {
     "map": 644,
     "name": "Grey Stone Meeting Room",
-    "walls": 14,
-    "floors": 14,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 34
   },
   {
     "map": 645,
     "name": "Desert Winds Guild Hall <PK>",
-    "walls": 43,
-    "floors": 32,
+    "walls": 23,
+    "floors": 15,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 48
   },
   {
     "map": 646,
     "name": "A Dark Passage <PK>",
-    "walls": 5,
-    "floors": 5,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 116
+    "reviewNotes": 118
   },
   {
     "map": 647,
     "name": "Secret Vault",
-    "walls": 10,
-    "floors": 8,
+    "walls": 6,
+    "floors": 6,
     "trees": 2,
-    "reviewNotes": 45
+    "reviewNotes": 49
   },
   {
     "map": 648,
@@ -5026,10 +5026,10 @@
   {
     "map": 649,
     "name": "Big City Team Carnage",
-    "walls": 6,
-    "floors": 6,
+    "walls": 4,
+    "floors": 4,
     "trees": 13,
-    "reviewNotes": 13
+    "reviewNotes": 15
   },
   {
     "map": 650,
@@ -5042,10 +5042,10 @@
   {
     "map": 651,
     "name": "Spiral Mountain",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 86
+    "reviewNotes": 87
   },
   {
     "map": 652,
@@ -5098,18 +5098,18 @@
   {
     "map": 658,
     "name": "Summit Town",
-    "walls": 21,
-    "floors": 21,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 29
+    "reviewNotes": 50
   },
   {
     "map": 659,
     "name": "Pyramid Guild Hall <PK>",
-    "walls": 28,
+    "walls": 27,
     "floors": 26,
     "trees": 0,
-    "reviewNotes": 29
+    "reviewNotes": 30
   },
   {
     "map": 660,
@@ -5146,10 +5146,10 @@
   {
     "map": 664,
     "name": "Brandon's Smithy Shop",
-    "walls": 19,
-    "floors": 17,
+    "walls": 18,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 19
+    "reviewNotes": 20
   },
   {
     "map": 665,
@@ -5170,18 +5170,18 @@
   {
     "map": 667,
     "name": "Big City Team Carnage",
-    "walls": 6,
-    "floors": 6,
+    "walls": 3,
+    "floors": 3,
     "trees": 14,
-    "reviewNotes": 8
+    "reviewNotes": 11
   },
   {
     "map": 668,
     "name": "The Mystic's Magic shop",
-    "walls": 8,
+    "walls": 6,
     "floors": 6,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 60
   },
   {
     "map": 669,
@@ -5194,10 +5194,10 @@
   {
     "map": 670,
     "name": "Locksmith Willy's Basement",
-    "walls": 21,
-    "floors": 18,
+    "walls": 18,
+    "floors": 16,
     "trees": 2,
-    "reviewNotes": 4
+    "reviewNotes": 7
   },
   {
     "map": 671,
@@ -5210,42 +5210,42 @@
   {
     "map": 672,
     "name": "Down The Well",
-    "walls": 39,
-    "floors": 20,
+    "walls": 38,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 67
+    "reviewNotes": 68
   },
   {
     "map": 673,
     "name": "V'Drazzig's Treasure Hoard",
-    "walls": 12,
-    "floors": 12,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 24
   },
   {
     "map": 674,
     "name": "Grey Stone Armory",
-    "walls": 27,
-    "floors": 22,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 33
+    "reviewNotes": 49
   },
   {
     "map": 675,
     "name": "Grey Stone Armory",
-    "walls": 30,
-    "floors": 22,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 30
+    "reviewNotes": 49
   },
   {
     "map": 676,
     "name": "hë ¶K Mèhød",
-    "walls": 25,
-    "floors": 18,
+    "walls": 8,
+    "floors": 10,
     "trees": 28,
-    "reviewNotes": 30
+    "reviewNotes": 47
   },
   {
     "map": 677,
@@ -5258,10 +5258,10 @@
   {
     "map": 678,
     "name": "Lasurid's Front",
-    "walls": 7,
-    "floors": 6,
+    "walls": 1,
+    "floors": 1,
     "trees": 62,
-    "reviewNotes": 26
+    "reviewNotes": 32
   },
   {
     "map": 679,
@@ -5274,7 +5274,7 @@
   {
     "map": 680,
     "name": "Rob's Room",
-    "walls": 12,
+    "walls": 5,
     "floors": 4,
     "trees": 30,
     "reviewNotes": 69
@@ -5290,34 +5290,34 @@
   {
     "map": 682,
     "name": "Josh's Room",
-    "walls": 10,
-    "floors": 10,
+    "walls": 5,
+    "floors": 5,
     "trees": 14,
-    "reviewNotes": 51
+    "reviewNotes": 56
   },
   {
     "map": 683,
     "name": "Trevor's Map",
-    "walls": 7,
-    "floors": 8,
+    "walls": 2,
+    "floors": 3,
     "trees": 17,
-    "reviewNotes": 51
+    "reviewNotes": 56
   },
   {
     "map": 684,
     "name": "Warp Me Where?",
-    "walls": 5,
-    "floors": 6,
+    "walls": 2,
+    "floors": 3,
     "trees": 1,
-    "reviewNotes": 54
+    "reviewNotes": 57
   },
   {
     "map": 685,
     "name": "hë ¶K Mèhød",
-    "walls": 8,
-    "floors": 8,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 14
   },
   {
     "map": 686,
@@ -5330,74 +5330,74 @@
   {
     "map": 687,
     "name": "Courtyard",
-    "walls": 9,
-    "floors": 9,
+    "walls": 0,
+    "floors": 0,
     "trees": 8,
-    "reviewNotes": 56
+    "reviewNotes": 65
   },
   {
     "map": 688,
     "name": "A Frozen Stiff Room",
-    "walls": 10,
-    "floors": 10,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 59
+    "reviewNotes": 65
   },
   {
     "map": 689,
     "name": "The Room of Elementals",
-    "walls": 16,
-    "floors": 16,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 44
+    "reviewNotes": 60
   },
   {
     "map": 690,
     "name": "Torture Chamber",
-    "walls": 10,
-    "floors": 10,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 69
+    "reviewNotes": 79
   },
   {
     "map": 691,
     "name": "The Babylon Hilton",
-    "walls": 29,
-    "floors": 17,
+    "walls": 11,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 27
+    "reviewNotes": 38
   },
   {
     "map": 692,
     "name": "Underground Prison Cell",
-    "walls": 45,
-    "floors": 39,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 57
   },
   {
     "map": 693,
     "name": "Underground Prison Cell",
-    "walls": 42,
-    "floors": 41,
+    "walls": 9,
+    "floors": 9,
     "trees": 1,
-    "reviewNotes": 2
+    "reviewNotes": 35
   },
   {
     "map": 694,
     "name": "Underground Prison Cell",
-    "walls": 33,
-    "floors": 29,
+    "walls": 12,
+    "floors": 11,
     "trees": 0,
-    "reviewNotes": 7
+    "reviewNotes": 28
   },
   {
     "map": 695,
     "name": "Room of Fail",
-    "walls": 4,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 3,
-    "reviewNotes": 39
+    "reviewNotes": 42
   },
   {
     "map": 696,
@@ -5410,10 +5410,10 @@
   {
     "map": 697,
     "name": "The Northern Boathouse",
-    "walls": 12,
-    "floors": 10,
+    "walls": 0,
+    "floors": 0,
     "trees": 4,
-    "reviewNotes": 30
+    "reviewNotes": 42
   },
   {
     "map": 698,
@@ -5426,10 +5426,10 @@
   {
     "map": 699,
     "name": "Southern Boathouse",
-    "walls": 18,
-    "floors": 18,
+    "walls": 0,
+    "floors": 0,
     "trees": 2,
-    "reviewNotes": 22
+    "reviewNotes": 40
   },
   {
     "map": 700,
@@ -5442,58 +5442,58 @@
   {
     "map": 701,
     "name": "City of Aredenal",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 56,
-    "reviewNotes": 38
+    "reviewNotes": 39
   },
   {
     "map": 702,
     "name": "Aredenal's City Hall",
-    "walls": 15,
-    "floors": 14,
+    "walls": 1,
+    "floors": 1,
     "trees": 2,
-    "reviewNotes": 112
+    "reviewNotes": 126
   },
   {
     "map": 703,
     "name": "Water House",
-    "walls": 7,
-    "floors": 7,
+    "walls": 0,
+    "floors": 0,
     "trees": 8,
-    "reviewNotes": 68
+    "reviewNotes": 75
   },
   {
     "map": 704,
     "name": "®îçÓ§",
-    "walls": 42,
-    "floors": 29,
+    "walls": 19,
+    "floors": 13,
     "trees": 0,
-    "reviewNotes": 44
+    "reviewNotes": 67
   },
   {
     "map": 705,
     "name": "Cookie's Kingdom",
-    "walls": 9,
-    "floors": 15,
+    "walls": 2,
+    "floors": 8,
     "trees": 11,
-    "reviewNotes": 46
+    "reviewNotes": 53
   },
   {
     "map": 706,
     "name": "TitaN's Palace",
-    "walls": 6,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 60
   },
   {
     "map": 707,
     "name": "Hellish Cemetery",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 24
   },
   {
     "map": 708,
@@ -5562,10 +5562,10 @@
   {
     "map": 730,
     "name": "Shiv's Palace",
-    "walls": 6,
-    "floors": 6,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 1
+    "reviewNotes": 3
   },
   {
     "map": 731,
@@ -5586,18 +5586,18 @@
   {
     "map": 733,
     "name": "Inviskill and Zake's House",
-    "walls": 30,
-    "floors": 24,
+    "walls": 13,
+    "floors": 12,
     "trees": 4,
-    "reviewNotes": 27
+    "reviewNotes": 44
   },
   {
     "map": 734,
     "name": "Training Grounds",
-    "walls": 23,
-    "floors": 18,
+    "walls": 14,
+    "floors": 12,
     "trees": 12,
-    "reviewNotes": 40
+    "reviewNotes": 48
   },
   {
     "map": 735,
@@ -5610,42 +5610,42 @@
   {
     "map": 736,
     "name": "Venom's house.",
-    "walls": 10,
-    "floors": 8,
+    "walls": 4,
+    "floors": 4,
     "trees": 10,
-    "reviewNotes": 21
+    "reviewNotes": 26
   },
   {
     "map": 737,
     "name": "Venom's vaults.",
-    "walls": 14,
-    "floors": 10,
+    "walls": 7,
+    "floors": 7,
     "trees": 9,
-    "reviewNotes": 26
+    "reviewNotes": 32
   },
   {
     "map": 739,
     "name": "HEMI's House",
-    "walls": 6,
-    "floors": 8,
+    "walls": 0,
+    "floors": 2,
     "trees": 3,
-    "reviewNotes": 67
+    "reviewNotes": 73
   },
   {
     "map": 740,
     "name": "ShawNEE's House",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 5,
-    "reviewNotes": 38
+    "reviewNotes": 40
   },
   {
     "map": 741,
     "name": "ShawNEE's house",
-    "walls": 5,
-    "floors": 5,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 75
+    "reviewNotes": 80
   },
   {
     "map": 742,
@@ -5658,10 +5658,10 @@
   {
     "map": 743,
     "name": "Mr. A Room",
-    "walls": 16,
-    "floors": 16,
+    "walls": 11,
+    "floors": 13,
     "trees": 5,
-    "reviewNotes": 19
+    "reviewNotes": 24
   },
   {
     "map": 744,
@@ -5682,10 +5682,10 @@
   {
     "map": 746,
     "name": "Vault Room",
-    "walls": 23,
-    "floors": 23,
+    "walls": 15,
+    "floors": 15,
     "trees": 0,
-    "reviewNotes": 79
+    "reviewNotes": 87
   },
   {
     "map": 747,
@@ -5698,26 +5698,26 @@
   {
     "map": 748,
     "name": "V'Drazzig's Treasure Hoard",
-    "walls": 24,
-    "floors": 21,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 9
+    "reviewNotes": 14
   },
   {
     "map": 749,
     "name": "V'Drazzig's Treasure Hoard",
-    "walls": 13,
-    "floors": 13,
+    "walls": 11,
+    "floors": 11,
     "trees": 0,
-    "reviewNotes": 21
+    "reviewNotes": 23
   },
   {
     "map": 750,
     "name": "V'Drazzig's Treasure Hoard",
-    "walls": 24,
-    "floors": 21,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 9
+    "reviewNotes": 14
   },
   {
     "map": 751,
@@ -5802,34 +5802,34 @@
   {
     "map": 762,
     "name": "Shiv's Vault",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 3
+    "reviewNotes": 4
   },
   {
     "map": 763,
     "name": "Drayk's Room",
-    "walls": 7,
-    "floors": 7,
+    "walls": 0,
+    "floors": 0,
     "trees": 1,
-    "reviewNotes": 56
+    "reviewNotes": 63
   },
   {
     "map": 764,
     "name": "CAK's Room",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 1,
-    "reviewNotes": 35
+    "reviewNotes": 38
   },
   {
     "map": 765,
     "name": "River Valley Guild Hall <PK>",
-    "walls": 20,
-    "floors": 17,
+    "walls": 14,
+    "floors": 14,
     "trees": 25,
-    "reviewNotes": 59
+    "reviewNotes": 65
   },
   {
     "map": 766,
@@ -5842,82 +5842,82 @@
   {
     "map": 767,
     "name": "Aegas Mansion",
-    "walls": 8,
-    "floors": 7,
+    "walls": 2,
+    "floors": 2,
     "trees": 2,
-    "reviewNotes": 49
+    "reviewNotes": 55
   },
   {
     "map": 768,
     "name": "Graveyard Guild Hall <PK>",
-    "walls": 43,
-    "floors": 30,
+    "walls": 32,
+    "floors": 22,
     "trees": 6,
-    "reviewNotes": 32
+    "reviewNotes": 43
   },
   {
     "map": 769,
     "name": "Aegas' Basement",
-    "walls": 33,
-    "floors": 29,
+    "walls": 9,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 48
   },
   {
     "map": 770,
     "name": "Leveias's House",
-    "walls": 11,
-    "floors": 11,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 64
+    "reviewNotes": 69
   },
   {
     "map": 771,
     "name": "Devil's Mouth",
-    "walls": 4,
-    "floors": 4,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 26
+    "reviewNotes": 28
   },
   {
     "map": 772,
     "name": "Ozz's Room",
-    "walls": 1,
-    "floors": 3,
+    "walls": 0,
+    "floors": 2,
     "trees": 12,
-    "reviewNotes": 49
+    "reviewNotes": 50
   },
   {
     "map": 773,
     "name": "Aegas Room #2",
-    "walls": 34,
-    "floors": 30,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 48
   },
   {
     "map": 774,
     "name": "Aegas Yard",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 34,
-    "reviewNotes": 22
+    "reviewNotes": 24
   },
   {
     "map": 775,
     "name": "Hazey Hangout",
-    "walls": 4,
-    "floors": 4,
+    "walls": 2,
+    "floors": 2,
     "trees": 14,
-    "reviewNotes": 34
+    "reviewNotes": 36
   },
   {
     "map": 776,
     "name": "Grey Stone Castle",
-    "walls": 5,
-    "floors": 5,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 36
+    "reviewNotes": 38
   },
   {
     "map": 777,
@@ -5930,34 +5930,34 @@
   {
     "map": 779,
     "name": "Grey Stone Castle",
-    "walls": 50,
-    "floors": 50,
+    "walls": 12,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 38
   },
   {
     "map": 780,
     "name": "Grey Stone Castle",
-    "walls": 5,
-    "floors": 5,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 37
+    "reviewNotes": 39
   },
   {
     "map": 781,
     "name": "Grey Stone Castle",
-    "walls": 46,
-    "floors": 42,
+    "walls": 24,
+    "floors": 24,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 46
   },
   {
     "map": 782,
     "name": "Grey Stone Castle",
-    "walls": 46,
-    "floors": 42,
+    "walls": 24,
+    "floors": 24,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 46
   },
   {
     "map": 800,
@@ -5970,18 +5970,18 @@
   {
     "map": 801,
     "name": "Underworld Guild Vault <PK>",
-    "walls": 64,
-    "floors": 53,
+    "walls": 36,
+    "floors": 27,
     "trees": 0,
-    "reviewNotes": 16
+    "reviewNotes": 44
   },
   {
     "map": 802,
     "name": "Underworld Baracks <PK>",
-    "walls": 48,
-    "floors": 36,
+    "walls": 42,
+    "floors": 32,
     "trees": 0,
-    "reviewNotes": 18
+    "reviewNotes": 24
   },
   {
     "map": 803,
@@ -6034,10 +6034,10 @@
   {
     "map": 809,
     "name": "Hollow Tree Trunk",
-    "walls": 4,
-    "floors": 4,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 24
   },
   {
     "map": 810,
@@ -6066,10 +6066,10 @@
   {
     "map": 813,
     "name": "Forest maze",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 134,
-    "reviewNotes": 22
+    "reviewNotes": 23
   },
   {
     "map": 814,
@@ -6082,10 +6082,10 @@
   {
     "map": 815,
     "name": "Bloody Wretched Underworld Spa",
-    "walls": 15,
+    "walls": 14,
     "floors": 15,
     "trees": 4,
-    "reviewNotes": 20
+    "reviewNotes": 21
   },
   {
     "map": 816,
@@ -6106,34 +6106,34 @@
   {
     "map": 818,
     "name": "Tundra Town Vaults <PK>",
-    "walls": 42,
-    "floors": 34,
+    "walls": 40,
+    "floors": 32,
     "trees": 0,
-    "reviewNotes": 46
+    "reviewNotes": 48
   },
   {
     "map": 819,
     "name": "The Vault <PK>",
-    "walls": 36,
-    "floors": 36,
+    "walls": 30,
+    "floors": 30,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 28
   },
   {
     "map": 820,
     "name": "Tundra Barracks <PK>",
-    "walls": 20,
-    "floors": 20,
+    "walls": 14,
+    "floors": 14,
     "trees": 0,
-    "reviewNotes": 26
+    "reviewNotes": 32
   },
   {
     "map": 821,
     "name": "Tundra Barracks <PK>",
-    "walls": 42,
-    "floors": 42,
+    "walls": 40,
+    "floors": 40,
     "trees": 0,
-    "reviewNotes": 18
+    "reviewNotes": 20
   },
   {
     "map": 822,
@@ -6154,10 +6154,10 @@
   {
     "map": 824,
     "name": "Deathblow's House",
-    "walls": 10,
-    "floors": 10,
+    "walls": 5,
+    "floors": 5,
     "trees": 1,
-    "reviewNotes": 40
+    "reviewNotes": 45
   },
   {
     "map": 844,
@@ -6202,18 +6202,18 @@
   {
     "map": 849,
     "name": "Outside the Volcano",
-    "walls": 5,
-    "floors": 5,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 43
   },
   {
     "map": 850,
     "name": "Entrance to the Crypt",
-    "walls": 30,
-    "floors": 28,
+    "walls": 25,
+    "floors": 24,
     "trees": 0,
-    "reviewNotes": 3
+    "reviewNotes": 8
   },
   {
     "map": 851,
@@ -6394,10 +6394,10 @@
   {
     "map": 873,
     "name": "The Crypt of Trizarhn",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 0,
-    "reviewNotes": 3
+    "reviewNotes": 4
   },
   {
     "map": 874,
@@ -6458,10 +6458,10 @@
   {
     "map": 881,
     "name": "Guardian of Trizarhn",
-    "walls": 12,
-    "floors": 12,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 10
   },
   {
     "map": 882,
@@ -6482,18 +6482,18 @@
   {
     "map": 884,
     "name": "Pauper's Prison",
-    "walls": 4,
-    "floors": 4,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 7
+    "reviewNotes": 9
   },
   {
     "map": 885,
     "name": "The Tower of V'Drazzig",
-    "walls": 23,
+    "walls": 19,
     "floors": 19,
     "trees": 0,
-    "reviewNotes": 46
+    "reviewNotes": 50
   },
   {
     "map": 886,
@@ -6530,10 +6530,10 @@
   {
     "map": 890,
     "name": "The Tower of V'Drazzig",
-    "walls": 12,
-    "floors": 12,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 49
+    "reviewNotes": 52
   },
   {
     "map": 891,
@@ -6546,26 +6546,26 @@
   {
     "map": 892,
     "name": "The Undervault",
-    "walls": 38,
-    "floors": 32,
+    "walls": 22,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 16
   },
   {
     "map": 893,
     "name": "The Undervault",
-    "walls": 49,
-    "floors": 41,
+    "walls": 36,
+    "floors": 28,
     "trees": 0,
-    "reviewNotes": 2
+    "reviewNotes": 15
   },
   {
     "map": 894,
     "name": "Underground Sea",
-    "walls": 14,
-    "floors": 13,
+    "walls": 10,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 9
+    "reviewNotes": 13
   },
   {
     "map": 895,
@@ -6578,42 +6578,42 @@
   {
     "map": 896,
     "name": "Vault Entrance",
-    "walls": 6,
-    "floors": 6,
-    "trees": 0,
-    "reviewNotes": 17
-  },
-  {
-    "map": 897,
-    "name": "The Vault of V'Drazzig",
-    "walls": 9,
-    "floors": 9,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
     "reviewNotes": 19
   },
   {
+    "map": 897,
+    "name": "The Vault of V'Drazzig",
+    "walls": 8,
+    "floors": 8,
+    "trees": 0,
+    "reviewNotes": 20
+  },
+  {
     "map": 898,
     "name": "The Portal Chamber",
-    "walls": 12,
-    "floors": 12,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 14
+    "reviewNotes": 16
   },
   {
     "map": 899,
     "name": "V'Drazzig's Treasure Hoard",
-    "walls": 12,
-    "floors": 12,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 24
   },
   {
     "map": 900,
     "name": "Outside the Volcano",
-    "walls": 5,
-    "floors": 5,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 41
   },
   {
     "map": 901,
@@ -6690,18 +6690,18 @@
   {
     "map": 910,
     "name": "Beneath the Volcano <PK>",
-    "walls": 26,
-    "floors": 25,
+    "walls": 16,
+    "floors": 15,
     "trees": 0,
-    "reviewNotes": 25
+    "reviewNotes": 35
   },
   {
     "map": 911,
     "name": "Inside the Volcano",
-    "walls": 26,
-    "floors": 25,
+    "walls": 17,
+    "floors": 17,
     "trees": 0,
-    "reviewNotes": 10
+    "reviewNotes": 18
   },
   {
     "map": 912,
@@ -6714,58 +6714,58 @@
   {
     "map": 913,
     "name": "Inside the Volcano",
-    "walls": 23,
-    "floors": 21,
+    "walls": 20,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 14
+    "reviewNotes": 16
   },
   {
     "map": 914,
     "name": "A Very Warm Tunnel <PK>",
-    "walls": 16,
-    "floors": 16,
+    "walls": 12,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 17
+    "reviewNotes": 21
   },
   {
     "map": 915,
     "name": "Volcano Guild Hall <PK>",
-    "walls": 29,
-    "floors": 27,
+    "walls": 21,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 19
+    "reviewNotes": 27
   },
   {
     "map": 916,
     "name": "A Warm Tunnel",
-    "walls": 7,
-    "floors": 7,
+    "walls": 5,
+    "floors": 5,
     "trees": 0,
-    "reviewNotes": 23
+    "reviewNotes": 25
   },
   {
     "map": 917,
     "name": "A Warm Tunnel",
-    "walls": 15,
-    "floors": 15,
+    "walls": 14,
+    "floors": 14,
     "trees": 0,
-    "reviewNotes": 17
+    "reviewNotes": 18
   },
   {
     "map": 918,
     "name": "Chief's Hut",
-    "walls": 12,
-    "floors": 12,
+    "walls": 11,
+    "floors": 11,
     "trees": 1,
-    "reviewNotes": 22
+    "reviewNotes": 23
   },
   {
     "map": 919,
     "name": "Lair of the Bunny <PK>",
-    "walls": 30,
-    "floors": 30,
+    "walls": 9,
+    "floors": 9,
     "trees": 4,
-    "reviewNotes": 8
+    "reviewNotes": 29
   },
   {
     "map": 920,
@@ -6786,10 +6786,10 @@
   {
     "map": 922,
     "name": "Amazon Outlet",
-    "walls": 24,
+    "walls": 22,
     "floors": 24,
     "trees": 14,
-    "reviewNotes": 19
+    "reviewNotes": 21
   },
   {
     "map": 923,
@@ -6850,18 +6850,18 @@
   {
     "map": 930,
     "name": "Amazons at Arms",
-    "walls": 16,
-    "floors": 16,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 18
+    "reviewNotes": 24
   },
   {
     "map": 931,
     "name": "Gates of Kair-Norax",
-    "walls": 18,
-    "floors": 18,
+    "walls": 14,
+    "floors": 14,
     "trees": 0,
-    "reviewNotes": 4
+    "reviewNotes": 8
   },
   {
     "map": 932,
@@ -6906,10 +6906,10 @@
   {
     "map": 937,
     "name": "Blockade of Kair-Norax",
-    "walls": 18,
-    "floors": 18,
+    "walls": 16,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 4
+    "reviewNotes": 6
   },
   {
     "map": 938,
@@ -6930,7 +6930,7 @@
   {
     "map": 943,
     "name": "Amazon Elder's Basement",
-    "walls": 13,
+    "walls": 5,
     "floors": 0,
     "trees": 0,
     "reviewNotes": 212
@@ -6978,18 +6978,18 @@
   {
     "map": 951,
     "name": "Down The Well",
-    "walls": 37,
-    "floors": 30,
+    "walls": 34,
+    "floors": 29,
     "trees": 0,
-    "reviewNotes": 51
+    "reviewNotes": 54
   },
   {
     "map": 952,
     "name": "The Well Caves",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 66
+    "reviewNotes": 68
   },
   {
     "map": 953,
@@ -7106,10 +7106,10 @@
   {
     "map": 971,
     "name": "Dead Ahead",
-    "walls": 53,
-    "floors": 44,
+    "walls": 26,
+    "floors": 22,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 51
   },
   {
     "map": 972,
@@ -7178,26 +7178,26 @@
   {
     "map": 980,
     "name": "The Tomb of Tormengus <PK>",
-    "walls": 6,
+    "walls": 4,
     "floors": 4,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 2
   },
   {
     "map": 981,
     "name": "The Golden Gate",
-    "walls": 18,
-    "floors": 16,
+    "walls": 17,
+    "floors": 15,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 13
   },
   {
     "map": 982,
     "name": "The Higgins Hideaway",
-    "walls": 25,
-    "floors": 20,
+    "walls": 21,
+    "floors": 17,
     "trees": 0,
-    "reviewNotes": 14
+    "reviewNotes": 18
   },
   {
     "map": 983,
@@ -7210,10 +7210,10 @@
   {
     "map": 984,
     "name": "The Tomb of Tormengus <PK>",
-    "walls": 6,
+    "walls": 4,
     "floors": 4,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 2
   },
   {
     "map": 986,
@@ -7226,10 +7226,10 @@
   {
     "map": 987,
     "name": "Solid's Room",
-    "walls": 6,
-    "floors": 7,
+    "walls": 3,
+    "floors": 4,
     "trees": 4,
-    "reviewNotes": 27
+    "reviewNotes": 30
   },
   {
     "map": 989,
@@ -7242,26 +7242,26 @@
   {
     "map": 992,
     "name": "Strontium's Trading Post",
-    "walls": 13,
-    "floors": 13,
+    "walls": 2,
+    "floors": 2,
     "trees": 12,
-    "reviewNotes": 36
+    "reviewNotes": 47
   },
   {
     "map": 993,
     "name": "Strontium's Fishing Spot",
-    "walls": 15,
-    "floors": 15,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 43
+    "reviewNotes": 55
   },
   {
     "map": 994,
     "name": "Kingdom of Strontium",
-    "walls": 23,
-    "floors": 21,
+    "walls": 5,
+    "floors": 5,
     "trees": 10,
-    "reviewNotes": 18
+    "reviewNotes": 36
   },
   {
     "map": 995,
@@ -7274,10 +7274,10 @@
   {
     "map": 997,
     "name": "Strontium's Training Grounds",
-    "walls": 3,
-    "floors": 3,
+    "walls": 2,
+    "floors": 2,
     "trees": 6,
-    "reviewNotes": 7
+    "reviewNotes": 8
   },
   {
     "map": 1000,
@@ -7290,10 +7290,10 @@
   {
     "map": 1001,
     "name": "Tal von Ubel",
-    "walls": 25,
-    "floors": 39,
+    "walls": 19,
+    "floors": 35,
     "trees": 30,
-    "reviewNotes": 30
+    "reviewNotes": 36
   },
   {
     "map": 1002,
@@ -7386,10 +7386,10 @@
   {
     "map": 1020,
     "name": "CTF Waiting Room",
-    "walls": 4,
+    "walls": 2,
     "floors": 6,
     "trees": 13,
-    "reviewNotes": 117
+    "reviewNotes": 118
   },
   {
     "map": 1021,
@@ -7410,90 +7410,90 @@
   {
     "map": 1023,
     "name": "United States Navy",
-    "walls": 13,
-    "floors": 13,
+    "walls": 9,
+    "floors": 10,
     "trees": 2,
-    "reviewNotes": 91
+    "reviewNotes": 94
   },
   {
     "map": 1024,
     "name": "Bam!",
-    "walls": 9,
-    "floors": 6,
+    "walls": 3,
+    "floors": 5,
     "trees": 21,
-    "reviewNotes": 134
+    "reviewNotes": 135
   },
   {
     "map": 1025,
     "name": "Druid's Keep",
-    "walls": 46,
-    "floors": 36,
+    "walls": 12,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 10
+    "reviewNotes": 44
   },
   {
     "map": 1026,
     "name": "Meeting Room",
-    "walls": 30,
-    "floors": 28,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 6
+    "reviewNotes": 34
   },
   {
     "map": 1027,
     "name": "Members Room",
-    "walls": 47,
-    "floors": 41,
+    "walls": 20,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 8
+    "reviewNotes": 35
   },
   {
     "map": 1028,
     "name": "Master Bedroom",
-    "walls": 70,
-    "floors": 54,
+    "walls": 34,
+    "floors": 23,
     "trees": 0,
-    "reviewNotes": 6
+    "reviewNotes": 42
   },
   {
     "map": 1029,
     "name": "Castle Courtyard",
-    "walls": 45,
-    "floors": 37,
+    "walls": 7,
+    "floors": 5,
     "trees": 1,
-    "reviewNotes": 9
+    "reviewNotes": 47
   },
   {
     "map": 1030,
     "name": "Druid's Keep",
-    "walls": 60,
-    "floors": 50,
+    "walls": 16,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 8
+    "reviewNotes": 52
   },
   {
     "map": 1031,
     "name": "Dungeon",
-    "walls": 46,
-    "floors": 44,
+    "walls": 13,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 3
+    "reviewNotes": 35
   },
   {
     "map": 1032,
     "name": "Roaring Rock Castle < PK >",
-    "walls": 22,
-    "floors": 20,
+    "walls": 18,
+    "floors": 18,
     "trees": 4,
-    "reviewNotes": 20
+    "reviewNotes": 24
   },
   {
     "map": 1033,
     "name": "Roaring Rock Castle < PK >",
-    "walls": 7,
-    "floors": 5,
+    "walls": 5,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 9
+    "reviewNotes": 11
   },
   {
     "map": 1034,
@@ -7522,106 +7522,106 @@
   {
     "map": 1075,
     "name": "Rival Imperial Fortress",
-    "walls": 20,
-    "floors": 20,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 38
   },
   {
     "map": 1076,
     "name": "Rival Imperial Fortress",
-    "walls": 42,
-    "floors": 39,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 35
+    "reviewNotes": 73
   },
   {
     "map": 1077,
     "name": "Rival's Mansion",
-    "walls": 32,
-    "floors": 32,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 2
+    "reviewNotes": 32
   },
   {
     "map": 1078,
     "name": "Grimm's Vault",
-    "walls": 72,
-    "floors": 54,
+    "walls": 43,
+    "floors": 28,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 50
   },
   {
     "map": 1079,
     "name": "Kyral's Vault",
-    "walls": 30,
-    "floors": 28,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 40
   },
   {
     "map": 1080,
     "name": "Jay's Map",
-    "walls": 65,
-    "floors": 47,
+    "walls": 32,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 23
+    "reviewNotes": 56
   },
   {
     "map": 1081,
     "name": "Rival's Castle",
-    "walls": 76,
-    "floors": 44,
+    "walls": 32,
+    "floors": 18,
     "trees": 0,
-    "reviewNotes": 30
+    "reviewNotes": 74
   },
   {
     "map": 1082,
     "name": "Bones's Vault",
-    "walls": 57,
-    "floors": 32,
+    "walls": 19,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 33
+    "reviewNotes": 64
   },
   {
     "map": 1083,
     "name": "East Wing Vaults",
-    "walls": 71,
-    "floors": 47,
+    "walls": 19,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 23
+    "reviewNotes": 74
   },
   {
     "map": 1084,
     "name": "Castle Hallway",
-    "walls": 87,
-    "floors": 50,
+    "walls": 23,
+    "floors": 15,
     "trees": 0,
-    "reviewNotes": 23
+    "reviewNotes": 85
   },
   {
     "map": 1085,
     "name": "Rival's Arena",
-    "walls": 43,
-    "floors": 39,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 15
+    "reviewNotes": 47
   },
   {
     "map": 1086,
     "name": "Katy's Vault",
-    "walls": 82,
-    "floors": 45,
+    "walls": 27,
+    "floors": 17,
     "trees": 0,
-    "reviewNotes": 34
+    "reviewNotes": 89
   },
   {
     "map": 1087,
     "name": "dArKFiReXx's Secret Vault",
-    "walls": 31,
-    "floors": 17,
+    "walls": 5,
+    "floors": 5,
     "trees": 0,
-    "reviewNotes": 44
+    "reviewNotes": 60
   },
   {
     "map": 1093,
@@ -7658,58 +7658,58 @@
   {
     "map": 1108,
     "name": "Graystone Heights",
-    "walls": 34,
-    "floors": 36,
+    "walls": 10,
+    "floors": 18,
     "trees": 20,
-    "reviewNotes": 36
+    "reviewNotes": 60
   },
   {
     "map": 1109,
     "name": "Graystone Heights",
-    "walls": 26,
-    "floors": 25,
+    "walls": 13,
+    "floors": 12,
     "trees": 24,
-    "reviewNotes": 38
+    "reviewNotes": 51
   },
   {
     "map": 1110,
     "name": "Graystone Heights",
-    "walls": 9,
-    "floors": 9,
+    "walls": 5,
+    "floors": 5,
     "trees": 48,
-    "reviewNotes": 41
+    "reviewNotes": 45
   },
   {
     "map": 1111,
     "name": "Graystone Heights",
-    "walls": 9,
-    "floors": 9,
+    "walls": 5,
+    "floors": 5,
     "trees": 48,
-    "reviewNotes": 37
+    "reviewNotes": 41
   },
   {
     "map": 1112,
     "name": "GreyStone Heights",
-    "walls": 47,
-    "floors": 37,
+    "walls": 14,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 25
+    "reviewNotes": 58
   },
   {
     "map": 1113,
     "name": "GreyStone Heights",
-    "walls": 26,
-    "floors": 22,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 30
+    "reviewNotes": 48
   },
   {
     "map": 1120,
     "name": "Elvish Tanner",
-    "walls": 16,
+    "walls": 15,
     "floors": 15,
     "trees": 21,
-    "reviewNotes": 24
+    "reviewNotes": 25
   },
   {
     "map": 1127,
@@ -7786,26 +7786,26 @@
   {
     "map": 1152,
     "name": "Hall of the Ancient King",
-    "walls": 20,
-    "floors": 20,
+    "walls": 4,
+    "floors": 4,
     "trees": 4,
-    "reviewNotes": 18
+    "reviewNotes": 34
   },
   {
     "map": 1153,
     "name": "Hall of the Ancient King",
-    "walls": 8,
-    "floors": 32,
+    "walls": 4,
+    "floors": 30,
     "trees": 30,
-    "reviewNotes": 26
+    "reviewNotes": 30
   },
   {
     "map": 1154,
     "name": "Hall of the Ancient King",
-    "walls": 16,
-    "floors": 24,
+    "walls": 0,
+    "floors": 10,
     "trees": 10,
-    "reviewNotes": 20
+    "reviewNotes": 36
   },
   {
     "map": 1162,
@@ -7866,58 +7866,58 @@
   {
     "map": 1171,
     "name": "Colt45 and 2 ZigZags",
-    "walls": 5,
-    "floors": 5,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 80
+    "reviewNotes": 85
   },
   {
     "map": 1172,
     "name": "dallas",
-    "walls": 4,
-    "floors": 4,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 50
+    "reviewNotes": 54
   },
   {
     "map": 1173,
     "name": "A Shack In The Bogs",
-    "walls": 15,
-    "floors": 26,
+    "walls": 6,
+    "floors": 17,
     "trees": 21,
-    "reviewNotes": 36
+    "reviewNotes": 45
   },
   {
     "map": 1174,
     "name": "Southern Cave",
-    "walls": 26,
-    "floors": 20,
+    "walls": 18,
+    "floors": 16,
     "trees": 4,
-    "reviewNotes": 22
+    "reviewNotes": 30
   },
   {
     "map": 1175,
     "name": "Southern Cave",
-    "walls": 38,
-    "floors": 30,
+    "walls": 30,
+    "floors": 26,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 36
   },
   {
     "map": 1176,
     "name": "Southern Cave",
-    "walls": 12,
-    "floors": 10,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 37
+    "reviewNotes": 41
   },
   {
     "map": 1177,
     "name": "Southern Cave",
-    "walls": 12,
-    "floors": 10,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 32
+    "reviewNotes": 36
   },
   {
     "map": 1178,
@@ -7930,18 +7930,18 @@
   {
     "map": 1179,
     "name": "The Four Titans",
-    "walls": 46,
-    "floors": 40,
+    "walls": 24,
+    "floors": 24,
     "trees": 0,
-    "reviewNotes": 16
+    "reviewNotes": 38
   },
   {
     "map": 1180,
     "name": "Guarding The Guardian",
-    "walls": 9,
-    "floors": 7,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 25
+    "reviewNotes": 34
   },
   {
     "map": 1181,
@@ -7978,98 +7978,98 @@
   {
     "map": 1201,
     "name": "Master's Hangout",
-    "walls": 4,
-    "floors": 4,
+    "walls": 2,
+    "floors": 2,
     "trees": 14,
-    "reviewNotes": 34
+    "reviewNotes": 36
   },
   {
     "map": 1202,
     "name": "Along the Bay",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 30,
-    "reviewNotes": 11
+    "reviewNotes": 12
   },
   {
     "map": 1203,
     "name": "South-Western Wall",
-    "walls": 28,
-    "floors": 19,
+    "walls": 25,
+    "floors": 17,
     "trees": 11,
-    "reviewNotes": 21
+    "reviewNotes": 24
   },
   {
     "map": 1204,
     "name": "North-Western Wall",
-    "walls": 40,
-    "floors": 28,
+    "walls": 32,
+    "floors": 25,
     "trees": 15,
-    "reviewNotes": 7
+    "reviewNotes": 15
   },
   {
     "map": 1205,
     "name": "Southern Wall",
-    "walls": 12,
-    "floors": 12,
+    "walls": 10,
+    "floors": 10,
     "trees": 14,
-    "reviewNotes": 27
+    "reviewNotes": 29
   },
   {
     "map": 1206,
     "name": "Gate to Babylon",
-    "walls": 11,
-    "floors": 11,
+    "walls": 8,
+    "floors": 8,
     "trees": 13,
-    "reviewNotes": 18
+    "reviewNotes": 21
   },
   {
     "map": 1207,
     "name": "North-Eastern Wall",
-    "walls": 39,
-    "floors": 30,
+    "walls": 34,
+    "floors": 27,
     "trees": 14,
-    "reviewNotes": 3
+    "reviewNotes": 8
   },
   {
     "map": 1208,
     "name": "South-Eastern Wall",
-    "walls": 32,
-    "floors": 22,
+    "walls": 28,
+    "floors": 20,
     "trees": 16,
-    "reviewNotes": 23
+    "reviewNotes": 27
   },
   {
     "map": 1210,
     "name": "First National Bank of Bab",
-    "walls": 25,
-    "floors": 22,
+    "walls": 22,
+    "floors": 20,
     "trees": 4,
-    "reviewNotes": 25
+    "reviewNotes": 28
   },
   {
     "map": 1211,
     "name": "Boris the Arms Dealer",
-    "walls": 13,
-    "floors": 13,
+    "walls": 11,
+    "floors": 11,
     "trees": 5,
-    "reviewNotes": 21
+    "reviewNotes": 23
   },
   {
     "map": 1212,
     "name": "Noble Shop of Shields",
-    "walls": 18,
-    "floors": 16,
+    "walls": 6,
+    "floors": 6,
     "trees": 8,
-    "reviewNotes": 44
+    "reviewNotes": 54
   },
   {
     "map": 1213,
     "name": "Lofgan's Fashion Emporium",
-    "walls": 37,
-    "floors": 34,
+    "walls": 13,
+    "floors": 11,
     "trees": 8,
-    "reviewNotes": 24
+    "reviewNotes": 47
   },
   {
     "map": 1216,
@@ -8082,10 +8082,10 @@
   {
     "map": 1217,
     "name": "Skull Helmet Shop",
-    "walls": 24,
-    "floors": 12,
+    "walls": 20,
+    "floors": 10,
     "trees": 7,
-    "reviewNotes": 22
+    "reviewNotes": 26
   },
   {
     "map": 1220,
@@ -8194,26 +8194,26 @@
   {
     "map": 1233,
     "name": "Front Hall",
-    "walls": 22,
-    "floors": 20,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 18
+    "reviewNotes": 32
   },
   {
     "map": 1234,
     "name": "Great Hall",
-    "walls": 24,
-    "floors": 22,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 44
   },
   {
     "map": 1235,
     "name": "Front Hall",
-    "walls": 12,
-    "floors": 10,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 40
   },
   {
     "map": 1236,
@@ -8226,18 +8226,18 @@
   {
     "map": 1238,
     "name": "Great Hall",
-    "walls": 24,
-    "floors": 22,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 44
   },
   {
     "map": 1239,
     "name": "Front Hall",
-    "walls": 23,
-    "floors": 21,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 17
+    "reviewNotes": 32
   },
   {
     "map": 1240,
@@ -8250,18 +8250,18 @@
   {
     "map": 1244,
     "name": "Beware Attack Bunny",
-    "walls": 4,
-    "floors": 4,
+    "walls": 3,
+    "floors": 3,
     "trees": 7,
-    "reviewNotes": 45
+    "reviewNotes": 46
   },
   {
     "map": 1245,
     "name": "Odyssey Gym",
-    "walls": 12,
-    "floors": 10,
+    "walls": 6,
+    "floors": 6,
     "trees": 3,
-    "reviewNotes": 2
+    "reviewNotes": 8
   },
   {
     "map": 1246,
@@ -8274,114 +8274,114 @@
   {
     "map": 1250,
     "name": "The Great Castle of Babylon",
-    "walls": 84,
-    "floors": 56,
+    "walls": 16,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 6
+    "reviewNotes": 74
   },
   {
     "map": 1251,
     "name": "Great Hall",
-    "walls": 38,
-    "floors": 36,
-    "trees": 0,
-    "reviewNotes": 4
-  },
-  {
-    "map": 1252,
-    "name": "Training Garden",
-    "walls": 47,
-    "floors": 35,
-    "trees": 3,
-    "reviewNotes": 9
-  },
-  {
-    "map": 1253,
-    "name": "Training Garden",
-    "walls": 36,
-    "floors": 34,
-    "trees": 2,
-    "reviewNotes": 10
-  },
-  {
-    "map": 1254,
-    "name": "Guild Rooms for Rent",
-    "walls": 6,
-    "floors": 4,
-    "trees": 0,
-    "reviewNotes": 24
-  },
-  {
-    "map": 1255,
-    "name": "Babylon Castle Guild Room [PK]",
-    "walls": 41,
-    "floors": 34,
-    "trees": 0,
-    "reviewNotes": 12
-  },
-  {
-    "map": 1256,
-    "name": "Babylon Castle Guild Room [PK]",
-    "walls": 45,
-    "floors": 37,
-    "trees": 0,
-    "reviewNotes": 9
-  },
-  {
-    "map": 1257,
-    "name": "Babylon Castle Guild Room [PK]",
-    "walls": 38,
-    "floors": 32,
-    "trees": 0,
-    "reviewNotes": 23
-  },
-  {
-    "map": 1260,
-    "name": "Master's Hangout",
-    "walls": 1,
-    "floors": 1,
-    "trees": 15,
-    "reviewNotes": 20
-  },
-  {
-    "map": 1261,
-    "name": "Ice House",
-    "walls": 12,
-    "floors": 12,
-    "trees": 0,
-    "reviewNotes": 44
-  },
-  {
-    "map": 1262,
-    "name": "Denlor's Trading Post",
-    "walls": 26,
-    "floors": 30,
-    "trees": 8,
-    "reviewNotes": 28
-  },
-  {
-    "map": 1263,
-    "name": "Denlor's Fishing Spot",
-    "walls": 16,
-    "floors": 16,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
     "reviewNotes": 42
   },
   {
-    "map": 1264,
-    "name": "Denlor's Training Grounds",
+    "map": 1252,
+    "name": "Training Garden",
+    "walls": 0,
+    "floors": 2,
+    "trees": 3,
+    "reviewNotes": 56
+  },
+  {
+    "map": 1253,
+    "name": "Training Garden",
+    "walls": 0,
+    "floors": 2,
+    "trees": 2,
+    "reviewNotes": 46
+  },
+  {
+    "map": 1254,
+    "name": "Guild Rooms for Rent",
+    "walls": 0,
+    "floors": 0,
+    "trees": 0,
+    "reviewNotes": 30
+  },
+  {
+    "map": 1255,
+    "name": "Babylon Castle Guild Room [PK]",
+    "walls": 37,
+    "floors": 32,
+    "trees": 0,
+    "reviewNotes": 16
+  },
+  {
+    "map": 1256,
+    "name": "Babylon Castle Guild Room [PK]",
+    "walls": 40,
+    "floors": 35,
+    "trees": 0,
+    "reviewNotes": 14
+  },
+  {
+    "map": 1257,
+    "name": "Babylon Castle Guild Room [PK]",
+    "walls": 33,
+    "floors": 30,
+    "trees": 0,
+    "reviewNotes": 28
+  },
+  {
+    "map": 1260,
+    "name": "Master's Hangout",
+    "walls": 0,
+    "floors": 0,
+    "trees": 15,
+    "reviewNotes": 21
+  },
+  {
+    "map": 1261,
+    "name": "Ice House",
+    "walls": 2,
+    "floors": 2,
+    "trees": 0,
+    "reviewNotes": 54
+  },
+  {
+    "map": 1262,
+    "name": "Denlor's Trading Post",
+    "walls": 8,
+    "floors": 12,
+    "trees": 8,
+    "reviewNotes": 46
+  },
+  {
+    "map": 1263,
+    "name": "Denlor's Fishing Spot",
     "walls": 3,
     "floors": 3,
+    "trees": 0,
+    "reviewNotes": 55
+  },
+  {
+    "map": 1264,
+    "name": "Denlor's Training Grounds",
+    "walls": 2,
+    "floors": 2,
     "trees": 6,
-    "reviewNotes": 7
+    "reviewNotes": 8
   },
   {
     "map": 1265,
     "name": "Kingdom of Denlor",
-    "walls": 24,
-    "floors": 22,
+    "walls": 5,
+    "floors": 5,
     "trees": 10,
-    "reviewNotes": 16
+    "reviewNotes": 35
   },
   {
     "map": 1266,
@@ -8394,66 +8394,66 @@
   {
     "map": 1267,
     "name": "Slasher's Coast House",
-    "walls": 18,
-    "floors": 17,
+    "walls": 7,
+    "floors": 7,
     "trees": 5,
-    "reviewNotes": 40
+    "reviewNotes": 51
   },
   {
     "map": 1268,
     "name": "123 Fake Street",
-    "walls": 16,
-    "floors": 18,
+    "walls": 3,
+    "floors": 6,
     "trees": 18,
-    "reviewNotes": 45
+    "reviewNotes": 58
   },
   {
     "map": 1269,
     "name": "Sneaky and Sigma's House",
-    "walls": 13,
-    "floors": 13,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 62
+    "reviewNotes": 69
   },
   {
     "map": 1270,
     "name": "Death's Crib",
-    "walls": 5,
-    "floors": 5,
+    "walls": 4,
+    "floors": 4,
     "trees": 7,
-    "reviewNotes": 23
+    "reviewNotes": 24
   },
   {
     "map": 1271,
     "name": "Masters bedroom",
-    "walls": 12,
-    "floors": 12,
+    "walls": 9,
+    "floors": 9,
     "trees": 9,
-    "reviewNotes": 36
+    "reviewNotes": 39
   },
   {
     "map": 1272,
     "name": "TaloN's House",
-    "walls": 79,
-    "floors": 51,
+    "walls": 18,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 7
+    "reviewNotes": 68
   },
   {
     "map": 1273,
     "name": "TaloN's House",
-    "walls": 63,
-    "floors": 47,
+    "walls": 8,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 9
+    "reviewNotes": 64
   },
   {
     "map": 1274,
     "name": "TaloN's House",
-    "walls": 52,
-    "floors": 39,
+    "walls": 25,
+    "floors": 17,
     "trees": 0,
-    "reviewNotes": 17
+    "reviewNotes": 44
   },
   {
     "map": 1277,
@@ -8514,42 +8514,42 @@
   {
     "map": 1284,
     "name": "Preserved Catacomb's",
-    "walls": 31,
-    "floors": 31,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 11
+    "reviewNotes": 42
   },
   {
     "map": 1285,
     "name": "Preserved Catacomb's",
-    "walls": 35,
-    "floors": 35,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 9
+    "reviewNotes": 36
   },
   {
     "map": 1286,
     "name": "Hidden Tomb",
-    "walls": 7,
-    "floors": 7,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 35
+    "reviewNotes": 38
   },
   {
     "map": 1287,
     "name": "Summoning Chamber",
-    "walls": 6,
-    "floors": 6,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 82
+    "reviewNotes": 88
   },
   {
     "map": 1288,
     "name": "Babylon Throne Room",
-    "walls": 22,
-    "floors": 22,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 42
   },
   {
     "map": 1294,
@@ -8562,18 +8562,18 @@
   {
     "map": 1295,
     "name": "Eternal Offerings",
-    "walls": 35,
-    "floors": 31,
+    "walls": 25,
+    "floors": 21,
     "trees": 0,
-    "reviewNotes": 101
+    "reviewNotes": 111
   },
   {
     "map": 1296,
     "name": "Cezos' Chamber",
-    "walls": 21,
-    "floors": 21,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 77
+    "reviewNotes": 88
   },
   {
     "map": 1297,
@@ -8586,10 +8586,10 @@
   {
     "map": 1298,
     "name": "Under the Pyramid",
-    "walls": 17,
-    "floors": 16,
+    "walls": 14,
+    "floors": 14,
     "trees": 0,
-    "reviewNotes": 67
+    "reviewNotes": 70
   },
   {
     "map": 1299,
@@ -8658,10 +8658,10 @@
   {
     "map": 1307,
     "name": "Shadecall Vampires",
-    "walls": 8,
-    "floors": 10,
+    "walls": 5,
+    "floors": 7,
     "trees": 62,
-    "reviewNotes": 28
+    "reviewNotes": 31
   },
   {
     "map": 1308,
@@ -8674,15 +8674,15 @@
   {
     "map": 1309,
     "name": "Shadecall Lair",
-    "walls": 4,
-    "floors": 52,
+    "walls": 2,
+    "floors": 50,
     "trees": 57,
-    "reviewNotes": 23
+    "reviewNotes": 25
   },
   {
     "map": 1310,
     "name": "Shadecall Cavern",
-    "walls": 12,
+    "walls": 11,
     "floors": 0,
     "trees": 8,
     "reviewNotes": 173
@@ -8706,10 +8706,10 @@
   {
     "map": 1313,
     "name": "Shadecall Bog",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 54,
-    "reviewNotes": 51
+    "reviewNotes": 53
   },
   {
     "map": 1314,
@@ -8722,34 +8722,34 @@
   {
     "map": 1315,
     "name": "Shadecall Summoner",
-    "walls": 9,
-    "floors": 7,
+    "walls": 4,
+    "floors": 2,
     "trees": 32,
-    "reviewNotes": 48
+    "reviewNotes": 53
   },
   {
     "map": 1316,
     "name": "Shadecall Enchantress",
-    "walls": 23,
-    "floors": 21,
+    "walls": 11,
+    "floors": 11,
     "trees": 24,
-    "reviewNotes": 22
+    "reviewNotes": 34
   },
   {
     "map": 1317,
     "name": "Shadecall Sparring Ring",
-    "walls": 14,
-    "floors": 10,
+    "walls": 8,
+    "floors": 6,
     "trees": 33,
-    "reviewNotes": 62
+    "reviewNotes": 68
   },
   {
     "map": 1318,
     "name": "Glacial Dungeon",
-    "walls": 9,
-    "floors": 9,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 41
   },
   {
     "map": 1319,
@@ -8770,18 +8770,18 @@
   {
     "map": 1321,
     "name": "Glacial Dungeon",
-    "walls": 12,
-    "floors": 12,
+    "walls": 11,
+    "floors": 11,
     "trees": 0,
-    "reviewNotes": 52
+    "reviewNotes": 53
   },
   {
     "map": 1322,
     "name": "Cave of Souls",
-    "walls": 5,
-    "floors": 5,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 51
+    "reviewNotes": 53
   },
   {
     "map": 1323,
@@ -8802,106 +8802,106 @@
   {
     "map": 1325,
     "name": "?",
-    "walls": 10,
-    "floors": 9,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 43
+    "reviewNotes": 50
   },
   {
     "map": 1326,
     "name": "?",
-    "walls": 14,
-    "floors": 12,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 46
   },
   {
     "map": 1327,
     "name": "?",
-    "walls": 14,
-    "floors": 12,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 46
   },
   {
     "map": 1328,
     "name": "?",
-    "walls": 14,
-    "floors": 12,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 46
   },
   {
     "map": 1329,
     "name": "?",
-    "walls": 14,
-    "floors": 12,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 46
   },
   {
     "map": 1330,
     "name": "Glacial Catacombs",
-    "walls": 40,
-    "floors": 40,
+    "walls": 20,
+    "floors": 20,
     "trees": 0,
-    "reviewNotes": 71
+    "reviewNotes": 91
   },
   {
     "map": 1331,
     "name": "Glacial Catacombs",
-    "walls": 38,
-    "floors": 38,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 69
+    "reviewNotes": 88
   },
   {
     "map": 1332,
     "name": "Glacial Catacombs",
-    "walls": 38,
-    "floors": 38,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 69
+    "reviewNotes": 88
   },
   {
     "map": 1333,
     "name": "Glacial Catacombs",
-    "walls": 38,
-    "floors": 38,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 69
+    "reviewNotes": 88
   },
   {
     "map": 1334,
     "name": "Glacial Catacombs",
-    "walls": 38,
-    "floors": 38,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 69
+    "reviewNotes": 88
   },
   {
     "map": 1335,
     "name": "Glacial Catacombs",
-    "walls": 37,
-    "floors": 37,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 70
+    "reviewNotes": 88
   },
   {
     "map": 1336,
     "name": "Glacial Catacombs",
-    "walls": 38,
-    "floors": 38,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 69
+    "reviewNotes": 88
   },
   {
     "map": 1337,
     "name": "Glacial Catacombs",
-    "walls": 38,
-    "floors": 38,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 69
+    "reviewNotes": 88
   },
   {
     "map": 1338,
@@ -8914,15 +8914,15 @@
   {
     "map": 1339,
     "name": "Glacial Catacombs",
-    "walls": 38,
-    "floors": 38,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 69
+    "reviewNotes": 88
   },
   {
     "map": 1340,
     "name": "GO QUICKLY!",
-    "walls": 48,
+    "walls": 27,
     "floors": 0,
     "trees": 0,
     "reviewNotes": 138
@@ -8930,26 +8930,26 @@
   {
     "map": 1341,
     "name": "?",
-    "walls": 14,
-    "floors": 12,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 46
   },
   {
     "map": 1342,
     "name": "?",
-    "walls": 14,
-    "floors": 12,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 46
   },
   {
     "map": 1343,
     "name": "?",
-    "walls": 14,
-    "floors": 12,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 46
   },
   {
     "map": 1344,
@@ -8962,18 +8962,18 @@
   {
     "map": 1345,
     "name": "??",
-    "walls": 5,
-    "floors": 5,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 47
+    "reviewNotes": 49
   },
   {
     "map": 1346,
     "name": "?",
-    "walls": 14,
-    "floors": 12,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 46
   },
   {
     "map": 1347,
@@ -8994,10 +8994,10 @@
   {
     "map": 1349,
     "name": "Where..",
-    "walls": 5,
-    "floors": 5,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 42
+    "reviewNotes": 44
   },
   {
     "map": 1351,
@@ -9018,26 +9018,26 @@
   {
     "map": 1353,
     "name": "Glacial Dungeon",
-    "walls": 8,
-    "floors": 8,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 48
+    "reviewNotes": 50
   },
   {
     "map": 1354,
     "name": "Shock",
-    "walls": 6,
-    "floors": 6,
+    "walls": 4,
+    "floors": 4,
     "trees": 2,
-    "reviewNotes": 32
+    "reviewNotes": 34
   },
   {
     "map": 1355,
     "name": "Awe",
-    "walls": 5,
-    "floors": 5,
+    "walls": 3,
+    "floors": 3,
     "trees": 2,
-    "reviewNotes": 33
+    "reviewNotes": 35
   },
   {
     "map": 1356,
@@ -9050,10 +9050,10 @@
   {
     "map": 1357,
     "name": "Glacial Dungeon",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 0,
-    "reviewNotes": 42
+    "reviewNotes": 43
   },
   {
     "map": 1358,
@@ -9146,42 +9146,42 @@
   {
     "map": 1370,
     "name": "Glacial Dungeon",
-    "walls": 4,
-    "floors": 4,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 45
+    "reviewNotes": 46
   },
   {
     "map": 1371,
     "name": "Glacial Dungeon",
-    "walls": 12,
-    "floors": 12,
+    "walls": 11,
+    "floors": 11,
     "trees": 0,
-    "reviewNotes": 29
+    "reviewNotes": 30
   },
   {
     "map": 1372,
     "name": "Glacial Dungeon",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 0,
-    "reviewNotes": 47
+    "reviewNotes": 48
   },
   {
     "map": 1373,
     "name": "Glacial Dungeon",
-    "walls": 14,
-    "floors": 14,
+    "walls": 12,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 37
+    "reviewNotes": 39
   },
   {
     "map": 1374,
     "name": "Decisions..",
-    "walls": 20,
-    "floors": 15,
+    "walls": 13,
+    "floors": 13,
     "trees": 0,
-    "reviewNotes": 33
+    "reviewNotes": 40
   },
   {
     "map": 1375,
@@ -9202,34 +9202,34 @@
   {
     "map": 1399,
     "name": "Shadecall Bog",
-    "walls": 3,
-    "floors": 3,
+    "walls": 1,
+    "floors": 1,
     "trees": 63,
-    "reviewNotes": 47
+    "reviewNotes": 49
   },
   {
     "map": 1400,
     "name": "Ice Mountain Guild Hall [PK",
-    "walls": 68,
-    "floors": 42,
+    "walls": 18,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 74
   },
   {
     "map": 1401,
     "name": "Great Ice Hall [PK",
-    "walls": 42,
-    "floors": 32,
+    "walls": 26,
+    "floors": 18,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 44
   },
   {
     "map": 1402,
     "name": "Ice Guild Hall [PK",
-    "walls": 49,
-    "floors": 42,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 44
+    "reviewNotes": 74
   },
   {
     "map": 1403,
@@ -9242,10 +9242,10 @@
   {
     "map": 1404,
     "name": "Babylon Guild House [PK",
-    "walls": 31,
-    "floors": 26,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 35
+    "reviewNotes": 56
   },
   {
     "map": 1405,
@@ -9266,34 +9266,34 @@
   {
     "map": 1414,
     "name": "House Of < PK > - Duel Arena",
-    "walls": 72,
-    "floors": 46,
+    "walls": 13,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 59
+    "reviewNotes": 113
   },
   {
     "map": 1420,
     "name": "Battle Royale",
-    "walls": 56,
-    "floors": 36,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 2
+    "reviewNotes": 58
   },
   {
     "map": 1421,
     "name": "Battle Royale - Red Base",
-    "walls": 29,
-    "floors": 21,
+    "walls": 3,
+    "floors": 3,
     "trees": 2,
-    "reviewNotes": 45
+    "reviewNotes": 71
   },
   {
     "map": 1422,
     "name": "Battle Royale - Blue Base",
-    "walls": 29,
-    "floors": 22,
+    "walls": 4,
+    "floors": 4,
     "trees": 2,
-    "reviewNotes": 44
+    "reviewNotes": 69
   },
   {
     "map": 1423,
@@ -9338,18 +9338,18 @@
   {
     "map": 1428,
     "name": "Quest",
-    "walls": 30,
-    "floors": 28,
+    "walls": 13,
+    "floors": 13,
     "trees": 0,
-    "reviewNotes": 46
+    "reviewNotes": 63
   },
   {
     "map": 1429,
     "name": "Quest",
-    "walls": 36,
-    "floors": 33,
+    "walls": 22,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 34
   },
   {
     "map": 1435,
@@ -9386,18 +9386,18 @@
   {
     "map": 1440,
     "name": "Lost Hall <PK>",
-    "walls": 19,
-    "floors": 16,
+    "walls": 16,
+    "floors": 13,
     "trees": 0,
-    "reviewNotes": 31
+    "reviewNotes": 34
   },
   {
     "map": 1441,
     "name": "Secret Vault <PK>",
-    "walls": 23,
-    "floors": 23,
+    "walls": 20,
+    "floors": 20,
     "trees": 0,
-    "reviewNotes": 13
+    "reviewNotes": 16
   },
   {
     "map": 1442,
@@ -9410,18 +9410,18 @@
   {
     "map": 1443,
     "name": "House of < PK > - Team Arena",
-    "walls": 60,
-    "floors": 48,
+    "walls": 40,
+    "floors": 32,
     "trees": 0,
-    "reviewNotes": 38
+    "reviewNotes": 58
   },
   {
     "map": 1450,
     "name": "Dark Lake <PK>",
-    "walls": 22,
-    "floors": 22,
+    "walls": 10,
+    "floors": 10,
     "trees": 45,
-    "reviewNotes": 10
+    "reviewNotes": 22
   },
   {
     "map": 1460,
@@ -9434,10 +9434,10 @@
   {
     "map": 1470,
     "name": "Haunted Hall <PK>",
-    "walls": 6,
-    "floors": 19,
+    "walls": 3,
+    "floors": 16,
     "trees": 11,
-    "reviewNotes": 46
+    "reviewNotes": 49
   },
   {
     "map": 1471,
@@ -9450,10 +9450,10 @@
   {
     "map": 1474,
     "name": "Haunted Hall <PK>",
-    "walls": 5,
-    "floors": 5,
+    "walls": 4,
+    "floors": 4,
     "trees": 5,
-    "reviewNotes": 34
+    "reviewNotes": 35
   },
   {
     "map": 1475,
@@ -9514,34 +9514,34 @@
   {
     "map": 1504,
     "name": "Warp Room",
-    "walls": 6,
-    "floors": 6,
+    "walls": 2,
+    "floors": 2,
     "trees": 15,
-    "reviewNotes": 49
+    "reviewNotes": 53
   },
   {
     "map": 1505,
     "name": "Ancient Isle Guild hall",
-    "walls": 37,
-    "floors": 32,
+    "walls": 16,
+    "floors": 16,
     "trees": 3,
-    "reviewNotes": 22
+    "reviewNotes": 43
   },
   {
     "map": 1506,
     "name": "Ancient Isle Guild Hall <PK>",
-    "walls": 21,
-    "floors": 18,
+    "walls": 18,
+    "floors": 15,
     "trees": 0,
-    "reviewNotes": 16
+    "reviewNotes": 19
   },
   {
     "map": 1507,
     "name": "Ancient Isle Guild Hall <PK>",
-    "walls": 39,
-    "floors": 34,
+    "walls": 19,
+    "floors": 18,
     "trees": 4,
-    "reviewNotes": 28
+    "reviewNotes": 48
   },
   {
     "map": 1508,
@@ -9554,42 +9554,42 @@
   {
     "map": 1509,
     "name": "Secret Vault <PK>",
-    "walls": 25,
-    "floors": 23,
+    "walls": 14,
+    "floors": 13,
     "trees": 3,
-    "reviewNotes": 11
+    "reviewNotes": 22
   },
   {
     "map": 1510,
     "name": "Valiantvahe's House",
-    "walls": 27,
-    "floors": 23,
+    "walls": 11,
+    "floors": 10,
     "trees": 1,
-    "reviewNotes": 42
+    "reviewNotes": 58
   },
   {
     "map": 1511,
     "name": "Basement",
-    "walls": 5,
-    "floors": 4,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 74
+    "reviewNotes": 77
   },
   {
     "map": 1512,
     "name": "ShawNEE > You",
-    "walls": 14,
-    "floors": 14,
+    "walls": 12,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 38
+    "reviewNotes": 40
   },
   {
     "map": 1513,
     "name": "The Hidden Sanctorium",
-    "walls": 10,
-    "floors": 6,
+    "walls": 5,
+    "floors": 4,
     "trees": 20,
-    "reviewNotes": 17
+    "reviewNotes": 19
   },
   {
     "map": 1514,
@@ -9602,58 +9602,58 @@
   {
     "map": 1516,
     "name": "Castle Dragonia",
-    "walls": 3,
-    "floors": 3,
+    "walls": 2,
+    "floors": 2,
     "trees": 2,
-    "reviewNotes": 27
+    "reviewNotes": 28
   },
   {
     "map": 1517,
     "name": "Castle Dragonnia",
-    "walls": 13,
-    "floors": 11,
-    "trees": 0,
-    "reviewNotes": 25
-  },
-  {
-    "map": 1518,
-    "name": "Castle Dragonia",
     "walls": 10,
     "floors": 8,
-    "trees": 0,
-    "reviewNotes": 24
-  },
-  {
-    "map": 1519,
-    "name": "Barracks Guild <PK>",
-    "walls": 6,
-    "floors": 6,
-    "trees": 0,
-    "reviewNotes": 34
-  },
-  {
-    "map": 1520,
-    "name": "Castle Dragonia",
-    "walls": 13,
-    "floors": 11,
-    "trees": 0,
-    "reviewNotes": 25
-  },
-  {
-    "map": 1521,
-    "name": "Castle Dragonia",
-    "walls": 4,
-    "floors": 4,
     "trees": 0,
     "reviewNotes": 28
   },
   {
-    "map": 1522,
+    "map": 1518,
+    "name": "Castle Dragonia",
+    "walls": 8,
+    "floors": 6,
+    "trees": 0,
+    "reviewNotes": 26
+  },
+  {
+    "map": 1519,
+    "name": "Barracks Guild <PK>",
+    "walls": 3,
+    "floors": 3,
+    "trees": 0,
+    "reviewNotes": 37
+  },
+  {
+    "map": 1520,
     "name": "Castle Dragonia",
     "walls": 10,
     "floors": 8,
     "trees": 0,
-    "reviewNotes": 26
+    "reviewNotes": 28
+  },
+  {
+    "map": 1521,
+    "name": "Castle Dragonia",
+    "walls": 3,
+    "floors": 3,
+    "trees": 0,
+    "reviewNotes": 29
+  },
+  {
+    "map": 1522,
+    "name": "Castle Dragonia",
+    "walls": 9,
+    "floors": 7,
+    "trees": 0,
+    "reviewNotes": 27
   },
   {
     "map": 1525,
@@ -9730,18 +9730,18 @@
   {
     "map": 1534,
     "name": "Lower Basement",
-    "walls": 12,
-    "floors": 12,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 48
+    "reviewNotes": 60
   },
   {
     "map": 1535,
     "name": "Basement",
-    "walls": 44,
-    "floors": 42,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 52
+    "reviewNotes": 77
   },
   {
     "map": 1536,
@@ -9754,66 +9754,66 @@
   {
     "map": 1537,
     "name": "Titan Fortress",
-    "walls": 51,
-    "floors": 36,
+    "walls": 15,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 29
+    "reviewNotes": 65
   },
   {
     "map": 1538,
     "name": "Titan Fortress",
-    "walls": 70,
-    "floors": 54,
+    "walls": 41,
+    "floors": 30,
     "trees": 0,
-    "reviewNotes": 19
+    "reviewNotes": 48
   },
   {
     "map": 1539,
     "name": "Titan Throne Room",
-    "walls": 69,
-    "floors": 68,
+    "walls": 40,
+    "floors": 40,
     "trees": 0,
-    "reviewNotes": 52
+    "reviewNotes": 81
   },
   {
     "map": 1540,
     "name": "Fire Temple",
-    "walls": 32,
-    "floors": 24,
+    "walls": 18,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 4
+    "reviewNotes": 18
   },
   {
     "map": 1541,
     "name": "Fire Temple",
-    "walls": 6,
-    "floors": 3,
+    "walls": 4,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 3
+    "reviewNotes": 5
   },
   {
     "map": 1542,
     "name": "Fire Temple",
-    "walls": 29,
-    "floors": 24,
+    "walls": 17,
+    "floors": 13,
     "trees": 0,
-    "reviewNotes": 4
+    "reviewNotes": 16
   },
   {
     "map": 1543,
     "name": "Calindori Cave",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 1,
-    "reviewNotes": 129
+    "reviewNotes": 130
   },
   {
     "map": 1544,
     "name": "Cave of Devils",
-    "walls": 4,
-    "floors": 4,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 38
+    "reviewNotes": 39
   },
   {
     "map": 1545,
@@ -9826,26 +9826,26 @@
   {
     "map": 1546,
     "name": "Cave of Devils",
-    "walls": 4,
-    "floors": 3,
+    "walls": 1,
+    "floors": 1,
     "trees": 0,
-    "reviewNotes": 38
+    "reviewNotes": 41
   },
   {
     "map": 1547,
     "name": "Titan Fortress",
-    "walls": 16,
-    "floors": 15,
+    "walls": 13,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 18
+    "reviewNotes": 21
   },
   {
     "map": 1548,
     "name": "Titan Fortress",
-    "walls": 17,
-    "floors": 17,
+    "walls": 12,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 16
+    "reviewNotes": 21
   },
   {
     "map": 1549,
@@ -9858,18 +9858,18 @@
   {
     "map": 1550,
     "name": "Babylon Throne Room",
-    "walls": 22,
-    "floors": 22,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 42
   },
   {
     "map": 1551,
     "name": "Babylon Throne Room",
-    "walls": 22,
-    "floors": 22,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 42
   },
   {
     "map": 1552,
@@ -9930,50 +9930,50 @@
   {
     "map": 1560,
     "name": "Breaker's Sanctuary",
-    "walls": 23,
-    "floors": 23,
+    "walls": 11,
+    "floors": 11,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 12
   },
   {
     "map": 1561,
     "name": "Aeamlyn Burning Towers",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 25
+    "reviewNotes": 26
   },
   {
     "map": 1562,
     "name": "Cave of the Demon Gods",
-    "walls": 14,
-    "floors": 14,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 57
+    "reviewNotes": 63
   },
   {
     "map": 1563,
     "name": "The Flamelord's Arena",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 16
+    "reviewNotes": 18
   },
   {
     "map": 1564,
     "name": "Shadowhold",
-    "walls": 16,
-    "floors": 16,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 10
   },
   {
     "map": 1565,
     "name": "Cave of the Demon Gods",
-    "walls": 14,
-    "floors": 13,
+    "walls": 12,
+    "floors": 11,
     "trees": 0,
-    "reviewNotes": 33
+    "reviewNotes": 35
   },
   {
     "map": 1566,
@@ -9986,18 +9986,18 @@
   {
     "map": 1567,
     "name": "The Arena",
-    "walls": 7,
-    "floors": 4,
+    "walls": 3,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 24
   },
   {
     "map": 1568,
     "name": "Cave of the Demon Gods",
-    "walls": 6,
-    "floors": 6,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 53
+    "reviewNotes": 59
   },
   {
     "map": 1569,
@@ -10010,34 +10010,34 @@
   {
     "map": 1570,
     "name": "Cave of the Demon Gods",
-    "walls": 72,
-    "floors": 52,
-    "trees": 0,
-    "reviewNotes": 18
-  },
-  {
-    "map": 1571,
-    "name": "Maze of the Demon Gods",
-    "walls": 9,
-    "floors": 9,
+    "walls": 53,
+    "floors": 35,
     "trees": 0,
     "reviewNotes": 37
   },
   {
+    "map": 1571,
+    "name": "Maze of the Demon Gods",
+    "walls": 3,
+    "floors": 3,
+    "trees": 0,
+    "reviewNotes": 43
+  },
+  {
     "map": 1572,
     "name": "Sanctuary of Kha'rg'arn'gour",
-    "walls": 22,
-    "floors": 14,
+    "walls": 17,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 4
+    "reviewNotes": 9
   },
   {
     "map": 1573,
     "name": "Sanctuary of the Demonblade",
-    "walls": 8,
-    "floors": 8,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 6
+    "reviewNotes": 8
   },
   {
     "map": 1574,
@@ -10050,10 +10050,10 @@
   {
     "map": 1575,
     "name": "A Shadowy Cave",
-    "walls": 4,
-    "floors": 2,
+    "walls": 2,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 26
+    "reviewNotes": 28
   },
   {
     "map": 1576,
@@ -10082,42 +10082,42 @@
   {
     "map": 1579,
     "name": "Sonny's House",
-    "walls": 17,
-    "floors": 17,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 47
+    "reviewNotes": 58
   },
   {
     "map": 1580,
     "name": "Babylonian Prison",
-    "walls": 19,
-    "floors": 18,
+    "walls": 12,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 18
+    "reviewNotes": 25
   },
   {
     "map": 1581,
     "name": "Dragoon's Uber Vault xD",
-    "walls": 17,
-    "floors": 12,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 51
+    "reviewNotes": 68
   },
   {
     "map": 1582,
     "name": "Death's Crib",
-    "walls": 31,
-    "floors": 25,
+    "walls": 17,
+    "floors": 17,
     "trees": 20,
-    "reviewNotes": 28
+    "reviewNotes": 42
   },
   {
     "map": 1583,
     "name": "Gene's Hideout",
-    "walls": 34,
-    "floors": 29,
+    "walls": 14,
+    "floors": 19,
     "trees": 15,
-    "reviewNotes": 13
+    "reviewNotes": 33
   },
   {
     "map": 1584,
@@ -10138,10 +10138,10 @@
   {
     "map": 1586,
     "name": "North-Eastern Wall",
-    "walls": 18,
-    "floors": 9,
+    "walls": 16,
+    "floors": 8,
     "trees": 9,
-    "reviewNotes": 4
+    "reviewNotes": 6
   },
   {
     "map": 1587,
@@ -10178,10 +10178,10 @@
   {
     "map": 1591,
     "name": "South-Western Wall",
-    "walls": 18,
-    "floors": 10,
+    "walls": 16,
+    "floors": 9,
     "trees": 11,
-    "reviewNotes": 9
+    "reviewNotes": 11
   },
   {
     "map": 1592,
@@ -10194,10 +10194,10 @@
   {
     "map": 1593,
     "name": "Dragoon's Hideout",
-    "walls": 27,
-    "floors": 24,
+    "walls": 10,
+    "floors": 8,
     "trees": 14,
-    "reviewNotes": 19
+    "reviewNotes": 36
   },
   {
     "map": 1594,
@@ -10218,10 +10218,10 @@
   {
     "map": 1596,
     "name": "Dash's Dungeon",
-    "walls": 24,
-    "floors": 22,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 30
+    "reviewNotes": 46
   },
   {
     "map": 1597,
@@ -10234,74 +10234,74 @@
   {
     "map": 1598,
     "name": "Sonny's House",
-    "walls": 10,
-    "floors": 10,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 43
+    "reviewNotes": 53
   },
   {
     "map": 1599,
     "name": "Sonny's Mine",
-    "walls": 14,
-    "floors": 13,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 41
+    "reviewNotes": 45
   },
   {
     "map": 1600,
     "name": "Fanks House",
-    "walls": 38,
-    "floors": 36,
+    "walls": 12,
+    "floors": 16,
     "trees": 13,
-    "reviewNotes": 36
+    "reviewNotes": 62
   },
   {
     "map": 1601,
     "name": "Gate to Babylon",
-    "walls": 6,
-    "floors": 6,
+    "walls": 5,
+    "floors": 5,
     "trees": 10,
-    "reviewNotes": 16
+    "reviewNotes": 17
   },
   {
     "map": 1602,
     "name": "North-Eastern Wall",
-    "walls": 21,
-    "floors": 16,
+    "walls": 17,
+    "floors": 14,
     "trees": 8,
-    "reviewNotes": 6
+    "reviewNotes": 10
   },
   {
     "map": 1603,
     "name": "South-Eastern Wall",
-    "walls": 15,
-    "floors": 12,
+    "walls": 12,
+    "floors": 10,
     "trees": 12,
-    "reviewNotes": 10
+    "reviewNotes": 13
   },
   {
     "map": 1604,
     "name": "Southern Wall",
-    "walls": 7,
-    "floors": 7,
+    "walls": 6,
+    "floors": 6,
     "trees": 13,
-    "reviewNotes": 5
+    "reviewNotes": 6
   },
   {
     "map": 1605,
     "name": "South-Western Wall",
-    "walls": 17,
-    "floors": 12,
+    "walls": 15,
+    "floors": 11,
     "trees": 8,
-    "reviewNotes": 3
+    "reviewNotes": 5
   },
   {
     "map": 1606,
     "name": "Graystone Peaks",
-    "walls": 2,
-    "floors": 4,
+    "walls": 0,
+    "floors": 3,
     "trees": 5,
-    "reviewNotes": 122
+    "reviewNotes": 124
   },
   {
     "map": 1607,
@@ -10338,10 +10338,10 @@
   {
     "map": 1611,
     "name": "Dysfunctional Dungeon",
-    "walls": 52,
-    "floors": 43,
+    "walls": 15,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 16
+    "reviewNotes": 53
   },
   {
     "map": 1612,
@@ -10354,42 +10354,42 @@
   {
     "map": 1613,
     "name": "Garden",
-    "walls": 10,
-    "floors": 10,
+    "walls": 0,
+    "floors": 0,
     "trees": 13,
-    "reviewNotes": 20
+    "reviewNotes": 30
   },
   {
     "map": 1614,
     "name": "Back Garden",
-    "walls": 9,
-    "floors": 9,
+    "walls": 6,
+    "floors": 6,
     "trees": 8,
-    "reviewNotes": 19
+    "reviewNotes": 22
   },
   {
     "map": 1615,
     "name": "Rampage's Palace",
-    "walls": 19,
-    "floors": 21,
+    "walls": 7,
+    "floors": 9,
     "trees": 4,
-    "reviewNotes": 47
+    "reviewNotes": 59
   },
   {
     "map": 1616,
     "name": "Royal's Frozen Room",
-    "walls": 9,
-    "floors": 9,
+    "walls": 1,
+    "floors": 1,
     "trees": 14,
-    "reviewNotes": 64
+    "reviewNotes": 72
   },
   {
     "map": 1617,
     "name": "Prog's Room",
-    "walls": 19,
-    "floors": 19,
+    "walls": 14,
+    "floors": 14,
     "trees": 1,
-    "reviewNotes": 45
+    "reviewNotes": 50
   },
   {
     "map": 1618,
@@ -10402,18 +10402,18 @@
   {
     "map": 1619,
     "name": "Orber's Regal Paradise",
-    "walls": 3,
-    "floors": 3,
+    "walls": 2,
+    "floors": 2,
     "trees": 18,
-    "reviewNotes": 11
+    "reviewNotes": 12
   },
   {
     "map": 1620,
     "name": "Leveling Room",
-    "walls": 22,
-    "floors": 11,
+    "walls": 9,
+    "floors": 9,
     "trees": 5,
-    "reviewNotes": 0
+    "reviewNotes": 13
   },
   {
     "map": 1621,
@@ -10514,18 +10514,18 @@
   {
     "map": 1633,
     "name": "Zorlax's Home",
-    "walls": 6,
-    "floors": 6,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 61
+    "reviewNotes": 67
   },
   {
     "map": 1634,
     "name": "Zorlax's Home",
-    "walls": 6,
-    "floors": 6,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 57
+    "reviewNotes": 63
   },
   {
     "map": 1635,
@@ -10546,18 +10546,18 @@
   {
     "map": 1637,
     "name": "House of < PK > - CARNAGE",
-    "walls": 4,
-    "floors": 3,
+    "walls": 1,
+    "floors": 1,
     "trees": 1,
-    "reviewNotes": 55
+    "reviewNotes": 58
   },
   {
     "map": 1638,
     "name": "Chess Piece Carnage",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 1
   },
   {
     "map": 1644,
@@ -10738,34 +10738,34 @@
   {
     "map": 1670,
     "name": "Beware of Dog!",
-    "walls": 23,
-    "floors": 21,
+    "walls": 9,
+    "floors": 9,
     "trees": 6,
-    "reviewNotes": 16
+    "reviewNotes": 30
   },
   {
     "map": 1671,
     "name": "The VIP Room",
-    "walls": 11,
-    "floors": 11,
+    "walls": 4,
+    "floors": 4,
     "trees": 2,
-    "reviewNotes": 40
+    "reviewNotes": 47
   },
   {
     "map": 1672,
     "name": "MystHaven",
-    "walls": 20,
-    "floors": 18,
+    "walls": 10,
+    "floors": 10,
     "trees": 7,
-    "reviewNotes": 2
+    "reviewNotes": 12
   },
   {
     "map": 1673,
     "name": "MystHaven",
-    "walls": 18,
-    "floors": 17,
+    "walls": 10,
+    "floors": 9,
     "trees": 6,
-    "reviewNotes": 5
+    "reviewNotes": 13
   },
   {
     "map": 1674,
@@ -10778,114 +10778,114 @@
   {
     "map": 1675,
     "name": "The Devil's Playground",
-    "walls": 12,
-    "floors": 13,
+    "walls": 6,
+    "floors": 9,
     "trees": 12,
-    "reviewNotes": 84
+    "reviewNotes": 90
   },
   {
     "map": 1677,
     "name": "Greystone Manor",
-    "walls": 10,
-    "floors": 10,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 14
+    "reviewNotes": 24
   },
   {
     "map": 1678,
     "name": "Vault",
-    "walls": 37,
-    "floors": 35,
+    "walls": 18,
+    "floors": 18,
     "trees": 9,
-    "reviewNotes": 18
+    "reviewNotes": 37
   },
   {
     "map": 1679,
     "name": "Orber's Regal Villa",
-    "walls": 12,
-    "floors": 12,
+    "walls": 6,
+    "floors": 6,
     "trees": 6,
-    "reviewNotes": 56
+    "reviewNotes": 62
   },
   {
     "map": 1680,
     "name": "Vault",
-    "walls": 41,
-    "floors": 29,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 13
+    "reviewNotes": 45
   },
   {
     "map": 1681,
     "name": "Vault",
-    "walls": 36,
-    "floors": 24,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 38
   },
   {
     "map": 1682,
     "name": "Vault",
-    "walls": 36,
-    "floors": 24,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 38
   },
   {
     "map": 1683,
     "name": "Vault",
-    "walls": 36,
-    "floors": 24,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 38
   },
   {
     "map": 1684,
     "name": "Vault",
-    "walls": 36,
-    "floors": 24,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 38
   },
   {
     "map": 1685,
     "name": "Vault",
-    "walls": 36,
-    "floors": 24,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 38
   },
   {
     "map": 1686,
     "name": "Vault",
-    "walls": 36,
-    "floors": 24,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 38
   },
   {
     "map": 1687,
     "name": "Vault",
-    "walls": 36,
-    "floors": 24,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 12
+    "reviewNotes": 38
   },
   {
     "map": 1688,
     "name": "House of lol",
-    "walls": 13,
-    "floors": 12,
+    "walls": 5,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 30
+    "reviewNotes": 38
   },
   {
     "map": 1689,
     "name": "Zef and Dooleys' Empire",
-    "walls": 34,
-    "floors": 29,
+    "walls": 12,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 11
+    "reviewNotes": 33
   },
   {
     "map": 1690,
@@ -10898,18 +10898,18 @@
   {
     "map": 1691,
     "name": "Bloody's Hidden Garden",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 36,
-    "reviewNotes": 24
+    "reviewNotes": 25
   },
   {
     "map": 1692,
     "name": "Edward's Hideout",
-    "walls": 14,
-    "floors": 12,
+    "walls": 4,
+    "floors": 4,
     "trees": 33,
-    "reviewNotes": 24
+    "reviewNotes": 34
   },
   {
     "map": 1693,
@@ -10930,10 +10930,10 @@
   {
     "map": 1695,
     "name": "Zef's Treasure Vault",
-    "walls": 11,
-    "floors": 10,
+    "walls": 8,
+    "floors": 8,
     "trees": 2,
-    "reviewNotes": 18
+    "reviewNotes": 21
   },
   {
     "map": 1699,
@@ -10946,10 +10946,10 @@
   {
     "map": 1700,
     "name": "The Second Vault <PK>",
-    "walls": 36,
-    "floors": 36,
+    "walls": 30,
+    "floors": 30,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 28
   },
   {
     "map": 1701,
@@ -10970,34 +10970,34 @@
   {
     "map": 1703,
     "name": "The Third Vault <PK>",
-    "walls": 28,
-    "floors": 28,
+    "walls": 22,
+    "floors": 22,
     "trees": 0,
-    "reviewNotes": 32
+    "reviewNotes": 38
   },
   {
     "map": 1704,
     "name": "The Fourth Vault <PK>",
-    "walls": 28,
-    "floors": 28,
+    "walls": 22,
+    "floors": 22,
     "trees": 0,
-    "reviewNotes": 32
+    "reviewNotes": 38
   },
   {
     "map": 1705,
     "name": "The Fifth Vault <PK>",
-    "walls": 28,
-    "floors": 28,
+    "walls": 22,
+    "floors": 22,
     "trees": 0,
-    "reviewNotes": 32
+    "reviewNotes": 38
   },
   {
     "map": 1706,
     "name": "The Last Vault <PK>",
-    "walls": 14,
-    "floors": 14,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 44
   },
   {
     "map": 1714,
@@ -11010,18 +11010,18 @@
   {
     "map": 1723,
     "name": "V'Drazzig's Treasure Hoard",
-    "walls": 25,
-    "floors": 21,
+    "walls": 19,
+    "floors": 19,
     "trees": 0,
-    "reviewNotes": 9
+    "reviewNotes": 15
   },
   {
     "map": 1725,
     "name": "V'Drazzig's Treasure Hoard",
-    "walls": 13,
-    "floors": 13,
+    "walls": 11,
+    "floors": 11,
     "trees": 0,
-    "reviewNotes": 21
+    "reviewNotes": 23
   },
   {
     "map": 1750,
@@ -11042,26 +11042,26 @@
   {
     "map": 1754,
     "name": "Elder Castle <1st floor>",
-    "walls": 23,
-    "floors": 23,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 59
+    "reviewNotes": 73
   },
   {
     "map": 1784,
     "name": "Calindori Game House",
-    "walls": 18,
-    "floors": 18,
+    "walls": 6,
+    "floors": 6,
     "trees": 0,
-    "reviewNotes": 38
+    "reviewNotes": 50
   },
   {
     "map": 1785,
     "name": "Archery Range #1",
-    "walls": 4,
-    "floors": 4,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 62
+    "reviewNotes": 64
   },
   {
     "map": 1787,
@@ -11090,26 +11090,26 @@
   {
     "map": 1790,
     "name": "Viking Island Main Room",
-    "walls": 22,
-    "floors": 22,
+    "walls": 2,
+    "floors": 2,
     "trees": 1,
-    "reviewNotes": 5
+    "reviewNotes": 25
   },
   {
     "map": 1791,
     "name": "Viking Island Vault Room",
-    "walls": 41,
-    "floors": 37,
+    "walls": 24,
+    "floors": 23,
     "trees": 2,
-    "reviewNotes": 14
+    "reviewNotes": 31
   },
   {
     "map": 1792,
     "name": "Viking Secret Vault Room",
-    "walls": 24,
-    "floors": 20,
+    "walls": 6,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 58
   },
   {
     "map": 1793,
@@ -11130,26 +11130,26 @@
   {
     "map": 1799,
     "name": "Stake Arena",
-    "walls": 22,
-    "floors": 21,
+    "walls": 18,
+    "floors": 18,
     "trees": 0,
-    "reviewNotes": 35
+    "reviewNotes": 39
   },
   {
     "map": 1800,
     "name": "Hidden Passage",
-    "walls": 27,
-    "floors": 26,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 15
+    "reviewNotes": 42
   },
   {
     "map": 1801,
     "name": "Hidden Ice Tunnels",
-    "walls": 14,
-    "floors": 14,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 56
+    "reviewNotes": 60
   },
   {
     "map": 1802,
@@ -11170,122 +11170,122 @@
   {
     "map": 1804,
     "name": "Forgoten Dungon",
-    "walls": 45,
-    "floors": 36,
+    "walls": 15,
+    "floors": 20,
     "trees": 20,
-    "reviewNotes": 62
+    "reviewNotes": 92
   },
   {
     "map": 1805,
     "name": "Elder Castle <1st floor>",
-    "walls": 24,
-    "floors": 24,
+    "walls": 20,
+    "floors": 20,
     "trees": 0,
-    "reviewNotes": 0
+    "reviewNotes": 4
   },
   {
     "map": 1806,
     "name": "Elder Castle <1st floor>",
-    "walls": 32,
-    "floors": 28,
+    "walls": 14,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 40
   },
   {
     "map": 1807,
     "name": "Elder Castle <1st floor>",
-    "walls": 16,
-    "floors": 16,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 13
+    "reviewNotes": 29
   },
   {
     "map": 1808,
     "name": "Elder Castle <1st floor>",
-    "walls": 12,
-    "floors": 12,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 32
   },
   {
     "map": 1809,
     "name": "Elder Castle <1st floor>",
-    "walls": 11,
-    "floors": 11,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 31
   },
   {
     "map": 1810,
     "name": "Elder Castle <1st floor>",
-    "walls": 16,
-    "floors": 16,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 15
+    "reviewNotes": 31
   },
   {
     "map": 1811,
     "name": "Elder Castle <1st floor>",
-    "walls": 29,
-    "floors": 29,
+    "walls": 9,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 52
+    "reviewNotes": 72
   },
   {
     "map": 1812,
     "name": "Elder Castle <2nd floor>",
-    "walls": 31,
-    "floors": 31,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 13
+    "reviewNotes": 34
   },
   {
     "map": 1813,
     "name": "Elder Castle <2nd floor>",
-    "walls": 19,
-    "floors": 15,
+    "walls": 13,
+    "floors": 9,
     "trees": 0,
-    "reviewNotes": 25
+    "reviewNotes": 31
   },
   {
     "map": 1814,
     "name": "Elder Castle <2nd floor>",
-    "walls": 27,
-    "floors": 27,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 21
+    "reviewNotes": 40
   },
   {
     "map": 1815,
     "name": "Elder Castle <2nd floor>",
-    "walls": 23,
-    "floors": 22,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 23
+    "reviewNotes": 45
   },
   {
     "map": 1816,
     "name": "Elder Castle <2nd floor>",
-    "walls": 12,
-    "floors": 12,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 21
+    "reviewNotes": 33
   },
   {
     "map": 1820,
     "name": "The Virtually Impossible Task",
-    "walls": 20,
-    "floors": 20,
+    "walls": 16,
+    "floors": 16,
     "trees": 0,
-    "reviewNotes": 18
+    "reviewNotes": 22
   },
   {
     "map": 1821,
     "name": "The Virtually Impossible Task",
-    "walls": 36,
-    "floors": 36,
+    "walls": 32,
+    "floors": 32,
     "trees": 0,
-    "reviewNotes": 9
+    "reviewNotes": 13
   },
   {
     "map": 1822,
@@ -11322,10 +11322,10 @@
   {
     "map": 1826,
     "name": "The Impossible Task",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 26
+    "reviewNotes": 28
   },
   {
     "map": 1827,
@@ -11338,34 +11338,34 @@
   {
     "map": 1828,
     "name": "This Time Its Personal",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 25
+    "reviewNotes": 28
   },
   {
     "map": 1829,
     "name": "This Time Its Personal",
-    "walls": 3,
-    "floors": 3,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 25
+    "reviewNotes": 28
   },
   {
     "map": 1843,
     "name": "V'Drazzig's Treasure Hoard",
-    "walls": 12,
-    "floors": 12,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 22
+    "reviewNotes": 24
   },
   {
     "map": 1845,
     "name": "Jimmy's Pick Shop",
-    "walls": 17,
+    "walls": 16,
     "floors": 14,
     "trees": 4,
-    "reviewNotes": 33
+    "reviewNotes": 34
   },
   {
     "map": 1846,
@@ -11402,18 +11402,18 @@
   {
     "map": 1850,
     "name": "Elder Castle",
-    "walls": 4,
-    "floors": 4,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 58
+    "reviewNotes": 62
   },
   {
     "map": 1852,
     "name": "The Tower of V'Drazzig",
-    "walls": 23,
+    "walls": 19,
     "floors": 19,
     "trees": 0,
-    "reviewNotes": 46
+    "reviewNotes": 50
   },
   {
     "map": 1853,
@@ -11434,10 +11434,10 @@
   {
     "map": 1855,
     "name": "Death Chamber",
-    "walls": 3,
-    "floors": 3,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 1
+    "reviewNotes": 2
   },
   {
     "map": 1856,
@@ -11450,42 +11450,42 @@
   {
     "map": 1860,
     "name": "[Locksmiths Chuck's]",
-    "walls": 25,
-    "floors": 26,
+    "walls": 9,
+    "floors": 15,
     "trees": 9,
-    "reviewNotes": 9
+    "reviewNotes": 25
   },
   {
     "map": 1880,
     "name": "Locksmiths Chuck's",
-    "walls": 26,
-    "floors": 27,
+    "walls": 9,
+    "floors": 15,
     "trees": 9,
-    "reviewNotes": 8
+    "reviewNotes": 25
   },
   {
     "map": 1881,
     "name": "Jacob the Smith",
-    "walls": 10,
-    "floors": 11,
+    "walls": 6,
+    "floors": 7,
     "trees": 11,
-    "reviewNotes": 27
+    "reviewNotes": 31
   },
   {
     "map": 1882,
     "name": "Babylon Cafe",
-    "walls": 8,
-    "floors": 8,
+    "walls": 4,
+    "floors": 4,
     "trees": 9,
-    "reviewNotes": 10
+    "reviewNotes": 14
   },
   {
     "map": 1883,
     "name": "Tournament Arena <PK>",
-    "walls": 105,
-    "floors": 62,
+    "walls": 66,
+    "floors": 38,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 67
   },
   {
     "map": 1898,
@@ -11498,10 +11498,10 @@
   {
     "map": 1899,
     "name": "Under the Town",
-    "walls": 24,
-    "floors": 18,
+    "walls": 14,
+    "floors": 14,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 34
   },
   {
     "map": 1900,
@@ -11514,10 +11514,10 @@
   {
     "map": 1906,
     "name": "Babylon's Timewarp",
-    "walls": 18,
-    "floors": 16,
+    "walls": 13,
+    "floors": 11,
     "trees": 4,
-    "reviewNotes": 38
+    "reviewNotes": 43
   },
   {
     "map": 1923,
@@ -11530,10 +11530,10 @@
   {
     "map": 1929,
     "name": "Grey Stone Castle",
-    "walls": 46,
-    "floors": 42,
+    "walls": 24,
+    "floors": 24,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 46
   },
   {
     "map": 1945,
@@ -11546,34 +11546,34 @@
   {
     "map": 1949,
     "name": "House of <PK> - Stake Arena",
-    "walls": 123,
-    "floors": 70,
+    "walls": 59,
+    "floors": 35,
     "trees": 0,
-    "reviewNotes": 15
+    "reviewNotes": 79
   },
   {
     "map": 1950,
     "name": "Library",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 32
+    "reviewNotes": 33
   },
   {
     "map": 1952,
     "name": "Haunted House Deep Cellar",
-    "walls": 10,
-    "floors": 10,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 30
+    "reviewNotes": 40
   },
   {
     "map": 1953,
     "name": "Haunted House Deep Cellar",
-    "walls": 7,
-    "floors": 7,
+    "walls": 1,
+    "floors": 1,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 34
   },
   {
     "map": 1954,
@@ -11610,10 +11610,10 @@
   {
     "map": 1958,
     "name": "Stake Arena",
-    "walls": 105,
-    "floors": 66,
+    "walls": 48,
+    "floors": 37,
     "trees": 0,
-    "reviewNotes": 26
+    "reviewNotes": 83
   },
   {
     "map": 1959,
@@ -11626,18 +11626,18 @@
   {
     "map": 1960,
     "name": "House of < PK >",
-    "walls": 7,
-    "floors": 1,
+    "walls": 4,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 37
+    "reviewNotes": 38
   },
   {
     "map": 1961,
     "name": "House of < PK > - GUILDS",
-    "walls": 41,
-    "floors": 32,
+    "walls": 12,
+    "floors": 12,
     "trees": 0,
-    "reviewNotes": 40
+    "reviewNotes": 69
   },
   {
     "map": 1962,
@@ -11674,10 +11674,10 @@
   {
     "map": 1966,
     "name": "[House of <PK>]",
-    "walls": 34,
-    "floors": 31,
+    "walls": 5,
+    "floors": 5,
     "trees": 0,
-    "reviewNotes": 2
+    "reviewNotes": 31
   },
   {
     "map": 1967,
@@ -11714,18 +11714,18 @@
   {
     "map": 1971,
     "name": "Haunted Central Catacomb",
-    "walls": 6,
-    "floors": 6,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 16
+    "reviewNotes": 18
   },
   {
     "map": 1972,
     "name": "Haunted Landlord's Tomb",
-    "walls": 12,
-    "floors": 12,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 14
+    "reviewNotes": 18
   },
   {
     "map": 1973,
@@ -11738,10 +11738,10 @@
   {
     "map": 1974,
     "name": "House of PK <Free For All>",
-    "walls": 16,
-    "floors": 16,
+    "walls": 13,
+    "floors": 13,
     "trees": 0,
-    "reviewNotes": 30
+    "reviewNotes": 33
   },
   {
     "map": 1975,
@@ -11754,10 +11754,10 @@
   {
     "map": 1976,
     "name": "Hollow Tree Trunk",
-    "walls": 4,
-    "floors": 4,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 20
+    "reviewNotes": 24
   },
   {
     "map": 1983,
@@ -11770,42 +11770,42 @@
   {
     "map": 1984,
     "name": "Scholar's Abode",
-    "walls": 18,
-    "floors": 1,
+    "walls": 6,
+    "floors": 0,
     "trees": 2,
-    "reviewNotes": 46
+    "reviewNotes": 47
   },
   {
     "map": 1991,
     "name": "Ruin's of Babylon",
-    "walls": 7,
-    "floors": 7,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 39
+    "reviewNotes": 43
   },
   {
     "map": 1992,
     "name": "Ruin's Of Babylon",
-    "walls": 13,
-    "floors": 13,
+    "walls": 3,
+    "floors": 3,
     "trees": 0,
-    "reviewNotes": 34
+    "reviewNotes": 44
   },
   {
     "map": 1993,
     "name": "Ruin's Of Babylon",
-    "walls": 4,
-    "floors": 4,
+    "walls": 2,
+    "floors": 2,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 26
   },
   {
     "map": 1994,
     "name": "Castle Throne Room",
-    "walls": 14,
-    "floors": 12,
+    "walls": 2,
+    "floors": 2,
     "trees": 5,
-    "reviewNotes": 33
+    "reviewNotes": 45
   },
   {
     "map": 1995,
@@ -11818,18 +11818,18 @@
   {
     "map": 1996,
     "name": "Meeting Room",
-    "walls": 5,
-    "floors": 14,
+    "walls": 3,
+    "floors": 13,
     "trees": 41,
-    "reviewNotes": 63
+    "reviewNotes": 65
   },
   {
     "map": 1997,
     "name": "Ruins of Babylon",
-    "walls": 9,
-    "floors": 6,
+    "walls": 4,
+    "floors": 4,
     "trees": 21,
-    "reviewNotes": 48
+    "reviewNotes": 53
   },
   {
     "map": 1998,
@@ -11866,10 +11866,10 @@
   {
     "map": 2102,
     "name": "GH 1",
-    "walls": 11,
+    "walls": 10,
     "floors": 10,
     "trees": 3,
-    "reviewNotes": 26
+    "reviewNotes": 27
   },
   {
     "map": 2103,
@@ -11882,18 +11882,18 @@
   {
     "map": 2104,
     "name": "GH 3",
-    "walls": 22,
-    "floors": 22,
+    "walls": 5,
+    "floors": 5,
     "trees": 20,
-    "reviewNotes": 19
+    "reviewNotes": 36
   },
   {
     "map": 2105,
     "name": "Underground Prison Cell",
-    "walls": 37,
-    "floors": 28,
+    "walls": 4,
+    "floors": 4,
     "trees": 0,
-    "reviewNotes": 26
+    "reviewNotes": 59
   },
   {
     "map": 2106,
@@ -11914,15 +11914,15 @@
   {
     "map": 2111,
     "name": "The Lair of Lavos",
-    "walls": 10,
-    "floors": 10,
+    "walls": 8,
+    "floors": 8,
     "trees": 0,
-    "reviewNotes": 73
+    "reviewNotes": 75
   },
   {
     "map": 2112,
     "name": "The Fire Lord's Vault",
-    "walls": 2,
+    "walls": 0,
     "floors": 0,
     "trees": 0,
     "reviewNotes": 120
@@ -11938,66 +11938,66 @@
   {
     "map": 2114,
     "name": "Darkcone Fort",
-    "walls": 1,
-    "floors": 1,
+    "walls": 0,
+    "floors": 0,
     "trees": 8,
-    "reviewNotes": 54
+    "reviewNotes": 55
   },
   {
     "map": 2115,
     "name": "Mess Hall",
-    "walls": 34,
-    "floors": 26,
+    "walls": 9,
+    "floors": 7,
     "trees": 3,
-    "reviewNotes": 34
+    "reviewNotes": 59
   },
   {
     "map": 2116,
     "name": "Throne Room",
-    "walls": 7,
-    "floors": 7,
+    "walls": 6,
+    "floors": 6,
     "trees": 11,
-    "reviewNotes": 61
+    "reviewNotes": 62
   },
   {
     "map": 2117,
     "name": "A Commander's Arena",
-    "walls": 31,
-    "floors": 25,
+    "walls": 20,
+    "floors": 15,
     "trees": 0,
-    "reviewNotes": 6
+    "reviewNotes": 17
   },
   {
     "map": 2118,
     "name": "Lounge Area",
-    "walls": 28,
-    "floors": 28,
+    "walls": 9,
+    "floors": 9,
     "trees": 5,
-    "reviewNotes": 36
+    "reviewNotes": 55
   },
   {
     "map": 2119,
     "name": "Exclusive Room",
-    "walls": 13,
-    "floors": 13,
+    "walls": 10,
+    "floors": 10,
     "trees": 0,
-    "reviewNotes": 24
+    "reviewNotes": 27
   },
   {
     "map": 2120,
     "name": "Ancient Battlegrounds",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 48,
-    "reviewNotes": 33
+    "reviewNotes": 34
   },
   {
     "map": 2121,
     "name": "Ancient Battlegrounds",
-    "walls": 2,
-    "floors": 2,
+    "walls": 1,
+    "floors": 1,
     "trees": 57,
-    "reviewNotes": 26
+    "reviewNotes": 27
   },
   {
     "map": 2122,
@@ -12074,10 +12074,10 @@
   {
     "map": 2131,
     "name": "The Impossible Task",
-    "walls": 2,
-    "floors": 2,
+    "walls": 0,
+    "floors": 0,
     "trees": 0,
-    "reviewNotes": 28
+    "reviewNotes": 30
   },
   {
     "map": 2132,
