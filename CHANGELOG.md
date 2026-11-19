@@ -2,6 +2,12 @@
 
 This log summarizes implemented changes from repository history and development notes. A passing audit is not a claim that every original quest or map is fully restored.
 
+## v0.1.0-testing.20261119 — 2026-11-19
+
+- Windows package includes the November 17–18 quest, character picker, scenery and editor updates listed below.
+- Includes experimental conversion review warnings, thin wall corners, Ctrl-drag editing, preserved wall texture detail and conservative map-edge handling.
+- Complete portable package includes the game, server and Studio; personal accounts and saves are excluded.
+
 ## Source update — 2026-11-18: conversion corrections
 
 - Auto conversion preserves map-edge geometry and flags uncertain boundary connections instead of rebuilding them. Added Classic #1966 House of PK to render checks.
